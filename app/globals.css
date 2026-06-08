@@ -1,0 +1,249 @@
+/* ============================================================
+   Jicate IT Service — globals.css
+   Tailwind CSS v4 (CSS-first @theme, no tailwind.config.js)
+   All values are canonical measured tokens (docs 01/02/03/05).
+   1rem = 18px  (root font-size below) — DO NOT change.
+   ============================================================ */
+
+@import "tailwindcss";
+
+/* ----------------------------------------------------------------
+   :root — raw canonical values (source of truth, plain CSS vars)
+   ---------------------------------------------------------------- */
+:root {
+  /* Root unit — CRITICAL: 1rem = 18px for the whole system. */
+  font-size: 18px;
+
+  /* ---------- COLOR (doc 01) ---------- */
+  /* Ink scale (text on light canvas) */
+  --color-ink: #1e2124;            /* primary text, borders   rgb(30,33,36) */
+  --color-ink-medium: #636363;     /* grey statement headlines, secondary   */
+  --color-ink-light: #767676;      /* captions, meta                         */
+
+  /* Light canvas / surfaces / band */
+  --color-canvas: #ffffff;         /* page bg                                */
+  --color-surface-medium: #f3f3f3; /* cards, testimonial cards               */
+  --color-surface-light: #f9f9f9;  /* subtle fills, scrolled nav bar         */
+  --color-band: #efefef;           /* light section bands, split-CTA light half */
+
+  /* Accent — pine green (single brand color) */
+  --color-accent: #2b5945;
+  --color-accent-10: rgba(43, 89, 69, 0.10); /* tinted fill / hover wash      */
+  --color-accent-5: rgba(43, 89, 69, 0.05);  /* very subtle wash              */
+  --color-accent-5-opaque: #f4f7f6;          /* flattened 5% over white       */
+
+  /* Dark-context palette (full-bleed dark media) */
+  --color-near-black: #202426;     /* dark surfaces, hero overlay, inverse btn, announcement bar */
+  --color-blue: #4e8af7;           /* dark-context accent / hero glow ONLY — never on white */
+  --color-offwhite: #efefef;       /* text on dark; SAME value as --color-band */
+
+  /* Functional & interaction */
+  --color-error: #ff4136;
+  --color-hover: rgba(30, 33, 36, 0.33); /* ink @ 33% opacity, hover-opacity = 0.33 */
+
+  /* ---------- SPACING SCALE (doc 03) ---------- */
+  --space-tiny: 3px;   /* 0.1667rem — hairline insets, optical tweaks */
+  --space-xs:   10px;  /* 0.5556rem — tight padding; = gutter          */
+  --space-s:    20px;  /* 1.1111rem — default gap, container padding; = v-gutter */
+  --space-m:    20px;  /* 1.1111rem — alias of s                       */
+  --space-l:    40px;  /* 2.2222rem — block separation, card padding   */
+  --space-xl:   60px;  /* 3.3333rem — SECTION vertical spacing         */
+  --space-2xl:  80px;  /* 4.4444rem — large section breaks            */
+  --space-3xl:  120px; /* 6.6667rem — major full-bleed section padding */
+
+  /* ---------- GRID & CONTAINER (doc 03) ---------- */
+  --grid-columns: 12;
+  --gutter: 10px;            /* 0.5556rem — column gap (= space-xs)     */
+  --v-gutter: 20px;          /* 1.1111rem — row gap / h-spacing (= space-s) */
+  --max-width: 1440px;       /* 80rem — primary content max width       */
+  --max-width-wide: 1480px;  /* alt wide variant                        */
+  --container-pad: 20px;     /* 1.1111rem — min side padding            */
+
+  /* ---------- STRUCTURAL (doc 03) ---------- */
+  --nav-height: 86px;
+  --section-space: 60px;     /* = --space-xl */
+
+  /* ---------- BREAKPOINTS (doc 03) ---------- */
+  --bp-mobile: 640px;        /* <= 640   : mobile  */
+  --bp-tablet: 1024px;       /* 641–1024 : tablet  */
+  --bp-desktop: 1479px;      /* 1025–1479: desktop */
+  --bp-wide: 1480px;         /* >= 1480  : wide    */
+}
+
+/* ----------------------------------------------------------------
+   @theme inline — map raw vars to Tailwind v4 namespaces.
+   `inline` so font tokens track the live next/font variables and
+   color tokens track the :root values (no build-time snapshot).
+   ---------------------------------------------------------------- */
+@theme inline {
+  /* ----- Colors → bg-*, text-*, border-*, fill-*, ring-* ----- */
+  --color-ink:             var(--color-ink);
+  --color-ink-medium:      var(--color-ink-medium);
+  --color-ink-light:       var(--color-ink-light);
+  --color-canvas:          var(--color-canvas);
+  --color-surface-medium:  var(--color-surface-medium);
+  --color-surface-light:   var(--color-surface-light);
+  --color-band:            var(--color-band);
+  --color-accent:          var(--color-accent);
+  --color-accent-10:       var(--color-accent-10);
+  --color-accent-5:        var(--color-accent-5);
+  --color-accent-5-opaque: var(--color-accent-5-opaque);
+  --color-near-black:      var(--color-near-black);
+  --color-blue:            var(--color-blue);
+  --color-offwhite:        var(--color-offwhite);
+  --color-error:           var(--color-error);
+  --color-hover:           var(--color-hover);
+
+  /* ----- Fonts → font-* (values come from next/font in layout.tsx) ----- */
+  --font-body:    var(--font-geist-sans); /* Geist        -> Alliance No.1 (body, most headings) */
+  --font-display: var(--font-display);    /* Space Grotesk -> Alliance No.2 (hero, big display)  */
+  --font-mono:    var(--font-geist-mono); /* Geist Mono   -> Apercu Mono   (UPPERCASE labels)     */
+  /* Keep v4's default --font-sans pointing at the body face so unprefixed sans text matches: */
+  --font-sans:    var(--font-geist-sans);
+
+  /* ----- Type scale → text-* (size + paired line-height) ----- */
+  /* px @18px root in comments; line-heights from doc 02 §4.      */
+  --text-hero:                  4.4444rem; /* 80px  */
+  --text-hero--line-height:     0.975;     /* 78/80 */
+  --text-display:               2.7778rem; /* 50px  (big section H2)  */
+  --text-display--line-height:  1.05;
+  --text-headline:              1.8889rem; /* 34px  (--headline / feature H3) */
+  --text-headline--line-height: 1.1;
+  --text-headline-lg:           2.5556rem; /* 46px  (feature large + statement) */
+  --text-headline-lg--line-height: 1.1;
+  --text-eyebrow:               1.1111rem; /* 20px  (eyebrow / kicker) */
+  --text-eyebrow--line-height:  1.3;
+  --text-body-lg:               1.1111rem; /* 20px  (lead paragraphs)  */
+  --text-body-lg--line-height:  1.3;
+  --text-body:                  1rem;      /* 18px  (default copy)     */
+  --text-body--line-height:     1.389;     /* 25px                     */
+  --text-body-sm:               0.8889rem; /* 16px  (fine print/meta)  */
+  --text-body-sm--line-height:  1.4286;
+  --text-caption:               0.5556rem; /* 10px  (mono micro-label) */
+  --text-caption--line-height:  1.6;
+
+  /* ----- Spacing → p-*, m-*, gap-*, w-*, h-* ----- */
+  --spacing-tiny: var(--space-tiny);
+  --spacing-xs:   var(--space-xs);
+  --spacing-s:    var(--space-s);
+  --spacing-m:    var(--space-m);
+  --spacing-l:    var(--space-l);
+  --spacing-xl:   var(--space-xl);
+  --spacing-2xl:  var(--space-2xl);
+  --spacing-3xl:  var(--space-3xl);
+  --spacing-nav:  var(--nav-height); /* 86px — for h-nav, top-nav, scroll offsets */
+
+  /* ----- Container max-width → max-w-content / max-w-wide ----- */
+  --container-content: var(--max-width);      /* 1440px */
+  --container-wide:    var(--max-width-wide);  /* 1480px */
+
+  /* ----- Breakpoints → tablet: / desktop: / wide: variants ----- */
+  /* min-width, mobile-first. Mobile (<=640) is the unprefixed base. */
+  --breakpoint-tablet:  641px;  /* 641–1024 */
+  --breakpoint-desktop: 1025px; /* 1025–1479 */
+  --breakpoint-wide:    1480px; /* >= 1480 */
+
+  /* ----- Motion tokens (doc 05 §2) → duration-* / ease-* / stagger utilities ----- */
+  /* Durations — micro band 150–300ms */
+  --duration-micro-fast: 150ms;   /* hover color shift, arrow nudge */
+  --duration-micro:      200ms;   /* button inversion, dismiss collapse */
+  --duration-micro-slow: 300ms;   /* nav text crossfade element */
+
+  /* Durations — reveal band 400–800ms */
+  --duration-reveal:      500ms;  /* default scroll-reveal item */
+  --duration-reveal-slow: 700ms;  /* hero headline settle, mega-menu */
+  --duration-reveal-max:  800ms;  /* nav transparent->solid bg, longest */
+
+  /* Stagger between items in a reveal group */
+  --stagger: 80ms;
+
+  /* Easing curves (conventions) */
+  --ease-out-quint:  cubic-bezier(0.22, 1, 0.36, 1);   /* reveals / settle — decelerate, no overshoot */
+  --ease-standard:   cubic-bezier(0.4, 0, 0.2, 1);     /* micro state changes */
+  --ease-out-soft:   cubic-bezier(0.16, 1, 0.3, 1);    /* mega-menu open */
+}
+
+/* ----------------------------------------------------------------
+   Base layer — body defaults (doc 02 §1)
+   ---------------------------------------------------------------- */
+@layer base {
+  body {
+    font-family: var(--font-body);   /* Geist */
+    font-size: 1rem;                 /* 18px */
+    line-height: 1.389;              /* 25px */
+    color: var(--color-ink);         /* #1e2124 */
+    background: var(--color-canvas); /* #ffffff */
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* ----------------------------------------------------------------
+   Layout helpers (doc 03 §9) — plain CSS (utility-class friendly)
+   ---------------------------------------------------------------- */
+
+/* Centered container: max 1440px, guaranteed 20px side rail. */
+.h-contain {
+  width: 100%;
+  margin-inline: auto;
+  max-width: var(--max-width);
+  padding-inline: max((100% - var(--max-width)) / 2, var(--container-pad));
+}
+.h-contain--wide { max-width: var(--max-width-wide); } /* 1480px */
+
+/* 12-col grid with the MEASURED minmax(10px,1fr) floor — NOT Tailwind's
+   default grid-cols-12 (which is minmax(0,1fr)). Use this class, then
+   place children with col-span-* / col-start-* utilities. */
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(10px, 1fr));
+  column-gap: var(--gutter);  /* 10px */
+  row-gap: var(--v-gutter);   /* 20px */
+}
+
+/* Standard section vertical rhythm: 60px (space-xl). */
+.section { padding-block: var(--section-space); }
+
+/* ----------------------------------------------------------------
+   Motion — scroll-reveal + hero settle (doc 05 §3.3, §3.4; MOTION CSS CONTRACT)
+   Components add/toggle these classes + data-attrs; transform/opacity only.
+   ---------------------------------------------------------------- */
+
+/* Scroll-reveal base: hidden until IntersectionObserver sets data-visible.
+   Per-item stagger via --i (set inline by the component). */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity   var(--duration-reveal) var(--ease-out-quint),
+    transform var(--duration-reveal) var(--ease-out-quint);
+  transition-delay: calc(var(--i, 0) * var(--stagger));
+}
+.reveal[data-visible="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+/* Hero headline settle-in — one-shot on mount (reveal-slow + ease-out-quint). */
+@keyframes settle {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.settle {
+  animation: settle var(--duration-reveal-slow) var(--ease-out-quint) both;
+}
+
+/* ----------------------------------------------------------------
+   Reduced motion (doc 01 honors motion foundations + doc 05 §5:
+   disable autoplay, parallax, scroll-pinning; keep simple fades;
+   never trap content hidden — reveal/settle resolve to final state).
+   ---------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1 !important; transform: none !important; } /* never trap content hidden */
+  .settle { animation: none !important; }
+}

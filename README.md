@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jicate IT Service
+
+A [Next.js](https://nextjs.org) **16.2** application built with React 19, TypeScript, and Tailwind CSS v4 (App Router + Turbopack).
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies (already done if you scaffolded this project):
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the app. Edit `src/app/page.tsx` and the page auto-updates.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command         | Description                          |
+| --------------- | ------------------------------------ |
+| `npm run dev`   | Start the dev server (Turbopack)     |
+| `npm run build` | Production build                     |
+| `npm run start` | Run the production build             |
+| `npm run lint`  | Lint with ESLint                     |
 
-## Learn More
+## Folder Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+.
+├── public/                  # Static assets (images, fonts, icons)
+├── src/
+│   ├── app/                 # App Router — routes, layouts, pages
+│   │   ├── layout.tsx       # Root layout (fonts + metadata)
+│   │   ├── page.tsx         # Home page
+│   │   └── globals.css      # Tailwind import + global styles
+│   ├── components/          # Reusable React components
+│   │   └── ui/              # Low-level UI primitives (Button, Card, …)
+│   ├── lib/                 # Utilities & helpers (e.g. cn())
+│   ├── hooks/               # Custom React hooks
+│   ├── types/               # Shared TypeScript types
+│   ├── config/              # App constants / site metadata
+│   └── features/            # Feature-scoped modules (grows as you build)
+├── next.config.ts
+├── tsconfig.json            # Path alias: "@/*" → "src/*"
+├── eslint.config.mjs
+└── postcss.config.mjs
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Conventions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Path alias:** import from `@/` instead of long relative paths, e.g. `import { cn } from "@/lib/utils"`.
+- **Class names:** use `cn(...)` from `@/lib/utils` to merge conditional and conflicting Tailwind classes.
+- **Site metadata:** keep app-wide constants in `@/config/site`.
+- **Feature code:** group related components/hooks/types under `src/features/<feature>/`.
 
-## Deploy on Vercel
+## Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js 16.2.7 (App Router, Turbopack)
+- React 19.2
+- TypeScript 5
+- Tailwind CSS v4
+- ESLint 9

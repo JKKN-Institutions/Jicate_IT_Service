@@ -1,0 +1,318 @@
+/*
+ * ProductCarousel — scoped dark, full-screen slideshow styling, reproducing
+ * Palantir's homepage product carousel. Deliberately NOT wired to the Jicate
+ * light design tokens; this section owns its own dark palette.
+ *
+ * Each slide is a full-bleed, full-viewport-height feature card; the fixed site
+ * nav overlays the top of the slide (as on the reference design). Navigation is
+ * via the side arrows (and swipe) — there is no tab row.
+ */
+
+.section {
+  /* Rail aligns the tab bar with the rest of the page; the slide is full-bleed. */
+  --pc-rail: max((100% - 1440px) / 2, 20px);
+  /* One slide per view, full-bleed edge to edge (no rail, no peek). */
+  --pc-card-w: 100%;
+
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #0b0e10;
+  color: #f4f4f3;
+  font-family: var(--font-body);
+}
+
+/* ---- Tab bar overlay (floats over the top of the slide, below the nav) --- */
+
+.tabBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  /* Tabs sit flush at the top of the slide, directly below the fixed nav. */
+  padding-top: var(--nav-height, 86px);
+  padding-bottom: 14px;
+  /* Top scrim so the nav + tabs stay legible over bright slide imagery. */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.35) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  pointer-events: none; /* only the tabs / CTA capture clicks */
+}
+
+.tabBarInner {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: var(--pc-rail);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-snap-type: x proximity;
+  pointer-events: auto;
+  margin: -4px 0;
+  padding: 4px 4px 4px 0;
+}
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tab {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font: inherit;
+  font-size: 0.8333rem; /* ~15px */
+  line-height: 1;
+  white-space: nowrap;
+  color: rgba(244, 244, 243, 0.7);
+  background: transparent;
+  transition:
+    color var(--duration-micro, 200ms) var(--ease-standard, ease),
+    background-color var(--duration-micro, 200ms) var(--ease-standard, ease);
+}
+.tab:hover {
+  color: #ffffff;
+}
+.tabActive {
+  color: #0b0e10;
+  background: #f4f4f3;
+}
+.tabActive:hover {
+  color: #0b0e10;
+}
+.tab:focus-visible {
+  outline: 2px solid #f4f4f3;
+  outline-offset: 2px;
+}
+
+.headerCta {
+  align-self: center;
+  pointer-events: auto;
+}
+
+/* Pill link used by each card's CTA and by the tab bar's See All. */
+.pill {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid rgba(244, 244, 243, 0.4);
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 0.8333rem;
+  line-height: 1;
+  color: #f4f4f3;
+  text-decoration: none;
+  background: transparent;
+  transition:
+    background-color var(--duration-micro, 200ms) var(--ease-standard, ease),
+    border-color var(--duration-micro, 200ms) var(--ease-standard, ease);
+}
+.pill:hover {
+  background: rgba(244, 244, 243, 0.12);
+  border-color: rgba(244, 244, 243, 0.7);
+}
+.pill:focus-visible {
+  outline: 2px solid #f4f4f3;
+  outline-offset: 2px;
+}
+
+/* ---- Carousel: full-bleed scroll-snap track ----------------------------- */
+
+.carousel {
+  position: relative;
+}
+
+.track {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding-inline: 0;
+  scroll-padding-inline: 0;
+}
+.track::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  flex: 0 0 auto;
+  width: var(--pc-card-w);
+  scroll-snap-align: start;
+}
+
+/* ---- Feature card ------------------------------------------------------- */
+
+.feature {
+  position: relative;
+  display: block;
+  height: 100vh; /* fallback for browsers without dvh */
+  height: 100dvh; /* full screen height, stable across mobile browser chrome */
+  min-height: 480px;
+  border-radius: 0;
+  overflow: hidden;
+  background: #14181b;
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* slight settle so cards don't pop as images decode */
+  transition: transform var(--duration-reveal, 500ms) var(--ease-out-quint, ease);
+}
+.feature:hover .image {
+  transform: scale(1.03);
+}
+
+.feature::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.82) 0%,
+    rgba(0, 0, 0, 0.45) 32%,
+    rgba(0, 0, 0, 0) 68%
+  );
+  z-index: 1;
+}
+
+.textContainer {
+  position: absolute;
+  inset: auto 0 0 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: clamp(20px, 3vw, 40px);
+  max-width: 44ch;
+}
+
+.earmark {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.6667rem; /* ~12px */
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(244, 244, 243, 0.85);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.4444rem, 1rem + 1.4vw, 2.3333rem);
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+/* Stretched primary link: the whole card navigates to the card href. */
+.titleLink {
+  color: inherit;
+  text-decoration: none;
+}
+.titleLink::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1; /* below the card CTA (z-index: 2) so it stays clickable */
+}
+.feature:focus-within {
+  outline: 2px solid #f4f4f3;
+  outline-offset: 3px;
+}
+.titleLink:focus-visible {
+  outline: none; /* ring shown on .feature via :focus-within */
+}
+
+/* Secondary CTA sits above the stretched link. */
+.cardCta {
+  position: relative;
+  z-index: 2;
+  margin-top: 4px;
+}
+
+/* ---- Prev / next controls (centered on the left & right edges) ---------- */
+
+.controls {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: clamp(14px, 2.5vw, 36px);
+  pointer-events: none; /* re-enabled on the buttons themselves */
+}
+
+.control {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  border: 1px solid rgba(244, 244, 243, 0.45);
+  background: rgba(11, 14, 16, 0.5);
+  backdrop-filter: blur(6px);
+  color: #f4f4f3;
+  cursor: pointer;
+  transition:
+    background-color var(--duration-micro, 200ms) var(--ease-standard, ease),
+    border-color var(--duration-micro, 200ms) var(--ease-standard, ease);
+}
+.control:hover {
+  background: rgba(244, 244, 243, 0.16);
+  border-color: rgba(244, 244, 243, 0.8);
+}
+.control:focus-visible {
+  outline: 2px solid #f4f4f3;
+  outline-offset: 2px;
+}
+.control svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ---- Mobile ------------------------------------------------------------- */
+
+@media (max-width: 640px) {
+  .headerCta {
+    display: none; /* tabs carry navigation on small screens */
+  }
+  .controls {
+    display: none; /* swipe to scroll on touch */
+  }
+}
+
+/* Honor reduced-motion: drop the hover zoom and smooth programmatic scroll. */
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    scroll-behavior: auto;
+  }
+  .feature:hover .image {
+    transform: none;
+  }
+}
