@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import type { Testimonial } from "@/types";
-import { Container, Eyebrow, DogEarCard, IconButton } from "@/components/ui";
+import { Container, Eyebrow, IconButton } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 export interface TestimonialRowProps {
@@ -66,17 +66,19 @@ export function TestimonialRow({ testimonials, className }: TestimonialRowProps)
               key={t.clientName}
               className="[scroll-snap-align:start] shrink-0 w-[88vw] tablet:w-[420px]"
             >
-              <DogEarCard className="h-full p-l flex flex-col gap-l">
-                <Eyebrow as="p" className="text-ink-medium">
-                  {t.clientName}
-                </Eyebrow>
+              <div className="flex h-full flex-col gap-l rounded-none bg-surface-medium p-l">
                 <blockquote className="text-body text-ink">
                   {t.quote}
                 </blockquote>
-                <cite className="mt-auto text-caption text-ink-light not-italic">
-                  {t.role}
-                </cite>
-              </DogEarCard>
+                <div className="mt-auto flex flex-col gap-tiny">
+                  <Eyebrow as="p" className="text-ink">
+                    {t.clientName}
+                  </Eyebrow>
+                  <cite className="text-caption text-ink-light not-italic">
+                    {t.role}
+                  </cite>
+                </div>
+              </div>
             </li>
           ))}
         </ul>

@@ -28,22 +28,22 @@ export function SiteHeader() {
   return (
     <header
       data-solid={solid}
-      className="fixed inset-x-0 top-s z-50 text-offwhite data-[solid=true]:text-ink"
+      className="fixed inset-x-0 top-0 z-50 text-offwhite data-[solid=true]:text-ink"
     >
-      <nav aria-label="Primary">
+      {/* Flat full-bleed bar (design 03/04): transparent over the dark hero,
+          crossfading to a solid surface-light bar with a hairline underline
+          once the hero scrolls away. Sharp corners, no float, no blur. */}
+      <nav
+        aria-label="Primary"
+        className={cn(
+          "border-b-[0.8px] transition-colors duration-[var(--duration-reveal-max)] ease-[var(--ease-standard)]",
+          solid
+            ? "border-ink/10 bg-surface-light"
+            : "border-transparent bg-transparent",
+        )}
+      >
         <Container>
-          {/* Floating frosted-glass bar — translucent + backdrop-blur (the
-              "mirror"), rounded corners, hairline border and soft shadow.
-              Tinted light over the dark hero; frosted-white once scrolled. */}
-          <div
-            className={cn(
-              // Palantir headerBg properties: rgba(171,171,171,0.1) fill,
-              // blur(10px), 10px radius, soft 0 2px 10px shadow, no border.
-              "flex items-center justify-between gap-s rounded-[10px] bg-[rgba(171,171,171,0.1)] px-s py-xs shadow-[0px_2px_10px_0px_rgba(0,0,0,0.1)] backdrop-blur-[10px] transition-colors duration-[var(--duration-reveal-max)] ease-[var(--ease-standard)]",
-              // Text/icon tone still switches for legibility (dark hero vs light page).
-              solid ? "text-ink" : "text-offwhite",
-            )}
-          >
+          <div className="flex h-nav items-center justify-between gap-s">
             <a
               href={siteConfig.routes.home}
               aria-label="Jicate IT Service — Home"
@@ -55,12 +55,12 @@ export function SiteHeader() {
             <div className="flex items-center gap-xs">
               <Button
                 href={siteConfig.routes.getStarted}
-                className="hidden rounded-[10px] px-m tablet:inline-flex"
+                className="hidden px-m tablet:inline-flex"
               >
                 Get Started
               </Button>
 
-              <IconButton tone={iconTone} label="Search" className="rounded-[10px]">
+              <IconButton tone={iconTone} label="Search">
                 <Search size={18} aria-hidden />
               </IconButton>
 
@@ -70,7 +70,6 @@ export function SiteHeader() {
                 aria-expanded={open}
                 aria-controls="mega-menu"
                 onClick={() => setOpen((value) => !value)}
-                className="rounded-[10px]"
               >
                 <Menu size={18} aria-hidden />
               </IconButton>
