@@ -111,10 +111,11 @@ export function OurSoftware() {
                     </span>
                   </div>
 
-                  {/* Right: large product name */}
+                  {/* Right: large product name — left-aligned so every name
+                      starts at the same x (ragged right), per the reference. */}
                   <span
                     className={cn(
-                      "text-right font-display text-display font-normal leading-[0.95] tracking-[-0.02em] transition-colors duration-200 desktop:text-hero",
+                      "text-left font-display text-display font-normal leading-[0.95] tracking-[-0.02em] transition-colors duration-200 desktop:text-hero",
                       isActive ? "text-ink" : "text-ink-light",
                     )}
                   >
