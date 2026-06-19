@@ -1,38 +1,39 @@
 "use client";
 
-import { useEffect, useRef, useSyncExternalStore } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 
 import { cn } from "@/lib/utils";
 import { offerings, ourSoftwareHeading } from "@/content/offerings";
-import { Container, NumberedIndex } from "@/components/ui";
+import { Container, EarmarkGlyph, NumberedIndex } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
-import { useActiveStep } from "@/hooks/useActiveStep";
 
 /** Hydration flag without setState-in-effect: server snapshot `false`,
- *  client snapshot `true` (same trick as ServicesScrolly / ServicesSlider). */
+ *  client snapshot `true` (same trick as the other home sections). */
 const noopSubscribe = () => () => {};
 function useHydrated(): boolean {
   return useSyncExternalStore(noopSubscribe, () => true, () => false);
 }
 
 /**
- * "Our Software" — the numbered /0.1–/0.5 offerings list (reference: Palantir
- * homepage "Our Software"). Each product shows a looping muted video preview.
+ * "Our Software" — the numbered offerings list (reference: Palantir homepage
+ * "Our Software"). Each row is laid out as: tagline + /0.x index on the left,
+ * a preview in the middle, and the large product name on the right.
  *
- * Progressive enhancement:
- *  - Baseline (no JS / prefers-reduced-motion): a plain stacked list; every
- *    product fully legible; videos sit paused on their first frame (preload
- *    "metadata"), nothing dimmed.
- *  - Enhanced: a scroll-spy (useActiveStep, viewport-center band) marks the
- *    centered product active — its index lights to the accent, siblings dim,
- *    and only the active product's video plays (others pause).
+ * Interaction: hovering (or keyboard-focusing) a product reveals its looping
+ * video preview in the middle slot and lights its name + index to ink; the
+ * other rows show a quiet earmark glyph in place of the preview. The first
+ * product is active by default, so the section is never empty.
+ *
+ * Progressive enhancement: the active video only auto-plays after hydration
+ * and when motion is allowed; under reduced motion / no-JS it sits paused on
+ * its first frame and the default (first) product stays selected.
  */
 export function OurSoftware() {
   const reducedMotion = useReducedMotion();
   const hydrated = useHydrated();
-  const { activeIndex, registerStep } = useActiveStep(offerings.length);
   const enhanced = hydrated && !reducedMotion;
 
+  const [active, setActive] = useState(0);
   const videoRefs = useRef<Array<HTMLVideoElement | null>>([]);
 
   // Play the active offering's video; pause the rest. Inert until enhanced.
@@ -40,13 +41,13 @@ export function OurSoftware() {
     if (!enhanced) return;
     videoRefs.current.forEach((video, i) => {
       if (!video) return;
-      if (i === activeIndex) {
+      if (i === active) {
         void video.play().catch(() => {});
       } else {
         video.pause();
       }
     });
-  }, [enhanced, activeIndex]);
+  }, [enhanced, active]);
 
   return (
     <section className="section bg-canvas" aria-label={ourSoftwareHeading}>
@@ -55,60 +56,75 @@ export function OurSoftware() {
           {ourSoftwareHeading}
         </h2>
 
-        <ol className="mt-2xl grid gap-2xl">
+        <ul className="mt-2xl flex flex-col">
           {offerings.map((item, i) => {
-            const active = enhanced ? i === activeIndex : undefined;
-            const dimmed = active === false;
+            const isActive = i === active;
             return (
               <li
                 key={item.index}
-                ref={enhanced ? registerStep(i) : undefined}
-                className={cn(
-                  "grid items-center gap-l desktop:grid-cols-[3fr_4fr]",
-                  "transition-opacity duration-[var(--duration-reveal)] ease-[var(--ease-out-quint)] motion-reduce:transition-none",
-                  dimmed && "opacity-40",
-                )}
+                className="border-t-[0.8px] border-ink/15 last:border-b-[0.8px]"
+                onMouseEnter={() => setActive(i)}
               >
-                {/* Text */}
-                <div className="flex flex-col gap-s">
-                  <div className="flex items-center gap-s">
-                    <NumberedIndex value={item.index} active={active} />
-                    <span className="font-mono text-caption uppercase tracking-[0.05em] text-ink-light">
-                      {item.name}
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  onFocus={() => setActive(i)}
+                  className="grid items-center gap-l py-l focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent desktop:grid-cols-[3fr_4fr_5fr]"
+                >
+                  {/* Left: tagline + numbered index */}
+                  <div className="flex flex-col gap-s">
+                    <p className="text-body text-ink-medium max-w-[26ch]">
+                      {item.tagline}
+                    </p>
+                    <NumberedIndex value={item.index} active={isActive} />
+                  </div>
+
+                  {/* Middle: preview — video on the active row, glyph otherwise */}
+                  <div className="relative aspect-video w-full overflow-hidden">
+                    <video
+                      ref={(el) => {
+                        videoRefs.current[i] = el;
+                      }}
+                      className={cn(
+                        "absolute inset-0 h-full w-full bg-near-black object-cover transition-opacity duration-300 ease-[var(--ease-standard)]",
+                        isActive ? "opacity-100" : "opacity-0",
+                      )}
+                      src={item.video}
+                      muted
+                      loop
+                      playsInline
+                      preload="metadata"
+                      aria-hidden
+                    />
+                    <span
+                      aria-hidden
+                      className={cn(
+                        "absolute inset-0 flex items-center justify-center text-ink-light transition-opacity duration-300",
+                        isActive ? "opacity-0" : "opacity-100",
+                      )}
+                    >
+                      <EarmarkGlyph
+                        variant={i % 2 === 0 ? "circle" : "triangle"}
+                        size={48}
+                      />
                     </span>
                   </div>
-                  <h3 className="font-display text-headline text-ink max-w-[18ch]">
-                    <a
-                      href={item.href}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="transition-opacity duration-200 hover:opacity-[0.66]"
-                    >
-                      {item.tagline}
-                    </a>
-                  </h3>
-                </div>
 
-                {/* Video preview */}
-                <div className="aspect-video w-full overflow-hidden bg-near-black">
-                  <video
-                    ref={(el) => {
-                      videoRefs.current[i] = el;
-                    }}
-                    className="h-full w-full object-cover"
-                    src={item.video}
-                    poster={item.poster}
-                    muted
-                    loop
-                    playsInline
-                    preload="metadata"
-                    aria-label={`${item.name} preview`}
-                  />
-                </div>
+                  {/* Right: large product name */}
+                  <span
+                    className={cn(
+                      "text-right font-display text-display font-normal leading-[0.95] tracking-[-0.02em] transition-colors duration-200 desktop:text-hero",
+                      isActive ? "text-ink" : "text-ink-light",
+                    )}
+                  >
+                    {item.name}
+                  </span>
+                </a>
               </li>
             );
           })}
-        </ol>
+        </ul>
       </Container>
     </section>
   );
