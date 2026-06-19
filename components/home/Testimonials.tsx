@@ -23,7 +23,7 @@ export function Testimonials() {
           <div className="flex flex-col gap-s">
             <Eyebrow size="eyebrow">PROOF</Eyebrow>
             <h2 className="font-display text-headline-lg font-normal text-ink max-w-[20ch]">
-              Trusted by the teams we keep running.
+              What our partners say about us
             </h2>
           </div>
         </Container>
