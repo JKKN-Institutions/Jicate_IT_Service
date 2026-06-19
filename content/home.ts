@@ -15,6 +15,7 @@ import type {
   CaseStudy,
   ServicesIntro,
   ServiceItem,
+  ServiceSlide,
   Manifesto,
   Testimonial,
   SplitCTAHalf,
@@ -77,8 +78,106 @@ export const caseStudy: CaseStudy = {
 
 export const servicesIntro: ServicesIntro = {
   eyebrow: "WHAT WE DO",
-  headline: "Five disciplines, one accountable team.",
+  headline: "AI & Generative AI services, delivered end to end.",
 };
+
+/**
+ * §7 — Services slider (slide format).
+ *
+ * Every service from the two master groups, in original order, chunked into
+ * themed slides. `group` is the master heading the slide belongs to; the
+ * group tabs in `ServicesSlider` are derived from these strings in order.
+ */
+export const serviceSlides: ServiceSlide[] = [
+  {
+    index: "/0.1",
+    earmark: "circle",
+    group: "AI & Generative AI Services",
+    title: "AI Strategy & Generative AI Development",
+    services: [
+      "AI Strategy & Consulting",
+      "Generative AI Application Development",
+      "Custom AI Model Development",
+      "Large Language Model (LLM) Solutions",
+    ],
+  },
+  {
+    index: "/0.2",
+    earmark: "triangle",
+    group: "AI & Generative AI Services",
+    title: "AI Agents & Conversational AI",
+    services: [
+      "AI Agent Development",
+      "Multi-Agent Systems",
+      "AI Chatbot Development",
+      "Conversational AI Platforms",
+      "Voice AI Assistants",
+    ],
+  },
+  {
+    index: "/0.3",
+    earmark: "circle",
+    group: "AI & Generative AI Services",
+    title: "Knowledge Systems & Model Operations",
+    services: [
+      "AI Search & Knowledge Base Systems",
+      "Retrieval-Augmented Generation (RAG)",
+      "Prompt Engineering",
+      "AI Model Fine-Tuning",
+      "AI Model Deployment & Monitoring",
+    ],
+  },
+  {
+    index: "/0.4",
+    earmark: "triangle",
+    group: "AI & Generative AI Services",
+    title: "Applied AI & Machine Learning",
+    services: [
+      "Computer Vision Solutions",
+      "Natural Language Processing (NLP)",
+      "Predictive Analytics",
+      "Recommendation Engines",
+      "Sentiment Analysis",
+      "OCR & Document Intelligence",
+    ],
+  },
+  {
+    index: "/0.5",
+    earmark: "circle",
+    group: "AI Automation Services",
+    title: "Process & Workflow Automation",
+    services: [
+      "Business Process Automation",
+      "Robotic Process Automation (RPA)",
+      "AI Workflow Automation",
+    ],
+  },
+  {
+    index: "/0.6",
+    earmark: "triangle",
+    group: "AI Automation Services",
+    title: "Business Function Automation",
+    services: [
+      "Customer Support Automation",
+      "Email Automation",
+      "HR Automation",
+      "Sales Automation",
+      "Marketing Automation",
+      "Finance Automation",
+    ],
+  },
+  {
+    index: "/0.7",
+    earmark: "circle",
+    group: "AI Automation Services",
+    title: "Document Intelligence & Data Extraction",
+    services: [
+      "Invoice Processing Automation",
+      "Document Processing Automation",
+      "Intelligent Data Extraction",
+    ],
+  },
+];
 
 export const services: ServiceItem[] = [
   {
@@ -141,13 +240,12 @@ export const services: ServiceItem[] = [
 /* §8 — Value / manifesto band -------------------------------------------- */
 
 export const manifesto: Manifesto = {
-  statement:
-    "We treat your systems the way good engineers treat their own: documented, monitored, and built to fail quietly.",
+  statement: "There is so much left to build",
   support:
-    "No mystery boxes, no lock-in, no surprise invoices. You own your stack — we make sure it keeps its promises.",
+    "Palantirians deliver mission-critical outcomes for the West's most important institutions.",
   link: {
-    label: "How we work",
-    href: "/company/approach",
+    label: "Learn More",
+    href: "/careers",
     arrow: "drillin",
   },
 };
@@ -157,27 +255,33 @@ export const manifesto: Manifesto = {
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "Our team stopped thinking about IT — which is the highest compliment I can give a managed provider.",
-    clientName: "NORTHWIND LOGISTICS",
-    role: "VP, Operations",
+      "Now, we've not only fixed our inventory problem, we've now taken a problem that would go on for weeks and days and fixed it in five minutes, making our people incredibly efficient.",
+    clientName: "WENDY'S QUALITY SUPPLY CHAIN CO-OP",
+    role: "Pete Suerken · President & CEO",
   },
   {
     quote:
-      "The cloud migration was the first big project in years that finished on time and under budget.",
-    clientName: "MERIDIAN FINANCE",
-    role: "CTO",
+      "We started with the goal of piloting 10 stores within about six months. However, leveraging Foundry and AIP, we began to see real promise quickly in composing AI-powered, end-to-end workflows that allowed us to get to about 4000 stores within eight months.",
+    clientName: "WALGREENS",
+    role: "Jeff Hoffman · VP, Product Pharmacy",
   },
   {
     quote:
-      "After the security overhaul we passed our audit on the first pass. Jicate had the evidence ready before we asked.",
-    clientName: "CEDARLINE HEALTH",
-    role: "Compliance Director",
+      "S.C.O.U.T began as a joint effort between AT&T and Palantir, and now has over 100 AT&T dedicated engineers and a dedicated support team for this application. It's just one of the 660 applications we have on Foundry today.",
+    clientName: "AT&T",
+    role: "Dan Wagner · Dir. of Technology",
   },
   {
     quote:
-      "When something breaks at 2 a.m., a real person answers and it gets fixed. That's the whole pitch, and they deliver it.",
-    clientName: "ATLAS MANUFACTURING",
-    role: "IT Manager",
+      "We estimate that this solution reduces our time to submission materials by over 50% — from the current 10-to-12-week average to around 3 to 4 weeks — and cuts in half the time required to get there.",
+    clientName: "PAREXEL",
+    role: "Dan Ballard · SVP Digital Innovation",
+  },
+  {
+    quote:
+      "We had a great chassis of the car, but our engine was underpowered. So we went to Palantir because we want the best engine out there. In three months, the teams built what took us three years before.",
+    clientName: "HEINEKEN",
+    role: "Laurens van de Rotte · COO, Heineken USA",
   },
 ];
 
@@ -185,14 +289,12 @@ export const testimonials: Testimonial[] = [
 
 export const splitCTA: SplitCTAHalf[] = [
   {
-    label: "Talk to an Expert",
-    sublabel: "A 30-minute call, no sales script.",
-    href: "/contact",
+    label: "Request a Demo",
+    href: "/contact/demo",
     tone: "light",
   },
   {
-    label: "Get Started",
-    sublabel: "Tell us what's slowing you down.",
+    label: "Start Building",
     href: "/get-started",
     tone: "dark",
   },
