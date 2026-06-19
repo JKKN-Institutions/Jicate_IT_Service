@@ -17,6 +17,7 @@ import type {
   ServiceItem,
   ServiceSlide,
   Manifesto,
+  SoftwareStatement,
   Testimonial,
   SplitCTAHalf,
 } from "@/types";
@@ -239,6 +240,17 @@ export const services: ServiceItem[] = [
 
 /* §8 — Value / manifesto band -------------------------------------------- */
 
+/**
+ * §7.5 — Big software statement band (reference: the centered editorial line
+ * above "Our Software"). `highlight` renders in muted grey, the rest in ink.
+ */
+export const softwareStatement: SoftwareStatement = {
+  before: "Our software powers real-time, ",
+  highlight: "AI-driven",
+  after:
+    " decisions in critical government and commercial enterprises in the West, from the factory floors to the front lines.",
+};
+
 export const manifesto: Manifesto = {
   statement: "There is so much left to build",
   support:
@@ -248,6 +260,10 @@ export const manifesto: Manifesto = {
     href: "/careers",
     arrow: "drillin",
   },
+  // Verbatim reference image (hot-linked, scaffolding — swap before launch).
+  image:
+    "https://www.palantir.com/assets/xrfr7uokpv1b/3fV2sByCOe17eTh4UIvFhi/afc62abb438137d60df34d1efc85fbbd/onsite.jpg",
+  imageAlt: "Palantir team on-site",
 };
 
 /* §9 — Testimonials ------------------------------------------------------ */

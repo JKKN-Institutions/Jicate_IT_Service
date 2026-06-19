@@ -1,6 +1,7 @@
 import {
   Hero,
   ProductCarousel,
+  StatementBand,
   OurSoftware,
   ManifestoBand,
   Testimonials,
@@ -12,6 +13,7 @@ export default function Home() {
     <main className="flex-1">
       <Hero />
       <ProductCarousel />
+      <StatementBand />
       <OurSoftware />
       <ManifestoBand />
       <Testimonials />
