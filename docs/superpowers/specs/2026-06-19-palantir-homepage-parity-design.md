@@ -89,9 +89,9 @@ Verbatim partner quotes (captured live):
 - Keep `↖ Get Started` primary CTA. Align subcopy/secondary link to the reference if a mismatch is found during build (low priority — hero already largely matches).
 
 ### 2.6 Header / footer parity polish
-- **Mount `AnnouncementBar`** in `app/layout.tsx` (built, currently not rendered). Place it above `SiteHeader` per `design/07 §3`.
+- **`AnnouncementBar` stays UNMOUNTED.** Correction to an earlier assumption: the live reference has **no announcement strip**, so strict parity = keep it off the page (component remains in the repo).
 - **Footer locale** → `US / UK / JP` (currently "Global (EN)"), in `content/navigation.ts` `legal.locale`. Social pills already match (Youtube/X/Linkedin/Github/Store).
-- **Nav/menu IA** → align top-level/menu labels toward the reference set where it doesn't break existing routes (Offerings, Impact Studies, Documentation, Careers). Keep changes minimal and route-safe.
+- **Platforms IA** → add a `Platforms` group (AIP / Gotham / Foundry / Ontology / Apollo) to the mega menu and footer, mirroring the reference's primary platform directory. Other columns keep Jicate's route-safe IA.
 
 ---
 
