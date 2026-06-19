@@ -111,16 +111,17 @@ export function OurSoftware() {
                     </span>
                   </div>
 
-                  {/* Right: large product name — left-aligned so every name
-                      starts at the same x (ragged right), per the reference. */}
-                  <span
+                  {/* Right: large product name as the offering heading (h3) —
+                      left-aligned so every name starts at the same x (ragged
+                      right), per the reference. */}
+                  <h3
                     className={cn(
                       "text-left font-display text-display font-normal leading-[0.95] tracking-[-0.02em] transition-colors duration-200 desktop:text-hero",
                       isActive ? "text-ink" : "text-ink-light",
                     )}
                   >
                     {item.name}
-                  </span>
+                  </h3>
                 </a>
               </li>
             );
