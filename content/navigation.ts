@@ -40,6 +40,15 @@ export const industryLinks: NavLink[] = [
   { label: "Education", href: "/industries/education" },
 ];
 
+/** The five reference platforms (verbatim — scaffolding). */
+export const platformLinks: NavLink[] = [
+  { label: "AIP", href: "https://www.palantir.com/platforms/aip/", arrow: "external", external: true },
+  { label: "Gotham", href: "https://www.palantir.com/platforms/gotham/", arrow: "external", external: true },
+  { label: "Foundry", href: "https://www.palantir.com/platforms/foundry/", arrow: "external", external: true },
+  { label: "Ontology", href: "https://www.palantir.com/platforms/ontology/", arrow: "external", external: true },
+  { label: "Apollo", href: "https://www.palantir.com/platforms/apollo/", arrow: "external", external: true },
+];
+
 /* ---------------------------------------------------------------------------
  * §4 — Top-level nav items (canonical IA for this clone).
  * ------------------------------------------------------------------------- */
@@ -58,6 +67,10 @@ export const primaryNav: NavItem[] = [
  * ------------------------------------------------------------------------- */
 
 export const megaMenuGroups: MegaMenuGroup[] = [
+  {
+    heading: "Platforms",
+    links: platformLinks,
+  },
   {
     heading: "Services",
     links: serviceLinks,
@@ -164,6 +177,10 @@ export const megaMenuFeatured: FeaturedCard[] = [
 
 export const footerColumns: FooterColumn[] = [
   {
+    heading: "Platforms",
+    links: platformLinks,
+  },
+  {
     heading: "Services",
     links: serviceLinks,
   },
@@ -250,7 +267,7 @@ export const socialLinks: SocialLink[] = [
 export const legal: LegalInfo = {
   copyright: "© 2026 Jicate IT Service. All rights reserved.",
   tagline: "Engineered to stay up.",
-  locale: "Global (EN)",
+  locale: "US / UK / JP",
   links: [
     { label: "Privacy Policy", href: "/legal/privacy" },
     { label: "Terms of Service", href: "/legal/terms" },
