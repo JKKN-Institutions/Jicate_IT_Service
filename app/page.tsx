@@ -1,7 +1,8 @@
 import {
   Hero,
   ProductCarousel,
-  ServicesScrolly,
+  StatementBand,
+  OurSoftware,
   ManifestoBand,
   Testimonials,
   SplitCTA,
@@ -12,7 +13,8 @@ export default function Home() {
     <main className="flex-1">
       <Hero />
       <ProductCarousel />
-      <ServicesScrolly />
+      <StatementBand />
+      <OurSoftware />
       <ManifestoBand />
       <Testimonials />
       <SplitCTA />
