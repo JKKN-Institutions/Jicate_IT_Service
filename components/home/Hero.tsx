@@ -30,7 +30,7 @@ export function Hero() {
       {/* Darkening overlay for legibility over the video (near-black family). */}
       <div aria-hidden className="absolute inset-0 -z-10 bg-near-black/55" />
 
-      <Container className="flex flex-col items-center gap-l py-3xl text-center">
+      <Container className="flex flex-col items-center gap-m py-2xl text-center tablet:gap-l tablet:py-3xl">
         <Eyebrow size="eyebrow" className="text-offwhite">
           {hero.eyebrow}
         </Eyebrow>

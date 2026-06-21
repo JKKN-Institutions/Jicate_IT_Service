@@ -103,13 +103,16 @@
 
   /* ----- Type scale → text-* (size + paired line-height) ----- */
   /* px @18px root in comments; line-heights from doc 02 §4.      */
-  --text-hero:                  4.4444rem; /* 80px  */
+  /* Display sizes are FLUID (mobile-first): they scale from a phone-friendly
+     floor up to the canonical desktop value, which is the clamp max — so the
+     desktop design is unchanged (≥~1280px resolves to the original px). */
+  --text-hero:                  clamp(2.2222rem, 1.3rem + 4.4vw, 4.4444rem);  /* 40px → 80px */
   --text-hero--line-height:     0.975;     /* 78/80 */
-  --text-display:               2.7778rem; /* 50px  (big section H2)  */
+  --text-display:               clamp(1.6667rem, 1.2rem + 2.2vw, 2.7778rem);  /* 30px → 50px (big section H2) */
   --text-display--line-height:  1.05;
-  --text-headline:              1.8889rem; /* 34px  (--headline / feature H3) */
+  --text-headline:              clamp(1.3333rem, 1.1rem + 1.1vw, 1.8889rem);  /* 24px → 34px (feature H3) */
   --text-headline--line-height: 1.1;
-  --text-headline-lg:           2.5556rem; /* 46px  (feature large + statement) */
+  --text-headline-lg:           clamp(1.5556rem, 1.14rem + 2vw, 2.5556rem);   /* 28px → 46px (feature large + statement) */
   --text-headline-lg--line-height: 1.1;
   --text-eyebrow:               1.1111rem; /* 20px  (eyebrow / kicker) */
   --text-eyebrow--line-height:  1.3;

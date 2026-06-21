@@ -34,7 +34,7 @@ function SplitCTAPanel({ half }: { half: SplitCTAHalf }) {
     <a
       href={half.href}
       className={cn(
-        "group relative col-span-12 flex min-h-[clamp(18rem,32vw,26rem)] items-center justify-between gap-l p-3xl transition-colors duration-200 desktop:col-span-6",
+        "group relative col-span-12 flex min-h-[clamp(18rem,32vw,26rem)] items-center justify-between gap-s p-l transition-colors duration-200 tablet:gap-l tablet:p-2xl desktop:col-span-6 desktop:p-3xl",
         "focus-visible:outline-2 focus-visible:outline-offset-2",
         isDark
           ? "bg-near-black text-offwhite hover:bg-[#272b2e] focus-visible:outline-offwhite"
