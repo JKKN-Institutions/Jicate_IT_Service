@@ -4,6 +4,9 @@
 /node_modules
 /.pnp
 .pnp.*
+# standardized on npm (package-lock.json); keep bun.lock out so Vercel's
+# package-manager detection stays unambiguous (caused a 404 build issue before)
+bun.lock
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
