@@ -23,54 +23,59 @@ import { HeroVideo } from "./HeroVideo";
  */
 export function Hero() {
   return (
-    <section className="relative isolate flex min-h-[100svh] items-center overflow-hidden bg-near-black text-offwhite">
-      {/* Full-bleed looping background video (client leaf). */}
-      <HeroVideo className="-z-10" />
+    // Light-gray frame around the full-screen hero (reference look): the dark
+    // media is inset on the sides and bottom; the top stays flush so the dark
+    // media meets the transparent header that overlays it.
+    <div className="flex min-h-[100svh] flex-col bg-band px-s pb-s">
+      <section className="relative isolate flex flex-1 items-center overflow-hidden bg-near-black text-offwhite">
+        {/* Full-bleed looping background video (client leaf). */}
+        <HeroVideo className="-z-10" />
 
-      {/* Darkening overlay for legibility over the video (near-black family). */}
-      <div aria-hidden className="absolute inset-0 -z-10 bg-near-black/55" />
+        {/* Darkening overlay for legibility over the video (near-black family). */}
+        <div aria-hidden className="absolute inset-0 -z-10 bg-near-black/55" />
 
-      <Container className="flex flex-col items-center gap-m py-2xl text-center tablet:gap-l tablet:py-3xl">
-        <Eyebrow size="eyebrow" className="text-offwhite">
-          {hero.eyebrow}
-        </Eyebrow>
+        <Container className="flex flex-col items-center gap-m py-2xl text-center tablet:gap-l tablet:py-3xl">
+          <Eyebrow size="eyebrow" className="text-offwhite">
+            {hero.eyebrow}
+          </Eyebrow>
 
-        <h1 className="settle max-w-[20ch] text-balance font-display text-hero font-normal tracking-[-0.0425em] text-offwhite">
-          {hero.headline}
-        </h1>
+          <h1 className="settle max-w-[20ch] text-balance font-display text-hero font-normal tracking-[-0.0425em] text-offwhite">
+            {hero.headline}
+          </h1>
 
-        <p className="settle max-w-[48ch] text-body-lg text-offwhite/85">
-          {hero.subcopy}
-        </p>
+          <p className="settle max-w-[48ch] text-body-lg text-offwhite/85">
+            {hero.subcopy}
+          </p>
 
-        <div className="flex flex-wrap items-center justify-center gap-l">
-          <Button
-            variant="inverse"
-            href={hero.primaryCTA.href}
-            arrow={hero.primaryCTA.arrow}
-          >
-            {hero.primaryCTA.label}
-          </Button>
+          <div className="flex flex-wrap items-center justify-center gap-l">
+            <Button
+              variant="inverse"
+              href={hero.primaryCTA.href}
+              arrow={hero.primaryCTA.arrow}
+            >
+              {hero.primaryCTA.label}
+            </Button>
 
-          <ArrowLink
-            href={hero.secondaryLink.href}
-            arrow={hero.secondaryLink.arrow}
-            external={hero.secondaryLink.external}
-            className="text-blue hover:text-offwhite focus-visible:outline-offwhite"
-          >
-            {hero.secondaryLink.label}
-          </ArrowLink>
-        </div>
-      </Container>
+            <ArrowLink
+              href={hero.secondaryLink.href}
+              arrow={hero.secondaryLink.arrow}
+              external={hero.secondaryLink.external}
+              className="text-blue hover:text-offwhite focus-visible:outline-offwhite"
+            >
+              {hero.secondaryLink.label}
+            </ArrowLink>
+          </div>
+        </Container>
 
-      {/* Nav scroll sentinel — SiteHeader/useNavScrollState observes this to go
-          solid once it scrolls out of view (see CLAUDE.md overlap rules). */}
-      <span
-        data-nav-sentinel
-        aria-hidden
-        className="pointer-events-none absolute bottom-0 left-0 h-px w-full"
-      />
-    </section>
+        {/* Nav scroll sentinel — SiteHeader/useNavScrollState observes this to go
+            solid once it scrolls out of view (see CLAUDE.md overlap rules). */}
+        <span
+          data-nav-sentinel
+          aria-hidden
+          className="pointer-events-none absolute bottom-0 left-0 h-px w-full"
+        />
+      </section>
+    </div>
   );
 }
 
