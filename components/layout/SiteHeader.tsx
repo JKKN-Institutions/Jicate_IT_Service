@@ -25,6 +25,12 @@ export function SiteHeader() {
 
   const iconTone = solid ? "light" : "dark";
 
+  // Reference parity: search/menu render as PLAIN icons (no bordered box),
+  // dimming on hover instead of filling. Borderless reads in both nav states
+  // because the icons are glyphs, not fills.
+  const bareIcon =
+    "border-transparent hover:bg-transparent hover:text-inherit hover:opacity-60";
+
   return (
     <header
       data-solid={solid}
@@ -49,18 +55,24 @@ export function SiteHeader() {
               aria-label="Jicate IT Service — Home"
               className="inline-flex items-center transition-colors duration-[var(--duration-micro-slow)] ease-[var(--ease-standard)] hover:opacity-[0.33] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current"
             >
-              <Logo />
+              <Logo className="h-7" />
             </a>
 
             <div className="flex items-center gap-xs">
               <Button
                 href={siteConfig.routes.getStarted}
-                className="hidden px-m tablet:inline-flex"
+                className={cn(
+                  // Rounded, clean white pill like the reference. Border is
+                  // transparent over the dark hero; restored once the bar goes
+                  // solid (near-white) so the white button stays legible.
+                  "hidden rounded-md px-m tablet:inline-flex",
+                  solid ? "border-ink" : "border-transparent",
+                )}
               >
                 Get Started
               </Button>
 
-              <IconButton tone={iconTone} label="Search">
+              <IconButton tone={iconTone} label="Search" className={bareIcon}>
                 <Search size={18} aria-hidden />
               </IconButton>
 
@@ -70,6 +82,7 @@ export function SiteHeader() {
                 aria-expanded={open}
                 aria-controls="mega-menu"
                 onClick={() => setOpen((value) => !value)}
+                className={bareIcon}
               >
                 <Menu size={18} aria-hidden />
               </IconButton>
