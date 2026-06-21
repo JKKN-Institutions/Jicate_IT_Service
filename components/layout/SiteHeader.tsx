@@ -23,10 +23,11 @@ export function SiteHeader() {
   const solid = useNavScrollState();
   const [open, setOpen] = useState(false);
 
-  const iconTone = solid ? "light" : "dark";
+  // Nav content is dark (ink) on the persistent light bar.
+  const iconTone = "light";
 
   // Reference parity: search/menu render as PLAIN icons (no bordered box),
-  // dimming on hover instead of filling. Borderless reads in both nav states
+  // dimming on hover instead of filling. Borderless reads on the light bar
   // because the icons are glyphs, not fills.
   const bareIcon =
     "border-transparent hover:bg-transparent hover:text-inherit hover:opacity-60";
@@ -34,18 +35,19 @@ export function SiteHeader() {
   return (
     <header
       data-solid={solid}
-      className="fixed inset-x-0 top-0 z-50 text-offwhite data-[solid=true]:text-ink"
+      className="fixed inset-x-0 top-0 z-50 text-ink"
     >
-      {/* Flat full-bleed bar (design 03/04): transparent over the dark hero,
-          crossfading to a solid surface-light bar with a hairline underline
-          once the hero scrolls away. Sharp corners, no float, no blur. */}
+      {/* Persistent light-gray bar with a soft drop shadow (reference look):
+          the bar is always solid surface-light; the shadow deepens a little
+          once the hero scrolls away to reinforce depth. Sharp corners, no
+          float, no blur. */}
       <nav
         aria-label="Primary"
         className={cn(
-          "border-b-[0.8px] transition-colors duration-[var(--duration-reveal-max)] ease-[var(--ease-standard)]",
+          "border-b-[0.8px] border-ink/10 bg-surface-light transition-shadow duration-[var(--duration-reveal-max)] ease-[var(--ease-standard)]",
           solid
-            ? "border-ink/10 bg-surface-light"
-            : "border-transparent bg-transparent",
+            ? "shadow-[0_8px_24px_rgba(30,33,36,0.12)]"
+            : "shadow-[0_2px_10px_rgba(30,33,36,0.08)]",
         )}
       >
         <Container>
@@ -62,11 +64,9 @@ export function SiteHeader() {
               <Button
                 href={siteConfig.routes.getStarted}
                 className={cn(
-                  // Rounded, clean white pill like the reference. Border is
-                  // transparent over the dark hero; restored once the bar goes
-                  // solid (near-white) so the white button stays legible.
-                  "hidden rounded-md px-m tablet:inline-flex",
-                  solid ? "border-ink" : "border-transparent",
+                  // Rounded, clean pill like the reference. The nav is always a
+                  // light bar now, so the ink border is shown at all times.
+                  "hidden rounded-md border-ink px-m tablet:inline-flex",
                 )}
               >
                 Get Started
