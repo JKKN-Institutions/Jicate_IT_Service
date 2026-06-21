@@ -47,7 +47,7 @@ function FooterLink({ label, href, arrow, external, dimmed }: NavLink) {
 export function Footer() {
   return (
     <footer role="contentinfo" className="section bg-near-black text-offwhite">
-      <Container className="flex flex-col gap-2xl">
+      <Container className="flex flex-col gap-xl tablet:gap-2xl">
         {/* Social pills — the only rounded-full elements in the system. */}
         <ul
           aria-label="Jicate IT Service on social media"
@@ -66,7 +66,7 @@ export function Footer() {
             <nav
               key={column.heading}
               aria-label={column.heading}
-              className="col-span-12 tablet:col-span-6 desktop:col-span-2"
+              className="col-span-6 tablet:col-span-4 desktop:col-span-2"
             >
               <Eyebrow as="h2" className="text-offwhite">
                 {column.heading}
@@ -95,7 +95,7 @@ export function Footer() {
               {legal.locale}
             </span>
           </div>
-          <ul className="flex flex-wrap items-center gap-l">
+          <ul className="flex flex-wrap items-center gap-x-l gap-y-s">
             {legal.links.map((link) => (
               <li key={link.href}>
                 <a

@@ -115,7 +115,7 @@ export function MegaMenu({ open, onClose }: MegaMenuProps) {
               >
                 <div
                   aria-hidden
-                  className="aspect-video w-full bg-surface-medium"
+                  className="hidden aspect-video w-full bg-surface-medium tablet:block"
                 />
                 <h3 className="font-display text-headline text-ink">
                   {card.headline}
