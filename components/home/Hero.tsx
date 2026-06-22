@@ -26,7 +26,7 @@ export function Hero() {
     // Light-gray frame around the full-screen hero (reference look): the dark
     // media is inset on the sides and bottom; the top stays flush so the dark
     // media meets the transparent header that overlays it.
-    <div className="flex min-h-[100svh] flex-col bg-band px-s pb-s">
+    <div className="flex min-h-[100svh] flex-col bg-band">
       <section className="relative isolate flex flex-1 items-center overflow-hidden bg-near-black text-offwhite">
         {/* Full-bleed looping background video (client leaf). */}
         <HeroVideo className="-z-10" />
