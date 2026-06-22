@@ -66,33 +66,39 @@
 
 .tab {
   position: relative;
-  overflow: hidden; /* clips the progress bar to the pill shape */
+  overflow: hidden; /* clips the progress bar to the chip shape */
   flex: 0 0 auto;
   scroll-snap-align: start;
   appearance: none;
-  border: 0;
   cursor: pointer;
-  border-radius: 999px;
-  padding: 9px 18px;
+  /* Visible outlined chip (reference look): every tab is a distinct
+     rounded-rectangle chip with a light fill + hairline border. */
+  border: 1px solid rgba(30, 33, 36, 0.12);
+  border-radius: 7px;
+  padding: 8px 16px;
   font: inherit;
   font-size: 0.8333rem; /* ~15px */
   line-height: 1;
   white-space: nowrap;
   color: var(--pc-ink-muted);
-  background: transparent;
+  background: rgba(30, 33, 36, 0.04);
   transition:
     color var(--duration-micro, 200ms) var(--ease-standard, ease),
+    border-color var(--duration-micro, 200ms) var(--ease-standard, ease),
     background-color var(--duration-micro, 200ms) var(--ease-standard, ease);
 }
 .tab:hover {
   color: var(--pc-ink);
-  background: rgba(30, 33, 36, 0.06);
+  background: rgba(30, 33, 36, 0.08);
+  border-color: rgba(30, 33, 36, 0.2);
 }
 .tabActive,
 .tabActive:hover {
   color: var(--pc-ink);
   font-weight: 500;
-  background: var(--pc-band);
+  /* Selected chip reads clearly darker than the inactive ones. */
+  background: rgba(30, 33, 36, 0.12);
+  border-color: rgba(30, 33, 36, 0.22);
 }
 .tab:focus-visible {
   outline: 2px solid var(--pc-ink);
@@ -103,30 +109,31 @@
   position: relative;
 }
 
-/* Auto-advance progress bar, pinned to the bottom of the active pill. Its
+/* Auto-advance progress: a thin single underline spanning the bottom edge of
+   the active chip (reference look — neutral ink, not a coloured pill). Its
    scaleX is driven frame-by-frame from the component (see the rAF loop); when
    it reaches 1 the carousel steps to the next slide. */
 .tabProgress {
   position: absolute;
-  left: 12px;
-  right: 12px;
-  bottom: 4px;
-  height: 6px;
-  border-radius: 999px;
-  background: var(--color-accent, #2b5945);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  border-radius: 0;
+  background: var(--pc-ink, #1e2124);
   transform: scaleX(0);
   transform-origin: left center;
   will-change: transform;
 }
 
-/* Pill link used by the tab bar's "See All". */
+/* Outlined chip used by the tab bar's "See All" (matches the tab shape). */
 .pill {
   flex: 0 0 auto;
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  border: 1px solid rgba(30, 33, 36, 0.35);
-  border-radius: 999px;
+  border: 1px solid rgba(30, 33, 36, 0.2);
+  border-radius: 7px;
   padding: 8px 18px;
   font-size: 0.75rem;
   font-weight: 500;

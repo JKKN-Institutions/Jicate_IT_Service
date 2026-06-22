@@ -7,8 +7,8 @@ import type { SplitCTAHalf } from "@/types";
  * Section 8 — Big split CTA (design/07 §10, design/04 §7).
  *
  * Full-bleed two-up row: a LIGHT half (band `#efefef`, ink text) and a DARK
- * half (near-black, off-white text). Each half is a single large link with a
- * big grotesque label, optional sublabel, and a right-aligned `→` glyph.
+ * half (near-black, off-white text). Each half is a compact bar link with a
+ * grotesque label, optional sublabel, and a right-aligned `→` glyph.
  *
  * Server Component — no interactivity. Hover/focus are CSS-only; the arrow
  * nudge is gated with `motion-reduce:transform-none` so the reduced-motion
@@ -34,7 +34,7 @@ function SplitCTAPanel({ half }: { half: SplitCTAHalf }) {
     <a
       href={half.href}
       className={cn(
-        "group relative col-span-12 flex min-h-[clamp(18rem,32vw,26rem)] items-center justify-between gap-s p-l transition-colors duration-200 tablet:gap-l tablet:p-2xl desktop:col-span-6 desktop:p-3xl",
+        "group relative col-span-12 flex min-h-[clamp(4.5rem,7vw,5.5rem)] items-center justify-between gap-s px-l py-[clamp(24px,3vw,34px)] transition-colors duration-200 tablet:gap-l tablet:px-xl desktop:col-span-6",
         "focus-visible:outline-2 focus-visible:outline-offset-2",
         isDark
           ? "bg-near-black text-offwhite hover:bg-[#272b2e] focus-visible:outline-offwhite"
@@ -42,7 +42,7 @@ function SplitCTAPanel({ half }: { half: SplitCTAHalf }) {
       )}
     >
       <span className="flex flex-col gap-xs">
-        <span className="font-display text-display font-normal tracking-[-0.0425em]">
+        <span className="font-display text-headline font-normal tracking-[-0.0425em]">
           {half.label}
         </span>
         {half.sublabel ? (
@@ -60,7 +60,7 @@ function SplitCTAPanel({ half }: { half: SplitCTAHalf }) {
       <Arrow
         kind="big"
         className={cn(
-          "shrink-0 text-display leading-none transition-transform duration-[var(--duration-micro-fast)] ease-[var(--ease-standard)] group-hover:translate-x-[0.22em] motion-reduce:transform-none",
+          "shrink-0 text-headline leading-none transition-transform duration-[var(--duration-micro-fast)] ease-[var(--ease-standard)] group-hover:translate-x-[0.22em] motion-reduce:transform-none",
           isDark && "text-blue",
         )}
       />

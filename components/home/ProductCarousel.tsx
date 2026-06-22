@@ -38,6 +38,7 @@ export function ProductCarousel() {
 
   const sectionRef = useRef<HTMLElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
+  const tabsRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<Array<HTMLDivElement | null>>([]);
   const tabRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const barRef = useRef<HTMLSpanElement>(null);
@@ -73,11 +74,17 @@ export function ProductCarousel() {
     (index: number) => {
       const clamped = ((index % cards.length) + cards.length) % cards.length;
       setActive(clamped);
-      itemRefs.current[clamped]?.scrollIntoView({
-        inline: "start",
-        block: "nearest",
-        behavior: reduced ? "auto" : "smooth",
-      });
+      // Scroll ONLY the track horizontally — never the page. Each slide is
+      // exactly one track-width wide, so the target offset is index * width.
+      // (element.scrollIntoView would scroll every ancestor including the
+      // window, yanking the whole page up to the carousel on each advance.)
+      const track = trackRef.current;
+      if (track) {
+        track.scrollTo({
+          left: clamped * track.clientWidth,
+          behavior: reduced ? "auto" : "smooth",
+        });
+      }
     },
     [cards.length, reduced],
   );
@@ -160,13 +167,29 @@ export function ProductCarousel() {
     return () => observer.disconnect();
   }, []);
 
-  // Keep the active tab visible within the (scrollable) tab bar.
+  // Keep the active tab visible within the (scrollable) tab bar — scoped to the
+  // tab row only. We scrollBy() on the container (never element.scrollIntoView,
+  // which would scroll the whole page) and only when the tab is actually out of
+  // view, so auto-advancing the carousel never moves the page itself.
   useEffect(() => {
-    tabRefs.current[active]?.scrollIntoView({
-      inline: "nearest",
-      block: "nearest",
-    });
-  }, [active]);
+    const container = tabsRef.current;
+    const tab = tabRefs.current[active];
+    if (!container || !tab) return;
+    const cRect = container.getBoundingClientRect();
+    const tRect = tab.getBoundingClientRect();
+    const pad = 12;
+    if (tRect.left < cRect.left) {
+      container.scrollBy({
+        left: tRect.left - cRect.left - pad,
+        behavior: reduced ? "auto" : "smooth",
+      });
+    } else if (tRect.right > cRect.right) {
+      container.scrollBy({
+        left: tRect.right - cRect.right + pad,
+        behavior: reduced ? "auto" : "smooth",
+      });
+    }
+  }, [active, reduced]);
 
   const onTabsKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
     if (event.key !== "ArrowRight" && event.key !== "ArrowLeft") return;
@@ -196,6 +219,7 @@ export function ProductCarousel() {
         <div className={styles.tabBar}>
           <div
             className={styles.tabs}
+            ref={tabsRef}
             role="group"
             aria-label="Choose a featured item"
             onKeyDown={onTabsKeyDown}

@@ -46,7 +46,10 @@ function FooterLink({ label, href, arrow, external, dimmed }: NavLink) {
  */
 export function Footer() {
   return (
-    <footer role="contentinfo" className="section bg-near-black text-offwhite">
+    <footer
+      role="contentinfo"
+      className="mt-xl bg-near-black pb-xl pt-xl text-offwhite tablet:mt-2xl"
+    >
       <Container className="flex flex-col gap-xl tablet:gap-2xl">
         {/* Social pills — the only rounded-full elements in the system. */}
         <ul
