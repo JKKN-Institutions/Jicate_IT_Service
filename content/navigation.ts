@@ -175,75 +175,107 @@ export const megaMenuFeatured: FeaturedCard[] = [
  * Company / Legal). Service + Industry columns reuse the shared arrays above.
  * ------------------------------------------------------------------------- */
 
+/* Footer mega-directory columns — transcribed VERBATIM from the reference
+ * footer screenshot (OFFERINGS / IMPACT STUDIOS / CAPABILITIES / DOCUMENTS).
+ * `href: "#"` is an intentional placeholder: the reference link targets are not
+ * known, so we don't fabricate URLs — only the visible labels are reproduced. */
 export const footerColumns: FooterColumn[] = [
   {
-    heading: "Platforms",
-    links: platformLinks,
-  },
-  {
-    heading: "Services",
-    links: serviceLinks,
-  },
-  {
-    heading: "Industries",
-    links: industryLinks,
-  },
-  {
-    heading: "Case Studies",
+    heading: "OFFERINGS",
     links: [
-      { label: "All Case Studies", href: "/case-studies" },
-      { label: "Healthcare", href: "/case-studies/healthcare" },
-      { label: "Finance", href: "/case-studies/finance" },
-      { label: "Manufacturing", href: "/case-studies/manufacturing" },
+      { label: "American Tech Fellowship", href: "/american-tech-fellowship" },
+      { label: "Anti-Money Laundering", href: "/anti-money-laundering" },
+      { label: "Automotive & Mobility", href: "/automotive-mobility" },
+      { label: "Construction", href: "#" },
+      { label: "Data Protection", href: "#" },
+      { label: "Defense", href: "#" },
+      { label: "Energy", href: "#" },
+      { label: "Federal Health", href: "#" },
+      { label: "FedStart", href: "#" },
+      { label: "Financial Services", href: "#" },
+      { label: "Food & Beverage", href: "#" },
+      { label: "Palantir for Builders", href: "#" },
+      { label: "Govt Financial Management", href: "#" },
+      { label: "Hospital Operations", href: "#" },
+      { label: "Insurance", href: "#" },
+      { label: "Intelligence", href: "#" },
+      { label: "Life Sciences", href: "#" },
+      { label: "Mission Manager", href: "#" },
+      { label: "Procurement", href: "#" },
+      { label: "Rail", href: "#" },
+      { label: "Readiness", href: "#" },
+      { label: "Retail", href: "#" },
+      { label: "Secure Collaboration", href: "#" },
+      { label: "Semiconductors", href: "#" },
+      { label: "Supply Chain", href: "#" },
+      { label: "Telecommunications", href: "#" },
+      { label: "Utilities", href: "#" },
     ],
   },
   {
-    heading: "Resources",
+    heading: "IMPACT STUDIOS",
     links: [
-      { label: "Blog", href: "/resources/blog" },
-      { label: "Guides & Whitepapers", href: "/resources/guides" },
-      {
-        label: "Documentation",
-        href: "https://docs.jicate.com",
-        arrow: "external",
-        external: true,
-      },
-      { label: "Webinars", href: "/resources/webinars" },
-      {
-        label: "Service Status",
-        href: "https://status.jicate.com",
-        arrow: "external",
-        external: true,
-      },
+      { label: "Airbus", href: "#" },
+      { label: "Axel Springer", href: "#" },
+      { label: "Cleveland Clinic", href: "#" },
+      { label: "Concordance", href: "#" },
+      { label: "Doosan Infracore", href: "#" },
+      { label: "Fujitsu", href: "#" },
+      { label: "Jacobs", href: "#" },
+      { label: "Kinder Morgan", href: "#" },
+      { label: "NHS", href: "#" },
+      { label: "Noto Peninsula Earthquake", href: "#" },
+      { label: "Ringier", href: "#" },
+      { label: "Sonnedix", href: "#" },
+      { label: "SOMPO", href: "#" },
+      { label: "Swiss Re", href: "#" },
+      { label: "Tampa General Hospital", href: "#" },
+      { label: "World Food Programme", href: "#" },
     ],
   },
   {
-    heading: "Company",
+    heading: "CAPABILITIES",
     links: [
-      { label: "About", href: "/company/about" },
-      { label: "Our Approach", href: "/company/approach" },
-      {
-        label: "Careers",
-        href: "/company/careers",
-        arrow: "external",
-        external: true,
-      },
-      { label: "Partners", href: "/company/partners" },
-      { label: "Newsroom", href: "/company/newsroom" },
-      { label: "Contact", href: "/contact" },
+      { label: "AI + ML", href: "/ai-ml" },
+      { label: "AIP for Developers", href: "/aip-developers" },
+      { label: "Data Integration", href: "/data-integration" },
+      { label: "Digital Twin", href: "/digital-twin" },
+      { label: "Dynamic Scheduling", href: "/dynamic-scheduling" },
+      { label: "Edge AI", href: "/edge-ai" },
+      { label: "Marketplace", href: "/marketplace" },
+      { label: "MetaConstellation", href: "/metaconstellation" },
+      { label: "Pipeline Builder", href: "/pipeline-builder" },
+      { label: "Process Mining", href: "/process-mining" },
+      { label: "Real-Time Alerting", href: "/foundry-rules" },
+      { label: "Streaming", href: "/streaming" },
+      { label: "Titanium", href: "/titanium" },
     ],
   },
   {
-    heading: "Legal",
+    heading: "DOCUMENTS",
     links: [
-      { label: "Privacy Policy", href: "/legal/privacy" },
-      { label: "Terms of Service", href: "/legal/terms" },
-      { label: "Security", href: "/legal/security" },
-      { label: "Accessibility", href: "/legal/accessibility" },
-      { label: "Cookie Settings", href: "/legal/cookies" },
+      { label: "Developer Community", href: "#" },
+      { label: "Platform Documentation", href: "#" },
+      { label: "Palantir Developers", href: "#" },
+      { label: "Trust Center", href: "#" },
+      { label: "Modern Slavery Statement", href: "#" },
+      { label: "Cookies", href: "#" },
+      { label: "Privacy and Civil Liberties", href: "#" },
+      { label: "US Public Policy", href: "#" },
+      { label: "Palantir Explained", href: "#" },
+      { label: "Sustainability", href: "#" },
+      { label: "Human Rights Policy", href: "#" },
+      { label: "Privacy Statement", href: "#" },
+      { label: "Terms of Use", href: "#" },
     ],
   },
 ];
+
+/** Left-rail language switcher (visual toggle — first entry is active). */
+export const footerLanguages = ["US", "UK", "JP"] as const;
+
+/** Left-rail cookie-preferences link label. */
+export const cookiesSettingsLabel = "Cookies Settings";
 
 /* ---------------------------------------------------------------------------
  * §11 — Social pills (outlined, UPPERCASE). icon = lucide name where one exists,

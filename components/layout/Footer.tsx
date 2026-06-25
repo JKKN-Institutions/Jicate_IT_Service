@@ -1,18 +1,26 @@
-import { Container, Eyebrow, Arrow } from "@/components/ui";
-import { footerColumns, socialLinks, legal } from "@/content/navigation";
+import { Eyebrow, Arrow } from "@/components/ui";
+import {
+  footerColumns,
+  socialLinks,
+  legal,
+  footerLanguages,
+  cookiesSettingsLabel,
+} from "@/content/navigation";
 import { cn } from "@/lib/utils";
 import type { NavLink } from "@/types";
 
 import { SocialPill } from "./SocialPill";
 
 /**
- * FooterLink — a single directory entry (design 04 §10 / 07 §11).
+ * FooterLink — a single directory entry (reference footer §11).
  *
- * - Default links: `text-offwhite`; dimmed links: `text-ink-light` brightening
- *   toward offwhite on hover.
- * - External links append the `↗` glyph with the standard hover nudge.
- * - `body-sm` (16px) per the footer type spec; visible focus ring on dark uses
- *   the offwhite outline.
+ * Hover effect (Palantir-parity): a leading `→` glyph is hidden by default
+ * (absolutely positioned at the left edge, faded out, nudged left) and on
+ * hover/focus it fades in while the label slides right to make room. The arrow
+ * is `absolute` so the reveal never reflows neighbouring links.
+ *
+ * LIGHT footer: ink label on white. `dimmed` renders the softer `ink-light`.
+ * Reduced-motion drops the slide but keeps the reveal.
  */
 function FooterLink({ label, href, arrow, external, dimmed }: NavLink) {
   return (
@@ -20,63 +28,106 @@ function FooterLink({ label, href, arrow, external, dimmed }: NavLink) {
       href={href}
       {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
       className={cn(
-        "group inline-flex items-center gap-tiny text-body-sm transition-colors duration-200 hover:text-offwhite focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-offwhite",
-        dimmed ? "text-ink-light" : "text-offwhite hover:opacity-100",
+        "group relative inline-flex items-center text-body-sm transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink",
+        dimmed ? "text-ink-light hover:text-ink" : "text-ink hover:text-ink",
       )}
     >
-      {label}
-      {arrow ? (
-        <Arrow
-          kind={arrow}
-          className="transition-transform duration-[150ms] group-hover:translate-x-[0.22em] motion-reduce:transform-none"
-        />
-      ) : null}
+      {/* Leading arrow — revealed on hover/focus, slides in from the left. */}
+      <Arrow
+        kind="big"
+        className="absolute left-0 top-1/2 -translate-x-1 -translate-y-1/2 opacity-0 transition-all duration-[var(--duration-micro)] ease-[var(--ease-standard)] group-hover:translate-x-0 group-hover:opacity-100 group-focus-visible:translate-x-0 group-focus-visible:opacity-100 motion-reduce:transition-[opacity]"
+      />
+      {/* Label (+ any trailing glyph) nudges right to make room for the arrow. */}
+      <span className="inline-flex items-center gap-tiny transition-transform duration-[var(--duration-micro)] ease-[var(--ease-standard)] group-hover:translate-x-[1.15em] group-focus-visible:translate-x-[1.15em] motion-reduce:transform-none">
+        {label}
+        {arrow ? <Arrow kind={arrow} /> : null}
+      </span>
     </a>
   );
 }
 
 /**
- * Footer — the page's closing infrastructure (design 07 §11 / 04 §10).
+ * Footer — the page's closing infrastructure, matched to the reference footer.
  *
- * Server Component: dark mega-directory on near-black with offwhite text.
- * Top = outlined social pills; middle = a 12-col grid of categorized link
- * columns (mono UPPERCASE headings, body-sm links); bottom = the legal row
- * (copyright, tagline, locale, legal links). All copy comes from
- * `@/content/navigation` — nothing is hardcoded.
+ * Server Component: a LIGHT band (white canvas, ink text). Two-up layout —
+ *   • LEFT RAIL: copyright, a hairline rule, "Cookies Settings", the US/UK/JP
+ *     language switcher, and the outlined social pills stacked vertically.
+ *   • RIGHT: a four-column mega-directory (OFFERINGS / IMPACT STUDIOS /
+ *     CAPABILITIES / DOCUMENTS) with mono UPPERCASE headings.
+ * All copy comes from `@/content/navigation` — nothing is hardcoded here.
  */
 export function Footer() {
+  // Copyright renders on two lines: "© … Inc." then "All rights reserved."
+  const [copyrightOwner, ...copyrightRest] = legal.copyright.split(". ");
+
   return (
     <footer
       role="contentinfo"
-      className="mt-xl bg-near-black pb-xl pt-xl text-offwhite tablet:mt-2xl"
+      className="mt-xl border-t border-ink/10 bg-canvas pb-2xl pt-xl text-ink tablet:mt-2xl"
     >
-      <Container className="flex flex-col gap-xl tablet:gap-2xl">
-        {/* Social pills — the only rounded-full elements in the system. */}
-        <ul
-          aria-label="Jicate IT Service on social media"
-          className="flex flex-wrap items-center gap-s"
-        >
-          {socialLinks.map((social) => (
-            <li key={social.label}>
-              <SocialPill label={social.label} href={social.href} />
-            </li>
-          ))}
-        </ul>
+      {/* Full-bleed footer: one row spanning the full width — a narrow brand
+          rail on the far left, then the four directory columns spread evenly to
+          the right edge (reference parity). */}
+      <div className="mx-auto w-full max-w-[1760px] px-[clamp(20px,4vw,60px)]">
+        <div className="grid grid-cols-2 gap-x-l gap-y-2xl tablet:grid-cols-4 desktop:grid-cols-5">
+          {/* LEFT RAIL — brand / cookies / language / social. */}
+          <div className="col-span-2 flex flex-col gap-l tablet:col-span-4 desktop:col-span-1">
+            <div className="flex flex-col gap-tiny text-body-sm text-ink-light">
+              <span>{copyrightOwner}.</span>
+              {copyrightRest.length ? <span>{copyrightRest.join(". ")}</span> : null}
+            </div>
 
-        {/* Mega-directory: one navigation landmark per category column. */}
-        <div className="grid-12 gap-y-xl">
-          {footerColumns.map((column) => (
-            <nav
-              key={column.heading}
-              aria-label={column.heading}
-              className="col-span-6 tablet:col-span-4 desktop:col-span-2"
+            <hr className="max-w-[220px] border-0 border-t border-ink/15" />
+
+            <a
+              href="#"
+              className="text-body-sm text-ink-light transition-colors duration-200 hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
             >
-              <Eyebrow as="h2" className="text-offwhite">
+              {cookiesSettingsLabel}
+            </a>
+
+            {/* Language switcher — visual toggle, first entry active. */}
+            <div
+              aria-label="Language"
+              className="flex items-center gap-s font-mono text-caption uppercase tracking-[0.08em]"
+            >
+              {footerLanguages.map((lang, i) => (
+                <button
+                  key={lang}
+                  type="button"
+                  aria-pressed={i === 0}
+                  className={cn(
+                    "transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink",
+                    i === 0 ? "text-ink" : "text-ink-light hover:text-ink",
+                  )}
+                >
+                  {lang}
+                </button>
+              ))}
+            </div>
+
+            {/* Outlined social pills — stacked, full-rail width. */}
+            <ul
+              aria-label="Jicate IT Service on social media"
+              className="mt-s flex max-w-[220px] flex-col gap-s"
+            >
+              {socialLinks.map((social) => (
+                <li key={social.label}>
+                  <SocialPill label={social.label} href={social.href} className="w-full" />
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Four directory columns — each one column of the same full-width row. */}
+          {footerColumns.map((column) => (
+            <nav key={column.heading} aria-label={column.heading}>
+              <Eyebrow as="h2" className="text-ink-light">
                 {column.heading}
               </Eyebrow>
               <ul className="mt-m flex flex-col gap-s">
                 {column.links.map((link) => (
-                  <li key={`${column.heading}-${link.href}`}>
+                  <li key={`${column.heading}-${link.label}`}>
                     <FooterLink {...link} />
                   </li>
                 ))}
@@ -84,34 +135,7 @@ export function Footer() {
             </nav>
           ))}
         </div>
-
-        {/* Legal row. */}
-        <div className="flex flex-col gap-m border-t border-offwhite/10 pt-l tablet:flex-row tablet:items-center tablet:justify-between">
-          <div className="flex flex-col gap-tiny text-ink-light tablet:flex-row tablet:items-center tablet:gap-l">
-            <span className="text-body-sm">{legal.copyright}</span>
-            {legal.tagline ? (
-              <span className="font-mono text-caption uppercase tracking-[0.05em]">
-                {legal.tagline}
-              </span>
-            ) : null}
-            <span className="font-mono text-caption uppercase tracking-[0.05em]">
-              {legal.locale}
-            </span>
-          </div>
-          <ul className="flex flex-wrap items-center gap-x-l gap-y-s">
-            {legal.links.map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  className="text-body-sm text-ink-light transition-colors duration-200 hover:text-offwhite focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-offwhite"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </Container>
+      </div>
     </footer>
   );
 }

@@ -11,8 +11,9 @@ export interface SocialPillProps {
 /**
  * Outlined, pill-shaped social link — the ONLY `rounded-full` element in the
  * system (design 04 §10 / 07 §11). Hairline 0.8px border, mono UPPERCASE label,
- * inverts to a filled chip on hover. Rendered on the dark footer band, so the
- * offwhite outline + offwhite focus ring keep it visible.
+ * centered. On the LIGHT footer band it shows an ink hairline + ink label and
+ * inverts to a filled ink chip on hover. Width is caller-controlled (the footer
+ * stacks them full-width in the left rail).
  */
 export function SocialPill({ label, href, className }: SocialPillProps) {
   return (
@@ -22,7 +23,7 @@ export function SocialPill({ label, href, className }: SocialPillProps) {
       rel="noreferrer"
       aria-label={`Jicate IT Service on ${label}`}
       className={cn(
-        "inline-flex min-h-[44px] items-center rounded-full border-[0.8px] border-offwhite px-s py-tiny font-mono text-caption uppercase tracking-[0.05em] text-offwhite transition-colors duration-200 hover:bg-offwhite hover:text-near-black focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-offwhite",
+        "inline-flex min-h-[44px] items-center justify-center rounded-full border-[0.8px] border-ink/30 px-s py-tiny font-mono text-caption uppercase tracking-[0.05em] text-ink transition-colors duration-200 hover:border-ink hover:bg-ink hover:text-canvas focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink",
         className,
       )}
     >

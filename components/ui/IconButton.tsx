@@ -2,7 +2,7 @@ import type { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from "reac
 
 import { cn } from "@/lib/utils";
 
-type IconButtonTone = "light" | "dark";
+type IconButtonTone = "light" | "dark" | "neutral";
 
 type IconButtonBaseProps = {
   /** Accessible label, applied as `aria-label`. */
@@ -36,6 +36,10 @@ const tones: Record<IconButtonTone, string> = {
   light:
     "border-ink text-ink hover:bg-ink hover:text-canvas focus-visible:outline-accent",
   dark: "border-offwhite text-offwhite hover:bg-offwhite hover:text-near-black focus-visible:outline-offwhite",
+  // Mid-grey (#767676) — reads on BOTH light and dark surfaces, for the frosted
+  // header bar that overlays the dark hero and light page content alike.
+  neutral:
+    "border-ink-light text-ink-light hover:bg-ink-light hover:text-canvas focus-visible:outline-ink-light",
 };
 
 export function IconButton({

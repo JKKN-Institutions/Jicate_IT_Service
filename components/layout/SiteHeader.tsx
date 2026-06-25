@@ -51,12 +51,12 @@ export function SiteHeader() {
               Get Started
             </Button>
 
-            <IconButton tone="dark" label="Search">
+            <IconButton tone="neutral" label="Search">
               <Search size={18} aria-hidden />
             </IconButton>
 
             <IconButton
-              tone="dark"
+              tone="neutral"
               label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
               aria-controls="mega-menu"
