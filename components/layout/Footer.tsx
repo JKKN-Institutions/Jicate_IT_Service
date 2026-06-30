@@ -5,6 +5,7 @@ import {
   legal,
   footerLanguages,
   cookiesSettingsLabel,
+  footerContactLink,
 } from "@/content/navigation";
 import { cn } from "@/lib/utils";
 import type { NavLink } from "@/types";
@@ -106,17 +107,25 @@ export function Footer() {
               ))}
             </div>
 
-            {/* Outlined social pills — stacked, full-rail width. */}
-            <ul
-              aria-label="Jicate IT Service on social media"
-              className="mt-s flex max-w-[220px] flex-col gap-s"
-            >
-              {socialLinks.map((social) => (
-                <li key={social.label}>
-                  <SocialPill label={social.label} href={social.href} className="w-full" />
-                </li>
-              ))}
-            </ul>
+            {/* Outlined social pills + Contact — stacked, full-rail width. */}
+            <div className="mt-s flex max-w-[220px] flex-col gap-s">
+              <ul aria-label="Jicate IT Service on social media" className="flex flex-col gap-s">
+                {socialLinks.map((social) => (
+                  <li key={social.label}>
+                    <SocialPill label={social.label} href={social.href} className="w-full" />
+                  </li>
+                ))}
+              </ul>
+
+              {/* Contact — internal link, same pill styling (opens in-tab). */}
+              <a
+                href={footerContactLink.href}
+                aria-label={footerContactLink.label}
+                className="inline-flex min-h-[44px] w-full items-center justify-center rounded-full border-[0.8px] border-ink/30 px-s py-tiny font-mono text-caption uppercase tracking-[0.05em] text-ink transition-colors duration-200 hover:border-ink hover:bg-ink hover:text-canvas focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+              >
+                {footerContactLink.label}
+              </a>
+            </div>
           </div>
 
           {/* Four directory columns — each one column of the same full-width row. */}

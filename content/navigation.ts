@@ -277,6 +277,9 @@ export const footerLanguages = ["US", "UK", "JP"] as const;
 /** Left-rail cookie-preferences link label. */
 export const cookiesSettingsLabel = "Cookies Settings";
 
+/** Left-rail "Contact" pill — internal link to the contact page. */
+export const footerContactLink: NavLink = { label: "CONTACT", href: "/contact" };
+
 /* ---------------------------------------------------------------------------
  * §11 — Social pills (outlined, UPPERCASE). icon = lucide name where one exists,
  * else a custom key the component maps to a bespoke glyph.
