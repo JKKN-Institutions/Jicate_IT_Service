@@ -1,0 +1,9 @@
+export { SubNav } from "./SubNav";
+export { Hero } from "./Hero";
+export { Partners } from "./Partners";
+export { Work } from "./Work";
+export { Impact } from "./Impact";
+export { HowItWorks } from "./HowItWorks";
+export { Spotlight } from "./Spotlight";
+export { Differentiators } from "./Differentiators";
+export { ContactForm } from "./ContactForm";

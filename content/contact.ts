@@ -17,6 +17,8 @@ export interface CTA {
 export interface ReachItem {
   category: string;
   link: CTA;
+  /** Optional extra links rendered under the same category (e.g. two phone numbers). */
+  links?: CTA[];
 }
 
 export interface Office {
@@ -42,6 +44,14 @@ export const hero = {
 export const waysToReach = {
   heading: "Ways to Reach Us",
   items: [
+    {
+      category: "Call Us",
+      link: { label: "+91 99432 72666", href: "tel:+919943272666" },
+      links: [
+        { label: "+91 99432 72666", href: "tel:+919943272666" },
+        { label: "+91 98429 71712", href: "tel:+919842971712" },
+      ],
+    },
     {
       category: "Business",
       link: { label: "Inquire about becoming a customer", href: "#" },

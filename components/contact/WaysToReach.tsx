@@ -6,23 +6,29 @@ import type { ReachItem } from "@/content/contact";
 import { GiantHeading } from "./parts";
 
 function ReachBlock({ item, index }: { item: ReachItem; index: number }) {
+  const links = item.links ?? [item.link];
   return (
     <Reveal index={index} className="flex flex-col gap-l">
       <h2 className="font-display text-display font-normal leading-[1.08] tracking-[-0.02em] text-ink">
         {item.category}
       </h2>
-      <a
-        href={item.link.href}
-        className="group flex items-center justify-between gap-s border-b border-ink/20 pb-s text-body-lg text-ink transition-colors duration-200 hover:text-ink-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-      >
-        <span>{item.link.label}</span>
-        <span
-          aria-hidden
-          className="shrink-0 transition-transform duration-[var(--duration-micro)] group-hover:translate-x-[0.22em] motion-reduce:transform-none"
-        >
-          →
-        </span>
-      </a>
+      <div className="flex flex-col gap-s">
+        {links.map((link) => (
+          <a
+            key={link.href}
+            href={link.href}
+            className="group flex items-center justify-between gap-s border-b border-ink/20 pb-s text-body-lg text-ink transition-colors duration-200 hover:text-ink-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          >
+            <span>{link.label}</span>
+            <span
+              aria-hidden
+              className="shrink-0 transition-transform duration-[var(--duration-micro)] group-hover:translate-x-[0.22em] motion-reduce:transform-none"
+            >
+              →
+            </span>
+          </a>
+        ))}
+      </div>
     </Reveal>
   );
 }

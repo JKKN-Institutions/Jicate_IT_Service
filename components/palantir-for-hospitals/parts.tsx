@@ -1,0 +1,130 @@
+import type { ReactNode } from "react";
+
+import { cn } from "@/lib/utils";
+
+/**
+ * Heading helpers for the Palantir-for-Hospitals page. The hero sits on a dark
+ * band (white text); the rest of the page is light (ink text). Line-height is
+ * baked into the size token so tailwind-merge can't strip a standalone
+ * `leading-*` class.
+ */
+
+/** Hero heading — ~140px desktop, -0.015em tracking, 1.0 line-height, white. */
+export function HeroHeading({ children, className }: { children: ReactNode; className?: string }) {
+  return (
+    <h1
+      className={cn(
+        "font-display font-normal tracking-[-0.015em] text-white",
+        "text-[clamp(3rem,9.72vw,8.75rem)]/[1.0]",
+        className,
+      )}
+    >
+      {children}
+    </h1>
+  );
+}
+
+/** Giant heading — ~100px desktop, -0.02em tracking, 1.15 line-height, ink. */
+export function GiantHeading({
+  children,
+  className,
+  as: Tag = "h2",
+}: {
+  children: ReactNode;
+  className?: string;
+  as?: "h1" | "h2";
+}) {
+  return (
+    <Tag
+      className={cn(
+        "font-display font-normal tracking-[-0.02em] text-ink",
+        "text-[clamp(2.5rem,6.95vw,6.25rem)]/[1.15]",
+        className,
+      )}
+    >
+      {children}
+    </Tag>
+  );
+}
+
+/** Section heading — ~50px desktop, -0.02em tracking, 1.0 line-height, ink. */
+export function SectionHeading({
+  children,
+  className,
+  as: Tag = "h2",
+}: {
+  children: ReactNode;
+  className?: string;
+  as?: "h2" | "h3" | "p";
+}) {
+  return (
+    <Tag
+      className={cn(
+        "font-display font-normal tracking-[-0.02em] text-ink",
+        "text-[clamp(2rem,3.47vw,3.125rem)]/[1.0]",
+        className,
+      )}
+    >
+      {children}
+    </Tag>
+  );
+}
+
+/** Step heading — ~72px desktop, -0.03em tracking, 1.07 line-height, ink. */
+export function StepHeading({ children, className }: { children: ReactNode; className?: string }) {
+  return (
+    <h3
+      className={cn(
+        "font-display font-normal tracking-[-0.03em] text-ink",
+        "text-[clamp(2.4rem,5vw,4.5rem)]/[1.07]",
+        className,
+      )}
+    >
+      {children}
+    </h3>
+  );
+}
+
+/** Sub heading — ~34px desktop, normal tracking, 1.176 line-height, ink. */
+export function SubHeading({
+  children,
+  className,
+  as: Tag = "h3",
+}: {
+  children: ReactNode;
+  className?: string;
+  as?: "h2" | "h3" | "p";
+}) {
+  return (
+    <Tag
+      className={cn(
+        "font-display font-normal tracking-normal text-ink",
+        "text-[clamp(1.6rem,2.36vw,2.125rem)]/[1.176]",
+        className,
+      )}
+    >
+      {children}
+    </Tag>
+  );
+}
+
+/** Full-width underlined link row: label left, nudging arrow right. */
+export function InkLink({ href, children, className }: { href: string; children: ReactNode; className?: string }) {
+  return (
+    <a
+      href={href}
+      className={cn(
+        "group flex w-full items-center justify-between gap-s border-b border-ink/25 pb-s text-body-lg text-ink transition-colors duration-200 hover:border-ink",
+        className,
+      )}
+    >
+      <span>{children}</span>
+      <span
+        aria-hidden
+        className="shrink-0 transition-transform duration-[var(--duration-micro)] group-hover:translate-x-[0.22em] motion-reduce:transform-none"
+      >
+        →
+      </span>
+    </a>
+  );
+}
