@@ -3,8 +3,6 @@ import {
   footerColumns,
   socialLinks,
   legal,
-  footerLanguages,
-  cookiesSettingsLabel,
   footerContactLink,
 } from "@/content/navigation";
 import { cn } from "@/lib/utils";
@@ -51,8 +49,8 @@ function FooterLink({ label, href, arrow, external, dimmed }: NavLink) {
  * Footer — the page's closing infrastructure, matched to the reference footer.
  *
  * Server Component: a LIGHT band (white canvas, ink text). Two-up layout —
- *   • LEFT RAIL: copyright, a hairline rule, "Cookies Settings", the US/UK/JP
- *     language switcher, and the outlined social pills stacked vertically.
+ *   • LEFT RAIL: copyright, a hairline rule, and the outlined social pills
+ *     (+ Contact) stacked vertically.
  *   • RIGHT: a four-column mega-directory (OFFERINGS / IMPACT STUDIOS /
  *     CAPABILITIES / DOCUMENTS) with mono UPPERCASE headings.
  * All copy comes from `@/content/navigation` — nothing is hardcoded here.
@@ -66,46 +64,18 @@ export function Footer() {
       role="contentinfo"
       className="mt-xl border-t border-ink/10 bg-canvas pb-2xl pt-xl text-ink tablet:mt-2xl"
     >
-      {/* Full-bleed footer: one row spanning the full width — a narrow brand
-          rail on the far left, then the four directory columns spread evenly to
-          the right edge (reference parity). */}
+      {/* Footer: a narrow brand rail on the far left, then the directory columns
+          as a group horizontally centered in the remaining space. */}
       <div className="mx-auto w-full max-w-[1760px] px-[clamp(20px,4vw,60px)]">
-        <div className="grid grid-cols-2 gap-x-l gap-y-2xl tablet:grid-cols-4 desktop:grid-cols-5">
+        <div className="flex flex-col gap-2xl desktop:flex-row desktop:items-start desktop:gap-2xl">
           {/* LEFT RAIL — brand / cookies / language / social. */}
-          <div className="col-span-2 flex flex-col gap-l tablet:col-span-4 desktop:col-span-1">
+          <div className="flex flex-col gap-l desktop:w-[220px] desktop:shrink-0">
             <div className="flex flex-col gap-tiny text-body-sm text-ink-light">
               <span>{copyrightOwner}.</span>
               {copyrightRest.length ? <span>{copyrightRest.join(". ")}</span> : null}
             </div>
 
             <hr className="max-w-[220px] border-0 border-t border-ink/15" />
-
-            <a
-              href="#"
-              className="text-body-sm text-ink-light transition-colors duration-200 hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
-            >
-              {cookiesSettingsLabel}
-            </a>
-
-            {/* Language switcher — visual toggle, first entry active. */}
-            <div
-              aria-label="Language"
-              className="flex items-center gap-s font-mono text-caption uppercase tracking-[0.08em]"
-            >
-              {footerLanguages.map((lang, i) => (
-                <button
-                  key={lang}
-                  type="button"
-                  aria-pressed={i === 0}
-                  className={cn(
-                    "transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink",
-                    i === 0 ? "text-ink" : "text-ink-light hover:text-ink",
-                  )}
-                >
-                  {lang}
-                </button>
-              ))}
-            </div>
 
             {/* Outlined social pills + Contact — stacked, full-rail width. */}
             <div className="mt-s flex max-w-[220px] flex-col gap-s">
@@ -121,28 +91,39 @@ export function Footer() {
               <a
                 href={footerContactLink.href}
                 aria-label={footerContactLink.label}
-                className="inline-flex min-h-[44px] w-full items-center justify-center rounded-full border-[0.8px] border-ink/30 px-s py-tiny font-mono text-caption uppercase tracking-[0.05em] text-ink transition-colors duration-200 hover:border-ink hover:bg-ink hover:text-canvas focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+                className="inline-flex min-h-[44px] w-full items-center justify-center rounded-full border-[0.8px] border-ink/30 px-s py-tiny font-mono uppercase tracking-[0.05em] text-ink transition-colors duration-200 hover:border-ink hover:bg-ink hover:text-canvas focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
               >
                 {footerContactLink.label}
               </a>
             </div>
           </div>
 
-          {/* Four directory columns — each one column of the same full-width row. */}
-          {footerColumns.map((column) => (
-            <nav key={column.heading} aria-label={column.heading}>
-              <Eyebrow as="h2" className="text-ink-light">
-                {column.heading}
-              </Eyebrow>
-              <ul className="mt-m flex flex-col gap-s">
-                {column.links.map((link) => (
-                  <li key={`${column.heading}-${link.label}`}>
-                    <FooterLink {...link} />
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          ))}
+          {/* Directory columns — OFFERINGS (2-col, centered title) + CAPABILITIES,
+              horizontally centered as a group in the space beside the left rail. */}
+          <div className="flex flex-1 flex-wrap justify-center gap-x-3xl gap-y-2xl">
+            {footerColumns.map((column) => {
+              const isOfferings = column.heading === "OFFERINGS";
+              return (
+                <nav key={column.heading} aria-label={column.heading}>
+                <Eyebrow as="h2" className={cn("text-ink-light", isOfferings && "block text-center")}>
+                  {column.heading}
+                </Eyebrow>
+                <ul
+                  className={cn(
+                    "mt-m",
+                    isOfferings ? "grid grid-cols-2 gap-x-2xl gap-y-s" : "flex flex-col gap-s",
+                  )}
+                >
+                  {column.links.map((link) => (
+                    <li key={`${column.heading}-${link.label}`}>
+                      <FooterLink {...link} />
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+              );
+            })}
+          </div>
         </div>
       </div>
     </footer>

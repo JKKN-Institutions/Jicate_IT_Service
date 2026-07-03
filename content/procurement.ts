@@ -306,7 +306,6 @@ export const demo = {
     { name: "lastName", label: "LAST NAME:", type: "text", required: true },
     { name: "email", label: "BUSINESS EMAIL:", type: "email", required: true },
     { name: "company", label: "COMPANY NAME:", type: "text", required: true },
-    { name: "jobTitle", label: "JOB TITLE:", type: "text", required: true },
     { name: "phone", label: "PHONE NUMBER:", type: "tel", required: false },
   ],
   countryLabel: "COUNTRY:",

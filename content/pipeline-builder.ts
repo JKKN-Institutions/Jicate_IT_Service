@@ -200,7 +200,6 @@ export const contactForm = {
     { name: "lastName", label: "Last Name", type: "text", required: true },
     { name: "businessEmail", label: "Business Email Address", type: "email", required: true },
     { name: "phone", label: "Phone Number", type: "tel", required: false },
-    { name: "jobTitle", label: "Job Title", type: "text", required: true },
     { name: "company", label: "Company / Institution", type: "text", required: true },
     { name: "country", label: "Country", type: "select", required: true },
   ],

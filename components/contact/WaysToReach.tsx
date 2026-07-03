@@ -6,14 +6,17 @@ import type { ReachItem } from "@/content/contact";
 import { GiantHeading } from "./parts";
 
 function ReachBlock({ item, index }: { item: ReachItem; index: number }) {
-  const links = item.links ?? [item.link];
+  const links = item.links ?? (item.link ? [item.link] : []);
   return (
     <Reveal index={index} className="flex flex-col gap-l">
       <h2 className="font-display text-display font-normal leading-[1.08] tracking-[-0.02em] text-ink">
         {item.category}
       </h2>
-      <div className="flex flex-col gap-s">
-        {links.map((link) => (
+      {item.note ? (
+        <p className="border-b border-ink/20 pb-s text-body-lg text-ink">{item.note}</p>
+      ) : (
+        <div className="flex flex-col gap-s">
+          {links.map((link) => (
           <a
             key={link.href}
             href={link.href}
@@ -26,9 +29,10 @@ function ReachBlock({ item, index }: { item: ReachItem; index: number }) {
             >
               →
             </span>
-          </a>
-        ))}
-      </div>
+            </a>
+          ))}
+        </div>
+      )}
     </Reveal>
   );
 }

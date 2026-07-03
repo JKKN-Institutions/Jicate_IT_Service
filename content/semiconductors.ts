@@ -107,7 +107,6 @@ export const demoForm = {
     { name: "lastName", label: "Last Name", type: "text", required: true },
     { name: "email", label: "Email Address", type: "email", required: true },
     { name: "company", label: "Company Name", type: "text", required: true },
-    { name: "jobTitle", label: "Job Title", type: "text", required: true },
     { name: "country", label: "Country", type: "select", required: true },
     { name: "phone", label: "Phone Number", type: "tel" },
     {

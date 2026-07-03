@@ -147,7 +147,6 @@ export const contact = {
     { name: "lastName", label: "LAST NAME:", type: "text", required: true },
     { name: "email", label: "BUSINESS EMAIL ADDRESS:", type: "email", required: true },
     { name: "phone", label: "PHONE:", type: "tel", required: true },
-    { name: "jobTitle", label: "JOB TITLE:", type: "text", required: true },
     { name: "company", label: "COMPANY / INSTITUTION:", type: "text", required: true },
   ],
   countryLabel: "COUNTRY:",

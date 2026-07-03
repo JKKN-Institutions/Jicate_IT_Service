@@ -19,7 +19,7 @@
  */
 
 const BASE = "/utilities";
-const SONNEDIX_VIDEO = `${BASE}/-ENGLISH_SUBTITLES-_Palantir_and_Sonnedix_-_Foundry_Impact_-_Cutdown___1_.mov`;
+const SONNEDIX_VIDEO = `${BASE}/-ENGLISH_SUBTITLES-_Sonnedix_-_Foundry_Impact_-_Cutdown___1_.mov`;
 
 /* ------------------------------ shared shapes ----------------------------- */
 
@@ -124,7 +124,7 @@ export const impact = {
   cases: [
     {
       name: "Jacobs",
-      video: `${BASE}/Jacobs_X_Palantir_Twitter_Cutdown.mov`,
+      video: `${BASE}/Jacobs_Twitter_Cutdown.mov`,
       stat: "PLACEHOLDER — SIGNIFICANT PLANT-WIDE POWER SAVINGS THROUGH PREDICTIVE OPERATIONS.",
       theme: "Predictive Operations",
       quote:
@@ -222,7 +222,6 @@ export const demoForm = {
     { name: "lastName", label: "Last Name", type: "text", required: true },
     { name: "email", label: "Business Email", type: "email", required: true },
     { name: "phone", label: "Phone Number", type: "tel", required: true },
-    { name: "jobTitle", label: "Job Title", type: "text", required: true },
     { name: "company", label: "Company / Institution", type: "text", required: true },
     { name: "country", label: "Country", type: "select", required: true },
     {

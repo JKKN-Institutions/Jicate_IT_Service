@@ -174,7 +174,7 @@ export const inAction = {
   heading: "Foundry Streaming in Action",
   caseStudies: [
     {
-      video: "/streaming/Palantir_and_Sonnedix_-_Ontology_Modelling_-_Cutdown.mp4",
+      video: "/streaming/Sonnedix_-_Ontology_Modelling_-_Cutdown.mp4",
       title: "Powering the Global Energy Transition at Sonnedix",
       body: "Sonnedix uses the Ontology to digitally represent its real-world assets in real-time and more fully understand production patterns. With remote monitoring of solar fields, asset managers can immediately detect and respond to solar trackers in need of maintenance.",
       link: { label: "Learn More", href: "#" },
@@ -183,7 +183,7 @@ export const inAction = {
       author: "Head of AI Implementation, Sonnedix",
     },
     {
-      video: "/streaming/sompo_palantir_clip_01_.mov",
+      video: "/streaming/sompo_clip_01_.mov",
       title: "Improving Elder Care at SOMPO",
       body: "The Ontology empowers SOMPO to understand residents' health holistically and to move from reactivity to proactivity with tailored sensor alerts that measure critical vital signs like sleep, breathing, and pulse rate. Reviewing care plans that once took 30–60 minutes now happens at a glance.",
       link: { label: "Learn More", href: "#" },
@@ -209,7 +209,6 @@ export const contact = {
   fields: [
     { name: "firstName", label: "FIRST NAME:", type: "text", required: true },
     { name: "lastName", label: "LAST NAME:", type: "text", required: true },
-    { name: "jobTitle", label: "JOB TITLE:", type: "text", required: true },
     { name: "email", label: "BUSINESS EMAIL:", type: "email", required: true },
     { name: "phone", label: "PHONE NUMBER:", type: "tel", required: true },
     { name: "company", label: "COMPANY / INSTITUTION:", type: "text", required: true },

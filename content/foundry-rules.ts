@@ -177,7 +177,6 @@ export const contactForm = {
   fields: [
     { name: "firstName", label: "First Name", type: "text", required: true },
     { name: "lastName", label: "Last Name", type: "text", required: true },
-    { name: "jobTitle", label: "Job Title", type: "text", required: true },
     { name: "businessEmail", label: "Business Email", type: "email", required: true },
     { name: "phone", label: "Phone Number", type: "tel", required: false },
     { name: "company", label: "Company / Institution", type: "text", required: true },

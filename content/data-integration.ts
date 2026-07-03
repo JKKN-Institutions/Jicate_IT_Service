@@ -234,7 +234,6 @@ export const expertForm = {
     { name: "lastName", label: "Last Name", type: "text", required: true },
     { name: "businessEmail", label: "Business Email", type: "email", required: true },
     { name: "company", label: "Company", type: "text", required: true },
-    { name: "jobTitle", label: "Job Title", type: "text", required: true },
     { name: "country", label: "Country", type: "select", required: true },
   ],
   message: { name: "message", label: "How can we help?", type: "textarea", required: false },

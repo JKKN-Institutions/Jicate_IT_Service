@@ -1,4 +1,5 @@
-import { Container, Eyebrow, Button, ArrowLink } from "@/components/ui";
+import { Container, Eyebrow, ArrowLink } from "@/components/ui";
+import { GetStartedButton } from "@/components/layout/GetStartedButton";
 import { hero } from "@/content/home";
 
 import { HeroVideo } from "./HeroVideo";
@@ -48,13 +49,12 @@ export function Hero() {
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-l">
-            <Button
+            <GetStartedButton
               variant="inverse"
-              href={hero.primaryCTA.href}
               arrow={hero.primaryCTA.arrow}
             >
               {hero.primaryCTA.label}
-            </Button>
+            </GetStartedButton>
 
             <ArrowLink
               href={hero.secondaryLink.href}

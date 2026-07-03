@@ -255,7 +255,6 @@ export const form = {
     { name: "lastName", label: "LAST NAME:", type: "text", required: true },
     { name: "email", label: "BUSINESS EMAIL:", type: "email", required: true },
     { name: "phone", label: "PHONE NUMBER:", type: "tel", required: true },
-    { name: "jobTitle", label: "JOB TITLE:", type: "text", required: true },
     { name: "company", label: "COMPANY / INSTITUTION:", type: "text", required: true },
   ] as Field[],
   countryLabel: "COUNTRY:",

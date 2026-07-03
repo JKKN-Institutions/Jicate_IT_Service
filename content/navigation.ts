@@ -40,13 +40,13 @@ export const industryLinks: NavLink[] = [
   { label: "Education", href: "/industries/education" },
 ];
 
-/** The five reference platforms (verbatim — scaffolding). */
+/** The five platform pages — order mirrors the Palantir site menu. */
 export const platformLinks: NavLink[] = [
-  { label: "AIP", href: "https://www.palantir.com/platforms/aip/", arrow: "external", external: true },
-  { label: "Gotham", href: "https://www.palantir.com/platforms/gotham/", arrow: "external", external: true },
-  { label: "Foundry", href: "https://www.palantir.com/platforms/foundry/", arrow: "external", external: true },
-  { label: "Ontology", href: "https://www.palantir.com/platforms/ontology/", arrow: "external", external: true },
-  { label: "Apollo", href: "https://www.palantir.com/platforms/apollo/", arrow: "external", external: true },
+  { label: "AIP", href: "/aip" },
+  { label: "Foundry", href: "/foundry" },
+  { label: "Gotham", href: "/gotham" },
+  { label: "Ontology", href: "/ontology" },
+  { label: "Apollo", href: "/apollo" },
 ];
 
 /* ---------------------------------------------------------------------------
@@ -72,75 +72,45 @@ export const megaMenuGroups: MegaMenuGroup[] = [
     links: platformLinks,
   },
   {
-    heading: "Services",
-    links: serviceLinks,
-  },
-  {
-    heading: "Industries",
-    links: industryLinks,
-  },
-  {
-    heading: "Case Studies",
+    heading: "Navigation",
     links: [
-      {
-        label: "All Case Studies",
-        href: "/case-studies",
-        arrow: "external",
-        external: true,
-      },
-      {
-        label: "How a clinic network cut downtime 40%",
-        href: "/case-studies/clinic-network-downtime",
-        arrow: "drillin",
-      },
-    ],
-  },
-  {
-    heading: "Resources",
-    links: [
-      { label: "Blog", href: "/resources/blog" },
-      { label: "Guides & Whitepapers", href: "/resources/guides" },
+      { label: "Generate Alpha", href: "/aip" },
+      { label: "Offerings", href: "/offerings" },
+      { label: "Impact Studies", href: "/case-studies", arrow: "drillin" },
       {
         label: "Documentation",
         href: "https://docs.jicate.com",
         arrow: "external",
         external: true,
       },
-      { label: "Webinars", href: "/resources/webinars" },
-      {
-        label: "Service Status",
-        href: "https://status.jicate.com",
-        arrow: "external",
-        external: true,
-      },
-    ],
-  },
-  {
-    heading: "Company",
-    links: [
-      { label: "About", href: "/company/about" },
-      { label: "Our Approach", href: "/company/approach" },
       {
         label: "Careers",
         href: "/company/careers",
         arrow: "external",
         external: true,
       },
-      { label: "Partners", href: "/company/partners" },
       { label: "Newsroom", href: "/company/newsroom" },
+      { label: "Jicate Explained", href: "/company/about" },
     ],
   },
   {
-    heading: "Contact",
+    heading: "Quick Links",
     links: [
-      { label: "Talk to an Expert", href: "/contact", arrow: "drillin" },
+      { label: "About Jicate", href: "/company/about" },
+      { label: "Blog", href: "/resources/blog" },
+      { label: "Investor Relations", href: "/company/investors" },
+      { label: "Letters from the CEO", href: "/company/newsroom" },
+      { label: "Privacy & Civil Liberties", href: "/legal/privacy" },
+      { label: "Information Security", href: "/information-security" },
+      { label: "Cloud Partners", href: "/company/partners" },
       {
-        label: "Support Portal",
-        href: "https://support.jicate.com",
+        label: "Jicate Learning",
+        href: "https://learn.jicate.com",
         arrow: "external",
         external: true,
       },
-      { label: "Find an Office", href: "/contact/offices" },
+      { label: "Customer Success Services", href: "/services/support" },
+      { label: "Contact", href: "/contact", arrow: "drillin" },
     ],
   },
 ];
@@ -151,20 +121,20 @@ export const megaMenuGroups: MegaMenuGroup[] = [
 
 export const megaMenuFeatured: FeaturedCard[] = [
   {
-    headline: "Managed IT, run like infrastructure",
-    caption: "Always-on monitoring, patching, and helpdesk under one SLA.",
+    headline: "The latest from Jicate",
+    caption: "News, announcements, and updates from across the company.",
     link: {
-      label: "Explore Managed IT",
-      href: "/services/managed-it",
+      label: "Visit the Newsroom",
+      href: "/company/newsroom",
       arrow: "drillin",
     },
   },
   {
-    headline: "Migrate to cloud without the downtime",
-    caption: "Lift, shift, and modernize on AWS, Azure, or GCP.",
+    headline: "See the impact in the field",
+    caption: "How teams put Jicate to work on their hardest problems.",
     link: {
-      label: "See cloud services",
-      href: "/services/cloud",
+      label: "View Impact Studies",
+      href: "/case-studies",
       arrow: "drillin",
     },
   },
@@ -194,15 +164,15 @@ export const footerColumns: FooterColumn[] = [
       { label: "FedStart", href: "/fedstart" },
       { label: "Financial Services", href: "/financial-services" },
       { label: "Food & Beverage", href: "/food-and-beverage" },
-      { label: "Palantir for Builders", href: "/palantir-for-builders" },
+      { label: "Jicate for Builders", href: "/jicate-for-builders" },
       { label: "Govt Financial Management", href: "/government-financial-management" },
-      { label: "Hospital Operations", href: "/palantir-for-hospitals" },
+      { label: "Hospital Operations", href: "/jicate-for-hospitals" },
       { label: "Insurance", href: "/insurance" },
       { label: "Intelligence", href: "/intelligence" },
       { label: "Life Sciences", href: "/life-sciences" },
       { label: "Mission Manager", href: "/mission-manager" },
       { label: "Procurement", href: "/procurement" },
-      { label: "Rail", href: "/palantir-for-rail" },
+      { label: "Rail", href: "/jicate-for-rail" },
       { label: "Readiness", href: "/readiness" },
       { label: "Retail", href: "/retail" },
       { label: "Secure Collaboration", href: "/secure-collaboration" },
@@ -210,27 +180,6 @@ export const footerColumns: FooterColumn[] = [
       { label: "Supply Chain", href: "/supply-chain" },
       { label: "Telecommunications", href: "/telecommunications" },
       { label: "Utilities", href: "/utilities" },
-    ],
-  },
-  {
-    heading: "IMPACT STUDIOS",
-    links: [
-      { label: "Airbus", href: "#" },
-      { label: "Axel Springer", href: "#" },
-      { label: "Cleveland Clinic", href: "#" },
-      { label: "Concordance", href: "#" },
-      { label: "Doosan Infracore", href: "#" },
-      { label: "Fujitsu", href: "#" },
-      { label: "Jacobs", href: "#" },
-      { label: "Kinder Morgan", href: "#" },
-      { label: "NHS", href: "#" },
-      { label: "Noto Peninsula Earthquake", href: "#" },
-      { label: "Ringier", href: "#" },
-      { label: "Sonnedix", href: "#" },
-      { label: "SOMPO", href: "#" },
-      { label: "Swiss Re", href: "#" },
-      { label: "Tampa General Hospital", href: "#" },
-      { label: "World Food Programme", href: "#" },
     ],
   },
   {
@@ -249,24 +198,6 @@ export const footerColumns: FooterColumn[] = [
       { label: "Real-Time Alerting", href: "/foundry-rules" },
       { label: "Streaming", href: "/streaming" },
       { label: "Titanium", href: "/titanium" },
-    ],
-  },
-  {
-    heading: "DOCUMENTS",
-    links: [
-      { label: "Developer Community", href: "#" },
-      { label: "Platform Documentation", href: "#" },
-      { label: "Palantir Developers", href: "#" },
-      { label: "Trust Center", href: "#" },
-      { label: "Modern Slavery Statement", href: "#" },
-      { label: "Cookies", href: "#" },
-      { label: "Privacy and Civil Liberties", href: "#" },
-      { label: "US Public Policy", href: "#" },
-      { label: "Palantir Explained", href: "#" },
-      { label: "Sustainability", href: "#" },
-      { label: "Human Rights Policy", href: "#" },
-      { label: "Privacy Statement", href: "#" },
-      { label: "Terms of Use", href: "#" },
     ],
   },
 ];

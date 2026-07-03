@@ -9,8 +9,8 @@ import { GiantHeading } from "./parts";
  */
 export function Hero() {
   return (
-    <Section className="bg-canvas pt-2xl" aria-label={hero.title}>
-      <Container>
+    <Section className="bg-canvas" aria-label={hero.title}>
+      <Container className="pt-[80px] desktop:pt-[100px]">
         <GiantHeading as="h1" size="hero">
           {hero.title}
         </GiantHeading>

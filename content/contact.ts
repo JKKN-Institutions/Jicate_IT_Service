@@ -16,9 +16,11 @@ export interface CTA {
 
 export interface ReachItem {
   category: string;
-  link: CTA;
+  link?: CTA;
   /** Optional extra links rendered under the same category (e.g. two phone numbers). */
   links?: CTA[];
+  /** Plain informational text (e.g. business hours) rendered without a link/arrow. */
+  note?: string;
 }
 
 export interface Office {
@@ -53,72 +55,51 @@ export const waysToReach = {
       ],
     },
     {
+      category: "Email Us",
+      link: { label: "jicatesolutions@gmail.com", href: "mailto:jicatesolutions@gmail.com" },
+    },
+    {
+      category: "Business Hours",
+      note: "Mon–Sat, 9am – 7pm (IST)",
+    },
+    {
       category: "Business",
-      link: { label: "Inquire about becoming a customer", href: "#" },
+      link: { label: "Inquire about becoming a customer", href: "/enquiry-form" },
     },
     {
       category: "Media",
-      link: { label: "Contact our press and media team", href: "mailto:media@jicate.com" },
+      link: { label: "Contact our press and media team", href: "/enquiry-form" },
     },
     {
       category: "Product Training & Support",
-      link: { label: "Get in touch with our Customer Success Services team", href: "#" },
+      link: { label: "Get in touch with our Customer Success Services team", href: "/enquiry-form" },
     },
     {
       category: "Employee Verification",
       link: {
         label: "Submit an employee verification request",
-        href: "mailto:employee-verifications@jicate.com",
+        href: "/enquiry-form",
       },
     },
   ] as ReachItem[],
 };
 
-/* ----------------------------- Office Locations -------------------------- */
+/* ------------------------------ Office Location -------------------------- */
 
-export const officeLocations = {
-  heading: "Office Locations",
-  regions: [
-    {
-      name: "North America",
-      offices: [
-        { country: "CALIFORNIA", city: "Palo Alto" },
-        { country: "CANADA", city: "Ottawa" },
-        { country: "COLORADO", city: "Denver (Headquarters)" },
-        { country: "D.C.", city: "Washington" },
-        { country: "NEW YORK", city: "New York" },
-        { country: "WASHINGTON", city: "Seattle" },
-      ],
-    },
-    {
-      name: "Europe & Middle East",
-      offices: [
-        { country: "DENMARK", city: "Copenhagen" },
-        { country: "FRANCE", city: "Paris" },
-        { country: "GERMANY", city: "Munich" },
-        { country: "ISRAEL", city: "Tel Aviv" },
-        { country: "ITALY", city: "Rome" },
-        { country: "NETHERLANDS", city: "Amsterdam" },
-        { country: "NORWAY", city: "Oslo" },
-        { country: "POLAND", city: "Warsaw" },
-        { country: "QATAR", city: "Doha" },
-        { country: "SPAIN", city: "Madrid" },
-        { country: "SWEDEN", city: "Stockholm" },
-        { country: "SWITZERLAND", city: "Zurich" },
-        { country: "UNITED ARAB EMIRATES", city: "Abu Dhabi" },
-        { country: "UNITED KINGDOM", city: "London" },
-      ],
-    },
-    {
-      name: "Asia & Pacific",
-      offices: [
-        { country: "AUSTRALIA", city: "Canberra" },
-        { country: "AUSTRALIA", city: "Sydney" },
-        { country: "JAPAN", city: "Tokyo" },
-        { country: "KOREA", city: "Seoul" },
-      ],
-    },
-  ] as Region[],
-  mapImage: "/contact/Offices_Map.png",
-  mapAlt: "Map of office locations",
+/** Single registered office (India). Rendered with an embedded, clickable
+ * Google Map — no section title, no world map (per request). */
+export const officeLocation = {
+  name: "JICATE SOLUTIONS PRIVATE LIMITED",
+  address: [
+    "230 Salem Main Road, Komarapalayam,",
+    "Namakkal, Namakkal,",
+    "Namakkal - 638183",
+    "India (IN)",
+  ],
+  /** Interactive embed (iframe src). */
+  mapEmbed:
+    "https://www.google.com/maps?q=JICATE+SOLUTIONS+PRIVATE+LIMITED+230+Salem+Main+Road+Komarapalayam+Namakkal+638183+Tamil+Nadu+India&output=embed",
+  /** Opens the location in Google Maps in a new tab. */
+  mapsLink:
+    "https://www.google.com/maps/search/?api=1&query=JICATE%20SOLUTIONS%20PRIVATE%20LIMITED%20230%20Salem%20Main%20Road%20Komarapalayam%20Namakkal%20638183%20Tamil%20Nadu%20India",
 };

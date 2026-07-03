@@ -254,16 +254,14 @@ export const softwareStatement: SoftwareStatement = {
 export const manifesto: Manifesto = {
   statement: "There is so much left to build",
   support:
-    "Palantirians deliver mission-critical outcomes for the West's most important institutions.",
+    "Jicate teams deliver mission-critical outcomes for the world's most important institutions.",
   link: {
-    label: "Learn More",
-    href: "/careers",
+    label: "Reach Us",
+    href: "/enquiry-form",
     arrow: "drillin",
   },
-  // Verbatim reference image (hot-linked, scaffolding — swap before launch).
-  image:
-    "https://www.palantir.com/assets/xrfr7uokpv1b/3fV2sByCOe17eTh4UIvFhi/afc62abb438137d60df34d1efc85fbbd/onsite.jpg",
-  imageAlt: "Palantir team on-site",
+  image: "/home/onsite.jpg",
+  imageAlt: "Jicate team on-site",
 };
 
 /* §9 — Testimonials ------------------------------------------------------ */
@@ -283,7 +281,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "S.C.O.U.T began as a joint effort between AT&T and Palantir, and now has over 100 AT&T dedicated engineers and a dedicated support team for this application. It's just one of the 660 applications we have on Foundry today.",
+      "S.C.O.U.T began as a joint effort between AT&T and Jicate, and now has over 100 AT&T dedicated engineers and a dedicated support team for this application. It's just one of the 660 applications we have on Foundry today.",
     clientName: "AT&T",
     role: "Dan Wagner · Dir. of Technology",
   },
@@ -295,7 +293,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "We had a great chassis of the car, but our engine was underpowered. So we went to Palantir because we want the best engine out there. In three months, the teams built what took us three years before.",
+      "We had a great chassis of the car, but our engine was underpowered. So we went to Jicate because we want the best engine out there. In three months, the teams built what took us three years before.",
     clientName: "HEINEKEN",
     role: "Laurens van de Rotte · COO, Heineken USA",
   },
