@@ -74,9 +74,8 @@ export const megaMenuGroups: MegaMenuGroup[] = [
   {
     heading: "Navigation",
     links: [
-      { label: "Generate Alpha", href: "/aip" },
       { label: "Offerings", href: "/offerings" },
-      { label: "Jicate Explained", href: "/jicate-explained" },
+      { label: "Jicate Explained", href: "/about" },
       { label: "Search", href: "/search" },
     ],
   },

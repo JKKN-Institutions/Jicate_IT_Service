@@ -20,12 +20,6 @@ export function Resources() {
             <div className="flex flex-col gap-[16px]">
               <h2 className="text-[20px] leading-[1.3] text-ink">{resources.careers.heading}</h2>
               <p className="text-[16px] leading-[1.5] text-ink-light">{resources.careers.body}</p>
-              <a
-                href={resources.careers.link.href}
-                className="mt-[4px] w-fit text-[16px] text-ink underline decoration-ink/30 underline-offset-[5px] transition-colors hover:decoration-ink"
-              >
-                {resources.careers.link.label}
-              </a>
             </div>
           </div>
         </Reveal>

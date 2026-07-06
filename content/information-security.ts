@@ -157,6 +157,5 @@ export const resources = {
   careers: {
     heading: "Careers",
     body: "The Information Security team is Jicate's first line of defense. We're engineers, analysts, and operators committed to making the world a safer place — and we're hiring.",
-    link: { label: "See Open Positions", href: "/contact" },
   },
 };
