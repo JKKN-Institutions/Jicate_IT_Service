@@ -7,7 +7,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { cn } from "@/lib/utils";
 import { modules } from "@/content/data-protection";
 
-import { GiantHeading, InkLink } from "./parts";
+import { GiantHeading } from "./parts";
 
 /**
  * "Data Protection Modules and Capabilities" — a giant heading with a leading
@@ -103,11 +103,6 @@ export function Modules() {
           <div className="hidden desktop:block" />
           <div className="grid grid-cols-1 gap-2xl tablet:grid-cols-[1fr_auto] tablet:items-start">
             <p className="max-w-[40ch] text-body leading-[1.5] text-ink-light">{modules.footnote}</p>
-            <div className="tablet:w-[220px]">
-              <InkLink href={modules.footnoteLink.href} className="text-body">
-                {modules.footnoteLink.label}
-              </InkLink>
-            </div>
           </div>
         </div>
       </Container>

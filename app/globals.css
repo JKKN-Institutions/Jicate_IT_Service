@@ -170,6 +170,16 @@
    Base layer — body defaults (doc 02 §1)
    ---------------------------------------------------------------- */
 @layer base {
+  html {
+    scroll-behavior: smooth;         /* animate in-page anchor jumps */
+    scroll-padding-top: 120px;       /* land anchor targets below the fixed ~106px header */
+    /* Global horizontal-overflow guard. A stray wide child (bleeding media, a
+       fixed-column grid, a giant heading) must never widen the document and push
+       centered content off to the right on narrow screens. `clip` (not `hidden`)
+       prevents the sideways scroll WITHOUT creating a scroll container, so every
+       `position: sticky` sub-nav on the site keeps sticking to the viewport. */
+    overflow-x: clip;
+  }
   body {
     font-family: var(--font-body);   /* Geist */
     font-size: 1rem;                 /* 18px */
@@ -177,6 +187,7 @@
     color: var(--color-ink);         /* #1e2124 */
     background: var(--color-canvas); /* #ffffff */
     -webkit-font-smoothing: antialiased;
+    overflow-x: clip;                /* belt-and-braces with html (see above) */
   }
 }
 

@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { renewables } from "@/content/energy";
 
-import { ArrowItem, InkLink } from "./parts";
+import { ArrowItem } from "./parts";
 import { AnchorTitle } from "./blocks";
 
 /**
@@ -34,10 +34,6 @@ export function Renewables() {
               <p className="text-[clamp(1.25rem,1rem+1vw,1.625rem)] leading-[1.3] text-ink">{renewables.quote}</p>
             </Reveal>
           </div>
-
-          <Reveal className="mt-2xl desktop:ml-[33.333%]">
-            <InkLink href={renewables.link.href}>{renewables.link.label}</InkLink>
-          </Reveal>
         </Container>
       </Section>
 

@@ -100,7 +100,7 @@ export function Footer() {
 
           {/* Directory columns — OFFERINGS (2-col, centered title) + CAPABILITIES,
               horizontally centered as a group in the space beside the left rail. */}
-          <div className="flex flex-1 flex-wrap justify-center gap-x-3xl gap-y-2xl">
+          <div className="flex flex-1 flex-wrap justify-center gap-x-2xl gap-y-2xl desktop:gap-x-3xl">
             {footerColumns.map((column) => {
               const isOfferings = column.heading === "OFFERINGS";
               return (
@@ -111,7 +111,7 @@ export function Footer() {
                 <ul
                   className={cn(
                     "mt-m",
-                    isOfferings ? "grid grid-cols-2 gap-x-2xl gap-y-s" : "flex flex-col gap-s",
+                    isOfferings ? "grid grid-cols-1 gap-y-s tablet:grid-cols-2 tablet:gap-x-2xl" : "flex flex-col gap-s",
                   )}
                 >
                   {column.links.map((link) => (

@@ -26,7 +26,21 @@ export function About() {
             ))}
           </div>
 
-          <div className="mt-3xl grid grid-cols-1 desktop:grid-cols-12">
+          <div className="mt-3xl grid grid-cols-1 gap-l desktop:grid-cols-12 desktop:items-center">
+            {/* Ontology diagram — sits in the (previously empty) left column, at a
+                smaller size beside the intro text. */}
+            <Reveal className="desktop:col-span-6 desktop:col-start-1">
+              <div className="w-full overflow-hidden rounded-[2px] bg-ink/[0.04]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={about.diagram}
+                  alt={about.diagramAlt}
+                  className="h-full w-full object-contain"
+                  loading="lazy"
+                />
+              </div>
+            </Reveal>
+
             <Reveal className="flex flex-col gap-l desktop:col-span-6 desktop:col-start-7">
               {about.intro.map((p) => (
                 <p key={p.slice(0, 24)} className="text-body leading-[1.5] text-ink">
@@ -35,22 +49,6 @@ export function About() {
               ))}
             </Reveal>
           </div>
-        </Container>
-      </Section>
-
-      <Section className="bg-canvas !pt-0" aria-label="Energy ontology diagram">
-        <Container>
-          <Reveal>
-            <div className="w-full overflow-hidden rounded-[2px] bg-ink/[0.04]">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={about.diagram}
-                alt={about.diagramAlt}
-                className="h-full w-full object-contain"
-                loading="lazy"
-              />
-            </div>
-          </Reveal>
         </Container>
       </Section>
     </>

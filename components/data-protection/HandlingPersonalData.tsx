@@ -2,8 +2,6 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { handling } from "@/content/data-protection";
 
-import { InkLink } from "./parts";
-
 /**
  * "Handling Personal Data" — 2-column. The Beyond Anonymisation whitepaper card
  * image on the left; a heading, a short body line with an inline underlined link,
@@ -36,16 +34,11 @@ export function HandlingPersonalData() {
             <Reveal index={1} className="grid grid-cols-1 gap-2xl tablet:grid-cols-[1fr_auto] tablet:items-start">
               <p className="max-w-[34ch] text-body-lg leading-[1.45] text-ink-light">
                 {handling.bodyLead}
-                <a href={handling.cta.href} className="text-ink underline underline-offset-2 hover:no-underline">
+                <span className="text-ink underline underline-offset-2">
                   {handling.bodyLink}
-                </a>
+                </span>
                 {handling.bodyTrail}
               </p>
-              <div className="tablet:w-[220px]">
-                <InkLink href={handling.cta.href} className="text-body">
-                  {handling.cta.label}
-                </InkLink>
-              </div>
             </Reveal>
           </div>
         </div>

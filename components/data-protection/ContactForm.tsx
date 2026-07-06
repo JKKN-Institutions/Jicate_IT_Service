@@ -7,7 +7,13 @@ import { contact } from "@/content/data-protection";
  * styling, and behaviour are identical everywhere.
  */
 export function ContactForm() {
-  return <SiteContactForm title={contact.heading} id={contact.id} />;
+  return (
+    <SiteContactForm
+      title={contact.heading}
+      id={contact.id}
+      titleClassName="text-[length:clamp(2.5rem,5.8vw,5rem)]!"
+    />
+  );
 }
 
 export default ContactForm;

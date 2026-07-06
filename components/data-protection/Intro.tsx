@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { intro } from "@/content/data-protection";
 
-import { GiantHeading, InkLink } from "./parts";
+import { GiantHeading } from "./parts";
 
 /**
  * Intro band — 2-column. A giant statement heading on the left; the right column
@@ -32,11 +32,6 @@ export function Intro() {
                     {p}
                   </p>
                 ))}
-              </div>
-              <div className="tablet:w-[220px]">
-                <InkLink href={intro.link.href} className="text-body">
-                  {intro.link.label}
-                </InkLink>
               </div>
             </Reveal>
           </div>

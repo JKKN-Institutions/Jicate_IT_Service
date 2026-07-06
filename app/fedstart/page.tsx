@@ -6,9 +6,7 @@ import {
   HowItWorks,
   WhyFedStart,
   Cmmc,
-  Partners,
   BlogTiles,
-  Spotlight,
   VideoFeatures,
   ContactForm,
 } from "@/components/fedstart";
@@ -26,9 +24,7 @@ export default function FedStartPage() {
       <HowItWorks />
       <WhyFedStart />
       <Cmmc />
-      <Partners />
       <BlogTiles />
-      <Spotlight />
       <VideoFeatures />
       <ContactForm />
       {/* The shared site Footer renders from the root layout. */}

@@ -40,14 +40,6 @@ function Card({ item }: { item: Offering }) {
       </span>
       <h3 className="font-display text-body-lg font-normal tracking-[-0.01em] text-ink">{item.title}</h3>
       <p className="max-w-[44ch] text-body leading-[1.5] text-ink-medium">{item.body}</p>
-      {item.cta ? (
-        <a
-          href="#"
-          className="mt-[4px] inline-flex items-baseline gap-[0.4em] text-body-sm text-ink underline decoration-ink/30 underline-offset-[3px] hover:decoration-ink"
-        >
-          <span aria-hidden>↳</span> {item.cta}
-        </a>
-      ) : null}
     </article>
   );
 }

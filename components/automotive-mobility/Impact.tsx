@@ -7,7 +7,7 @@ import { LoopingVideo } from "@/components/ai-ml/LoopingVideo";
 import { cn } from "@/lib/utils";
 import { impact, type ImpactTab } from "@/content/automotive-mobility";
 
-import { SectionHeading, InkLink } from "./parts";
+import { SectionHeading } from "./parts";
 
 /**
  * "Our Impact" — a section heading, a pill tab rail (one per customer), and the
@@ -74,7 +74,6 @@ function Panel({ tab }: { tab: ImpactTab }) {
             <img src={tab.image} alt={tab.alt} className="h-full w-full object-cover" loading="lazy" />
           ) : null}
         </div>
-        {tab.link ? <InkLink href={tab.link.href}>{tab.link.label}</InkLink> : null}
         {tab.tags && tab.tags.length > 0 ? (
           <ul className="flex flex-col gap-[8px]">
             {tab.tags.map((t) => (

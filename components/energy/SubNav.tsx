@@ -7,7 +7,7 @@ import { subNav } from "@/content/energy";
  */
 export function SubNav() {
   return (
-    <div className="sticky top-[106px] z-30 border-b border-ink/10 bg-canvas/90 backdrop-blur-sm">
+    <div className="sticky top-[88px] z-30 border-b border-ink/10 bg-canvas/90 backdrop-blur-sm">
       <Container>
         <nav aria-label="On this page" className="flex flex-wrap gap-x-2xl gap-y-xs py-m">
           {subNav.map((item) => (
