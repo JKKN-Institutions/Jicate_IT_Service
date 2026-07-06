@@ -93,7 +93,7 @@ export const keyFeatures = {
       title: "Optimization.",
       body: "Integrate with external third-party solvers using Foundry APIs, or build custom recommendation engines for dynamic plans in the long term and to identify incremental opportunities in real time.",
     },
-  ] satisfies Feature[],
+  ] as Feature[],
 };
 
 /* -------------------------------- spotlight ------------------------------- */
