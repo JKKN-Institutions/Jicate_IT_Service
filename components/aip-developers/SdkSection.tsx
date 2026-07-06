@@ -39,32 +39,6 @@ export function SdkSection() {
         <div className="mt-3xl">
           <FeatureCards cards={sdkSection.cards} variant="mono" cols={3} />
         </div>
-
-        <div className="mt-3xl grid-12 gap-y-l">
-          {sdkSection.links.map((link, i) => (
-            <Reveal
-              index={i}
-              key={link.title}
-              className="col-span-12 tablet:col-span-4"
-            >
-              <a
-                href={link.href}
-                className="group flex h-full flex-col gap-xs border border-offwhite/15 p-l transition-colors duration-200 hover:border-offwhite/40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-offwhite"
-              >
-                <span className="flex items-center justify-between gap-s font-display text-headline font-normal text-offwhite">
-                  {link.title}
-                  <span
-                    aria-hidden
-                    className="transition-transform duration-[var(--duration-micro)] group-hover:translate-x-[0.22em] motion-reduce:transform-none"
-                  >
-                    ↗
-                  </span>
-                </span>
-                <span className="text-body-sm text-offwhite/60">{link.body}</span>
-              </a>
-            </Reveal>
-          ))}
-        </div>
       </Container>
     </Section>
   );

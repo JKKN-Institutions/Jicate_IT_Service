@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { renaissance } from "@/content/american-tech-fellowship";
 
-import { SectionHeading, InkLink } from "./parts";
+import { SectionHeading } from "./parts";
 
 /**
  * "A New Technological Renaissance" — a section heading, then a long essay laid
@@ -35,7 +35,6 @@ export function Renaissance() {
                 {p}
               </p>
             ))}
-            <InkLink href={renaissance.link.href}>{renaissance.link.label}</InkLink>
           </Reveal>
         </div>
       </Container>

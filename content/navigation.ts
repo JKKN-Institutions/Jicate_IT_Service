@@ -76,41 +76,17 @@ export const megaMenuGroups: MegaMenuGroup[] = [
     links: [
       { label: "Generate Alpha", href: "/aip" },
       { label: "Offerings", href: "/offerings" },
-      { label: "Impact Studies", href: "/case-studies", arrow: "drillin" },
-      {
-        label: "Documentation",
-        href: "https://docs.jicate.com",
-        arrow: "external",
-        external: true,
-      },
-      {
-        label: "Careers",
-        href: "/company/careers",
-        arrow: "external",
-        external: true,
-      },
-      { label: "Newsroom", href: "/company/newsroom" },
-      { label: "Jicate Explained", href: "/company/about" },
+      { label: "Jicate Explained", href: "/jicate-explained" },
+      { label: "Search", href: "/search" },
     ],
   },
   {
     heading: "Quick Links",
     links: [
-      { label: "About Jicate", href: "/company/about" },
-      { label: "Blog", href: "/resources/blog" },
-      { label: "Investor Relations", href: "/company/investors" },
-      { label: "Letters from the CEO", href: "/company/newsroom" },
-      { label: "Privacy & Civil Liberties", href: "/legal/privacy" },
+      { label: "About Jicate", href: "/about" },
       { label: "Information Security", href: "/information-security" },
-      { label: "Cloud Partners", href: "/company/partners" },
-      {
-        label: "Jicate Learning",
-        href: "https://learn.jicate.com",
-        arrow: "external",
-        external: true,
-      },
-      { label: "Customer Success Services", href: "/services/support" },
       { label: "Contact", href: "/contact", arrow: "drillin" },
+      { label: "Get Started", href: "/enquiry-form", arrow: "drillin" },
     ],
   },
 ];
@@ -124,8 +100,8 @@ export const megaMenuFeatured: FeaturedCard[] = [
     headline: "The latest from Jicate",
     caption: "News, announcements, and updates from across the company.",
     link: {
-      label: "Visit the Newsroom",
-      href: "/company/newsroom",
+      label: "Read Jicate Explained",
+      href: "/jicate-explained",
       arrow: "drillin",
     },
   },
@@ -133,8 +109,8 @@ export const megaMenuFeatured: FeaturedCard[] = [
     headline: "See the impact in the field",
     caption: "How teams put Jicate to work on their hardest problems.",
     link: {
-      label: "View Impact Studies",
-      href: "/case-studies",
+      label: "Explore our Offerings",
+      href: "/offerings",
       arrow: "drillin",
     },
   },
@@ -153,7 +129,7 @@ export const footerColumns: FooterColumn[] = [
   {
     heading: "OFFERINGS",
     links: [
-      { label: "American Tech Fellowship", href: "/american-tech-fellowship" },
+      { label: "Indian Tech Fellowship", href: "/american-tech-fellowship" },
       { label: "Anti-Money Laundering", href: "/anti-money-laundering" },
       { label: "Automotive & Mobility", href: "/automotive-mobility" },
       { label: "Construction", href: "/construction" },
@@ -203,7 +179,7 @@ export const footerColumns: FooterColumn[] = [
 ];
 
 /** Left-rail language switcher (visual toggle — first entry is active). */
-export const footerLanguages = ["US", "UK", "JP"] as const;
+export const footerLanguages = ["IN"] as const;
 
 /** Left-rail cookie-preferences link label. */
 export const cookiesSettingsLabel = "Cookies Settings";
@@ -229,7 +205,7 @@ export const socialLinks: SocialLink[] = [
 export const legal: LegalInfo = {
   copyright: "© 2026 Jicate IT Service. All rights reserved.",
   tagline: "Engineered to stay up.",
-  locale: "US / UK / JP",
+  locale: "IN",
   links: [
     { label: "Privacy Policy", href: "/legal/privacy" },
     { label: "Terms of Service", href: "/legal/terms" },

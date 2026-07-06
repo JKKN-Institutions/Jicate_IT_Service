@@ -10,10 +10,14 @@ import { GiantHeading, InkLink } from "./parts";
  */
 export function Hero() {
   return (
-    <Section tone="dark" className="bg-near-black pt-2xl" aria-label={hero.title}>
+    <Section tone="dark" className="bg-near-black !pt-[140px]" aria-label={hero.title}>
       <Container>
         <div className="grid-12 items-start gap-y-xl">
-          <GiantHeading as="h1" size="hero" className="col-span-12 desktop:col-span-7">
+          <GiantHeading
+            as="h1"
+            size="hero"
+            className="col-span-12 desktop:col-span-7 text-[clamp(2rem,1rem+4vw,4.25rem)]"
+          >
             {hero.title}
           </GiantHeading>
 

@@ -24,7 +24,7 @@ export function Statement() {
           <img
             src={statement.image}
             alt={statement.alt}
-            className="w-full select-none rounded-[6px]"
+            className="mx-auto block w-full max-w-[880px] select-none rounded-[6px]"
             draggable={false}
           />
         </Reveal>

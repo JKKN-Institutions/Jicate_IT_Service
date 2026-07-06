@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { spotlight } from "@/content/dynamic-scheduling";
 
-import { SectionHeading, InkLink } from "./parts";
+import { SectionHeading } from "./parts";
 
 /**
  * "Spotlight" — section heading, a feature title, a media figure (the
@@ -24,7 +24,6 @@ export function Spotlight() {
             </h3>
             <div className="flex flex-col gap-[20px]">
               <p className="max-w-[48ch] text-body leading-[1.45] text-ink-medium">{spotlight.body}</p>
-              <InkLink href={spotlight.link.href}>{spotlight.link.label}</InkLink>
             </div>
           </Reveal>
 

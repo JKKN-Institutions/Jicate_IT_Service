@@ -53,7 +53,6 @@ export const subNav: CTA[] = [
   { label: "Modular & Interoperable", href: "#modular-interoperable" },
   { label: "Build Alpha, Not Infra", href: "#alpha-not-infra" },
   { label: "Speed to Deploy", href: "#rapid-deploying" },
-  { label: "View Docs ↗", href: "#" },
 ];
 
 /* --------------------------------- hero ---------------------------------- */

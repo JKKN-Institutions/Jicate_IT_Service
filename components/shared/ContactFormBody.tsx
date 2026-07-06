@@ -24,7 +24,6 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
  */
 export interface ContactFormBodyProps {
   submitLabel?: string;
-  privacyHref?: string;
 }
 
 const fieldCls =
@@ -41,7 +40,6 @@ const LEADING = [
 
 export function ContactFormBody({
   submitLabel = "Submit",
-  privacyHref = "/legal/privacy",
 }: ContactFormBodyProps) {
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string>("");
@@ -254,9 +252,9 @@ export function ContactFormBody({
 
       <p className="mt-[8px] text-center text-body-sm text-ink-light">
         Please see our{" "}
-        <a href={privacyHref} className="underline decoration-ink/30 underline-offset-2 hover:decoration-ink">
+        <span className="underline decoration-ink/30 underline-offset-2">
           Privacy Policy
-        </a>{" "}
+        </span>{" "}
         regarding how we will handle this information.
       </p>
     </form>

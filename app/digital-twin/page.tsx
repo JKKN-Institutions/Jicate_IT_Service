@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
 import {
-  SubNav,
   Hero,
   FeatureBlocks,
   Expressed,
@@ -21,7 +20,6 @@ export const metadata: Metadata = {
 export default function DigitalTwinPage() {
   return (
     <main className="flex-1 bg-canvas">
-      <SubNav />
       <Hero />
       <FeatureBlocks />
       <Expressed />

@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { militaryCommands as s } from "@/content/metaconstellation";
 
-import { GiantHeading, SectionIndex, InkLink } from "./parts";
+import { GiantHeading, SectionIndex } from "./parts";
 
 /**
  * 06 — "Powering Insights Across Military Commands". Numbered divider, giant
@@ -36,7 +36,6 @@ export function MilitaryCommands() {
             <p className="font-display text-display font-normal leading-[1.12] tracking-[-0.02em] text-offwhite">
               {s.caption}
             </p>
-            <InkLink href={s.link.href}>{s.link.label}</InkLink>
           </Reveal>
         </div>
       </Container>

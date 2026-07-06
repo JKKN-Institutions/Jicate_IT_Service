@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { industries, useCases } from "@/content/marketplace";
 
-import { MidHeading, InkLink } from "./parts";
+import { MidHeading } from "./parts";
 
 /**
  * "Industries" + "Example Use Cases" — two side-by-side columns, each a 34px
@@ -34,11 +34,11 @@ export function IndustriesUseCases() {
             <MidHeading>{useCases.heading}</MidHeading>
             <ul className="flex flex-col gap-[12px]">
               {useCases.items.map((item) => (
-                <li key={item.label} className="flex items-baseline gap-[10px]">
+                <li key={item.label} className="flex items-baseline gap-[10px] text-body text-ink">
                   <span aria-hidden className="text-ink-light">
                     ↳
                   </span>
-                  <InkLink href={item.href}>{item.label}</InkLink>
+                  {item.label}
                 </li>
               ))}
             </ul>

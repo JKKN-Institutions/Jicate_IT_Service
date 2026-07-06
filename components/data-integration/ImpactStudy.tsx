@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { impactStudy } from "@/content/data-integration";
 
-import { GiantHeading, InkLink } from "./parts";
+import { GiantHeading } from "./parts";
 
 /**
  * Impact study — "The Challenge". A giant heading and narrative on the left,
@@ -48,14 +48,6 @@ export function ImpactStudy() {
                 </div>
               ))}
             </dl>
-
-            <ul className="flex flex-col gap-[10px]">
-              {impactStudy.tags.map((t) => (
-                <li key={t.label}>
-                  <InkLink href={t.href}>{t.label}</InkLink>
-                </li>
-              ))}
-            </ul>
           </Reveal>
         </div>
       </Container>

@@ -72,10 +72,6 @@ export const keyFeatures = {
     {
       title: "Point and click problem formulation.",
       body: "Encode your operational constraints and define permitted and optimal behavior in schedules with a point-and-click, low-code interface. Configure temporal and condition-based logic in the Foundry Rules app.",
-      links: [
-        { label: "Foundry Rules", href: "#foundry-rules" },
-        { label: "Foundry Ontology", href: "#foundry-ontology" },
-      ],
     },
     {
       title: "Full impact visibility and response.",

@@ -10,7 +10,7 @@ import { GiantHeading } from "./parts";
  */
 export function AtfHero() {
   return (
-    <Section className="!pb-[40px] !pt-[80px] desktop:!pt-[100px]" aria-label="The American Tech Fellowship">
+    <Section className="!pb-[40px] !pt-[80px] desktop:!pt-[100px]" aria-label="The Indian Tech Fellowship">
       <Container>
         <Reveal className="grid items-start gap-l desktop:grid-cols-[1fr_320px] desktop:gap-[60px]">
           <GiantHeading className="max-w-[12ch]">{hero.title}</GiantHeading>

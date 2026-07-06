@@ -42,7 +42,7 @@ export interface CaseStudy {
 export const hero = {
   title: "Foundry Process Mining & Automation",
   subcopy: "Mine processes. Reveal inefficiencies. Drive change. Continuously optimize.",
-  cta: { label: "Get in touch", href: "#get-in-touch" } as CTA,
+  cta: { label: "Get in touch", href: "/enquiry-form" } as CTA,
   posterLabel: "Process Mining & Automation",
 };
 
@@ -89,20 +89,22 @@ export const howItWorks = {
     {
       title: "Understand.",
       body: "Mine processes to produce a point-and-click visualization and model the ideal path. An easy-to-navigate view of expected behavior and its deviations lets you investigate at any level of granularity — from individual steps to high-level trends.",
-      images: ["/process-mining/Product_Images-03.png", "/process-mining/Product_Images-02.png"],
+      images: ["/process-mining/Product_Images-03.png"],
     },
     {
       title: "Analyze.",
       body: "With the Ontology, query related objects from across your business to understand the drivers of unexpected process transitions. Rapidly analyze deviations, diagnose bottlenecks, and perform root-cause analysis.",
+      images: ["/process-mining/Product_Images-02.png"],
     },
     {
       title: "Act.",
       body: "Process orchestration lets you take action to address inefficiencies, writing back to external systems to fix problems at their source — while keeping all your systems in sync.",
-      images: ["/process-mining/Product_Images-05.png", "/process-mining/Product_Images-06.png"],
+      images: ["/process-mining/Product_Images-05.png"],
     },
     {
       title: "Automate.",
       body: "Continuously optimize your processes with custom triggers for automatic action when steps are completed, milestones are met, or thresholds are breached.",
+      images: ["/process-mining/Product_Images-06.png"],
     },
   ] as Step[],
 };
@@ -181,13 +183,6 @@ export const exampleIndustries = {
 export const exampleUseCases = {
   heading: "Example Use Cases",
   items: ["Purchase-to-pay", "Quality control", "Export control", "Customer journeys", "Order-to-cash"],
-};
-
-/* ------------------------------ White paper ------------------------------ */
-
-export const whitepaper = {
-  heading: "Learn More: Foundry Process Mining & Automation White Paper",
-  cta: { label: "Download", href: "#" } as CTA,
 };
 
 /* ------------------------- Reference architecture ------------------------ */

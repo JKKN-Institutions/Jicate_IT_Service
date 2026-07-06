@@ -44,11 +44,19 @@ export function HowItWorks() {
                 aria-selected={i === active}
                 onClick={() => setActive(i)}
                 className={cn(
-                  "border-t border-ink/12 py-[16px] text-left text-body-lg transition-colors duration-[var(--duration-micro)]",
+                  "flex items-center justify-between gap-s border-b border-ink/12 py-[16px] text-left text-body-lg transition-colors duration-[var(--duration-micro)]",
                   i === active ? "text-ink" : "text-ink-light hover:text-ink",
                 )}
               >
-                {s.tab}
+                <span className="inline-flex items-baseline gap-[6px]">
+                  {s.tab}
+                  <sup className="font-mono text-[0.6em] text-ink-light">
+                    {String(i + 1).padStart(2, "0")}
+                  </sup>
+                </span>
+                {i === active ? (
+                  <span aria-hidden className="h-[6px] w-[6px] shrink-0 rounded-full bg-ink" />
+                ) : null}
               </button>
             ))}
           </div>
@@ -56,10 +64,13 @@ export function HowItWorks() {
           {/* Active content */}
           <div className="flex flex-col gap-[28px]">
             <div className="flex flex-col gap-[20px]">
-              <span className="font-mono text-caption uppercase tracking-[0.06em] text-ink-light">{step.eyebrow}</span>
+              <span className="font-mono text-caption uppercase tracking-[0.06em] text-ink-light">
+                {String(active + 1).padStart(2, "0")} — {step.eyebrow}
+              </span>
               {step.lines.map((line, i) => (
-                <p key={i} className="max-w-[60ch] text-body-lg leading-[1.4] text-ink">
-                  {line}
+                <p key={i} className="flex max-w-[64ch] gap-[14px] text-body-lg leading-[1.4] text-ink">
+                  <span aria-hidden className="shrink-0 text-ink-light">↳</span>
+                  <span>{line}</span>
                 </p>
               ))}
             </div>

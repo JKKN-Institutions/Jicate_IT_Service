@@ -10,7 +10,7 @@ import { GiantHeading } from "./parts";
 export function Hero() {
   return (
     <Section className="bg-canvas pt-2xl" aria-label={hero.title}>
-      <Container>
+      <Container className="pt-[64px]">
         <div className="grid-12 items-start gap-y-xl">
           <GiantHeading as="h1" size="hero" className="col-span-12 desktop:col-span-7">
             {hero.title}

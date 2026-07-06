@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import {
   AmHero,
   AboutWork,
-  Partners,
   Offerings,
   Impact,
   DefineFuture,
@@ -19,7 +18,6 @@ export default function AutomotiveMobilityPage() {
     <main className="flex-1">
       <AmHero />
       <AboutWork />
-      <Partners />
       <Offerings />
       <Impact />
       <DefineFuture />

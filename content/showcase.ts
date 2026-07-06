@@ -22,21 +22,21 @@ export const showcase: Showcase = {
       id: "shipos",
       tab: "ShipOS",
       earmark: "ShipOS",
-      title: "Rebuilding American Sea Power",
+      title: "Rebuilding Indian Sea Power",
       href: "#",
       image:
         "https://images.ctfassets.net/xrfr7uokpv1b/7M8IyM7xipV1h9mdqIUZpB/5f53ac4d162dbe9c9153b546ae92cee4/shutterstock_690389866.jpg",
-      alt: "Rebuilding American Sea Power",
+      alt: "Rebuilding Indian Sea Power",
     },
     {
       id: "warp-speed",
       tab: "Warp Speed",
       earmark: "Warp Speed",
-      title: "The Manufacturing OS for American Re-Industrialization",
+      title: "The Manufacturing OS for Indian Re-Industrialization",
       href: "#",
       image:
         "https://images.ctfassets.net/xrfr7uokpv1b/44a39QNvwOiXh46KptFpLS/f1ef86734a4f276ccfae71a8d2e49027/WarpSpeed___1_.png",
-      alt: "The Manufacturing OS for American Re-Industrialization",
+      alt: "The Manufacturing OS for Indian Re-Industrialization",
     },
     {
       id: "systems-migration",
@@ -63,7 +63,7 @@ export const showcase: Showcase = {
       tab: "AIPCon 9",
       earmark: "AIPCon 9",
       title:
-        "How Foundry and AIP Create Magic on the Front Lines: 55 Speakers Including U.S. Navy, CDAO, GE Aerospace, and more",
+        "How Foundry and AIP Create Magic on the Front Lines: 55 Speakers Including Indian Navy, CDAO, GE Aerospace, and more",
       href: "https://www.youtube.com/playlist?list=PLmKm_LhXXgqQaVJ2k-YffD3SRzMygbSYK",
       image:
         "https://images.ctfassets.net/xrfr7uokpv1b/7GpnCN76IYKSNcG16Rlx6/9aefb430493f84c10c152386beafe209/007-Dr.Alex_Karp-AIPCon9__1_.jpg",
@@ -103,11 +103,11 @@ export const showcase: Showcase = {
       id: "chain-reaction",
       tab: "Chain Reaction",
       earmark: "Chain Reaction",
-      title: "The Operating System for American AI Infrastructure",
+      title: "The Operating System for Indian AI Infrastructure",
       href: "#",
       image:
         "https://images.ctfassets.net/xrfr7uokpv1b/3BDq1fdUIfzwqG691uZkgy/3ca97383cf78d39c8bee3545c2ecb45d/Asset_2_4x.png",
-      alt: "The Operating System for American AI Infrastructure",
+      alt: "The Operating System for Indian AI Infrastructure",
     },
   ],
 };

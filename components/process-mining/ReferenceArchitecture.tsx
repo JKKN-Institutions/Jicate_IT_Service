@@ -12,7 +12,7 @@ export function ReferenceArchitecture() {
     <Section className="bg-canvas" aria-label={ra.heading}>
       <Container>
         <Reveal>
-          <GiantHeading className="max-w-[24ch]">{ra.heading}</GiantHeading>
+          <GiantHeading className="max-w-[24ch] text-[clamp(2rem,1rem+4.6vw,4.5rem)]">{ra.heading}</GiantHeading>
         </Reveal>
         <Reveal index={1} className="mt-2xl">
           {/* eslint-disable-next-line @next/next/no-img-element */}

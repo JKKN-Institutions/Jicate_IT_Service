@@ -6,7 +6,6 @@ import {
   RealTimeOntology,
   UseCases,
   InAction,
-  Whitepaper,
   ContactForm,
 } from "@/components/streaming";
 
@@ -24,7 +23,6 @@ export default function StreamingPage() {
       <RealTimeOntology />
       <UseCases />
       <InAction />
-      <Whitepaper />
       <ContactForm />
       {/* The shared site Footer renders from the root layout. */}
     </main>

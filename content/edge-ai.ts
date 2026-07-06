@@ -46,7 +46,7 @@ export const subNav = {
 export const hero = {
   title: "Jicate Edge AI",
   subcopy: "Unparalleled technology. Pushed to the edge.",
-  cta: { label: "Get the Technical Whitepaper", href: "#whitepaper" } as CTA,
+  cta: { label: "Get Touch With Us", href: "#whitepaper" } as CTA,
   // No hero clip shipped — render a play-button poster placeholder.
   posterLabel: "Edge AI",
   watch:
@@ -144,7 +144,7 @@ export const useCasesSection = {
 
 export const whitepaper = {
   id: "whitepaper",
-  heading: "Download the Whitepaper",
+  heading: "Get Touch With Us",
   fields: [
     { name: "firstName", label: "FIRST NAME:", type: "text", required: true },
     { name: "lastName", label: "LAST NAME:", type: "text", required: true },

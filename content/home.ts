@@ -295,7 +295,7 @@ export const testimonials: Testimonial[] = [
     quote:
       "We had a great chassis of the car, but our engine was underpowered. So we went to Jicate because we want the best engine out there. In three months, the teams built what took us three years before.",
     clientName: "HEINEKEN",
-    role: "Laurens van de Rotte · COO, Heineken USA",
+    role: "Laurens van de Rotte · COO, Heineken India",
   },
 ];
 
@@ -304,12 +304,12 @@ export const testimonials: Testimonial[] = [
 export const splitCTA: SplitCTAHalf[] = [
   {
     label: "Request a Demo",
-    href: "/contact/demo",
+    href: "/enquiry-form",
     tone: "light",
   },
   {
     label: "Start Building",
-    href: "/get-started",
+    href: "/enquiry-form",
     tone: "dark",
   },
 ];

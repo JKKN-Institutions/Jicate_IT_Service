@@ -57,7 +57,7 @@ export interface FeatureBand {
 export const hero = {
   title: "Foundry Data Integration",
   body: "Accelerate pipeline development and management with built-in automation. Deliver the full spectrum of use cases atop a trusted foundation, solving problems as quickly as business needs evolve.",
-  cta: { label: "Get a Demo", href: "/get-started" } satisfies CTA,
+  cta: { label: "Get a Demo", href: "/enquiry-form" } satisfies CTA,
 };
 
 /* ------------------------------- video band ------------------------------- */
@@ -82,21 +82,18 @@ export const productCards: ProductCard[] = [
     alt: "Hyperauto pipeline generation",
     title: "Groundbreaking Time to Value.",
     body: "Unlock complex data estates in hours. Jicate Hyperauto enables automatic and dynamic pipeline generation for the most common ERP, CRM, and SQL stores.",
-    link: { label: "Learn more about Jicate Hyperauto", href: "#hyperauto" },
   },
   {
     image: "/data-integration/Asset_107.png",
     alt: "Pipeline Builder authoring",
     title: "Treat Data Like Code.",
     body: "Foundry offers both code-based and no-code interfaces for authoring production-grade pipelines. In both cases, Foundry treats data like code — bringing the power of git-style branching, merging, and rich change management to data pipelines.",
-    link: { label: "Get to know Pipeline Builder", href: "#pipeline-builder" },
   },
   {
     image: "/data-integration/Asset_105.png",
     alt: "Open connectors and interoperability",
     title: "Built Open.",
     body: "Foundry is an open platform that connects to your existing data lakes, warehouses, lakehouses, data science environments, and BI tools. Beyond open interfaces, native connectors move every type of data and metadata — structured, unstructured, or streaming — in and out without lock-in.",
-    link: { label: "See how Foundry interoperates with your architecture", href: "#interoperate" },
   },
   {
     image: "/data-integration/Asset_110.png",
@@ -145,7 +142,6 @@ export const featureBands: FeatureBand[] = [
     title: "Global Collaboration. Universal Impact.",
     image: "/data-integration/Foundry_Data_Catalog.png",
     alt: "Foundry Data Catalog search",
-    imageLink: { label: "Foundry Data Catalog", href: "#data-catalog" },
     features: [
       {
         eyebrow: "TREAT DATA LIKE CODE",
@@ -166,7 +162,6 @@ export const featureBands: FeatureBand[] = [
     title: "SQL. And Much More.",
     image: "/data-integration/Time_Series_1.png",
     alt: "Quiver time-series analytics",
-    imageLink: { label: "Quiver", href: "#quiver" },
     features: [
       {
         eyebrow: "BROAD SQL CONNECTIVITY",

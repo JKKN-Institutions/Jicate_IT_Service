@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function EnquiryFormPage() {
   return (
-    <main className="flex-1 bg-canvas pt-[80px] desktop:pt-[100px]">
+    <main className="flex-1 bg-canvas pt-[24px] desktop:pt-[32px]">
       <SiteContactForm title="How can we help?" id="enquiry-form" />
       {/* Header + Footer render from the root layout. */}
     </main>

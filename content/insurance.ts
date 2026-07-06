@@ -108,18 +108,18 @@ export const transformation = {
       watchLabel: "Watch: Chief Data Officer at the AI Conference",
     },
     {
-      tab: "At a large European Insurer",
-      partner: "European Insurer",
+      tab: "At a large Indian Insurer",
+      partner: "Indian Insurer",
       quote: "“The platform gave our teams a single operating picture — decisions that used to take weeks now take days.”",
       overview:
-        "A large European insurer deployed the platform to integrate underwriting, claims, and actuarial data into a single environment, accelerating decisions while preserving strict governance and compliance.",
+        "A large Indian insurer deployed the platform to integrate underwriting, claims, and actuarial data into a single environment, accelerating decisions while preserving strict governance and compliance.",
       points: [
         { strong: "Faster underwriting", body: "Automated data extraction and augmented decision-making compressed submission turnaround times across lines of business." },
         { strong: "Stronger compliance", body: "Full decision lineage and auditability gave risk and compliance teams confidence in every automated action." },
       ],
       image: "/insurance/image (7).png",
       imageAlt: "Abstract product visualization",
-      watchLabel: "Watch: European Insurer case study",
+      watchLabel: "Watch: Indian Insurer case study",
     },
     {
       tab: "At a Reinsurer",

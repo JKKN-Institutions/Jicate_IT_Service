@@ -34,7 +34,7 @@ import styles from "./ProductCarousel.module.css";
  * clickable without nesting a second anchor inside an anchor.
  */
 export function ProductCarousel() {
-  const { cards, ctaLabel, ctaHref } = showcase;
+  const { cards } = showcase;
 
   const sectionRef = useRef<HTMLElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
@@ -247,15 +247,6 @@ export function ProductCarousel() {
               </button>
             ))}
           </div>
-
-          <a
-            className={`${styles.pill} ${styles.headerCta}`}
-            href={ctaHref}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {ctaLabel}
-          </a>
         </div>
 
         <div className={styles.viewport}>

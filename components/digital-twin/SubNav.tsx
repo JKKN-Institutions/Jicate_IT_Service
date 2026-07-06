@@ -11,7 +11,7 @@ export function SubNav() {
   return (
     <nav
       aria-label="Foundry"
-      className="sticky top-nav z-30 border-b border-ink/10 bg-canvas/90 backdrop-blur-sm"
+      className="sticky top-[88px] z-30 border-b border-ink/10 bg-canvas/90 backdrop-blur-sm"
     >
       <Container>
         <div className="flex flex-wrap items-center gap-x-l gap-y-xs py-s">

@@ -7,7 +7,12 @@ import { contactForm } from "@/content/pipeline-builder";
  * styling, and behaviour are identical everywhere.
  */
 export function GetStarted() {
-  return <SiteContactForm title={contactForm.title} />;
+  return (
+    <SiteContactForm
+      title={contactForm.title}
+      titleClassName="text-[clamp(1.75rem,4vw,3.333rem)]/[1.15]"
+    />
+  );
 }
 
 export default GetStarted;

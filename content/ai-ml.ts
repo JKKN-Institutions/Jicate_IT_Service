@@ -180,14 +180,14 @@ export const ctaCards: {
     eyebrow: "GET STARTED",
     title: "Build with Jicate AI",
     body: "Bring a use case. We'll scope it, prototype it, and put a working AI workflow in front of your team.",
-    link: { label: "Start building", href: "/get-started", arrow: "cta" },
+    link: { label: "Start building", href: "/enquiry-form", arrow: "cta" },
     video: "/ai-ml-page/sign-up.mp4",
   },
   {
     eyebrow: "SEE IT LIVE",
     title: "Explore Jicate AI now",
     body: "Walk through the platform with our engineers and see how it maps onto your operations.",
-    link: { label: "Book a demo", href: "/contact/demo", arrow: "cta" },
+    link: { label: "Book a demo", href: "/enquiry-form", arrow: "cta" },
     video: "/ai-ml-page/explore.mp4",
   },
 ];

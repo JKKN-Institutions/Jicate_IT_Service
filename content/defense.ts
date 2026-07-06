@@ -69,8 +69,8 @@ export const discover = {
   link: { label: "Explore UK Defence", href: "#contact" } satisfies CTA,
   services: [
     { label: "US Army", href: "#contact" },
-    { label: "U.S. Air & Space Force", href: "#contact" },
-    { label: "U.S. Navy & Marines", href: "#contact" },
+    { label: "Indian Air & Space Force", href: "#contact" },
+    { label: "Indian Navy & Marines", href: "#contact" },
   ] satisfies ServiceRow[],
 };
 

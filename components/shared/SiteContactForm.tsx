@@ -1,5 +1,6 @@
 import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
+import { cn } from "@/lib/utils";
 
 import { ContactFormBody } from "./ContactFormBody";
 
@@ -17,25 +18,26 @@ export interface SiteContactFormProps {
   id?: string;
   /** Submit button label. */
   submitLabel?: string;
-  /** Privacy Policy link target. */
-  privacyHref?: string;
+  /** Optional per-page override for the heading classes (e.g. a smaller size);
+   *  omitted everywhere else so the default heading size is unchanged. */
+  titleClassName?: string;
 }
 
 export function SiteContactForm({
   title,
   id = "contact",
   submitLabel = "Submit",
-  privacyHref = "/legal/privacy",
+  titleClassName,
 }: SiteContactFormProps) {
   return (
     <Section id={id} className="bg-canvas !py-[80px] scroll-mt-[140px]" aria-label={title}>
       <Container>
         <Reveal className="mx-auto flex max-w-[760px] flex-col">
-          <h2 className="text-center font-display font-normal leading-[1.15] tracking-[-0.02em] text-ink text-[clamp(2.5rem,6.4vw,5.5556rem)]">
+          <h2 className={cn("text-center font-display font-normal leading-[1.15] tracking-[-0.02em] text-ink text-[clamp(2.5rem,6.4vw,5.5556rem)]", titleClassName)}>
             {title}
           </h2>
 
-          <ContactFormBody submitLabel={submitLabel} privacyHref={privacyHref} />
+          <ContactFormBody submitLabel={submitLabel} />
         </Reveal>
       </Container>
     </Section>

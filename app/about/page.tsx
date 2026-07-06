@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { Hero, WhatWeDo, WhereWeGoing } from "@/components/about";
+import { SiteContactForm } from "@/components/shared/SiteContactForm";
 
 export const metadata: Metadata = {
   title: "About",
@@ -14,6 +15,7 @@ export default function AboutPage() {
       <Hero />
       <WhatWeDo />
       <WhereWeGoing />
+      <SiteContactForm title="Get in touch" />
       {/* The shared site Footer renders from the root layout. */}
     </main>
   );

@@ -111,7 +111,7 @@ export const whereWeWork = {
       tab: "RAN Energy Savings",
       no: "01",
       lead: "Reduce power usage in your network — without impacting your customers.",
-      body: "Energy Optimizer powered by Jicate is a cloud-based, scalable SaaS that empowers mobile operators to navigate energy-consumption challenges with data-driven decisions, reducing power usage and carbon emissions. It is delivered in partnership with a RAN specialist that has more than three decades of experience building, operating, and optimizing radio access networks (RAN) at major European CSPs.",
+      body: "Energy Optimizer powered by Jicate is a cloud-based, scalable SaaS that empowers mobile operators to navigate energy-consumption challenges with data-driven decisions, reducing power usage and carbon emissions. It is delivered in partnership with a RAN specialist that has more than three decades of experience building, operating, and optimizing radio access networks (RAN) at major Indian CSPs.",
       subhead: "Energy Optimizer Powered by Jicate",
       subleadline: "Minimize power usage up to 15% per site in your Radio Area Networks",
       bullets: [
@@ -236,8 +236,8 @@ export const partnerships = {
       link: "Read More",
     },
     {
-      heading: "Jicate & a European Telecom Leader",
-      body: "Leaders from Jicate and a major European telecom operator discuss software, sovereignty, and the future of connectivity on stage at a leading technology conference in Europe.",
+      heading: "Jicate & an Indian Telecom Leader",
+      body: "Leaders from Jicate and a major Indian telecom operator discuss software, sovereignty, and the future of connectivity on stage at a leading technology conference in India.",
       image: "/telecommunications/shutterstock_1606674793 (1).jpg",
       imageAlt: "Leaders speaking at a technology conference",
       link: "Play Video",

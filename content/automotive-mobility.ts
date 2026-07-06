@@ -27,14 +27,6 @@ export interface CTA {
   href: string;
 }
 
-export interface PartnerCard {
-  eyebrow: string;
-  partner: string;
-  title: string;
-  body: string;
-  cta: string;
-}
-
 export interface Offering {
   title: string;
   body: string;
@@ -76,42 +68,6 @@ export const aboutWork = {
     "Placeholder paragraph. Describe how OEMs, suppliers, and dealers unlock value quickly to accelerate growth.",
   ],
   link: { label: "Learn more about our offerings.", href: "#offerings" } satisfies CTA,
-};
-
-/* ------------------------------- our partners ----------------------------- */
-
-export const partners = {
-  heading: "Our Partners",
-  cards: [
-    {
-      eyebrow: "AUTOMOTIVE // IMPACT",
-      partner: "Partner One",
-      title: "Placeholder case-study headline one.",
-      body: "Placeholder case-study summary. Replace with your own partner story.",
-      cta: "Learn more",
-    },
-    {
-      eyebrow: "AUTOMOTIVE // IMPACT",
-      partner: "Partner Two",
-      title: "Placeholder case-study headline two.",
-      body: "Placeholder case-study summary. Replace with your own partner story.",
-      cta: "Learn more",
-    },
-    {
-      eyebrow: "AVIATION // IMPACT",
-      partner: "Partner Three",
-      title: "Placeholder case-study headline three.",
-      body: "Placeholder case-study summary. Replace with your own partner story.",
-      cta: "Learn more",
-    },
-    {
-      eyebrow: "AUTOMOTIVE // IMPACT",
-      partner: "Partner Four",
-      title: "Placeholder case-study headline four.",
-      body: "Placeholder case-study summary. Replace with your own partner story.",
-      cta: "Learn more",
-    },
-  ] satisfies PartnerCard[],
 };
 
 /* ------------------------------ our offerings ----------------------------- */

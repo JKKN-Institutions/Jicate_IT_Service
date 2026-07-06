@@ -59,7 +59,7 @@ export const hero = {
   title: "Foundry Digital Twin",
   subcopy:
     "Power next-generation operations with semantic data, AI/ML-based twins, and twin-based simulations.",
-  cta: { label: "Get a Demo", href: "#get-in-touch" } as CTA,
+  cta: { label: "Get a Demo", href: "/enquiry-form" } as CTA,
   media: "/digital-twin/foundry_1.gif",
   mediaAlt: "Artistic rendering of the Jicate Digital Twin",
 };
@@ -80,14 +80,14 @@ export const featureBlocks: FeatureBlock[] = [
     alt: "Operational AI and ML artwork",
     title: "Operational AI/ML.",
     body: "Orchestrate the flow of data and models through real operational workflows. Give data scientists, ML engineers, business owners, and operators one shared substrate to build on together.",
-    link: { label: "Get to know Jicate AI/ML", href: "#" },
+    link: { label: "Get to know Jicate AI/ML", href: "/contact" },
   },
   {
     image: "/digital-twin/3-Read_Write_Apps.png",
     alt: "Read-write applications artwork",
     title: "Power Read-Write Applications.",
     body: "Move past read-only dashboards. Build applications that read and write — taking real-world actions back into the systems that run your business.",
-    link: { label: "Learn how digital twins provide connectivity at scale", href: "#" },
+    link: { label: "Talk to a Jicate expert", href: "/contact" },
   },
   {
     image: "/digital-twin/4-Next_Gen_Analytics.png",

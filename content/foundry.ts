@@ -130,7 +130,7 @@ export const impact = {
         },
         {
           eyebrow: "Global Solar Operator",
-          body: "A global solar operator has deployed Jicate at their solar plant in Spain — and several other solar energy sites — to radically digitize production processes and reduce plant downtime.",
+          body: "A global solar operator has deployed Jicate at their solar plant in India — and several other solar energy sites — to radically digitize production processes and reduce plant downtime.",
           image: "/foundry/Screen_Shot_2023-01-17_at_4.55.30_PM__1_.png",
           imageAlt: "Solar energy plant digitization",
         },

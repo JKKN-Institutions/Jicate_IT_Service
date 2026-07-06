@@ -21,7 +21,7 @@ export function GiantHeading({
     <Tag
       className={cn(
         "font-display font-normal tracking-[-0.02em] text-ink",
-        "text-[clamp(2.5rem,6.95vw,5.5556rem)]/[1.15]",
+        "text-[clamp(1.75rem,4vw,3.333rem)]/[1.15]",
         className,
       )}
     >

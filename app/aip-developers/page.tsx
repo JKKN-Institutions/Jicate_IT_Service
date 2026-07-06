@@ -9,7 +9,6 @@ import {
   FocusAlpha,
   RapidDeploy,
   Closing,
-  FinalCTA,
 } from "@/components/aip-developers";
 
 export const metadata: Metadata = {
@@ -29,7 +28,6 @@ export default function AipDevelopersPage() {
       <FocusAlpha />
       <RapidDeploy />
       <Closing />
-      <FinalCTA />
       {/* The shared site Footer renders from the root layout. */}
     </main>
   );

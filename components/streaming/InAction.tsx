@@ -2,12 +2,12 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { inAction } from "@/content/streaming";
 
-import { GiantHeading, InkLink } from "./parts";
+import { GiantHeading } from "./parts";
 
 /**
  * Foundry Streaming in Action — giant heading over two case studies, each a
- * 2-column row: a video on one side and the title, body, link, and a pull-quote
- * on the other. Light Section.
+ * 2-column row: a video on one side and the title, body, and a pull-quote on
+ * the other. Light Section.
  */
 export function InAction() {
   return (
@@ -37,7 +37,6 @@ export function InAction() {
                   {study.title}
                 </h3>
                 <p className="text-body-lg text-ink-light">{study.body}</p>
-                <InkLink href={study.link.href}>{study.link.label}</InkLink>
                 <blockquote className="mt-s flex flex-col gap-s">
                   <p className="font-display text-headline font-normal leading-[1.25] text-ink">
                     “{study.quote}”

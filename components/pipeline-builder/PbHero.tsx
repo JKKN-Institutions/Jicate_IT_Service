@@ -14,7 +14,10 @@ export function PbHero() {
     <Section className="!pb-[60px] !pt-[80px] desktop:!pt-[100px]" aria-label="Next-Generation Pipeline Builder">
       <Container>
         <Reveal className="grid items-start gap-l desktop:grid-cols-[1fr_420px] desktop:gap-[60px]">
-          <GiantHeading as="h1" className="max-w-[11ch]">
+          <GiantHeading
+            as="h1"
+            className="max-w-[13ch] text-[clamp(2rem,1rem+4vw,4.25rem)]/[1.1]"
+          >
             {hero.title}
           </GiantHeading>
 

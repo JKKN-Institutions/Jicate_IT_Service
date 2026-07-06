@@ -48,7 +48,7 @@ export const hero = {
   title: "Next-Generation Pipeline Builder",
   body: "Ship production data pipelines that come with security, data quality, and governed teamwork built in from day one.",
   note: "Coding skills not required.",
-  cta: { label: "Get a demo", href: "/get-started" } satisfies CTA,
+  cta: { label: "Get a demo", href: "/enquiry-form" } satisfies CTA,
 };
 
 /* ------------------------------- video band ------------------------------- */
@@ -113,7 +113,7 @@ export const howItWorks = {
         "Turn raw XML, JSON, PDF and more into clean tables, and stitch datasets together with joins and unions.",
         "Reach for a deep library of functions — clean, derive, pivot, encrypt, aggregate, filter — plus image, geospatial, and finance operations.",
       ],
-      image: null,
+      image: "/pipeline-builder/Transforms.png",
       alt: "Transforming data",
     },
     {
@@ -123,7 +123,7 @@ export const howItWorks = {
         "Working on a live pipeline? Spin up a branch and make changes in isolation, leaving the main version untouched.",
         "Run many branches in parallel — even branches of branches — so teams can iterate, add features, and fix issues at the same time.",
       ],
-      image: null,
+      image: "/pipeline-builder/pipeline_ux_sequence-02.png",
       alt: "Collaborating with branches",
     },
     {
@@ -134,7 +134,7 @@ export const howItWorks = {
         "Builder flags merge conflicts — including overlaps from teammates editing the same transforms — and walks you through resolving them.",
         "A full history of versions, edits, and merges is always on hand, so large teams can move fast with confidence.",
       ],
-      image: null,
+      image: "/pipeline-builder/Multiple_Layers.png",
       alt: "Merging changes",
     },
     {
@@ -145,7 +145,7 @@ export const howItWorks = {
         "Once it checks out, the merge lands and the branch deploys to refresh your pipeline outputs.",
         "Target batch, streaming, time series, or modeling outputs, with Builder guiding you through each input it needs.",
       ],
-      image: null,
+      image: "/pipeline-builder/pipeline_diagram-3D-.png",
       alt: "Deploying a pipeline",
     },
   ] satisfies WalkStep[],

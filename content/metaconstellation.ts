@@ -38,7 +38,7 @@ export interface NumberedSection {
 export const hero = {
   title: "MetaConstellation",
   subcopy: "Harness the power of satellite constellations to empower decision-makers on Earth",
-  cta: { label: "Request a Demo", href: "#learn-more" } as CTA,
+  cta: { label: "Request a Demo", href: "/enquiry-form" } as CTA,
   video: "/metaconstellation/metacon_hero1.2_.mov",
 };
 

@@ -3,17 +3,19 @@
  * the reference page, mapped onto this project's design system. Layout/visual
  * treatment matches the reference 1:1.
  *
- * IMPORTANT: the reference's long-form essay and the individual fellow bios are
- * the source's own editorial/biographical content. They are NOT reproduced here
- * — every paragraph below is neutral PLACEHOLDER text and the fellows use
- * generic placeholder names. The user replaces all copy with their own.
+ * IMPORTANT (IP): the reference's long-form manifesto is the source's own
+ * editorial content and is NOT reproduced. The "New Technological Renaissance"
+ * essay here is ORIGINAL, genericized prose in Jicate's own voice — same broad
+ * theme (a technology renaissance, builders, AI in service of people), none of the
+ * reference's specific wording or ideology. The reference's individual fellow
+ * profiles (real named individuals + quotes) are not reproduced — that section has
+ * been removed from this page.
  *
  * Types are declared locally so the page is fully self-contained.
  *
  * Local media (in /public/offerings-american-tech-fellowship):
  *   shutterstock_2589895863.png — hero image
  *   shutterstock_2076774316.jpeg — fellowship image
- *   (fellow videos + press images not shipped — placeholders used)
  */
 
 const HERO_IMG_BASE = "/offerings-american-tech-fellowship";
@@ -25,29 +27,11 @@ export interface CTA {
   href: string;
 }
 
-export interface Fellow {
-  name: string;
-  /** Short placeholder bio paragraph. */
-  bio: string;
-  /** Pull-quote placeholder. */
-  quote: string;
-  /** Video path, or null when not shipped (poster placeholder). */
-  video: string | null;
-}
-
-export interface PressItem {
-  date: string;
-  source: string;
-  title: string;
-  cta: string;
-  image: string | null;
-}
-
 /* --------------------------------- hero ----------------------------------- */
 
 export const hero = {
-  title: "The American Tech Fellowship",
-  body: "A placeholder tagline goes here — swap in your own headline copy.",
+  title: "The Indian Tech Fellowship",
+  body: "The generations before you built the last century. This one is yours to build.",
   image: `${HERO_IMG_BASE}/shutterstock_2589895863.png`,
   alt: "Fellowship hero image",
 };
@@ -58,17 +42,17 @@ export const renaissance = {
   heading: "A New Technological Renaissance",
   // Neutral placeholder paragraphs — replace with your own editorial copy.
   paragraphs: [
-    "This is placeholder copy. Replace it with your own opening paragraph describing the program's mission and the people it serves.",
-    "Placeholder paragraph. Use this space to introduce the builders, makers, and technologists the fellowship is designed for.",
-    "Placeholder paragraph. Describe the broader story you want to tell about technology, craft, and opportunity.",
-    "Placeholder paragraph. Add the context and history that frames why this program exists.",
-    "Placeholder paragraph. Continue the narrative here with your own words.",
-    "Placeholder paragraph. Outline the challenge the program responds to.",
-    "Placeholder paragraph. Describe the role of new technology and how people put it to work.",
-    "Placeholder paragraph. Share the belief or principle that guides the program.",
-    "Placeholder paragraph. Reinforce that conviction with a concrete example.",
-    "Placeholder paragraph. Explain how the work supports people in their craft.",
-    "Placeholder closing paragraph. Tie the vision back to the fellowship and the opportunity it creates.",
+    "Every era of progress has been built by people who work with their hands and their minds — the makers, operators, and problem-solvers who turn ideas into things that last.",
+    "We are living through a new technological renaissance. Artificial intelligence is reshaping how work gets done, and the people closest to real problems are the ones best placed to put it to use.",
+    "There is a great deal of noise about what AI will become. Some imagine a future of effortless abundance, where machines do everything and human effort no longer matters.",
+    "Others warn of the opposite — that intelligent systems will slip beyond our control and turn against the people who built them.",
+    "We accept neither story. We believe AI is a tool, and like every tool before it, its value comes from the skill and judgment of the person using it.",
+    "History is full of celebrated inventors, but behind every famous name stood countless builders whose work never made the headlines. This is a program for them.",
+    "Again and again, the most transformative uses of AI come not from a lab, but from the factory floor, the field, and the front line — from people with an instinct for how things actually work.",
+    "That instinct is a form of craft. It cannot be faked, and it does not require a particular degree or pedigree — only curiosity, drive, and a willingness to build.",
+    "We believe technology should serve people rather than replace them — amplifying what individuals do best and supporting them in the work that matters most to them.",
+    "The Indian Tech Fellowship exists to put that belief into practice: to find talented builders wherever they are, and give them the tools, training, and opportunities to shape what comes next.",
+    "It is an investment in people — proof of our conviction that the next generation of great builders is already out there, ready to be discovered.",
   ],
   link: { label: "competitive advantage", href: "#" } satisfies CTA,
 };
@@ -77,20 +61,20 @@ export const renaissance = {
 
 export const fellowship = {
   heading: "The Fellowship",
-  body: "Placeholder description of the fellowship — a high-intensity training program that equips participants with in-demand skills. Replace with your own copy.",
-  bodyTwo: "Placeholder line: exceptional graduates connect directly with employers who need their skills.",
+  body: "Jicate created the Indian Tech Fellowship to equip working Indians with the skills and the opportunities to transform how the country builds. Fellows take on an intensive training course built to set the truly exceptional apart from the rest.",
+  bodyTwo: "Standout graduates are introduced directly to leading employers who need exactly what they bring.",
   highlights: [
     {
       title: "High-intensity training:",
-      body: "Placeholder — describe the hands-on curriculum and the tools participants learn.",
+      body: "Get hands-on with Jicate's industry-leading software and learn the tools shaping the country's future.",
     },
     {
-      title: "Job-placement opportunities:",
-      body: "Placeholder — describe how graduates are matched with hiring partners across the country.",
+      title: "Job placement opportunities:",
+      body: "Standout graduates get the chance to interview with Jicate and its customers and partners across the country.",
     },
     {
-      title: "No tech-degree needed:",
-      body: "Placeholder — describe how the program is open to people from many backgrounds, not just résumé pedigrees.",
+      title: "No tech degree needed:",
+      body: "We're looking for high-agency builders who obsess over results — not over padding a résumé.",
     },
   ],
   image: `${HERO_IMG_BASE}/shutterstock_2076774316.jpeg`,
@@ -102,77 +86,32 @@ export const fellowship = {
 export const applyBand = {
   eyebrow: "Applicants: Reawaken the Giant.",
   heading: "Ready to Build the Future?",
-  cta: { label: "Apply Now", href: "#apply" } satisfies CTA,
+  cta: { label: "Apply Now", href: "/enquiry-form" } satisfies CTA,
 };
 
 /* ----------------------------- meet the fellows --------------------------- */
 
 export const meetFellows = {
-  bigHeading: "Unlocking America's Next Generation of Builders",
+  bigHeading: "Unlocking India's Next Generation of Builders",
   heading: "Meet the Fellows",
   intro:
-    "Placeholder intro. From thousands of applicants, a select cohort was chosen for their drive, ingenuity, and practical skill. The first cohorts include:",
+    "From thousands of applicants, a select group was chosen for their drive, ingenuity, and practical wisdom. Our initial cohorts include:",
   cohort: [
-    "Placeholder cohort line one",
-    "Placeholder cohort line two",
-    "Placeholder cohort line three",
+    "Transitioning military veterans and enlisted leaders",
+    "Engineers, operators, and self-taught builders from factories, railroads, logistics, and field service",
+    "Startup founders and self-taught technologists",
   ],
   unitesLabel: "What unites them:",
   unites:
-    "Placeholder — a shared commitment to learning, building, and solving real problems. Replace with your own copy.",
+    "A relentless drive to learn, build, and solve the problems that count. They come from the heartland and the coasts, from garages and machine shops, and they're ready to power the country's renewal.",
   capstoneLabel: "Capstone Projects:",
   capstone:
-    "Placeholder — fellows complete an end-to-end capstone project that demonstrates their ability to apply new tools to real-world challenges.",
+    "Every fellow completes a capstone project — an end-to-end operational workflow, dashboard, or automation — showing they can bring AI to bear on real-world challenges.",
 };
-
-export const fellows: Fellow[] = [
-  {
-    name: "Fellow One",
-    bio: "Placeholder bio. Replace with a short profile of this fellow — their background, their path, and what they bring to the program.",
-    quote: "Placeholder pull-quote from the fellow goes here.",
-    video: null,
-  },
-  {
-    name: "Fellow Two",
-    bio: "Placeholder bio. Replace with a short profile of this fellow.",
-    quote: "Placeholder pull-quote from the fellow goes here.",
-    video: null,
-  },
-  {
-    name: "Fellow Three",
-    bio: "Placeholder bio. Replace with a short profile of this fellow.",
-    quote: "Placeholder pull-quote from the fellow goes here.",
-    video: null,
-  },
-  {
-    name: "Fellow Four",
-    bio: "Placeholder bio. Replace with a short profile of this fellow.",
-    quote: "Placeholder pull-quote from the fellow goes here.",
-    video: null,
-  },
-  {
-    name: "Fellow Five",
-    bio: "Placeholder bio. Replace with a short profile of this fellow.",
-    quote: "Placeholder pull-quote from the fellow goes here.",
-    video: null,
-  },
-];
 
 /* -------------------------------- hiring band ----------------------------- */
 
 export const hiringBand = {
   heading: "Interested in hiring a Fellow?",
-  cta: { label: "Contact us", href: "#contact" } satisfies CTA,
-};
-
-/* ------------------------------- press & media ---------------------------- */
-
-export const pressMedia = {
-  heading: "Press & Media",
-  items: [
-    { date: "Placeholder date", source: "Source One", title: "Placeholder press headline one.", cta: "Read now", image: null },
-    { date: "Placeholder date", source: "Source Two", title: "Placeholder press headline two.", cta: "Read now", image: null },
-    { date: "Placeholder date", source: "Source Three", title: "Placeholder press headline three.", cta: "Read now", image: null },
-    { date: "Placeholder date", source: "Source Four", title: "Placeholder press headline four.", cta: "Read Now", image: null },
-  ] satisfies PressItem[],
+  cta: { label: "Contact us", href: "/contact" } satisfies CTA,
 };

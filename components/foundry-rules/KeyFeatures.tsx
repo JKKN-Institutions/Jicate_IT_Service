@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { keyFeatures } from "@/content/foundry-rules";
 
-import { SectionHeading, InkLink } from "./parts";
+import { SectionHeading } from "./parts";
 
 /**
  * "Key Features" — a section heading, then a 2-column split: a sticky product
@@ -34,9 +34,6 @@ export function KeyFeatures() {
                 </div>
               </Reveal>
             ))}
-            <Reveal index={keyFeatures.features.length}>
-              <InkLink href={keyFeatures.ontologyLink.href}>{keyFeatures.ontologyLink.label}</InkLink>
-            </Reveal>
           </div>
         </div>
       </Container>
