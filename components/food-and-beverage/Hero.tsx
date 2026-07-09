@@ -14,7 +14,7 @@ export function Hero() {
     <Section className="bg-canvas" aria-label={hero.title}>
       <Container>
         <div className="pt-[70px] desktop:pt-[100px]">
-          <GiantHeading as="h1" size="hero" className="max-w-[10ch]">
+          <GiantHeading as="h1" size="hero" className="max-w-[20ch]">
             {hero.title}
           </GiantHeading>
         </div>

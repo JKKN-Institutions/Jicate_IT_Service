@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
 import {
-  SubNav,
   Hero,
   About,
   Partners,
@@ -19,7 +18,6 @@ export default function UtilitiesPage() {
   return (
     <main className="flex-1 bg-canvas">
       <Hero />
-      <SubNav />
       <About />
       <Partners />
       <Impact />

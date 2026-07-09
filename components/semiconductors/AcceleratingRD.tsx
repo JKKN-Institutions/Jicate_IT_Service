@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { accelerating } from "@/content/semiconductors";
 
-import { GiantHeading, InkLink } from "./parts";
+import { GiantHeading } from "./parts";
 
 /**
  * Accelerating Research & Development Time — two staggered 2-column rows on a
@@ -34,28 +34,17 @@ export function AcceleratingRD() {
               {accelerating.heading}
             </GiantHeading>
             <p className="max-w-[46ch] text-[18px] leading-[1.39] text-ink">{accelerating.lead}</p>
-            <p className="max-w-[46ch] text-[16px] leading-[1.45] text-ink">
-              {accelerating.whitepaperPrompt}
-            </p>
-            <InkLink href={accelerating.whitepaperCta.href} className="max-w-[460px]">
-              {accelerating.whitepaperCta.label}
-            </InkLink>
           </div>
         </Reveal>
 
-        {/* Row B — copy cols 2-6, product screenshot cols 8-12. The reference
-            separates the two rows with tall blank "page break" spacer images;
-            we reproduce that gap with vertical margin. */}
-        <Reveal className="mt-[clamp(160px,48vw,700px)] grid grid-cols-1 gap-[clamp(40px,5vw,64px)] desktop:grid-cols-12 desktop:items-center">
+        {/* Row B — copy cols 2-6, product screenshot cols 8-12. */}
+        <Reveal className="mt-[clamp(64px,9vw,120px)] grid grid-cols-1 gap-[clamp(40px,5vw,64px)] desktop:grid-cols-12 desktop:items-center">
           <div className="flex flex-col gap-m desktop:col-span-5 desktop:col-start-2">
             {accelerating.body.map((para, i) => (
               <p key={i} className="max-w-[46ch] text-[16px] leading-[1.45] text-ink">
                 {para}
               </p>
             ))}
-            <InkLink href={accelerating.bodyCta.href} className="mt-s max-w-[460px]">
-              {accelerating.bodyCta.label}
-            </InkLink>
           </div>
 
           <div className="aspect-[559/353] w-full overflow-hidden bg-ink/[0.04] desktop:col-span-5 desktop:col-start-8">

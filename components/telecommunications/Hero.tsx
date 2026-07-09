@@ -22,7 +22,7 @@ export function Hero() {
               </p>
             </div>
             <div className="self-end desktop:col-span-4 desktop:col-start-9">
-              <InkLink href="#">{hero.link}</InkLink>
+              <InkLink href="/contact">{hero.link}</InkLink>
             </div>
           </div>
         </Container>

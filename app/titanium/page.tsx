@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { TiHero, NextGen, KeyFeatures, ConnectedOS, VerifiedSolution } from "@/components/titanium";
+import { SiteContactForm } from "@/components/shared/SiteContactForm";
 
 export const metadata: Metadata = {
   title: "Titanium",
@@ -16,6 +17,7 @@ export default function TitaniumPage() {
       <KeyFeatures />
       <ConnectedOS />
       <VerifiedSolution />
+      <SiteContactForm title="Contact Us" />
       {/* The shared site Footer renders from the root layout. */}
     </main>
   );

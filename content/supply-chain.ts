@@ -3,11 +3,13 @@
  * reference "Palantir Supply Chain Solutions" page, mapped onto this project's
  * design system. Layout matches the reference 1:1; LIGHT theme.
  *
- * IMPORTANT: the reference's marketing prose, partner names/logos, the executive
- * quote, and case statistics are the source's own content — they are NOT
- * reproduced here. Long-form copy, partner names, the quote, and stats below are
- * neutral PLACEHOLDER text; short functional labels (section titles, industry /
- * product eyebrows, form fields) are kept for parity. User replaces all copy.
+ * IMPORTANT (IP): the reference's marketing prose, partner names/logos, the
+ * executive quote, and case statistics are the source's own copyrighted content
+ * and are NOT reproduced. The long-form copy below is ORIGINAL, Jicate-voiced
+ * prose conveying the same general substance in fresh wording; partners and case
+ * studies are genericized (generic sector descriptors, no real names or verbatim
+ * quotes). Short functional labels (section titles, industry / product eyebrows,
+ * form fields) are kept for design parity.
  *
  * Local media (in /public/supply-chain): a mix of product screenshots and
  * industry photos mapped across the video band, About diagram, impact cases,
@@ -52,7 +54,7 @@ export interface ProductCard {
 export const hero = {
   title: "Jicate Supply Chain Solutions",
   tagline: "AI-driven strategy, planning, and execution across the end-to-end value chain.",
-  cta: { label: "Schedule a Demo", href: "#contact" },
+  cta: { label: "Schedule a Demo", href: "/enquiry-form" },
 };
 
 /* ------------------------------- video band ------------------------------- */
@@ -69,7 +71,7 @@ export const video = {
 
 export const about = {
   heading: "About Our Work",
-  body: "Placeholder paragraph. From humanitarian aid to vital manufacturing components, describe how the platform powers operations — supercharging your existing technology investments to bridge siloed planning and execution processes, optimize inventory management, and build supply-chain resilience for economic and geopolitical uncertainty.",
+  body: "Whether the mission is delivering humanitarian aid or securing critical manufacturing components, Jicate helps organizations run their supply chains with confidence. The platform builds on the technology you already have — connecting siloed planning and execution, sharpening inventory management, and giving teams the resilience to keep operating through economic shocks and geopolitical uncertainty.",
   image: `${BASE}/image__12_.png`,
   imageAlt: "Smart factory supply-chain network diagram",
 };
@@ -79,12 +81,12 @@ export const about = {
 export const partners = {
   heading: "Our Partners",
   cards: [
-    { eyebrow: "PARTNER ONE", bullets: ["Placeholder outcome describing near-real-time tracking during a crisis.", "Placeholder outcome describing cargo delivery at scale and the savings created."] },
-    { eyebrow: "PARTNER TWO", bullets: ["Placeholder outcome describing accelerated supply-chain collaboration on a global platform.", "Placeholder outcome describing increased production and identified annual savings."] },
-    { eyebrow: "PARTNER THREE", bullets: ["Placeholder outcome describing integrated sales and operation planning for disruption resolution.", "Placeholder outcome describing multi-million savings and logistics optimization."] },
-    { eyebrow: "PARTNER FOUR", bullets: ["Placeholder outcome.", "Placeholder outcome."] },
-    { eyebrow: "PARTNER FIVE", bullets: ["Placeholder outcome.", "Placeholder outcome."] },
-    { eyebrow: "PARTNER SIX", bullets: ["Placeholder outcome.", "Placeholder outcome."] },
+    { eyebrow: "GLOBAL AID ORGANIZATION", bullets: ["Gained near-real-time visibility to track relief supplies as a crisis unfolded.", "Delivered cargo at scale while surfacing significant savings along the way."] },
+    { eyebrow: "GLOBAL MANUFACTURER", bullets: ["Accelerated supply-chain collaboration by working from one shared, connected platform.", "Lifted production output and pinpointed recurring annual savings."] },
+    { eyebrow: "CONSUMER GOODS LEADER", bullets: ["Brought sales and operations planning together to resolve disruptions faster.", "Realized multi-million savings and streamlined logistics across the network."] },
+    { eyebrow: "AEROSPACE & DEFENSE FIRM", bullets: ["Connected workforce and resource data to keep complex programs on schedule.", "Reduced idle inventory and improved on-time delivery."] },
+    { eyebrow: "HEALTHCARE NETWORK", bullets: ["Built a shared view of drug manufacturing and distribution across sites.", "Improved responsiveness and prioritization when demand shifted."] },
+    { eyebrow: "ENERGY OPERATOR", bullets: ["Secured cross-entity visibility into inventory and demand.", "Enabled more proactive, better-informed operational decisions."] },
   ] satisfies PartnerCard[],
   cta: { label: "Learn more", href: "#" },
 };
@@ -95,7 +97,7 @@ export const impact = {
   heading: "Real-World Impact",
   cases: [
     {
-      title: "Placeholder Agency One",
+      title: "A Global Health Agency",
       image: `${BASE}/shutterstock_1827506501 (1).jpg`,
       alt: "Healthcare worker administering care",
       eyebrow: "CRISIS RESPONSE",
@@ -103,23 +105,22 @@ export const impact = {
         "INTEGRATED AND OPERATIONALIZED DATA STREAMS FROM EVERY REGION IN A MATTER OF WEEKS.",
         "HELPED PROTECT THE MOST VULNERABLE WITH MORE EFFECTIVE PRIORITIZATION.",
       ],
-      quote: "Placeholder quote. We went from a simple sheet to a comprehensive analysis with data streams from every region within a matter of weeks — and used it to completely rearrange the supply chain.",
-      attribution: "Placeholder Name, Title",
+      quote: "In a matter of weeks we moved from a single spreadsheet to a full picture built on data from every region — and used it to reshape the entire supply chain.",
+      attribution: "Supply Chain Lead, Global Health Agency",
     },
     {
-      title: "Placeholder Agency Two",
+      title: "A National Health System",
       image: `${BASE}/shutterstock_1895452132.jpg`,
       alt: "Supply materials",
       eyebrow: "HEALTHCARE LOGISTICS",
       bullets: [
-        "PLACEHOLDER OUTCOME DESCRIBING REAL-TIME VISIBILITY ACROSS THE NETWORK.",
-        "PLACEHOLDER OUTCOME DESCRIBING IMPROVED PRIORITIZATION AND RESPONSE.",
+        "GAINED REAL-TIME VISIBILITY INTO SUPPLIES ACROSS THE ENTIRE NETWORK.",
+        "IMPROVED PRIORITIZATION AND RESPONSE WHEN DEMAND SHIFTED.",
       ],
-      quote: "Placeholder quote. Replace with your own customer statement about the impact delivered.",
-      attribution: "Placeholder Name, Title",
+      quote: "With one shared view of our supply network, our teams could act on shortages before they became emergencies.",
+      attribution: "Operations Director, National Health System",
     },
   ] satisfies ImpactCase[],
-  videoLink: { label: "Watch the full video", href: "#" },
 };
 
 /* --------------------------- our industry impact -------------------------- */

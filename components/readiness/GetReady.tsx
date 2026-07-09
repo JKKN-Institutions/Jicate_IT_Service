@@ -30,7 +30,7 @@ export function GetReady() {
           </GiantHeading>
 
           <a
-            href="#"
+            href="/enquiry-form"
             className="group inline-flex items-center gap-s border-[0.8px] border-ink bg-ink px-l py-s font-mono text-body-sm uppercase tracking-[0.05em] text-canvas transition-colors duration-200 hover:bg-canvas hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           >
             {getReady.cta}

@@ -11,7 +11,7 @@ import { GiantHeading, InkLink } from "./parts";
  */
 export function Hero() {
   return (
-    <Section className="!pt-[60px] desktop:!pt-[80px]" aria-label="Federal Health">
+    <Section className="!pt-[120px] desktop:!pt-[132px]" aria-label="Federal Health">
       <Container>
         <Reveal className="grid grid-cols-1 items-start gap-[40px] desktop:grid-cols-[1fr_1fr] desktop:gap-[80px]">
           <GiantHeading as="h1" className="max-w-[10ch]">

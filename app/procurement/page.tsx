@@ -4,7 +4,6 @@ import {
   Hero,
   OperatingSystem,
   Transformation,
-  Partners,
   Operationalizing,
   DemoForm,
 } from "@/components/procurement";
@@ -20,7 +19,6 @@ export default function ProcurementPage() {
       <Hero />
       <OperatingSystem />
       <Transformation />
-      <Partners />
       <Operationalizing />
       <DemoForm />
       {/* The shared site Footer renders from the root layout. */}

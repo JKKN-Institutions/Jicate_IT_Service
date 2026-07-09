@@ -20,7 +20,7 @@ export function ExploreFeatures() {
             {explore.text}
           </p>
           <div className="desktop:col-span-2 desktop:col-start-11">
-            <DarkLink href="#" className="w-full">
+            <DarkLink href="/enquiry-form" className="w-full">
               {explore.cta}
             </DarkLink>
           </div>

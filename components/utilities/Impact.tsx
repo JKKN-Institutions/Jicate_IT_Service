@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { impact } from "@/content/utilities";
 
-import { SectionHeading, Eyebrow, ArrowLink } from "./parts";
+import { SectionHeading, Eyebrow } from "./parts";
 import { CaseVideo } from "./media";
 
 /**
@@ -40,9 +40,6 @@ export function Impact() {
                     {c.quote}
                   </blockquote>
                   <p className="text-[14px] text-ink-light">{c.attribution}</p>
-                  <div className="mt-[4px]">
-                    <ArrowLink href={c.link.href}>{c.link.label}</ArrowLink>
-                  </div>
                 </div>
               </Reveal>
             ))}

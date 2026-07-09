@@ -25,7 +25,7 @@ export function Reseller() {
             <p className="text-body leading-[1.5] text-ink-light">{reseller.note}</p>
           </div>
           <div className="desktop:col-span-3">
-            <InkLink href="#" className="text-body">
+            <InkLink href="/enquiry-form" className="text-body">
               {reseller.link}
             </InkLink>
           </div>

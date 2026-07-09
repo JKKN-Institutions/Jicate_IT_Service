@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { industry } from "@/content/supply-chain";
 
-import { GiantHeading, Eyebrow, LeadLink } from "./parts";
+import { GiantHeading, Eyebrow } from "./parts";
 
 /**
  * "Our Industry Impact" — a top hairline, a giant heading, then a four-column
@@ -25,9 +25,6 @@ export function Industry() {
                   <img src={card.image} alt={card.alt} className="h-full w-full object-cover" loading="lazy" />
                 </div>
                 <p className="text-[clamp(1rem,1.25vw,1.125rem)]/[1.389] text-ink">{card.body}</p>
-                <LeadLink href={industry.cta.href} className="text-body">
-                  {industry.cta.label}
-                </LeadLink>
               </article>
             ))}
           </Reveal>

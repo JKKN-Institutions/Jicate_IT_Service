@@ -10,7 +10,7 @@ import { GiantHeading } from "./parts";
  */
 export function Hero() {
   return (
-    <Section className="!pt-[60px] desktop:!pt-[80px]" aria-label={hero.title}>
+    <Section className="!pt-[140px] desktop:!pt-[150px]" aria-label={hero.title}>
       <Container>
         <Reveal className="grid grid-cols-1 items-start gap-[40px] desktop:grid-cols-[1.1fr_1fr] desktop:gap-[80px]">
           <GiantHeading as="h1">{hero.title}</GiantHeading>

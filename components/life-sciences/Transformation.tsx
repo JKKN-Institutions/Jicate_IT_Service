@@ -7,7 +7,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { cn } from "@/lib/utils";
 import { transformation } from "@/content/life-sciences";
 
-import { GiantHeading, Eyebrow, InkLink, MediaPlaceholder } from "./parts";
+import { GiantHeading, Eyebrow, MediaPlaceholder } from "./parts";
 
 /**
  * Real AI Transformation — a giant heading, a row of pill tabs (one per partner),
@@ -98,9 +98,6 @@ export function Transformation() {
                 <MediaPlaceholder label={c.imageAlt} className="h-full" />
               )}
             </div>
-            <InkLink href="#" className="text-body">
-              {c.watchLabel}
-            </InkLink>
           </div>
         </div>
       </Container>

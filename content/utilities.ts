@@ -50,25 +50,15 @@ export const hero = {
   playLabel: "Play Video",
 };
 
-/* ------------------------------- sub-nav ---------------------------------- */
-
-export const subNav = [
-  { label: "About Our Work", href: "#about-our-work" },
-  { label: "Our Partners", href: "#our-partners" },
-  { label: "Our Impact", href: "#our-impact" },
-  { label: "Our Capabilities", href: "#our-capabilities" },
-  { label: "Get Started", href: "#utilities-demo-form" },
-];
-
 /* ----------------------------- about our work ----------------------------- */
 
 export const about = {
   eyebrow: "About Our Work",
   lead:
-    "Extreme weather conditions, the transition to renewables, and enabling new ways to produce and consume energy are just some of the real-world challenges those in utilities face today.",
+    "Extreme weather, the shift to renewables, and new ways of producing and consuming energy are just a few of the real-world pressures facing utilities today.",
   paragraphs: [
-    "Organizations now need to leverage vast quantities of data across increasingly complex digital ecosystems — while effectively turning these insights into actions. Jicate's Ontology operationalizes data from distribution management systems, asset records, inspections, geographical layout, and IoT devices, alongside risk and connectivity models to enable more informed decision making across the grid.",
-    "Our utility customers across the globe are able to quickly build and deploy flexible, production-ready applications to enable predictive operations, automate processes, simulate scenarios, and federate decision-making across teams and environments. We're empowering them to build more reliable and efficient utilities — from grid management to customer care.",
+    "Utilities now have to draw on enormous volumes of data spread across ever more complex digital ecosystems — and, crucially, turn that insight into action. Jicate's Ontology brings together data from distribution management systems, asset records, inspections, geographic layouts, and IoT devices, alongside risk and connectivity models, so teams can make better-informed decisions across the grid.",
+    "Utility operators around the world use Jicate to rapidly build and ship flexible, production-ready applications — predicting operations, automating processes, simulating scenarios, and coordinating decisions across teams and environments. The result is more reliable, more efficient utilities, from grid management right through to customer care.",
   ],
   image: `${BASE}/Ontology_stack_-_Utilities__JD_Edits_.png`,
   imageAlt: "Utilities ontology stack diagram",
@@ -87,21 +77,21 @@ export const partners = {
   heading: "Our Partners",
   items: [
     {
-      name: "Southern California Edison",
-      stat: "Placeholder — integrated data from millions of grid assets across its digital grid into the platform.",
-      note: "Placeholder metric — significant reduction in missed customer notifications for proactive power shutoffs, with notification time cut from hours to minutes.",
+      name: "A major electric utility",
+      stat: "Integrated data from millions of grid assets across its digital grid into the platform.",
+      note: "Sharply reduced missed customer notifications for proactive power shutoffs, cutting notification time from hours to minutes.",
       link: { label: "Learn more", href: "#" },
     },
     {
-      name: "Jacobs",
-      stat: "Placeholder — integrating Jicate and proprietary algorithms to enhance staff productivity, according to company leadership.",
-      note: "Placeholder metric — eliminated operational fines while also reducing greenhouse gas emissions.",
+      name: "A global engineering firm",
+      stat: "Combined Jicate with its own proprietary algorithms to lift staff productivity.",
+      note: "Eliminated operational fines while also reducing greenhouse-gas emissions.",
       link: { label: "Learn more", href: "#" },
     },
     {
-      name: "Sonnedix",
-      stat: "Placeholder — using Jicate and machine-learning models to enable remote monitoring of solar farms.",
-      note: "Placeholder metric — anticipating a reduction in revenue loss associated with tracker failure.",
+      name: "A global solar power producer",
+      stat: "Uses Jicate and machine-learning models to remotely monitor its solar farms.",
+      note: "Expects a meaningful reduction in revenue lost to tracker failures.",
       link: { label: "Learn more", href: "#" },
     },
   ] satisfies Partner[],
@@ -116,41 +106,38 @@ export interface ImpactCase {
   theme: string;
   quote: string;
   attribution: string;
-  link: CTA;
+  link?: CTA;
 }
 
 export const impact = {
   heading: "Our Impact",
   cases: [
     {
-      name: "Jacobs",
+      name: "Global Engineering Firm",
       video: `${BASE}/Jacobs_Twitter_Cutdown.mov`,
-      stat: "PLACEHOLDER — SIGNIFICANT PLANT-WIDE POWER SAVINGS THROUGH PREDICTIVE OPERATIONS.",
+      stat: "SIGNIFICANT PLANT-WIDE POWER SAVINGS DELIVERED THROUGH PREDICTIVE OPERATIONS.",
       theme: "Predictive Operations",
       quote:
-        "“Placeholder quote — describe the outcome the customer achieved, the value realized, and why it matters. The user will replace this with the approved testimonial.”",
-      attribution: "— Name, Title, Company",
-      link: { label: "Find out more", href: "#" },
+        "“Being able to anticipate issues before they happen is where the real value sits — the efficiency gains add up quickly, both for us and for the clients we serve.”",
+      attribution: "— Engineering Leader",
     },
     {
-      name: "Sonnedix",
+      name: "Solar Power Producer",
       video: SONNEDIX_VIDEO,
-      stat: "PLACEHOLDER — AUTOMATIC NOTIFICATION OF ASSETS IN NEED OF MAINTENANCE, AND PREVENTABLE MECHANICAL FAILURES REDUCED.",
+      stat: "AUTOMATIC NOTIFICATION OF ASSETS NEEDING MAINTENANCE, WITH PREVENTABLE MECHANICAL FAILURES SHARPLY REDUCED.",
       theme: "Digitize Renewables",
       quote:
-        "“Placeholder quote — describe the customer's goal of relying on real-time, fully integrated data to make critical business decisions. The user will replace this with the approved testimonial.”",
-      attribution: "— Name, Title, Company",
-      link: { label: "Find out more", href: "#" },
+        "“Our aim is to run on real-time, fully integrated data across the whole business, so every clean-energy decision is backed by information our teams can trust.”",
+      attribution: "— Company Executive",
     },
     {
-      name: "Southern California Edison",
+      name: "Electric Utility",
       video: `${BASE}/SC_Edison_Cutdown_7__1_.mov`,
-      stat: "PLACEHOLDER — MAJOR REDUCTION IN MISSED CUSTOMER NOTIFICATIONS FOR PROACTIVE POWER SHUTOFFS.",
+      stat: "MAJOR REDUCTION IN MISSED CUSTOMER NOTIFICATIONS FOR PROACTIVE POWER SHUTOFFS.",
       theme: "Enhance Customer Experience",
       quote:
-        "“Placeholder quote — describe the transformation from hardware-defined to software-defined operations across multiple use cases. The user will replace this with the approved testimonial.”",
-      attribution: "— Name, Title, Company",
-      link: { label: "Find out more", href: "#" },
+        "“We've moved from hardware-defined to software-defined operations across a growing set of use cases, and it's changing how we run and improve the grid.”",
+      attribution: "— Chief Information Officer",
     },
   ] satisfies ImpactCase[],
 };
@@ -171,42 +158,42 @@ export const capabilities = {
     {
       tab: "Emergency operations",
       title: "EMERGENCY OPERATIONS",
-      body: "Placeholder — improve pre-, mid-, and post-event planning by integrating geospatial and asset data to create a single view of your grid, potential outages, and customer notification status.",
+      body: "Strengthen planning before, during, and after events by combining geospatial and asset data into a single view of your grid, likely outages, and customer-notification status.",
       image: `${BASE}/Slide2%20(1).jpg`,
       link: { label: "Learn more", href: "#" },
     },
     {
       tab: "Asset management",
       title: "ASSET MANAGEMENT",
-      body: "Placeholder — build a unified, real-time view of asset health across the grid to prioritize inspections, maintenance, and replacements where they matter most.",
+      body: "Build a unified, real-time picture of asset health across the grid, so inspections, maintenance, and replacements go where they'll matter most.",
       image: `${BASE}/Slide1%20(1).jpg`,
       link: { label: "Learn more", href: "#" },
     },
     {
       tab: "Procurement",
       title: "PROCUREMENT",
-      body: "Placeholder — streamline sourcing and supplier decisions with integrated spend, inventory, and lead-time data across the organization.",
+      body: "Make faster sourcing and supplier decisions with spend, inventory, and lead-time data integrated across the organization.",
       image: `${BASE}/Slide2%20(2).jpg`,
       link: { label: "Learn more", href: "#" },
     },
     {
       tab: "Risk-based work planning",
       title: "RISK-BASED WORK PLANNING",
-      body: "Placeholder — plan and sequence field work using risk, connectivity, and condition models so crews focus on the highest-impact tasks first.",
+      body: "Plan and sequence field work using risk, connectivity, and condition models, so crews tackle the highest-impact tasks first.",
       image: `${BASE}/Utilities_1.png`,
       link: { label: "Learn more", href: "#" },
     },
     {
       tab: "Process mining",
       title: "PROCESS MINING",
-      body: "Placeholder — surface bottlenecks and inefficiencies across operational processes to drive continuous improvement and cost reduction.",
+      body: "Surface bottlenecks and inefficiencies across operational processes to drive continuous improvement and lower costs.",
       image: `${BASE}/Slide4%20(1).jpg`,
       link: { label: "Learn more", href: "#" },
     },
     {
       tab: "Capital delivery",
       title: "CAPITAL DELIVERY",
-      body: "Placeholder — track capital programs end to end with integrated schedule, cost, and progress data to keep projects on time and on budget.",
+      body: "Track capital programs end to end with integrated schedule, cost, and progress data to keep projects on time and on budget.",
       image: `${BASE}/Utilities_2.png`,
       link: { label: "Learn more", href: "#" },
     },

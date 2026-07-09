@@ -3,7 +3,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { cn } from "@/lib/utils";
 import type { ResourceCard } from "@/content/food-and-beverage";
 
-import { GiantHeading, Eyebrow, ReadMore } from "./parts";
+import { GiantHeading, Eyebrow } from "./parts";
 
 /**
  * A resource section — a giant heading on the left and a grid of resource cards
@@ -36,7 +36,6 @@ export function ResourceSection({
                 <p className="font-display text-[clamp(1.15rem,1rem+0.7vw,1.45rem)] leading-[1.15] tracking-[-0.01em] text-ink">
                   {c.title}
                 </p>
-                <ReadMore href={c.href} />
               </Reveal>
             ))}
           </div>

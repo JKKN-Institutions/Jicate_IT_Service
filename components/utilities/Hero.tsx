@@ -2,8 +2,9 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { hero } from "@/content/utilities";
 
-import { GiantHeading, InkLink } from "./parts";
+import { GiantHeading } from "./parts";
 import { LoopVideo } from "./media";
+import { ScheduleDemoLink } from "./ScheduleDemoLink";
 
 /**
  * Hero — an oversized title on the left with a tagline + "Schedule a Demo" link
@@ -21,7 +22,7 @@ export function Hero() {
 
           <div className="flex min-h-[200px] flex-col justify-between gap-[40px] desktop:min-h-[330px]">
             <p className="text-[clamp(1.5rem,1rem+1.6vw,2.125rem)]/[1.176] text-ink">{hero.tagline}</p>
-            <InkLink href={hero.cta.href}>{hero.cta.label}</InkLink>
+            <ScheduleDemoLink href={hero.cta.href}>{hero.cta.label}</ScheduleDemoLink>
           </div>
         </Reveal>
 

@@ -7,7 +7,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { cn } from "@/lib/utils";
 import { capabilities } from "@/content/utilities";
 
-import { SectionHeading, ReadLink } from "./parts";
+import { SectionHeading } from "./parts";
 
 /**
  * Our Capabilities — a 50px heading, then a vertical-tab walkthrough: a tab rail
@@ -65,9 +65,6 @@ export function Capabilities() {
               <div className="mt-[4px] w-full overflow-hidden rounded-[2px] bg-ink/[0.04]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={item.image} alt={item.title} className="h-auto w-full object-contain" loading="lazy" />
-              </div>
-              <div className="mt-[4px]">
-                <ReadLink href={item.link.href}>{item.link.label}</ReadLink>
               </div>
             </div>
           </div>

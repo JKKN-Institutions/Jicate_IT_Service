@@ -3,11 +3,12 @@
  * reference "Palantir for Rail" page, mapped onto this project's design system.
  * Layout matches the reference 1:1; LIGHT theme, with a sticky sub-nav.
  *
- * IMPORTANT: the reference's marketing prose, partner names/logos, and case
- * statistics are the source's own content — they are NOT reproduced here.
- * Long-form copy, stats, and partner names below are neutral PLACEHOLDER text;
- * short functional labels (section titles, work categories/items, differentiator
- * titles, form fields) are kept for parity. User replaces all copy.
+ * IMPORTANT (IP): the reference's marketing prose, partner names/logos, and case
+ * statistics are the source's own copyrighted content and are NOT reproduced. The
+ * long-form copy below is ORIGINAL, Jicate-voiced prose conveying the same general
+ * substance in fresh wording; partners and case studies are genericized (no real
+ * names or verbatim stats). Short functional labels (section titles, work
+ * categories/items, differentiator titles, form fields) are kept for design parity.
  *
  * Local media (in /public/jicate-for-rail):
  *   Hero_Image.jpg     — intro image
@@ -47,7 +48,6 @@ export const subNav: NavItem[] = [
   { label: "Impact", href: "#impact" },
   { label: "How it Works", href: "#how-it-works" },
   { label: "Key Differentiators", href: "#key-differentiators" },
-  { label: "AIPCon Spotlight", href: "#spotlight" },
 ];
 
 /* --------------------------------- hero ----------------------------------- */
@@ -90,12 +90,12 @@ export const impact = {
   heading: "Impact",
   stats: [
     {
-      stat: "Placeholder stat — multi-million-dollar annual recovery & double-digit material-spend reduction",
-      body: "Placeholder paragraph. Describe how a major railroad consolidated part details across financial and operational systems, automatically identified warranty opportunities, and streamlined claims — recovering value and reducing annual material spend.",
+      stat: "Multi-million-dollar annual recovery & double-digit material-spend reduction",
+      body: "A major railroad brought part details together from across its financial and operational systems, so warranty opportunities that used to slip through the cracks were surfaced automatically. With claims streamlined, the railroad recovered significant value and cut its annual material spend.",
     },
     {
       stat: "0 to deployment — in months",
-      body: "Placeholder paragraph. Describe how a major railroad accelerated their timeline to build a safety-critical application for real-time wayside-detector alerts and equipment-health diagnostics, achieving a production-ready system in months.",
+      body: "A major railroad compressed its build timeline to stand up a safety-critical application for real-time wayside-detector alerts and equipment-health diagnostics — reaching a production-ready system in a matter of months, not years.",
     },
   ] satisfies ImpactStat[],
 };
@@ -117,7 +117,7 @@ export const howItWorks = {
 
 export const spotlight = {
   heading: "Spotlight: Jicate for Rail at AIPCon",
-  intro: "Placeholder paragraph. AIPCon has become a key event for the rail industry. Executives from major players in rail — including operations, technology, business, and innovation leaders — converge to exchange ideas about the state of the industry and the latest technology, and come away with concrete, actionable insights for their own organizations.",
+  intro: "AIPCon has become a landmark event for the rail industry. Leaders from across major rail companies — spanning operations, technology, business, and innovation — come together to trade ideas on where the industry is headed and what the latest technology makes possible, and leave with concrete, actionable steps they can put to work in their own organizations.",
   photo: `${BASE}/Master_Classes___AIP_Bootcamp_AIPCon_Sept_14_2023__Steven_Gregory_Photography-4821__2_.jpg`,
   photoAlt: "Attendees at AIPCon",
   keynote: { label: "Watch the keynote", href: "#" },
@@ -131,8 +131,8 @@ export const differentiators = {
     { title: "Speed.", body: "Integrate and transform large-scale data. Assuming a complex customer landscape, Jicate integrates with all existing visualization, data store, data lake, and cloud partners." },
     { title: "Forward-Deployed Model.", body: "Engineers work alongside your team to gather signal directly from the field and drive change management." },
     { title: "Real-Time Connectivity.", body: "Power live collaboration between your data, models, and operators." },
-    { title: "Data Security & Governance.", body: "Placeholder description. Replace with your own copy on security, access controls, and governance." },
-    { title: "AI/ML-Powered Decisions.", body: "Placeholder description. Replace with your own copy on AI- and ML-driven decision-making." },
+    { title: "Data Security & Governance.", body: "Granular, role- and purpose-based access controls keep sensitive rail data protected, with a full, auditable record of who accessed what across every system." },
+    { title: "AI/ML-Powered Decisions.", body: "Put AI and machine-learning models to work on live operational data, turning forecasts and recommendations into action with a human in the loop." },
   ] satisfies Differentiator[],
 };
 

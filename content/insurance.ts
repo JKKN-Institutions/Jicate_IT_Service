@@ -94,7 +94,7 @@ export const transformation = {
   tabs: [
     {
       tab: "At a Global Insurer",
-      partner: "Global Insurer",
+      partner: "A global insurer",
       quote: "“So, what was the impact? Over the last three years, we have seen a significant improvement in profit — and we expect that to continue over the next three years.”",
       overview:
         "This global insurer operates across various forms of insurance. They sought a technology partner that could help streamline critical processes to ensure profitability, automate manual tasks so underwriters can focus where their expertise has the most impact, and provide peace of mind for their customers.",
@@ -109,7 +109,7 @@ export const transformation = {
     },
     {
       tab: "At a large Indian Insurer",
-      partner: "Indian Insurer",
+      partner: "A large Indian insurer",
       quote: "“The platform gave our teams a single operating picture — decisions that used to take weeks now take days.”",
       overview:
         "A large Indian insurer deployed the platform to integrate underwriting, claims, and actuarial data into a single environment, accelerating decisions while preserving strict governance and compliance.",
@@ -123,7 +123,7 @@ export const transformation = {
     },
     {
       tab: "At a Reinsurer",
-      partner: "Reinsurer",
+      partner: "A leading reinsurer",
       quote: "“We can now model portfolio risk continuously instead of quarterly — that changes how we run the business.”",
       overview:
         "A leading reinsurer uses the platform to unify exposure, claims, and market data, enabling continuous portfolio risk modeling and faster, better-informed capital decisions.",

@@ -24,7 +24,7 @@ export function Intro() {
             </Reveal>
             <Reveal index={1} className="flex flex-col gap-l desktop:col-span-5 desktop:col-start-7">
               <p className="text-body leading-[1.5] text-ink">{intro.body}</p>
-              <InkLink href="#" className="self-start">
+              <InkLink href="/enquiry-form" className="self-start">
                 {intro.link}
               </InkLink>
             </Reveal>

@@ -28,14 +28,14 @@ export function IndustriesBand() {
         </div>
 
         <ul className="flex flex-col">
-          {industries.items.map((name, i) => (
-            <Reveal as="li" key={name} index={Math.min(i, 6)}>
+          {industries.items.map((item, i) => (
+            <Reveal as="li" key={item.label} index={Math.min(i, 6)}>
               <a
-                href={industries.cta.href}
+                href={item.href}
                 className="group flex items-center justify-between gap-s border-t border-offwhite/15 py-m text-offwhite/55 transition-colors duration-200 hover:text-offwhite last:border-b"
               >
                 <span className="font-display text-headline font-normal tracking-[-0.02em] uppercase transition-transform duration-200 group-hover:translate-x-[0.3em] motion-reduce:transform-none">
-                  {name}
+                  {item.label}
                 </span>
                 <span
                   aria-hidden

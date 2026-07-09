@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { Hero, Ecosystem, Tailored, Benefits, Statement } from "@/components/mission-manager";
+import { SiteContactForm } from "@/components/shared/SiteContactForm";
 
 export const metadata: Metadata = {
   title: "Mission Manager",
@@ -16,6 +17,7 @@ export default function MissionManagerPage() {
       <Tailored />
       <Benefits />
       <Statement />
+      <SiteContactForm title="Get in touch" />
       {/* The shared site Footer renders from the root layout. */}
     </main>
   );

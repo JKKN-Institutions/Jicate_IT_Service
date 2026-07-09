@@ -4,10 +4,12 @@
  * system. Layout/visual treatment matches the reference 1:1; the page is DARK
  * (rgb(30,33,36) background, white text).
  *
- * IMPORTANT: the reference's marketing prose and the executive quote are the
- * source's own content — they are NOT reproduced here. Long-form copy and the
- * quote below are neutral PLACEHOLDER text; short functional labels (section
- * titles, service names, form fields) are kept for parity. User replaces copy.
+ * IMPORTANT (IP): the reference's marketing prose and the executive quote are the
+ * source's own copyrighted content and are NOT reproduced. The long-form copy and
+ * the quote below are ORIGINAL, Jicate-voiced prose conveying the same general
+ * substance in fresh wording; the quote is genericized (no real name or verbatim
+ * text). Short functional labels (section titles, service names, form fields) are
+ * kept for design parity.
  *
  * Types are declared locally so the page is fully self-contained.
  *
@@ -50,7 +52,7 @@ export const advantage = {
   title: "The Software Advantage",
   linkHeading: "AI-enabled technology to deter and defend",
   linkHref: "#discover",
-  body: "Placeholder paragraph. Describe how differentiated software derives exceptional outcomes — deployed around the world and on the front lines to power decision dominance for allied forces.",
+  body: "Superior software changes what is possible in the field. Deployed around the world and on the front lines, Jicate helps allied forces turn complex, fast-moving situations into clear decisions — and act on them faster than any adversary can.",
   edgeHeading: "Engineering Starts At The Tactical Edge",
   edgeLink: { label: "Explore Solutions", href: "#discover" } satisfies CTA,
   // Full-width command-center image (not shipped — placeholder block used).
@@ -65,10 +67,10 @@ export const discover = {
   image: `${BASE}/grid-platforms.png`,
   imageAlt: "Layered grid platforms graphic",
   heading: "Jicate provides configurable solutions to confront the most complex Defense challenges.",
-  body: "Placeholder paragraph. From building AI-enabled ground stations to supporting distributed multi-domain operations at the edge, describe the commitment to software that powers integrated deterrence and enduring advantage.",
+  body: "From AI-enabled ground stations to distributed, multi-domain operations at the tactical edge, Jicate is committed to the software that underpins integrated deterrence — giving the forces that depend on it a durable, enduring advantage.",
   link: { label: "Explore UK Defence", href: "#contact" } satisfies CTA,
   services: [
-    { label: "US Army", href: "#contact" },
+    { label: "India Army", href: "#contact" },
     { label: "Indian Air & Space Force", href: "#contact" },
     { label: "Indian Navy & Marines", href: "#contact" },
   ] satisfies ServiceRow[],
@@ -77,8 +79,8 @@ export const discover = {
 /* -------------------------------- quote band ------------------------------ */
 
 export const quote = {
-  text: "Placeholder quote. Replace with your own statement about harnessing the most advanced technical capabilities for defense and prosperity.",
-  attribution: "Placeholder Name, Title, Jicate",
+  text: "Bringing the most advanced technical capabilities to bear is how we protect our people and secure a lasting, shared prosperity.",
+  attribution: "Defense Lead, Jicate",
 };
 
 /* --------------------------- get involved (hiring) ------------------------ */

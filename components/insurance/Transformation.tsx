@@ -7,7 +7,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { cn } from "@/lib/utils";
 import { transformation } from "@/content/insurance";
 
-import { GiantHeading, Eyebrow, InkLink } from "./parts";
+import { GiantHeading, Eyebrow } from "./parts";
 
 /**
  * Real AI Transformation — a giant heading, a row of pill tabs (one per insurer),
@@ -75,9 +75,6 @@ export function Transformation() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={c.image} alt={c.imageAlt} className="h-full w-full object-cover" loading="lazy" />
             </div>
-            <InkLink href="#" className="text-body">
-              {c.watchLabel}
-            </InkLink>
           </div>
         </div>
 

@@ -4,11 +4,12 @@
  * mapped onto this project's design system. Layout matches the reference 1:1;
  * the page is DARK (rgb(30,33,36) background, white text).
  *
- * IMPORTANT: the reference's marketing prose, the Army case-study, and its
- * statistics are the source's own content — they are NOT reproduced here.
- * Long-form copy, the quote, and case details below are neutral PLACEHOLDER
- * text; short functional labels (section titles, tab/feature names, form
- * fields) are kept for parity. User replaces all copy.
+ * IMPORTANT (IP): the reference's marketing prose, its case-study, and its
+ * statistics are the source's own copyrighted content and are NOT reproduced.
+ * The long-form copy below is ORIGINAL, Jicate-voiced prose conveying the same
+ * general substance in fresh wording; the case study is genericized (no real
+ * named customer, product, quote, or attribution). Short functional labels
+ * (section titles, feature names, form fields) are kept for design parity.
  *
  * Local media (in /public/government-financial-management):
  *   shutterstock_1481978897__1_ (1).jpg — section 01 image
@@ -49,19 +50,19 @@ export const critical = {
   heading: "Critical Missions, Limited Budgets",
   image: `${BASE}/shutterstock_1481978897__1_ (1).jpg`,
   alt: "Government analyst at work",
-  body: "Placeholder paragraph. From safeguarding national security to protecting public health, government organizations serve our nation's most critical missions — and must do so with disciplined, transparent stewardship of every dollar.",
+  body: "From safeguarding national security to protecting public health, government organizations carry the country's most consequential missions — and they must deliver on them while accounting for every dollar. As budgets tighten and oversight grows, finance teams need to see exactly where funding is committed, where it risks lapsing, and where it can do the most good. Jicate gives them that clarity, so disciplined stewardship becomes a daily habit rather than a year-end scramble.",
 };
 
 /* --------------------------- 02 case study -------------------------------- */
 
 export const caseStudy = {
   number: "02",
-  heading: "Case Study: Vantage Contract Management",
-  quote: "Placeholder quote. During a recent fiscal year, the agency successfully deobligated billions in funding, well above prior-year levels…",
-  attribution: "Placeholder Name, Title",
-  partner: "Placeholder Partner",
-  problem: "Placeholder problem-space. Describe how it was historically difficult for personnel to understand how much funding was on a given contract and when that funding would expire.",
-  problem2: "Placeholder paragraph. Answering these questions required analysts to query multiple disconnected systems for large chunks of data and then piece it together from various sources.",
+  heading: "Case Study: Contract Management at Scale",
+  quote: "By bringing our funding data together in one place, our teams could finally see what was committed and what was about to expire — and we returned unspent funds for reuse well ahead of past cycles.",
+  attribution: "Finance Modernization Lead, Federal Agency",
+  partner: "A federal agency",
+  problem: "For years it was hard for staff to answer a simple question: how much funding remained on a given contract, and when would it expire? The information existed, but it was scattered across programs and buried in different formats.",
+  problem2: "Getting an answer meant pulling large extracts from several disconnected systems and stitching them together by hand — slow, error-prone work that left little time for the analysis that actually mattered.",
   image: null as string | null,
   alt: "Excess-funds data visualization",
   link: { label: "Read more", href: "#" } satisfies CTA,
@@ -85,17 +86,17 @@ export const impact = {
 export const solutions = {
   number: "04",
   heading: "End-to-End Financial Solutions",
-  intro: "Placeholder paragraph. Once established, an integrated foundation can power a multitude of financial workflows — from budgeting to auditing, and all the steps in-between.",
+  intro: "Once that integrated foundation is in place, it can power the full range of financial work — from budget formation through execution and auditing, and every step in between. Teams stop maintaining data and start acting on it.",
   cards: [
     {
       title: "Budgeting",
-      body: "Placeholder description. Describe how budget analysts move from manual, spreadsheet-bound processes to a connected, auditable budgeting workflow.",
+      body: "Budget analysts move off manual, spreadsheet-bound processes onto a connected workflow where every figure is traceable to its source. Plans, adjustments, and approvals stay in sync, so the budget is always current and always auditable.",
       image: null,
       alt: "Budgeting workflow",
     },
     {
       title: "Auditing",
-      body: "Placeholder description. Describe how billions of transactions stream into a single environment for continuous, explainable auditing.",
+      body: "Millions of transactions flow into a single, governed environment where they can be checked continuously rather than once a year. Every result is explainable and traceable back to the underlying records, turning audit prep into an everyday state.",
       image: null,
       alt: "Auditing dashboard",
     },

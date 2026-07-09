@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { impact } from "@/content/supply-chain";
 
-import { GiantHeading, SectionHeading, InkLink } from "./parts";
+import { GiantHeading, SectionHeading } from "./parts";
 
 /**
  * "Real-World Impact" — a giant heading, then per case study: a 50px title and a
@@ -52,11 +52,6 @@ export function Impact() {
                         <span aria-hidden>↳</span>
                         {c.attribution}
                       </p>
-                      <div className="border-b border-ink/30 pb-[8px] tablet:w-[200px]">
-                        <InkLink href={impact.videoLink.href} className="text-body">
-                          {impact.videoLink.label}
-                        </InkLink>
-                      </div>
                     </div>
                   </div>
                 </div>

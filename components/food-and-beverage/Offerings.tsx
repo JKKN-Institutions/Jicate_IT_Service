@@ -7,7 +7,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { cn } from "@/lib/utils";
 import { offerings } from "@/content/food-and-beverage";
 
-import { GiantHeading, ReadLink, Eyebrow } from "./parts";
+import { GiantHeading, Eyebrow } from "./parts";
 
 /**
  * Our Offerings — a giant heading and a vertical-tab walkthrough: a tab rail on
@@ -66,13 +66,6 @@ export function Offerings() {
                 >
                   {p}
                 </p>
-              ))}
-            </div>
-            <div className="mt-m flex flex-col gap-l">
-              {item.links.map((l) => (
-                <ReadLink key={l.label} href={l.href}>
-                  {l.label}
-                </ReadLink>
               ))}
             </div>
           </div>

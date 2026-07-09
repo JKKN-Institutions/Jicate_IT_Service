@@ -46,11 +46,6 @@ export function FeatureBand({
                     loading="lazy"
                   />
                 </div>
-                {band.imageLink ? (
-                  <figcaption>
-                    <InkLink href={band.imageLink.href}>{band.imageLink.label}</InkLink>
-                  </figcaption>
-                ) : null}
               </figure>
             </Reveal>
           ) : (

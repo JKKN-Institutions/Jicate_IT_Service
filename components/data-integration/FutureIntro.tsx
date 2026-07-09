@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { futureIntro } from "@/content/data-integration";
 
-import { GiantHeading, InkLink } from "./parts";
+import { GiantHeading } from "./parts";
 
 /**
  * "The Future of Data Integration." — giant heading + a short lead paragraph,
@@ -30,11 +30,6 @@ export function FutureIntro() {
                 loading="lazy"
               />
             </div>
-            {futureIntro.imageLink ? (
-              <figcaption>
-                <InkLink href={futureIntro.imageLink.href}>{futureIntro.imageLink.label}</InkLink>
-              </figcaption>
-            ) : null}
           </figure>
         </Reveal>
       </Container>

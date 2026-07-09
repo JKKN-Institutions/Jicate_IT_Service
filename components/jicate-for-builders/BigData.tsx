@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { bigData } from "@/content/jicate-for-builders";
 
-import { GiantHeading, InkLink, MediaPlaceholder } from "./parts";
+import { GiantHeading, MediaPlaceholder } from "./parts";
 
 /**
  * Big Data band — a 2-column layout: a giant statement heading on the left
@@ -30,13 +30,6 @@ export function BigData() {
                 {bigData.platformHeading}
               </h3>
               <p className="text-body leading-[1.5] text-ink-light">{bigData.platformBody}</p>
-              <div className="mt-m flex flex-col gap-l">
-                {bigData.platformLinks.map((l) => (
-                  <InkLink key={l.label} href={l.href}>
-                    {l.label}
-                  </InkLink>
-                ))}
-              </div>
             </Reveal>
 
             <Reveal index={2} className="flex flex-col gap-l">

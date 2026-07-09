@@ -38,7 +38,7 @@ export function Partnerships() {
                   {c.heading}
                 </GiantHeading>
                 <p className="text-body leading-[1.5] text-ink-light">{c.body}</p>
-                <InkLink href="#" className="self-start">
+                <InkLink href="/enquiry-form" className="self-start">
                   {c.link}
                 </InkLink>
               </div>

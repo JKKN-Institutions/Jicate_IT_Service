@@ -51,7 +51,7 @@ export const intro = {
 export const explore = {
   heading: "Explore the Features",
   text: "See how the Jicate platform powers secure collaboration for a truly data-centric force.",
-  cta: "Features",
+  cta: "Reach Out Here",
 };
 
 /* ------------------------------- demo form ------------------------------- */

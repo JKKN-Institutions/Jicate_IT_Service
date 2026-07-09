@@ -7,7 +7,6 @@ import {
   Work,
   Impact,
   HowItWorks,
-  Spotlight,
   Differentiators,
   ContactForm,
 } from "@/components/jicate-for-rail";
@@ -26,7 +25,6 @@ export default function JicateForRailPage() {
       <Work />
       <Impact />
       <HowItWorks />
-      <Spotlight />
       <Differentiators />
       <ContactForm />
       {/* The shared site Footer renders from the root layout. */}

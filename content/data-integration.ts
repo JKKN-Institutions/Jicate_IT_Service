@@ -110,7 +110,6 @@ export const futureIntro = {
   lead: "Power diverse BI, analytics, AI, and operational applications from a single, unified integration layer.",
   image: "/data-integration/Data_Lineage_1.png",
   alt: "Interactive data lineage graph",
-  imageLink: { label: "Data Lineage", href: "#data-lineage" } satisfies CTA,
 };
 
 /* ------------------------------ feature bands ----------------------------- */
@@ -121,7 +120,6 @@ export const featureBands: FeatureBand[] = [
     title: "Data Governance. Automated.",
     image: "/data-integration/Data_Lineage_1.png",
     alt: "Dynamic data lineage view",
-    imageLink: { label: "Data Lineage", href: "#data-lineage" },
     features: [
       {
         eyebrow: "DYNAMIC DATA LINEAGE",
@@ -190,7 +188,6 @@ export const featureBands: FeatureBand[] = [
       {
         eyebrow: "CONTINUOUS DELIVERY AND ZERO DOWNTIME",
         body: "Every component within Foundry is powered by Apollo, the next-generation platform for autonomous scaling, management, and monitoring of critical infrastructure.",
-        link: { label: "Jicate Apollo", href: "#apollo" },
       },
       {
         eyebrow: "MISSION CONTROL FOR YOUR DATA",

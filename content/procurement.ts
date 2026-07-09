@@ -133,13 +133,6 @@ export const transformation = {
   ] as CaseTab[],
 };
 
-/* ------------------------------- partners -------------------------------- */
-
-export const partners = {
-  heading: "Our Procurement Partners",
-  logos: ["Partner 01", "Partner 02", "Partner 03", "Partner 04", "Partner 05", "Partner 06"],
-};
-
 /* --------------------------- operationalizing ---------------------------- */
 
 export const operationalizing = {

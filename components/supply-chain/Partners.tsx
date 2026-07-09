@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { partners } from "@/content/supply-chain";
 
-import { GiantHeading, Eyebrow, LeadLink } from "./parts";
+import { GiantHeading, Eyebrow } from "./parts";
 
 /**
  * "Our Partners" — a top hairline, a giant heading, then a three-column grid of
@@ -33,9 +33,6 @@ export function Partners() {
                     </li>
                   ))}
                 </ul>
-                <LeadLink href={partners.cta.href} className="text-body">
-                  {partners.cta.label}
-                </LeadLink>
               </article>
             ))}
           </Reveal>

@@ -4,7 +4,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { transformation } from "@/content/jicate-for-hospitals";
 
-import { SectionHeading, SubHeading, InkLink } from "./parts";
+import { SectionHeading, SubHeading } from "./parts";
 
 /**
  * "Transformation Journeys Start with Jicate" — a 50px heading, then a
@@ -51,7 +51,6 @@ export function Transformation() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={transformation.video} alt={transformation.videoAlt} className="h-full w-full object-cover" loading="lazy" />
               </div>
-              <InkLink href={transformation.videoLink.href}>{transformation.videoLink.label}</InkLink>
             </div>
           </Reveal>
         </div>

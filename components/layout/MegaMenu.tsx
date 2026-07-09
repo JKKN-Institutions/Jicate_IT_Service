@@ -113,10 +113,21 @@ export function MegaMenu({ open, onClose }: MegaMenuProps) {
                 key={card.headline}
                 className="col-span-12 tablet:col-span-6 flex flex-col gap-s"
               >
-                <div
-                  aria-hidden
-                  className="hidden aspect-video w-full bg-surface-medium tablet:block"
-                />
+                {card.image ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={card.image}
+                    alt={card.imageAlt ?? ""}
+                    className="hidden aspect-video w-full bg-surface-medium object-cover tablet:block"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ) : (
+                  <div
+                    aria-hidden
+                    className="hidden aspect-video w-full bg-surface-medium tablet:block"
+                  />
+                )}
                 <h3 className="font-display text-headline text-ink">
                   {card.headline}
                 </h3>

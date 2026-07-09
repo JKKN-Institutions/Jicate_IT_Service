@@ -33,9 +33,11 @@ export function ReadinessModule({ module }: { module: Module }) {
           </Reveal>
           <Reveal index={2} className="flex flex-col gap-l">
             <p className="text-body leading-[1.5] text-ink-light">{module.aside}</p>
-            <InkLink href="#" className="text-body">
-              {module.link}
-            </InkLink>
+            {module.link ? (
+              <InkLink href="#" className="text-body">
+                {module.link}
+              </InkLink>
+            ) : null}
           </Reveal>
         </div>
 

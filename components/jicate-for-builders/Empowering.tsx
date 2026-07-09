@@ -10,7 +10,7 @@ export function Empowering() {
     <Section className="bg-canvas" aria-label="Empowering innovators">
       <Container>
         <Reveal>
-          <GiantHeading as="h2" size="banner" className="max-w-[20ch]">
+          <GiantHeading as="h2" size="banner" className="max-w-[20ch] text-[clamp(2rem,1rem+3.9vw,3.85rem)]">
             {empowering.heading}
           </GiantHeading>
         </Reveal>

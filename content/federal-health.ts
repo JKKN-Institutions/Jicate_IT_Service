@@ -3,11 +3,13 @@
  * reference "Federal Health" offering page, mapped onto this project's design
  * system. Layout/visual treatment matches the reference 1:1; LIGHT theme.
  *
- * IMPORTANT: the reference's marketing prose, customer case studies, and press
- * headlines are the source's own content — they are NOT reproduced here.
- * Long-form copy, impact descriptions, and news titles below are neutral
- * PLACEHOLDER text; short functional labels (section titles, capability tab
- * names, solution categories, form fields) are kept for parity. User replaces.
+ * IMPORTANT (IP): the reference's marketing prose, customer case studies, and
+ * press headlines are the source's own copyrighted content and are NOT
+ * reproduced. The long-form copy, impact descriptions, and news titles below are
+ * ORIGINAL, Jicate-voiced text conveying the same general substance in fresh
+ * wording; case studies and news are genericized (no real names or headlines).
+ * Short functional labels (section titles, capability tab names, solution
+ * categories, form fields) are kept for design parity.
  *
  * Types are declared locally so the page is fully self-contained.
  *
@@ -53,10 +55,6 @@ export interface ResourceCard {
   cta: CTA;
 }
 
-export interface NewsLink {
-  title: string;
-  href: string;
-}
 
 /* --------------------------------- hero ----------------------------------- */
 
@@ -74,15 +72,15 @@ export const hero = {
 
 export const impact = {
   heading: "Our Impact",
-  intro: "Placeholder paragraph. For the first time, agencies can easily collaborate on diverse data sets and workflows — from accelerating fundamental research to modernizing public health information systems.",
+  intro: "For the first time, agencies can work together across very different data sets and workflows in one place — whether they are speeding up fundamental research or modernizing the public health information systems the country depends on.",
   items: [
     {
       title: "Program One",
-      body: "Placeholder description. Describe how the platform helps facilitate pandemic response, management, reporting, and data sharing.",
+      body: "Jicate helps agencies coordinate pandemic response end to end — running day-to-day operations, standardizing reporting, and sharing data quickly and securely between teams.",
     },
     {
       title: "Program Two",
-      body: "Placeholder description. Describe how the platform enables researchers to better understand complex health conditions at scale.",
+      body: "Researchers use Jicate to study complex health conditions at scale, connecting data that was previously siloed to surface patterns and accelerate discovery.",
     },
   ] satisfies ImpactItem[],
 };
@@ -96,21 +94,21 @@ export const solutions = {
       eyebrow: "PUBLIC HEALTH SURVEILLANCE + RESPONSE",
       image: `${BASE}/hans-reniers-lQGJCMY5qcM-unsplash.jpg`,
       alt: "Laboratory work",
-      body: "Placeholder description. Oversee operations and make decisions on top of high-quality real-world data while enabling secure collaboration and protecting data within the platform.",
+      body: "Run surveillance and response operations on trusted, high-quality real-world data — collaborating securely across teams while sensitive information stays protected inside the platform.",
       cta: { label: "Learn More", href: "#capabilities" },
     },
     {
       eyebrow: "POPULATION HEALTH",
       image: `${BASE}/shutterstock_1665408049.jpg`,
       alt: "A crowd of people",
-      body: "Placeholder description. Drive informed decisions about population health interventions at the micro- and macro-levels while protecting privacy of the public.",
+      body: "Make well-informed decisions about population health interventions at both the individual and community scale, with privacy safeguards built in for the people you serve.",
       cta: { label: "Learn More", href: "#capabilities" },
     },
     {
       eyebrow: "EMERGENCY PREPAREDNESS, RESPONSE, + RECOVERY",
       image: `${BASE}/shutterstock_1827506501.jpg`,
       alt: "Emergency responders",
-      body: "Placeholder description. Model scenarios and prepare for emergencies, leveraging platform tools to improve transparency and explainability.",
+      body: "Model scenarios and rehearse for emergencies before they happen, using tools that keep every decision transparent and easy to explain.",
       cta: { label: "Learn More", href: "#capabilities" },
     },
   ] satisfies SolutionCard[],
@@ -127,7 +125,7 @@ export const capabilities = {
       number: "01",
       eyebrow: "01 — DATA INTEGRATION + HARMONIZATION",
       heading: "Collect, integrate, and harmonize data flexibly",
-      body: "Placeholder paragraph. The platform integrates and harmonizes complex, multi-modal data, making it analysis-ready through a secure open architecture, APIs, and a dynamic ontology.",
+      body: "Jicate brings complex, multi-modal data together and harmonizes it into an analysis-ready foundation — built on a secure open architecture, open APIs, and a living ontology.",
       bullets: [
         "Secure integration, transformation, and harmonization of data into one open environment",
         "Bi-directional connectivity to any systems, including EHRs/EMRs",
@@ -140,48 +138,48 @@ export const capabilities = {
       number: "02",
       eyebrow: "02 — DATA SHARING",
       heading: "Share data securely across teams and agencies",
-      body: "Placeholder paragraph. Describe how the platform enables secure, governed data sharing across organizational boundaries.",
-      bullets: ["Placeholder bullet one.", "Placeholder bullet two.", "Placeholder bullet three."],
+      body: "Share data across organizational boundaries without ever losing control of it. Governance travels with the data, so every agency sees exactly what it is cleared to see.",
+      bullets: ["Governed sharing across teams, agencies, and partners", "Fine-grained controls that follow the data everywhere", "A full, auditable record of who shared what, and when"],
     },
     {
       tab: "Data Access",
       number: "03",
       eyebrow: "03 — DATA ACCESS",
       heading: "Grant the right access to the right users",
-      body: "Placeholder paragraph. Describe granular, role-based access control across the data ecosystem.",
-      bullets: ["Placeholder bullet one.", "Placeholder bullet two.", "Placeholder bullet three."],
+      body: "Give each person precisely the access their role requires — no more, no less — across the entire data ecosystem.",
+      bullets: ["Role- and attribute-based access controls", "Purpose-based permissions enforced automatically", "Every access decision logged for review and audit"],
     },
     {
       tab: "Data Quality",
       number: "04",
       eyebrow: "04 — DATA QUALITY",
       heading: "Ensure data quality and up-to-date data",
-      body: "Placeholder paragraph. Describe automated checks and monitoring that keep data accurate and current.",
-      bullets: ["Placeholder bullet one.", "Placeholder bullet two.", "Placeholder bullet three."],
+      body: "Keep data accurate and current with automated checks that run continuously and flag issues before they ever reach a decision.",
+      bullets: ["Automated validation and quality monitoring", "Alerts the moment data drifts or goes stale", "Clear lineage back to every source"],
     },
     {
       tab: "Data-Driven Workflows",
       number: "05",
       eyebrow: "05 — DATA-DRIVEN WORKFLOWS",
       heading: "Operationalize decisions with data-driven workflows",
-      body: "Placeholder paragraph. Describe how analysis turns into action through configurable workflows.",
-      bullets: ["Placeholder bullet one.", "Placeholder bullet two.", "Placeholder bullet three."],
+      body: "Turn analysis into action with configurable workflows that put insight directly in the hands of the people doing the work.",
+      bullets: ["Configurable, point-and-click workflows", "Actions wired directly to live data", "Repeatable processes that scale across teams"],
     },
     {
       tab: "Interoperability",
       number: "06",
       eyebrow: "06 — INTEROPERABILITY",
       heading: "Connect systems and standards seamlessly",
-      body: "Placeholder paragraph. Describe interoperability across health data standards and external systems.",
-      bullets: ["Placeholder bullet one.", "Placeholder bullet two.", "Placeholder bullet three."],
+      body: "Work across the health data standards and external systems agencies already depend on, so nothing has to be rebuilt from scratch.",
+      bullets: ["Support for common health data standards", "Connectivity to existing external systems", "Interoperable data models and terminologies"],
     },
     {
       tab: "Data Privacy + Security",
       number: "07",
       eyebrow: "07 — DATA PRIVACY + SECURITY",
       heading: "Protect data with privacy and security by design",
-      body: "Placeholder paragraph. Describe the privacy-preserving and security-first foundations of the platform.",
-      bullets: ["Placeholder bullet one.", "Placeholder bullet two.", "Placeholder bullet three."],
+      body: "Privacy and security are built into the foundation, not bolted on afterwards — protecting sensitive health data at every layer.",
+      bullets: ["Privacy-preserving controls on by default", "Security enforced as immutable metadata", "Continuous monitoring and full auditability"],
     },
   ] satisfies CapabilityTab[],
 };
@@ -193,38 +191,27 @@ export const resources = {
   cards: [
     {
       image: `${BASE}/shutterstock_1481978897__1_.jpg`,
-      body: "Placeholder description. A leader unpacks what's critical for meeting a crisis head-on and sustaining the response.",
+      body: "A public-health leader shares what it takes to meet a crisis head-on — and to sustain the response long after the first surge has passed.",
       cta: { label: "Watch the Talk", href: "#" },
     },
     {
       image: `${BASE}/shutterstock_1652886169.jpg`,
-      body: "Placeholder description. This impact study discusses how a major agency used the platform's interoperability capabilities.",
+      body: "An impact study on how a large federal agency used Jicate's interoperability capabilities to connect data that had never worked together before.",
       cta: { label: "Download Impact Study", href: "#" },
     },
     {
       image: `${BASE}/shutterstock_297132446.jpg`,
-      body: "Placeholder description. Learn how the platform is helping a hospital create a connected health system and improve outcomes.",
+      body: "How one hospital is building a connected health system on Jicate — and improving patient outcomes along the way.",
       cta: { label: "Read Blog Post", href: "#" },
     },
     {
       image: `${BASE}/john-towner-p-rN-n6Miag-unsplash.jpg`,
-      body: "Placeholder description. This event showcases how the software is used by the life sciences and manufacturing industries.",
+      body: "A walkthrough of how teams across life sciences and manufacturing put Jicate to work in their day-to-day operations.",
       cta: { label: "Watch the Demo", href: "#" },
     },
   ] satisfies ResourceCard[],
 };
 
-/* ----------------------------- news + accolades --------------------------- */
-
-export const news = {
-  heading: "News + Accolades",
-  links: [
-    { title: "Placeholder headline one — replace with your own news item.", href: "#" },
-    { title: "Placeholder headline two — replace with your own news item.", href: "#" },
-    { title: "Placeholder headline three — replace with your own news item.", href: "#" },
-    { title: "Placeholder headline four — replace with your own accolade.", href: "#" },
-  ] satisfies NewsLink[],
-};
 
 /* --------------------------------- form ----------------------------------- */
 

@@ -32,7 +32,7 @@ export interface Module {
   intro: string;
   body: string;
   aside: string;
-  link: string;
+  link?: string;
   banner: ReadyBanner;
 }
 
@@ -71,7 +71,6 @@ export const modules: Module[] = [
     intro: "Jicate Asset Readiness provides an authoritative, actionable picture of an organization’s assets.",
     body: "The Jicate Platform unifies an organization’s fractured data landscape to create a digital replica of its assets. Asset Readiness helps many of the world’s largest organizations understand trends, answer questions about asset health, and make decisions in a single environment.",
     aside: "Jicate Asset Readiness offers up-to-date metrics and insights organizations can trust. Integrated data and flexible applications allow users to ask and answer questions for quick, accurate visibility.",
-    link: "Read the whitepaper",
     banner: {
       word1: "ASSET",
       word2: "READINESS",
@@ -87,7 +86,6 @@ export const modules: Module[] = [
     intro: "Jicate Personnel Readiness offers a secure and flexible personnel management solution.",
     body: "The Jicate Platform can integrate, fuse, and correlate all relevant data in a secure data environment to help facilitate qualitative and quantitative analyses in support of an organization’s key hiring, training, talent management, and retention needs.",
     aside: "The Jicate Platform revolutionizes an organization’s approach to personnel optimization and force readiness. To date, the platform has integrated more than 160 source systems and over 30,000 tables of data, many with millions of rows each.",
-    link: "Read the whitepaper",
     banner: {
       word1: "PERSONNEL",
       word2: "READINESS",
@@ -103,7 +101,6 @@ export const modules: Module[] = [
     intro: "Jicate Financial Management is a comprehensive and configurable module that brings together budget, financial, and contracting data.",
     body: "The Jicate Platform unifies financial data across silos, systems, and functions without a full system migration — helping create a collaborative, secure foundation for financial management professionals to analyze portfolios, track budgets, and intelligently reallocate funds.",
     aside: "Ensure every cent serves the mission. Within the first year of implementation, organizations have deobligated billions in funding using Jicate, well above prior-year baselines.",
-    link: "Learn more",
     banner: {
       word1: "FINANCIAL",
       word2: "MANAGEMENT",
@@ -122,7 +119,7 @@ export const reseller = {
   brandB: "Reseller Network",
   body: "Our authorized government reseller is the trusted IT solutions provider that supports an ecosystem of manufacturers, value-added resellers, system integrators, and consulting partners.",
   note: "Readiness modules are available to the public sector through our authorized reseller partners.",
-  link: "Reach out here to learn more",
+  link: "Reach Out Here",
 };
 
 /* ------------------------------- get ready ------------------------------- */

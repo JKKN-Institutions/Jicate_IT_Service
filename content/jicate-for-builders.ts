@@ -45,10 +45,6 @@ export const bigData = {
   platformHeading: "Jicate’s enterprise-grade software platforms.",
   platformBody:
     "Backed by years of product development and proven across major organizations worldwide, Jicate delivers a modern, end-to-end AI platform that enables organizations to fully customize internal systems, integrate LLMs into operational workflows, build and scale customer-facing products, all while maintaining robust security and governance.",
-  platformLinks: [
-    { label: "The Platform", href: "#" },
-    { label: "AIP", href: "#" },
-  ] as CTA[],
   videoAlt: "Interview — the Jicate for Builders program",
   videoCaption: "Our team discusses the Jicate for Builders program and mission.",
   quote: "“It is the same enterprise-grade software, but we’re leaning on the talent of our customers to do the building.”",

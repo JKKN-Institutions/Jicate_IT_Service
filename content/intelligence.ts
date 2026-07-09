@@ -25,7 +25,7 @@ export interface ContentBlock {
 
 export const hero = {
   title: "Intelligence",
-  tagline: "Jicate empowers intelligence agencies to securely derive actionable insights from sensitive data and achieve their most challenging operational objectives.",
+  tagline: "Jicate helps intelligence agencies turn sensitive data into actionable insight — securely — so they can meet their toughest operational objectives.",
   video: `${BASE}/Analysis_01.mp4`,
   alt: "Abstract intelligence-data visualization",
 };
@@ -33,25 +33,25 @@ export const hero = {
 /* -------------------------------- mission --------------------------------- */
 
 export const mission =
-  "Placeholder paragraph. Describe the founding mission to help intelligence agencies make better use of their data securely and responsibly, and how governments use the platform to understand and defend against evolving threats to national security — from cyberattacks, to disinformation, to insurgencies.";
+  "Jicate was built to help intelligence agencies make better, more responsible use of their data. Today, governments around the world rely on Jicate Gotham and Jicate Foundry to understand and defend against evolving threats to national security — from cyberattacks, to disinformation, to insurgencies.";
 
 /* ----------------------------- content blocks ----------------------------- */
 
 export const blocks = [
   {
     heading: "Build a Secure Data Foundation",
-    body: "Placeholder paragraph. Describe how agencies unify their fractured data landscape — integrating data of any type, size, source, or format while preserving the integrity and classification of source systems, with granular access controls that govern how users interact with data by role, classification, or purpose.",
+    body: "Intelligence agencies use Jicate to unify a fractured data landscape, integrating data of any type, size, source, or format while preserving the integrity and classification of the systems it comes from. Granular access controls govern how each user can work with data — by role, classification, or purpose — and streaming sources like live video can be brought in real time, with searches federated out to external systems. Once integrated, the platform helps refine high-volume, high-noise datasets and provides the infrastructure to deploy, train, evaluate, and improve AI and machine-learning models. By pairing human judgment with technology that makes data manageable at massive scale, analysts spend less time wrangling data and more time understanding it.",
   },
   {
     heading: "Access the Right Data at the Right Time",
-    body: "Placeholder paragraph. Describe how the software lets agencies build a one-stop shop for analysts and operators to find, request, and act on the data they need — when and where they need it.",
+    body: "The software gives agencies a single place for collaborative analysis, putting the data intelligence officers need in front of them exactly when they need it. Everyone from analysts to executives can make decisions against a knowledge base that compounds over time — nontechnical users don't have to learn specialized query languages to find and analyze data, while data-science toolkits let technical users get the most from the agency's data foundation. As proven commercial software already trusted across the intelligence community, Jicate is ready to deploy off the shelf, so agencies can bring cutting-edge technology to their most urgent problems without delay.",
   },
   {
     heading: "Protect Data and Secure Civil Liberties",
-    body: "Placeholder paragraph. Describe the belief that privacy and security are fundamental and complementary, and how the platform's controls, auditing, and oversight protect data and safeguard civil liberties.",
+    body: "We hold that privacy and security are fundamental to a well-functioning society, and the software has been designed from the start to protect data and preserve those shared values. Sophisticated access controls and audit logging make collaboration possible without compromising security or privacy — permissions can be highly granular, including temporal and purpose-based limits, and every user action is recorded so authorized oversight bodies can confirm data is used appropriately and lawfully. These protections apply across all networks, sensitivities, and classification levels, letting agencies stand up an ICD 501-compliant environment that non-technical analysts can actually use.",
   },
   {
     heading: "Transform the Intelligence Enterprise",
-    body: "Placeholder paragraph. Describe how the work — with strong roots in counterterrorism — has expanded to help intelligence enterprises modernize and transform end to end.",
+    body: "With deep roots in counterterrorism, the work has grown to help governments transform their core operations and functions end to end. Agencies use Jicate to manage resources, track budgets, attract talent, and retain their people — and leaders can make data-driven decisions that let their agencies spend resources effectively, efficiently, and accountably.",
   },
 ] satisfies ContentBlock[];

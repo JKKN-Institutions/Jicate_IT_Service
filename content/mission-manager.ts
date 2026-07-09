@@ -4,9 +4,10 @@
  * system. Layout matches the reference 1:1; the page is DARK (rgb(30,33,36)
  * background, white text). No contact form.
  *
- * IMPORTANT: the reference's marketing prose is the source's own content — it
- * is NOT reproduced here. Body copy below is neutral PLACEHOLDER text; short
- * functional headings/labels are kept for parity. User replaces all copy.
+ * IMPORTANT (IP): the reference's marketing prose is the source's own copyrighted
+ * content and is NOT reproduced. The body copy below is ORIGINAL, Jicate-voiced
+ * text conveying the same general substance in fresh wording; short functional
+ * headings/labels are kept for design parity.
  *
  * Local media (in /public/mission-manager):
  *   shutterstock_1902204682.png        — hero full-bleed image
@@ -55,12 +56,6 @@ export const tailored = {
 
 /* ------------------------------- the benefits ----------------------------- */
 
-const placeholderBullets = [
-  { lead: "Placeholder benefit one", body: "Describe the value delivered. Replace with your own copy." },
-  { lead: "Placeholder benefit two", body: "Describe the value delivered. Replace with your own copy." },
-  { lead: "Placeholder benefit three", body: "Describe the value delivered. Replace with your own copy." },
-];
-
 export const benefits = {
   heading: "The Benefits",
   tabs: [
@@ -81,35 +76,55 @@ export const benefits = {
       number: "02",
       eyebrow: "02 — CONTINUOUS MONITORING AND DELIVERY",
       heading: "Monitor and Deliver Continuously",
-      bullets: placeholderBullets,
+      bullets: [
+        { lead: "Always-On Monitoring", body: "Track the health and security posture of every deployed application in real time." },
+        { lead: "Continuous Delivery", body: "Ship updates safely and often, without disrupting live operations." },
+        { lead: "Early Issue Detection", body: "Surface problems as they emerge, before they reach the mission." },
+      ],
     },
     {
       tab: "Distributed Data Architecture",
       number: "03",
       eyebrow: "03 — DISTRIBUTED DATA ARCHITECTURE",
       heading: "Operate on a Distributed Data Architecture",
-      bullets: placeholderBullets,
+      bullets: [
+        { lead: "Data Where It Lives", body: "Work across distributed environments without forcing everything into one place." },
+        { lead: "Resilient by Design", body: "Keep operating even when individual nodes or sites go offline." },
+        { lead: "Scales With the Mission", body: "Add capacity and new sites without re-architecting the system." },
+      ],
     },
     {
       tab: "Centralized Identity Management and Data Security",
       number: "04",
       eyebrow: "04 — CENTRALIZED IDENTITY MANAGEMENT AND DATA SECURITY",
       heading: "Centralize Identity and Secure Your Data",
-      bullets: placeholderBullets,
+      bullets: [
+        { lead: "One Identity Layer", body: "Manage users, roles, and permissions from a single, consistent place." },
+        { lead: "Data Protected End to End", body: "Enforce access controls and encryption across every application." },
+        { lead: "Auditable Access", body: "Keep a complete record of who accessed what, and when." },
+      ],
     },
     {
       tab: "Deploy Everywhere, Operational Today",
       number: "05",
       eyebrow: "05 — DEPLOY EVERYWHERE, OPERATIONAL TODAY",
       heading: "Deploy Everywhere and Stay Operational",
-      bullets: placeholderBullets,
+      bullets: [
+        { lead: "Any Environment", body: "Run in the cloud, on-premises, or fully disconnected at the edge." },
+        { lead: "Operational From Day One", body: "Stand up and start using new capabilities without a long integration cycle." },
+        { lead: "Consistent Everywhere", body: "Get the same experience and controls wherever the software runs." },
+      ],
     },
     {
       tab: "Open Standards",
       number: "06",
       eyebrow: "06 — OPEN STANDARDS",
       heading: "Build on Open Standards",
-      bullets: placeholderBullets,
+      bullets: [
+        { lead: "No Vendor Lock-In", body: "Build on open, well-supported standards rather than proprietary formats." },
+        { lead: "Easy to Integrate", body: "Connect with the systems and tools your program already relies on." },
+        { lead: "Future-Ready", body: "Adopt new vendors and technologies as your mission evolves." },
+      ],
     },
   ] satisfies BenefitTab[],
 };

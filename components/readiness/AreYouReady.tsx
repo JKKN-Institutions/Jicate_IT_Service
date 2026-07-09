@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { areYouReady as ar } from "@/content/readiness";
 
-import { GiantHeading, InkLink } from "./parts";
+import { GiantHeading } from "./parts";
 
 /**
  * "Are you ready?" — a giant heading, then a two-column block: a portrait image
@@ -37,11 +37,6 @@ export function AreYouReady() {
                     {p}
                   </p>
                 ))}
-              </div>
-              <div>
-                <InkLink href="#" className="text-body">
-                  {ar.link}
-                </InkLink>
               </div>
             </div>
           </Reveal>

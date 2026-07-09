@@ -3,11 +3,13 @@
  * the reference "Palantir for Hospitals" page, mapped onto this project's design
  * system. Layout matches the reference 1:1; a DARK hero band over a LIGHT body.
  *
- * IMPORTANT: the reference's marketing prose, the Mount Sinai case study, and
- * its statistics are the source's own content — they are NOT reproduced here.
- * Long-form copy, the quote, and stats below are neutral PLACEHOLDER text;
- * short functional labels (section titles, step/toggle names, form fields) are
- * kept for parity. User replaces all copy.
+ * IMPORTANT (IP): the reference's marketing prose, its named case study, and its
+ * statistics are the source's own copyrighted content and are NOT reproduced. The
+ * long-form copy, the quote, and the impact statements below are ORIGINAL,
+ * Jicate-voiced text conveying the same general substance in fresh wording; the
+ * case study is genericized (no real named health system, person, or quote, and no
+ * fabricated precise statistics). Short functional labels (section titles,
+ * step/toggle names, form fields) are kept for design parity.
  *
  * Local media (in /public/jicate-for-hospitals):
  *   shutterstock_381286231.jpg            — hero image
@@ -59,9 +61,9 @@ export const operatingSystem = {
 
 export const transformation = {
   heading: "Transformation Journeys Start with Jicate.",
-  quote: "Placeholder quote. …work more extensively with Jicate…the uses are endless.",
-  attribution: "Placeholder Name, Title, Placeholder Health System",
-  overview: "Placeholder overview. As a large hospital network, the health system turned to Jicate to build solutions that enable data-driven decisions across multiple workflows, and drive better financial and patient outcomes.",
+  quote: "The more our teams work with Jicate, the more uses we find for it — the possibilities really are open-ended.",
+  attribution: "Chief Information Officer, a large hospital network",
+  overview: "A large hospital network turned to Jicate to build solutions across many of its workflows — helping teams make decisions grounded in data, and improving both financial performance and patient outcomes.",
   examples: [
     {
       title: "Determining Program Eligibility",
@@ -69,7 +71,7 @@ export const transformation = {
     },
     {
       title: "Clinical Denials Management",
-      body: "Placeholder description. Replace with your own example of the work delivered together.",
+      body: "Automating the review and appeal of denied claims — flagging denials early, assembling the right supporting information, and helping teams respond faster and recover more revenue.",
     },
   ] satisfies WorkExample[],
   video: `${BASE}/Screenshot_2025-01-26_at_6.20.57_PM.png`,
@@ -80,15 +82,15 @@ export const transformation = {
 /* --------------------------- operationalizing ai -------------------------- */
 
 const placeholderImpact = [
-  "Placeholder stat. Describe a multi-hundred-percent increase in admissions to a hospital-at-home program.",
-  "Placeholder stat. Describe reduced PACU hold times and faster time-to-place per patient.",
-  "Placeholder stat. Describe increased daily transfer volume and reduced average ER hold time.",
-  "Placeholder stat. Describe increased discharge-lounge utilization, identifying eligible patients each day.",
+  "A significant rise in admissions to hospital-at-home programs.",
+  "Shorter PACU hold times and faster time-to-place for each patient.",
+  "Higher daily transfer volume and a lower average ER hold time.",
+  "Better use of discharge lounges by identifying eligible patients every day.",
 ];
 
 const placeholderAction = [
-  "Placeholder paragraph. Describe how the workflow looks in action for the operational team.",
-  "Placeholder paragraph. Describe the live demo or screenshot that shows the experience.",
+  "In practice, the operational team works from a single shared view — spotting bottlenecks as they form and acting before they cascade.",
+  "A live workspace shows the current picture at a glance, so the team can see the impact of each decision as it happens.",
 ];
 
 export const operationalizing = {
@@ -104,14 +106,14 @@ export const operationalizing = {
     {
       id: "0.2",
       title: "Revenue Cycle Management",
-      body: "Placeholder paragraph. Describe how the platform streamlines the revenue cycle — from appeals letters to denials management — with AI-driven automations.",
+      body: "Streamline the revenue cycle from end to end — from drafting appeals letters to managing denials — with AI-driven automations that cut manual work and speed up reimbursement.",
       impact: placeholderImpact,
       action: placeholderAction,
     },
     {
       id: "0.3",
       title: "Staffing & Scheduling",
-      body: "Placeholder paragraph. Describe how the platform optimizes staff schedules and balances workloads across the organization.",
+      body: "Optimize staff schedules and balance workloads across the organization, matching the right people to the right shifts while easing pressure on frontline teams.",
       impact: placeholderImpact,
       action: placeholderAction,
     },

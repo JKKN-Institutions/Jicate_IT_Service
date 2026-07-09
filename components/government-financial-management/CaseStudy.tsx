@@ -4,7 +4,7 @@ import { Container } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { caseStudy } from "@/content/government-financial-management";
 
-import { GiantHeading, SubHeading, NumberLabel, InkLink } from "./parts";
+import { GiantHeading, SubHeading, NumberLabel } from "./parts";
 
 /**
  * "02 / Case Study" — a numbered eyebrow and giant heading, then a three-column
@@ -49,7 +49,6 @@ export function CaseStudy() {
                   <img src={caseStudy.image} alt={caseStudy.alt} className="h-full w-full object-cover" loading="lazy" />
                 ) : null}
               </div>
-              <InkLink href={caseStudy.link.href}>{caseStudy.link.label}</InkLink>
             </div>
           </Reveal>
         </div>

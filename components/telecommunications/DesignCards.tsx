@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { design } from "@/content/telecommunications";
 
-import { GiantHeading, Eyebrow, InkLink } from "./parts";
+import { GiantHeading, Eyebrow } from "./parts";
 
 /**
  * Meeting the demands … by design — a giant heading, then a three-column grid of
@@ -27,9 +27,6 @@ export function DesignCards() {
                 <img src={c.image} alt={c.title} className="h-full w-full object-contain" loading="lazy" />
               </div>
               <p className="text-body leading-[1.5] text-ink">{c.body}</p>
-              <InkLink href="#" className="self-start">
-                Learn more
-              </InkLink>
             </Reveal>
           ))}
         </div>

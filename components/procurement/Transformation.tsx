@@ -7,7 +7,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { cn } from "@/lib/utils";
 import { transformation } from "@/content/procurement";
 
-import { GiantHeading, Eyebrow, InkLink, MediaPlaceholder } from "./parts";
+import { GiantHeading, Eyebrow, MediaPlaceholder } from "./parts";
 
 /**
  * Transformation Journeys — a giant heading, a row of pill tabs (one per partner),
@@ -91,9 +91,6 @@ export function Transformation() {
           {/* Right: partner logo + keynote link */}
           <div className="flex flex-col gap-l">
             <MediaPlaceholder label={c.logoLabel} className="aspect-[16/9]" />
-            <InkLink href="#" className="text-body">
-              {c.watchLabel}
-            </InkLink>
           </div>
         </div>
       </Container>

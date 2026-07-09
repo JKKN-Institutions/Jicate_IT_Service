@@ -6,7 +6,6 @@ import {
   Solutions,
   Capabilities,
   Resources,
-  News,
   ContactForm,
 } from "@/components/federal-health";
 
@@ -23,7 +22,6 @@ export default function FederalHealthPage() {
       <Solutions />
       <Capabilities />
       <Resources />
-      <News />
       <ContactForm />
       {/* The shared site Footer renders from the root layout. */}
     </main>

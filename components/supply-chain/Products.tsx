@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { products } from "@/content/supply-chain";
 
-import { GiantHeading, Eyebrow, LeadLink } from "./parts";
+import { GiantHeading, Eyebrow } from "./parts";
 
 /**
  * "Learn about Jicate Supply Chain Solutions" — a top hairline, a giant heading,
@@ -25,9 +25,6 @@ export function Products() {
                   <img src={card.image} alt={card.alt} className="h-full w-full object-cover" loading="lazy" />
                 </div>
                 <p className="text-[clamp(0.9375rem,1.1vw,1rem)]/[1.43] text-ink">{card.body}</p>
-                <LeadLink href="#" className="text-body">
-                  Learn more
-                </LeadLink>
               </article>
             ))}
           </Reveal>

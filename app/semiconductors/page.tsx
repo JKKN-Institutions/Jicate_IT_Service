@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { Hero, AcceleratingRD, LatestNews, DemoForm } from "@/components/semiconductors";
+import { Hero, AcceleratingRD, DemoForm } from "@/components/semiconductors";
 
 export const metadata: Metadata = {
   title: "Offerings | Semiconductors",
@@ -13,7 +13,6 @@ export default function SemiconductorsPage() {
     <main className="flex-1 bg-canvas">
       <Hero />
       <AcceleratingRD />
-      <LatestNews />
       <DemoForm />
       {/* The shared site Footer renders from the root layout. */}
     </main>

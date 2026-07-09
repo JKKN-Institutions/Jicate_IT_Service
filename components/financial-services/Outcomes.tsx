@@ -6,7 +6,7 @@ import { Container, Section } from "@/components/ui";
 import { cn } from "@/lib/utils";
 import { outcomes, type OutcomeTab } from "@/content/financial-services";
 
-import { GiantHeading, InkLink } from "./parts";
+import { GiantHeading } from "./parts";
 
 /**
  * "Driving Industry Outcomes" — a giant heading, a wrapping rail of toggle
@@ -91,7 +91,6 @@ function Panel({ tab }: { tab: OutcomeTab }) {
             <img src={tab.image} alt={tab.alt} className="h-full w-full object-cover" loading="lazy" />
           ) : null}
         </div>
-        <InkLink href={tab.link.href}>{tab.link.label}</InkLink>
       </div>
     </div>
   );

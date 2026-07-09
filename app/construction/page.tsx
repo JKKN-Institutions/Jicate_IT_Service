@@ -7,7 +7,6 @@ import {
   Capabilities,
   Impact,
   Testimonials,
-  Explore,
   CtaBand,
   ContactForm,
 } from "@/components/construction";
@@ -27,7 +26,6 @@ export default function ConstructionPage() {
       <Capabilities />
       <Impact />
       <Testimonials />
-      <Explore />
       <CtaBand />
       <ContactForm />
       {/* The shared site Footer renders from the root layout. */}

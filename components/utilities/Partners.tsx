@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { partners } from "@/content/utilities";
 
-import { SectionHeading, ReadLink } from "./parts";
+import { SectionHeading } from "./parts";
 
 /**
  * Our Partners — a top hairline, a 50px heading, then a three-column row of
@@ -24,7 +24,6 @@ export function Partners() {
                 </div>
                 <p className="text-[16px]/[1.43] text-ink">{p.stat}</p>
                 <p className="text-[16px]/[1.43] text-ink-light">{p.note}</p>
-                <ReadLink href={p.link.href}>{p.link.label}</ReadLink>
               </div>
             ))}
           </Reveal>

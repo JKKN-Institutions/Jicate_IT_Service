@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { resources } from "@/content/federal-health";
 
-import { SectionHeading, InkLink } from "./parts";
+import { SectionHeading } from "./parts";
 
 /**
  * "Resources" — a top hairline, a 50px heading, then a four-column grid of
@@ -23,9 +23,6 @@ export function Resources() {
                   <img src={card.image} alt="" className="h-full w-full object-cover" loading="lazy" />
                 </div>
                 <p className="text-body leading-[1.45] text-ink">{card.body}</p>
-                <InkLink href={card.cta.href} lead className="text-body">
-                  {card.cta.label}
-                </InkLink>
               </article>
             ))}
           </Reveal>

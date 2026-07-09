@@ -98,15 +98,19 @@ export const megaMenuFeatured: FeaturedCard[] = [
   {
     headline: "The latest from Jicate",
     caption: "News, announcements, and updates from across the company.",
+    image: "/menu/jicate_group_photo (1).jpg",
+    imageAlt: "The Jicate team",
     link: {
       label: "Read Jicate Explained",
-      href: "/jicate-explained",
+      href: "/about",
       arrow: "drillin",
     },
   },
   {
     headline: "See the impact in the field",
     caption: "How teams put Jicate to work on their hardest problems.",
+    image: "/menu/premium-services-illustration.svg",
+    imageAlt: "Jicate premium services illustration",
     link: {
       label: "Explore our Offerings",
       href: "/offerings",

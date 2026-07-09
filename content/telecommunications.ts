@@ -48,7 +48,7 @@ export interface Field {
 export const hero = {
   title: "Telecommunications",
   subcopy: "Making data and analytics operational — from Circuit to Customer.",
-  link: "Learn more about the platform",
+  link: "Contact Us",
   image: "/telecommunications/shutterstock_1606674793.jpg",
   imageAlt: "Telecommunications towers against a blue sky",
 };
@@ -233,14 +233,14 @@ export const partnerships = {
       body: "A US operator’s Jicate-powered 5G network offering helps facilitate Connectivity as a Service (CaaS) and can unlock the value of data, even in limited-bandwidth or low-infrastructure environments.",
       image: "/telecommunications/Picture1.png",
       imageAlt: "Keynote presentation on a conference stage",
-      link: "Read More",
+      link: "Request a Demo",
     },
     {
       heading: "Jicate & an Indian Telecom Leader",
       body: "Leaders from Jicate and a major Indian telecom operator discuss software, sovereignty, and the future of connectivity on stage at a leading technology conference in India.",
       image: "/telecommunications/shutterstock_1606674793 (1).jpg",
       imageAlt: "Leaders speaking at a technology conference",
-      link: "Play Video",
+      link: "Request a Demo",
     },
   ],
 };

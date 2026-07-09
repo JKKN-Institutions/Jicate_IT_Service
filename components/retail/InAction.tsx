@@ -6,7 +6,7 @@ import { Container, Section } from "@/components/ui";
 import { cn } from "@/lib/utils";
 import { inAction, type CaseTab } from "@/content/retail";
 
-import { SectionHeading, InkLink } from "./parts";
+import { SectionHeading } from "./parts";
 
 /**
  * "The Platform in Action" — a 50px heading, a wrapping rail of case-study pills,
@@ -68,7 +68,6 @@ function Panel({ tab }: { tab: CaseTab }) {
             <img src={tab.image} alt={tab.alt} className="h-full w-full object-cover" loading="lazy" />
           ) : null}
         </div>
-        <InkLink href={inAction.caseLink.href}>{inAction.caseLink.label}</InkLink>
       </div>
     </div>
   );
