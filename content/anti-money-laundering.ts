@@ -38,8 +38,8 @@ export const hero = {
   title: "Anti-Money Laundering",
   subcopy: "Fighting the Future of Financial Crime",
   cta: { label: "Get Started", href: "#start-a-conversation" } as CTA,
-  // AML_Thumbnail.jpg is not shipped — Hero renders a video placeholder.
-  videoLabel: "Play Video",
+  image: "/anti-money-laundering/TA-2-AML.avif",
+  imageAlt: "Anti-money-laundering network analysis visual",
 };
 
 /* --------------------- One Approach, Every Challenge --------------------- */
@@ -113,8 +113,8 @@ export const platformForAml = {
 
 export const whatSetsApart = {
   heading: "What sets Jicate apart:",
-  // shutterstock_715806535.jpg is not shipped — rendered as a placeholder.
-  imageAlt: "Financial operations team at work",
+  image: "/anti-money-laundering/shutterstock_715806535 (1).jpg",
+  imageAlt: "Secure data-center corridor lined with server racks",
   features: [
     {
       title: "Powerful AI Foundation",

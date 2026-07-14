@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { regulatory } from "@/content/jicate-for-builders";
 
-import { GiantHeading, MediaPlaceholder } from "./parts";
+import { GiantHeading } from "./parts";
 
 /**
  * Regulatory band — a giant statement about compliance, with a centered logo
@@ -19,7 +19,15 @@ export function Regulatory() {
         </Reveal>
 
         <Reveal index={1} className="mt-3xl flex justify-center">
-          <MediaPlaceholder label={regulatory.logoAlt} className="aspect-[3/1] max-w-[420px]" />
+          <div className="aspect-[16/10] w-full max-w-[640px] overflow-hidden rounded-[2px] bg-ink/[0.06]">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={regulatory.image}
+              alt={regulatory.logoAlt}
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </div>
         </Reveal>
       </Container>
     </Section>

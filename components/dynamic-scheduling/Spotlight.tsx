@@ -28,13 +28,13 @@ export function Spotlight() {
           </Reveal>
 
           <Reveal index={1}>
-            <div className="aspect-[16/10] w-full overflow-hidden rounded-[2px] bg-band">
+            <div className="aspect-[4503/3102] w-full overflow-hidden rounded-[2px] bg-band">
               {spotlight.image ? (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
                   src={spotlight.image}
                   alt={spotlight.alt}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-contain"
                   loading="lazy"
                 />
               ) : (

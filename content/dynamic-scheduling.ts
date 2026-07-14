@@ -57,6 +57,8 @@ export const spotlightBand = {
   title: "Dynamic Scheduling Primitives",
   body: "Automatically trigger actions to downstream operational systems.",
   playLabel: "Play Video",
+  image: "/dynamic-scheduling/use-case-widget.png",
+  alt: "Scheduling Hub — use-case widget",
   wordmark: "Jicate",
   copyright:
     "© 2026 Jicate IT Service. The information in this video is provided for informational purposes only. Actual results and experiences may vary.",
@@ -101,10 +103,8 @@ export const keyFeatures = {
 export const spotlight = {
   heading: "Spotlight",
   title: "AI-Powered Scheduling Optimization, Powered by Foundry Dynamic Scheduling",
-  // Reference photo (CERAWeek) not shipped in /public/dynamic-scheduling — set
-  // a path here to swap in the real asset; null renders a neutral placeholder.
-  image: null as string | null,
-  alt: "Scheduling spotlight",
+  image: "/dynamic-scheduling/Asset_8TPM_Monitor.png" as string | null,
+  alt: "Foundry Rules app — editing a scheduling rule",
   body: "A conversation on making AI operational across heavy industry — how dynamic scheduling turns real-time data into decisions for critical institutions across the globe.",
   link: { label: "Learn More", href: "#learn-more" } satisfies CTA,
 };

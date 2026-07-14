@@ -8,7 +8,7 @@ import { GiantHeading, SectionIndex, InkLink } from "./parts";
  * Reusable numbered section (02 / 03 / 04 / 05). Index + a giant full-width
  * heading, then a three-column row: the lead paragraph (left) and the two
  * blocks (middle/right) with display-scale titles. Section 03 additionally
- * renders an Edge AI link and a video poster placeholder. Dark Section.
+ * renders an Edge AI link and a full-width image. Dark Section.
  */
 export function NumberedSection({ data }: { data: NumberedSectionData }) {
   return (
@@ -44,20 +44,16 @@ export function NumberedSection({ data }: { data: NumberedSectionData }) {
           ) : null}
         </div>
 
-        {data.videoPlaceholder ? (
+        {data.image ? (
           <Reveal className="mt-2xl">
-            <div className="flex aspect-[16/8] items-center justify-center rounded-[6px] border border-offwhite/10 bg-[#15181b] text-offwhite">
-              <span className="flex items-center gap-s">
-                <span
-                  aria-hidden
-                  className="flex h-[64px] w-[64px] items-center justify-center rounded-full border border-offwhite/50 text-headline"
-                >
-                  ▶
-                </span>
-                <span className="font-mono text-caption uppercase tracking-[0.05em] text-offwhite/70">
-                  MetaConstellation — Play Video
-                </span>
-              </span>
+            <div className="w-full overflow-hidden rounded-[6px] border border-offwhite/10 bg-[#15181b]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={data.image}
+                alt={data.imageAlt}
+                className="block w-full"
+                draggable={false}
+              />
             </div>
           </Reveal>
         ) : null}

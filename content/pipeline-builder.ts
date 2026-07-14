@@ -54,11 +54,8 @@ export const hero = {
 /* ------------------------------- video band ------------------------------- */
 
 export const videoBand = {
-  brand: "Foundry",
-  tag: "PIPELINE BUILDER",
-  speaker: "Kamran Khan",
-  role: "Lead Product Manager",
-  playLabel: "Play Video",
+  image: "/pipeline-builder/Screenshot (453).png",
+  alt: "Pipeline Builder — dataset, union, transform, join, and pipeline output stages",
 };
 
 /* --------------------------- data, democratized --------------------------- */

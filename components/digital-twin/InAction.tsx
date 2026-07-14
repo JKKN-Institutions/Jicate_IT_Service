@@ -7,9 +7,8 @@ import { GiantHeading } from "./parts";
 const { video, caseStudy } = inAction;
 
 /**
- * "Digital Twin In Action" — a featured video card (poster placeholder, no clip
- * shipped) followed by a written case study with Challenge / Solution columns.
- * Light Section.
+ * "Digital Twin In Action" — a featured image followed by a written case study
+ * with Challenge / Solution columns. Light Section.
  */
 export function InAction() {
   return (
@@ -19,18 +18,16 @@ export function InAction() {
           <GiantHeading>{inAction.heading}</GiantHeading>
         </Reveal>
 
-        {/* Featured video card */}
+        {/* Featured image */}
         <Reveal index={1} className="mt-2xl">
-          <div className="relative flex aspect-[16/8] items-end overflow-hidden rounded-[6px] bg-near-black p-l text-offwhite">
-            <span
-              aria-hidden
-              className="absolute left-1/2 top-1/2 flex h-[64px] w-[64px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-offwhite/50 text-headline"
-            >
-              ▶
-            </span>
-            <h2 className="font-display text-headline font-normal text-offwhite">
-              {video.title}
-            </h2>
+          <div className="relative mx-auto aspect-[16/8] w-[70%] overflow-hidden rounded-[6px] bg-near-black">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={video.image}
+              alt={video.alt}
+              className="absolute inset-0 h-full w-full object-cover"
+              draggable={false}
+            />
           </div>
         </Reveal>
 

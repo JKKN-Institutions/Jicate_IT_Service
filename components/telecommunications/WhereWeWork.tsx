@@ -75,10 +75,12 @@ export function WhereWeWork() {
                 </li>
               ))}
             </ul>
-            <div className="mt-l aspect-[16/9] w-full overflow-hidden rounded-[2px] border border-ink/10 bg-ink/[0.03]">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={www.diagram} alt={www.diagramAlt} className="h-full w-full object-contain" loading="lazy" />
-            </div>
+            {t.image ? (
+              <div className="mt-l aspect-[16/9] w-full overflow-hidden rounded-[2px] border border-ink/10 bg-ink/[0.03]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={t.image} alt={t.imageAlt ?? t.tab} className="h-full w-full object-contain" loading="lazy" />
+              </div>
+            ) : null}
           </div>
         </div>
       </Container>

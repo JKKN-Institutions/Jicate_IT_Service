@@ -19,23 +19,13 @@ export function SpotlightVideo() {
           <div className="grid grid-cols-1 overflow-hidden rounded-[2px] border border-ink/10 bg-canvas desktop:grid-cols-[1fr_320px]">
             {/* Screenshot / poster area */}
             <div className="relative aspect-[16/8] w-full overflow-hidden bg-surface-light desktop:aspect-auto desktop:min-h-[460px]">
-              <div
-                aria-hidden
-                className="absolute inset-0 bg-[linear-gradient(160deg,#fbfbfb_0%,#f1f1f1_100%)]"
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={spotlightBand.image}
+                alt={spotlightBand.alt}
+                className="absolute inset-0 h-full w-full object-cover object-left-top"
+                draggable={false}
               />
-              {/* play button + label, bottom-left */}
-              <div className="absolute bottom-[24px] left-[24px] flex items-center gap-[16px]">
-                <button
-                  type="button"
-                  aria-label={spotlightBand.playLabel}
-                  className="flex h-[48px] w-[48px] items-center justify-center rounded-[2px] bg-near-black text-offwhite transition-transform duration-[var(--duration-micro)] hover:scale-105"
-                >
-                  <svg viewBox="0 0 24 24" fill="currentColor" className="h-[18px] w-[18px] translate-x-[1px]" aria-hidden>
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </button>
-                <span className="text-body text-ink">{spotlightBand.playLabel}</span>
-              </div>
             </div>
 
             {/* Caption — dark text on light */}

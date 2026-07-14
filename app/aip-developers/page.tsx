@@ -10,6 +10,7 @@ import {
   RapidDeploy,
   Closing,
 } from "@/components/aip-developers";
+import { SiteContactForm } from "@/components/shared/SiteContactForm";
 
 export const metadata: Metadata = {
   title: "AIP for Developers",
@@ -28,6 +29,7 @@ export default function AipDevelopersPage() {
       <FocusAlpha />
       <RapidDeploy />
       <Closing />
+      <SiteContactForm title="Get in touch" />
       {/* The shared site Footer renders from the root layout. */}
     </main>
   );

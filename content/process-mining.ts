@@ -43,7 +43,8 @@ export const hero = {
   title: "Foundry Process Mining & Automation",
   subcopy: "Mine processes. Reveal inefficiencies. Drive change. Continuously optimize.",
   cta: { label: "Get in touch", href: "/enquiry-form" } as CTA,
-  posterLabel: "Process Mining & Automation",
+  image: "/process-mining/Screenshot 2026-07-13 123052.png",
+  alt: "Data lineage graph and non-conformity logs in Process Mining",
 };
 
 /* ------------------------------ Key Features ----------------------------- */

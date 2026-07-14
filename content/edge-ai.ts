@@ -47,8 +47,8 @@ export const hero = {
   title: "Jicate Edge AI",
   subcopy: "Unparalleled technology. Pushed to the edge.",
   cta: { label: "Get Touch With Us", href: "#whitepaper" } as CTA,
-  // No hero clip shipped — render a play-button poster placeholder.
-  posterLabel: "Edge AI",
+  image: "/edge-ai/What is Edge AI and Why Is It Critical for Next-Generation IoT.webp",
+  alt: "Edge AI — connected intelligence at the edge",
   watch:
     "Watch: Meet Jicate Edge AI — a generational shift in artificial intelligence. Jicate Edge AI modernizes your fleet of sensors across environments, so you can train, manage, and deploy AI models anywhere your sensors run.",
 };

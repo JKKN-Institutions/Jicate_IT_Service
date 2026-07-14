@@ -91,7 +91,21 @@ export function Transformation() {
           {/* Right: media + watch link */}
           <div className="flex flex-col gap-l">
             <div className="aspect-[16/10] w-full overflow-hidden rounded-[2px] bg-ink/[0.06]">
-              {c.image ? (
+              {c.video ? (
+                <video
+                  key={c.video}
+                  controls
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  aria-label={c.imageAlt}
+                  className="h-full w-full bg-ink object-cover"
+                >
+                  <source src={c.video} />
+                </video>
+              ) : c.image ? (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img src={c.image} alt={c.imageAlt} className="h-full w-full object-cover" loading="lazy" />
               ) : (

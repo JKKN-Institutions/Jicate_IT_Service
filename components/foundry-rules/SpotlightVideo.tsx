@@ -3,12 +3,9 @@ import { Reveal } from "@/components/motion/Reveal";
 import { spotlightBand } from "@/content/foundry-rules";
 
 /**
- * Full-width media band under the hero (reference parity). The reference is a
- * LIGHT composition: a product screenshot fills the left, a dark-text caption
- * sits on the right, a "Play Video" affordance anchors the bottom-left, and a
- * small wordmark + copyright line sits bottom-right. The product poster isn't
- * shipped in /public/foundry-rules, so the screenshot area is a neutral light
- * placeholder — drop a real <video>/poster in later without touching layout.
+ * Full-width media band under the hero (reference parity). LIGHT composition: a
+ * product image fills the left and a dark-text caption sits on the right, with a
+ * small wordmark + copyright line bottom-right.
  */
 export function SpotlightVideo() {
   return (
@@ -16,21 +13,15 @@ export function SpotlightVideo() {
       <Container>
         <Reveal>
           <div className="grid grid-cols-1 overflow-hidden rounded-[2px] border border-ink/10 bg-canvas desktop:grid-cols-[1fr_320px]">
-            {/* Screenshot / poster area */}
+            {/* Product image */}
             <div className="relative aspect-[16/8] w-full overflow-hidden bg-surface-light desktop:aspect-auto desktop:min-h-[460px]">
-              <div aria-hidden className="absolute inset-0 bg-[linear-gradient(160deg,#fbfbfb_0%,#f1f1f1_100%)]" />
-              <div className="absolute bottom-[24px] left-[24px] flex items-center gap-[16px]">
-                <button
-                  type="button"
-                  aria-label={spotlightBand.playLabel}
-                  className="flex h-[48px] w-[48px] items-center justify-center rounded-[2px] bg-near-black text-offwhite transition-transform duration-[var(--duration-micro)] hover:scale-105"
-                >
-                  <svg viewBox="0 0 24 24" fill="currentColor" className="h-[18px] w-[18px] translate-x-[1px]" aria-hidden>
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </button>
-                <span className="text-body text-ink">{spotlightBand.playLabel}</span>
-              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={spotlightBand.image}
+                alt={spotlightBand.imageAlt}
+                className="absolute inset-0 h-full w-full object-cover"
+                loading="lazy"
+              />
             </div>
 
             {/* Caption — dark text on light */}

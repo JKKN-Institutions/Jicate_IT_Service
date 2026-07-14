@@ -4,8 +4,8 @@ import { hero } from "@/content/edge-ai";
 import { GiantHeading, InkLink } from "./parts";
 
 /**
- * Hero — light. Giant title left, lead + whitepaper CTA right, then a video
- * poster placeholder (no clip shipped) and a "Watch:" lead-in below.
+ * Hero — light. Giant title left, lead + whitepaper CTA right, then a featured
+ * image and a "Watch:" lead-in below.
  */
 export function Hero() {
   return (
@@ -24,19 +24,15 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Video poster placeholder */}
-        <div className="mt-2xl flex aspect-[16/8] items-center justify-center rounded-[6px] bg-near-black text-offwhite">
-          <span className="flex items-center gap-s">
-            <span
-              aria-hidden
-              className="flex h-[64px] w-[64px] items-center justify-center rounded-full border border-offwhite/50 text-headline"
-            >
-              ▶
-            </span>
-            <span className="font-mono text-caption uppercase tracking-[0.05em] text-offwhite/70">
-              {hero.posterLabel} — Play Video
-            </span>
-          </span>
+        {/* Featured image */}
+        <div className="relative mx-auto mt-2xl aspect-[16/8] w-[80%] overflow-hidden rounded-[6px] bg-near-black">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={hero.image}
+            alt={hero.alt}
+            className="absolute inset-0 h-full w-full object-cover"
+            draggable={false}
+          />
         </div>
 
         <p className="mt-2xl max-w-[60ch] font-display text-headline font-normal leading-[1.2] tracking-[-0.01em] text-ink">

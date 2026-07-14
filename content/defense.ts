@@ -55,9 +55,8 @@ export const advantage = {
   body: "Superior software changes what is possible in the field. Deployed around the world and on the front lines, Jicate helps allied forces turn complex, fast-moving situations into clear decisions — and act on them faster than any adversary can.",
   edgeHeading: "Engineering Starts At The Tactical Edge",
   edgeLink: { label: "Explore Solutions", href: "#discover" } satisfies CTA,
-  // Full-width command-center image (not shipped — placeholder block used).
-  image: null as string | null,
-  imageAlt: "Defense operations command center",
+  image: "/defense/moslem-daneshzadeh-HXbESAQn-JQ-unsplash.jpg" as string | null,
+  imageAlt: "Precision-guided missiles positioned against a clear sky",
 };
 
 /* --------------------------- discover by service -------------------------- */

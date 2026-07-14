@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { bigData } from "@/content/jicate-for-builders";
 
-import { GiantHeading, MediaPlaceholder } from "./parts";
+import { GiantHeading } from "./parts";
 
 /**
  * Big Data band — a 2-column layout: a giant statement heading on the left
@@ -33,7 +33,15 @@ export function BigData() {
             </Reveal>
 
             <Reveal index={2} className="flex flex-col gap-l">
-              <MediaPlaceholder label={bigData.videoAlt} play className="aspect-video" />
+              <div className="aspect-video w-full overflow-hidden rounded-[2px] bg-ink/[0.06]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={bigData.image}
+                  alt={bigData.videoAlt}
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
               <p className="text-body text-ink-light">{bigData.videoCaption}</p>
               <p className="font-display text-[clamp(1.35rem,1rem+1.3vw,1.875rem)] font-normal leading-[1.2] tracking-[-0.01em] text-ink">
                 {bigData.quote}

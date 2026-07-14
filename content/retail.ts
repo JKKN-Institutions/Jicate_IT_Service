@@ -23,6 +23,7 @@ export interface CapabilityTab {
   number: string;
   eyebrow: string;
   body: string;
+  diagram: string;
 }
 
 export interface TechFeature {
@@ -74,17 +75,16 @@ export const about = {
 export const capabilities = {
   heading: "Our Capabilities",
   intro: "The platform runs across many functions of the retail value chain, helping retailers meet what tomorrow's consumers will expect.",
-  diagram: `${BASE}/03_2022_UK_Retail_Diagram_1_Overview.jpg`,
   diagramAlt: "Connected retail company network diagram",
   tabs: [
-    { tab: "The Connected Retail Company", number: "01", eyebrow: "01 — THE CONNECTED RETAIL COMPANY", body: "Bring the whole company back around its central mission. Build a digital twin of your entire enterprise so you can simulate how functions connect and see decision-making clearly across every operation." },
-    { tab: "Strategy & Planning", number: "02", eyebrow: "02 — STRATEGY & PLANNING", body: "Align long-range strategy with day-to-day plans on one shared data foundation, so forecasts, budgets, and targets stay connected and every team is planning against the same numbers." },
-    { tab: "Sourcing", number: "03", eyebrow: "03 — SOURCING", body: "Bring spend, supplier, and lead-time data together to make sharper sourcing decisions, negotiate from a position of insight, and reduce risk across your supplier base." },
-    { tab: "Supply Chain & Logistics", number: "04", eyebrow: "04 — SUPPLY CHAIN & LOGISTICS", body: "Gain end-to-end visibility across your supply chain to anticipate disruptions, balance inventory, and orchestrate logistics so the right product reaches the right place at the right time." },
-    { tab: "Store Operations", number: "05", eyebrow: "05 — STORE OPERATIONS", body: "Give store teams a single, real-time view of stock, staffing, and tasks, so they can act on what matters most and keep shelves, service, and execution consistent." },
-    { tab: "Marketing & Sales", number: "06", eyebrow: "06 — MARKETING & SALES", body: "Target the right customers with the right offers by pairing propensity and segmentation models with live data, and measure and refine campaigns against real results." },
-    { tab: "Customer Experience", number: "07", eyebrow: "07 — CUSTOMER EXPERIENCE", body: "Unify what you know about each customer across every channel to deliver consistent, personalized experiences from first touch through post-purchase." },
-    { tab: "Sustainability & Circularity", number: "08", eyebrow: "08 — SUSTAINABILITY & CIRCULARITY", body: "Measure and reduce environmental impact across the value chain with transparent data on materials, emissions, and waste — and design more circular, resource-efficient operations." },
+    { tab: "The Connected Retail Company", number: "01", eyebrow: "01 — THE CONNECTED RETAIL COMPANY", body: "Bring the whole company back around its central mission. Build a digital twin of your entire enterprise so you can simulate how functions connect and see decision-making clearly across every operation.", diagram: `${BASE}/03_2022_UK_Retail_Diagram_1_Overview.jpg` },
+    { tab: "Strategy & Planning", number: "02", eyebrow: "02 — STRATEGY & PLANNING", body: "Align long-range strategy with day-to-day plans on one shared data foundation, so forecasts, budgets, and targets stay connected and every team is planning against the same numbers.", diagram: `${BASE}/03_2022_UK_Retail_Diagram_2_Strategy_Planning.jpg` },
+    { tab: "Sourcing", number: "03", eyebrow: "03 — SOURCING", body: "Bring spend, supplier, and lead-time data together to make sharper sourcing decisions, negotiate from a position of insight, and reduce risk across your supplier base.", diagram: `${BASE}/03_2022_UK_Retail_Diagram_3_Sourcing.jpg` },
+    { tab: "Supply Chain & Logistics", number: "04", eyebrow: "04 — SUPPLY CHAIN & LOGISTICS", body: "Gain end-to-end visibility across your supply chain to anticipate disruptions, balance inventory, and orchestrate logistics so the right product reaches the right place at the right time.", diagram: `${BASE}/03_2022_UK_Retail_Diagram_4_Supply_Chain.jpg` },
+    { tab: "Store Operations", number: "05", eyebrow: "05 — STORE OPERATIONS", body: "Give store teams a single, real-time view of stock, staffing, and tasks, so they can act on what matters most and keep shelves, service, and execution consistent.", diagram: `${BASE}/03_2022_UK_Retail_Diagram_5_Local_Retail_Regional_Operations.jpg` },
+    { tab: "Marketing & Sales", number: "06", eyebrow: "06 — MARKETING & SALES", body: "Target the right customers with the right offers by pairing propensity and segmentation models with live data, and measure and refine campaigns against real results.", diagram: `${BASE}/03_2022_UK_Retail_Diagram_6_Marketing_Sales.jpg` },
+    { tab: "Customer Experience", number: "07", eyebrow: "07 — CUSTOMER EXPERIENCE", body: "Unify what you know about each customer across every channel to deliver consistent, personalized experiences from first touch through post-purchase.", diagram: `${BASE}/03_2022_UK_Retail_Diagram_7_Consumers.jpg` },
+    { tab: "Sustainability & Circularity", number: "08", eyebrow: "08 — SUSTAINABILITY & CIRCULARITY", body: "Measure and reduce environmental impact across the value chain with transparent data on materials, emissions, and waste — and design more circular, resource-efficient operations.", diagram: `${BASE}/03_2022_UK_Retail_Diagram_8_Sustainable_Retail.jpg` },
   ] satisfies CapabilityTab[],
 };
 

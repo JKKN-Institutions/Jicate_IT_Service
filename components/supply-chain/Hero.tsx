@@ -37,11 +37,6 @@ export function Hero() {
               {video.eyebrow}
             </span>
             <p className="max-w-[14ch] font-display text-[clamp(1.6rem,2.36vw,2.125rem)]/[1.176]">{video.text}</p>
-            <button type="button" aria-label={video.videoLabel} className="flex items-center gap-[20px] text-left">
-              <span className="flex h-[48px] w-[48px] items-center justify-center bg-white text-[#1e2124]">▶</span>
-              <span className="h-px w-[80px] bg-white" aria-hidden />
-              <span className="text-body-lg">{video.videoLabel}</span>
-            </button>
           </div>
         </Reveal>
       </Container>

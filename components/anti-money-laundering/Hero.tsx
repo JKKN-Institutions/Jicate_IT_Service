@@ -23,16 +23,14 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative mt-2xl flex aspect-video w-full items-center justify-center overflow-hidden rounded-[6px] bg-ink/[0.06]">
-          <span className="flex items-center gap-s text-body-lg text-ink">
-            <span
-              aria-hidden
-              className="flex size-[44px] items-center justify-center rounded-full border border-ink/40"
-            >
-              ▶
-            </span>
-            {hero.videoLabel}
-          </span>
+        <div className="relative mt-2xl aspect-video w-full overflow-hidden rounded-[6px] bg-ink/[0.06]">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={hero.image}
+            alt={hero.imageAlt}
+            className="h-full w-full object-cover"
+            loading="lazy"
+          />
         </div>
       </Container>
     </Section>

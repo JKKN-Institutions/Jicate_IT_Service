@@ -34,6 +34,8 @@ export interface CaseTab {
   pointsLabel: string;
   points: CasePoint[];
   image: string;
+  /** Optional case-study video — takes priority over `image` when present. */
+  video?: string;
   imageAlt: string;
   watchLabel: string;
 }
@@ -117,6 +119,7 @@ export const transformation = {
         },
       ],
       image: "",
+      video: "/life-sciences/Pharma2 (1).mov",
       imageAlt: "Large pharma case study visual",
       watchLabel: "Watch: Large Pharma case study",
     },

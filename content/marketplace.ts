@@ -53,6 +53,8 @@ export const spotlightBand = {
   title: "Find and deploy data products for Foundry",
   body: "Browse, install, and manage packaged data products from a single storefront.",
   playLabel: "Play Video",
+  image: "/marketplace/Screenshot 2026-07-13 120515.png",
+  alt: "Healthcare Marketplace — connectors, ontology, and solutions",
   wordmark: "Jicate",
   copyright:
     "© 2026 Jicate IT Service. The information in this video is provided for informational purposes only. Actual results and experiences may vary.",

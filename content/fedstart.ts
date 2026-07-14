@@ -44,7 +44,8 @@ export interface BlogTile {
 export const hero = {
   title: "Jicate FedStart",
   subcopy: "Deliver cutting-edge solutions to the government at the speed of innovation",
-  videoLabel: "Play Video",
+  image: "/fedstart/Screenshot 2026-07-13 165308.png",
+  imageAlt: "Glowing microchip on a circuit board",
 };
 
 /* ----------------------- Eliminating the Barrier ------------------------- */
@@ -67,6 +68,7 @@ export const howItWorks = {
   heading: "How It Works",
   statement:
     "FedStart enables innovators to run their products within Jicate’s secure, already-accredited environment.",
+  image: "/fedstart/Screenshot 2026-07-13 165056.png",
   imageAlt: "How It Works diagram",
   stepsLead: "Getting started with FedStart is easy:",
   steps: [
@@ -123,8 +125,6 @@ export const cmmc = {
       "CMMC compliance for SaaS applications can be achieved by obtaining FedRAMP authorization. Jicate FedStart offers a streamlined solution, providing an expedited path to secure FedRAMP High Authorization in as little as three months.",
       "FedStart’s accelerated approach is highly effective and may be your company’s best option to achieve full CMMC compliance for your SaaS offering within the current year.",
     ],
-    closing: "Learn more how Jicate FedStart can help your SaaS applications achieve CMMC compliance.",
-    link: { label: "FedStart-CMMC Fact Sheet", href: "#" } as CTA,
   },
 };
 

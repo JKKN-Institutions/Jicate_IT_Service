@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { cmmc } from "@/content/fedstart";
 
-import { GiantHeading, InkLink } from "./parts";
+import { GiantHeading } from "./parts";
 
 /**
  * CMMC — a 2-column section. Left column explains "What Is CMMC?"; the right
@@ -39,14 +39,6 @@ export function Cmmc() {
                   {p}
                 </p>
               ))}
-            </Reveal>
-            <Reveal index={2} className="mt-l flex flex-col gap-2xl tablet:flex-row tablet:items-start tablet:justify-between">
-              <p className="max-w-[34ch] text-body-lg leading-[1.4] text-ink">{cmmc.right.closing}</p>
-              <div className="tablet:w-[260px]">
-                <InkLink href={cmmc.right.link.href} className="text-body">
-                  {cmmc.right.link.label}
-                </InkLink>
-              </div>
             </Reveal>
           </div>
         </div>

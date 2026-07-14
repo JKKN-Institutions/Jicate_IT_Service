@@ -64,7 +64,7 @@ export function Capabilities() {
               <p className="max-w-[46ch] text-[clamp(1rem,1.25vw,1.125rem)]/[1.389] text-ink">{tab.body}</p>
               <div className="mt-[12px] w-full overflow-hidden rounded-[2px]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={capabilities.diagram} alt={capabilities.diagramAlt} className="h-auto w-full" loading="lazy" />
+                <img src={tab.diagram} alt={capabilities.diagramAlt} className="h-auto w-full" loading="lazy" />
               </div>
             </div>
           </div>

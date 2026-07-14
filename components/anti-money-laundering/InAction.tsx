@@ -31,7 +31,7 @@ export function InAction() {
                 className="aspect-square w-full select-none rounded-[6px] object-cover"
                 draggable={false}
               />
-              <p className="text-headline font-normal leading-[1.3] text-ink-light">
+              <p className="text-[length:clamp(1.1667rem,1rem+0.8vw,1.5556rem)] font-normal leading-[1.3] text-ink-light">
                 {card.segments.map((seg, j) =>
                   seg.strong ? (
                     <strong key={j} className="font-semibold text-ink">

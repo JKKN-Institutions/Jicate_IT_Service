@@ -41,22 +41,13 @@ export function Hero() {
         </Reveal>
       </Container>
 
-      {/* Play-video poster band */}
+      {/* Hero image band */}
       <Container className="mt-[64px] desktop:mt-[96px]">
-        <Reveal className="relative aspect-[16/5] w-full overflow-hidden rounded-[2px] bg-white/[0.06]">
+        <Reveal className="relative mx-auto aspect-[16/10] w-[90%] overflow-hidden rounded-[2px] bg-white/[0.06]">
           {hero.videoPoster ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={hero.videoPoster} alt="" className="h-full w-full object-cover" loading="lazy" />
+            <img src={hero.videoPoster} alt={hero.title} className="h-full w-full object-cover" loading="lazy" />
           ) : null}
-          <button
-            type="button"
-            className="absolute inset-0 flex items-center gap-[24px] px-[clamp(20px,4vw,56px)] text-left"
-            aria-label={hero.videoLabel}
-          >
-            <span className="flex h-[48px] w-[48px] items-center justify-center bg-white text-[#1e2124]">▶</span>
-            <span className="h-px w-[80px] bg-white" aria-hidden />
-            <span className="text-body-lg text-white">{hero.videoLabel}</span>
-          </button>
         </Reveal>
       </Container>
     </section>

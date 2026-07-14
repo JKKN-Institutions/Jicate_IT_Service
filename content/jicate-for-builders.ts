@@ -33,7 +33,8 @@ export const hero = {
   title: "Jicate for Builders",
   subcopy: "World-class AI software platform now available to startups, small and medium-sized companies.",
   cta: { label: "Build With Us", href: "#build-with-us" } as CTA,
-  imageAlt: "Jicate for Builders — leadership portrait",
+  image: "/jicate-for-builders/scott-blake-x-ghf9LjrVg-unsplash.jpg",
+  imageAlt: "Construction crew surveying a large building site from a rooftop",
 };
 
 /* -------------------------------- big data ------------------------------- */
@@ -45,7 +46,8 @@ export const bigData = {
   platformHeading: "Jicate’s enterprise-grade software platforms.",
   platformBody:
     "Backed by years of product development and proven across major organizations worldwide, Jicate delivers a modern, end-to-end AI platform that enables organizations to fully customize internal systems, integrate LLMs into operational workflows, build and scale customer-facing products, all while maintaining robust security and governance.",
-  videoAlt: "Interview — the Jicate for Builders program",
+  image: "/jicate-for-builders/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg",
+  videoAlt: "Builder measuring and cutting timber on a job site",
   videoCaption: "Our team discusses the Jicate for Builders program and mission.",
   quote: "“It is the same enterprise-grade software, but we’re leaning on the talent of our customers to do the building.”",
   attribution: "— Product Lead, Jicate",
@@ -69,7 +71,8 @@ export const infrastructure = {
 export const regulatory = {
   heading:
     "Our solutions also meet rigorous regulatory and industry requirements, including GDPR, HIPAA, FedRAMP, IL5/6, and SOC 2.",
-  logoAlt: "Jicate for Builders logo",
+  image: "/jicate-for-builders/danist-soh-8Gg2Ne_uTcM-unsplash.jpg",
+  logoAlt: "Tower cranes rising over a high-rise building under construction",
 };
 
 /* ------------------------------- empowering ------------------------------ */

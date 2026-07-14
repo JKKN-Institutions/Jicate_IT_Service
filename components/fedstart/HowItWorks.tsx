@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { howItWorks } from "@/content/fedstart";
 
-import { GiantHeading, ArrowItem, MediaPlaceholder } from "./parts";
+import { GiantHeading, ArrowItem } from "./parts";
 
 /**
  * How It Works — a 2-column header (heading left / large statement right), then a
@@ -25,7 +25,15 @@ export function HowItWorks() {
 
         <div className="mt-3xl grid grid-cols-1 items-start gap-x-2xl gap-y-2xl desktop:grid-cols-2">
           <Reveal>
-            <MediaPlaceholder label={howItWorks.imageAlt} className="aspect-[16/10]" />
+            <div className="aspect-[16/10] w-full overflow-hidden rounded-[2px] bg-[#17191d]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={howItWorks.image}
+                alt={howItWorks.imageAlt}
+                className="h-full w-full object-contain"
+                loading="lazy"
+              />
+            </div>
           </Reveal>
           <Reveal index={1} className="flex flex-col gap-l">
             <p className="text-body-lg text-ink">{howItWorks.stepsLead}</p>

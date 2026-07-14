@@ -187,9 +187,9 @@ export const opsDataScience = {
 export const inAction = {
   heading: "Digital Twin In Action",
   video: {
-    title: "Twin-based Asset and Risk Management",
-    // No video asset shipped — render a poster/play-button placeholder.
-    poster: null as string | null,
+    // Featured image for the section (replaces the earlier video placeholder).
+    image: "/data-integration/opentex-image-what-is-digital-twin-en.avif",
+    alt: "What is a digital twin",
   },
   caseStudy: {
     title: "Twin-based COGS and Production Optimization",

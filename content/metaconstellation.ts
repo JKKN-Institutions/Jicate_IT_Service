@@ -31,6 +31,9 @@ export interface NumberedSection {
   link?: CTA;
   /** When true, render a video poster placeholder under the blocks. */
   videoPlaceholder?: boolean;
+  /** When set, render this image (full-width) under the blocks. */
+  image?: string;
+  imageAlt?: string;
 }
 
 /* --------------------------------- hero ---------------------------------- */
@@ -88,7 +91,8 @@ export const sections: NumberedSection[] = [
       },
     ],
     link: { label: "Learn More About Edge AI", href: "/edge-ai" },
-    videoPlaceholder: true,
+    image: "/metaconstellation/Screenshot 2026-07-13 121213.png",
+    imageAlt: "MetaConstellation dashboard — detections across the South China Sea",
   },
   {
     index: "04",

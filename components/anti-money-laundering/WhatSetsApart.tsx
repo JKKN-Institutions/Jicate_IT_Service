@@ -18,11 +18,15 @@ export function WhatSetsApart() {
         </Reveal>
 
         <Reveal index={1} className="mt-2xl">
-          <div
-            role="img"
-            aria-label={w.imageAlt}
-            className="aspect-[16/7] w-full rounded-[6px] bg-ink/[0.06]"
-          />
+          <div className="aspect-[16/7] w-full overflow-hidden rounded-[6px] bg-ink/[0.06]">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={w.image}
+              alt={w.imageAlt}
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </div>
         </Reveal>
 
         <div className="mt-3xl grid-12 gap-x-l gap-y-3xl">

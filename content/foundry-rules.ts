@@ -58,7 +58,8 @@ export const spotlightBand = {
   eyebrow: "Jicate Spotlight",
   title: "Foundry Rules & Real-Time Alerting",
   body: "Author rules, watch live data, and route alerts to the people who can act on them.",
-  playLabel: "Play Video",
+  image: "/foundry-rules/Screenshot 2026-07-13 163943.png",
+  imageAlt: "Robotic arms assembling car bodies on an automated production line",
   wordmark: "Jicate",
   copyright:
     "© 2026 Jicate IT Service. The information in this video is provided for informational purposes only. Actual results and experiences may vary.",

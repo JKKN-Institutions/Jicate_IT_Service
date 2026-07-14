@@ -26,6 +26,9 @@ export interface WorkTab {
   subhead: string;
   subleadline: string;
   bullets: string[];
+  /** Optional per-tab diagram — only shown when present. */
+  image?: string;
+  imageAlt?: string;
 }
 
 export interface ImpactTab {
@@ -121,6 +124,8 @@ export const whereWeWork = {
         "Empower network operators with foresight over your energy profile",
         "Gain meaningful insight into network device performance and trigger upgrades at the edge of your network",
       ],
+      image: "/telecommunications/Telco_RAN_Energy_Savings_Diagram.jpeg",
+      imageAlt: "RAN energy-savings data flow from the network into the platform",
     },
     {
       tab: "Customer-Centric Network Management",

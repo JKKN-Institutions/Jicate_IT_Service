@@ -29,7 +29,7 @@ export function Hero() {
       </Section>
 
       <Container>
-        <div className="aspect-[16/6] w-full overflow-hidden bg-ink/[0.06]">
+        <div className="aspect-[3/2] w-full overflow-hidden bg-ink/[0.06]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={hero.image} alt={hero.imageAlt} className="h-full w-full object-cover" />
         </div>

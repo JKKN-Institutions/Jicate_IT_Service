@@ -2,12 +2,12 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { hero } from "@/content/fedstart";
 
-import { GiantHeading, MediaPlaceholder } from "./parts";
+import { GiantHeading } from "./parts";
 
 /**
- * Hero — light. Giant title left, subcopy top-right, with an explainer-video
- * placeholder full-width beneath. The clearance offset sits on the inner wrapper
- * (the Section's own padding is fixed and would tuck the title under the header).
+ * Hero — light. Giant title left, subcopy top-right, with a full-width product
+ * image beneath. The clearance offset sits on the inner wrapper (the Section's
+ * own padding is fixed and would tuck the title under the header).
  */
 export function Hero() {
   return (
@@ -25,7 +25,15 @@ export function Hero() {
         </div>
 
         <Reveal className="mt-2xl">
-          <MediaPlaceholder label="FedStart explainer video" play className="aspect-video" />
+          <div className="aspect-video w-full overflow-hidden rounded-[2px] bg-ink/[0.06]">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={hero.image}
+              alt={hero.imageAlt}
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </div>
         </Reveal>
       </Container>
     </Section>

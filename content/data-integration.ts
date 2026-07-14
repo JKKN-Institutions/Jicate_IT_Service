@@ -60,16 +60,12 @@ export const hero = {
   cta: { label: "Get a Demo", href: "/enquiry-form" } satisfies CTA,
 };
 
-/* ------------------------------- video band ------------------------------- */
+/* ------------------------------- image band ------------------------------- */
 
 export const videoBand = {
-  /** Top-left product breadcrumb shown over the media card. */
-  brand: "Foundry",
-  /** Top-right product tag. */
-  tag: "PIPELINE BUILDER",
-  speaker: "Kamran Khan",
-  role: "Lead Product Manager",
-  playLabel: "Play Video",
+  /** Full-width media-card image (Data Integration Journey title card). */
+  image: "/data-integration/sddefault.png",
+  alt: "Foundry Data Integration Journey",
 };
 
 /* ---------------------- "Data Integration, Supercharged." ------------------ */

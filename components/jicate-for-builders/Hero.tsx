@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { hero } from "@/content/jicate-for-builders";
 
-import { GiantHeading, InkLink, MediaPlaceholder } from "./parts";
+import { GiantHeading, InkLink } from "./parts";
 
 /**
  * Hero — light. Giant title left; subcopy and a "Build With Us" link top-right;
@@ -25,7 +25,15 @@ export function Hero() {
         </div>
 
         <Reveal className="mt-2xl">
-          <MediaPlaceholder label={hero.imageAlt} className="aspect-[16/7]" />
+          <div className="aspect-[16/7] w-full overflow-hidden rounded-[2px] bg-ink/[0.06]">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={hero.image}
+              alt={hero.imageAlt}
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </div>
         </Reveal>
       </Container>
     </Section>

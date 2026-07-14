@@ -40,7 +40,7 @@ export const hero = {
   links: ["Auditing", "Budgeting", "Contract Management"],
   cta: { label: "Request a Demo", href: "#contact" } satisfies CTA,
   videoLabel: "Play Video",
-  videoPoster: null as string | null,
+  videoPoster: `${BASE}/Screenshot 2026-07-13 171732.png` as string | null,
 };
 
 /* ------------------------- 01 critical missions --------------------------- */
@@ -63,7 +63,7 @@ export const caseStudy = {
   partner: "A federal agency",
   problem: "For years it was hard for staff to answer a simple question: how much funding remained on a given contract, and when would it expire? The information existed, but it was scattered across programs and buried in different formats.",
   problem2: "Getting an answer meant pulling large extracts from several disconnected systems and stitching them together by hand — slow, error-prone work that left little time for the analysis that actually mattered.",
-  image: null as string | null,
+  image: `${BASE}/Screen_Shot_2021-09-15_at_6.21.39_PM.png` as string | null,
   alt: "Excess-funds data visualization",
   link: { label: "Read more", href: "#" } satisfies CTA,
 };
@@ -91,14 +91,14 @@ export const solutions = {
     {
       title: "Budgeting",
       body: "Budget analysts move off manual, spreadsheet-bound processes onto a connected workflow where every figure is traceable to its source. Plans, adjustments, and approvals stay in sync, so the budget is always current and always auditable.",
-      image: null,
-      alt: "Budgeting workflow",
+      image: `${BASE}/shutterstock_715806535.jpg`,
+      alt: "Secure data-center infrastructure powering financial workflows",
     },
     {
       title: "Auditing",
       body: "Millions of transactions flow into a single, governed environment where they can be checked continuously rather than once a year. Every result is explainable and traceable back to the underlying records, turning audit prep into an everyday state.",
-      image: null,
-      alt: "Auditing dashboard",
+      image: `${BASE}/shutterstock_1899127129.jpg`,
+      alt: "Close-up examination in a precision lab environment",
     },
   ] satisfies SolutionCard[],
 };

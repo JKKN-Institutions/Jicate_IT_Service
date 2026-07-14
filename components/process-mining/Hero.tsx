@@ -4,8 +4,8 @@ import { hero } from "@/content/process-mining";
 import { GiantHeading, InkLink } from "./parts";
 
 /**
- * Hero — light. Giant title left, lead + "Get in touch" CTA right, then a video
- * poster placeholder (no thumbnail shipped) beneath.
+ * Hero — light. Giant title left, lead + "Get in touch" CTA right, then a
+ * featured image beneath.
  */
 export function Hero() {
   return (
@@ -24,18 +24,14 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="mt-2xl flex aspect-[16/8] items-center justify-center rounded-[6px] bg-near-black text-offwhite">
-          <span className="flex items-center gap-s">
-            <span
-              aria-hidden
-              className="flex h-[64px] w-[64px] items-center justify-center rounded-full border border-offwhite/50 text-headline"
-            >
-              ▶
-            </span>
-            <span className="font-mono text-caption uppercase tracking-[0.05em] text-offwhite/70">
-              {hero.posterLabel} — Play Video
-            </span>
-          </span>
+        <div className="mx-auto mt-2xl w-[80%] overflow-hidden rounded-[6px] bg-near-black">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={hero.image}
+            alt={hero.alt}
+            className="block w-full"
+            draggable={false}
+          />
         </div>
       </Container>
     </Section>

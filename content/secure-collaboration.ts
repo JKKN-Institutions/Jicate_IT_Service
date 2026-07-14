@@ -22,7 +22,9 @@ export interface Field {
 export const hero = {
   title: "Secure Collaboration",
   right: "Powering a data-centric force.",
-  /** Overlay chrome for the CSS-built video poster. */
+  image: "/secure-collaboration/Screenshot 2026-07-14 103410.png",
+  imageAlt: "Network graph tracing data breaches, bottlenecks, and connection risks across mission sets",
+  /** Overlay chrome for the CSS-built video poster (retained for reference). */
   poster: {
     topLeft: "[ S | C ] → Secure Collaboration",
     brand: "◌ Jicate →",
