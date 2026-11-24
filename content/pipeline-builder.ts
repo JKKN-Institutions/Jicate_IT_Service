@@ -1,6 +1,6 @@
 /**
  * Content for the /pipeline-builder page — a faithful design rebuild of the
- * reference "Foundry Pipeline Builder" page, mapped onto this project's design
+ * reference "Jicate Data Platform Data Pipelines" page, mapped onto this project's design
  * system. Layout/visual treatment matches the reference 1:1; all body copy is
  * ORIGINAL Jicate content written in our own words (only short functional
  * labels/headings are kept). The user edits final wording.
@@ -45,7 +45,7 @@ export interface GridItem {
 /* --------------------------------- hero ----------------------------------- */
 
 export const hero = {
-  title: "Next-Generation Pipeline Builder",
+  title: "Next-Generation Data Pipelines",
   body: "Ship production data pipelines that come with security, data quality, and governed teamwork built in from day one.",
   note: "Coding skills not required.",
   cta: { label: "Get a demo", href: "/enquiry-form" } satisfies CTA,
@@ -55,7 +55,7 @@ export const hero = {
 
 export const videoBand = {
   image: "/pipeline-builder/Screenshot (453).png",
-  alt: "Pipeline Builder — dataset, union, transform, join, and pipeline output stages",
+  alt: "Data Pipelines — dataset, union, transform, join, and pipeline output stages",
 };
 
 /* --------------------------- data, democratized --------------------------- */
@@ -63,7 +63,7 @@ export const videoBand = {
 export const dataDemocratized = {
   heading: "Data, Democratized.",
   image: "/pipeline-builder/2-AI_ML%20(1).png",
-  alt: "Pipeline Builder artwork",
+  alt: "Data Pipelines artwork",
   rows: [
     {
       title: "Pipelines In Record Time",
@@ -88,19 +88,19 @@ export const dataDemocratized = {
 
 export const howItWorks = {
   heading: "How It Works",
-  subheading: "Pipeline Builder is designed around speed and simplicity.",
+  subheading: "Data Pipelines is designed around speed and simplicity.",
   body: "Stop fighting code, libraries, builds, and repository sprawl — and put your time into the work that actually moves the needle.",
   steps: [
     {
       tab: "Add Data",
       eyebrow: "ADD DATA",
       lines: [
-        "Begin by picking the datasets you want to work with directly inside Foundry.",
+        "Begin by picking the datasets you want to work with directly inside Jicate Data Platform.",
         "Pull data in from virtually any source system — structured, unstructured, IoT, or geospatial — with minimal setup.",
-        "Need a quick one-off? Drag and drop raw files straight into Foundry.",
+        "Need a quick one-off? Drag and drop raw files straight into Jicate Data Platform.",
       ],
       image: "/pipeline-builder/pipeline-add-data--01.png",
-      alt: "Adding data in Pipeline Builder",
+      alt: "Adding data in Data Pipelines",
     },
     {
       tab: "Transform Data",
@@ -191,7 +191,7 @@ export const engineered = {
 /* --------------------------------- form ----------------------------------- */
 
 export const contactForm = {
-  title: "Get Started with Pipeline Builder",
+  title: "Get Started with Data Pipelines",
   fields: [
     { name: "firstName", label: "First Name", type: "text", required: true },
     { name: "lastName", label: "Last Name", type: "text", required: true },

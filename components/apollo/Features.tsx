@@ -5,7 +5,7 @@ import { features } from "@/content/apollo";
 import { GiantHeading, SubLink } from "./parts";
 
 /**
- * "Apollo allows you to:" (light). A section heading on the left and a
+ * "Jicate Deployment Service allows you to:" (light). A section heading on the left and a
  * four-column feature grid on the right — each column is an icon tile, a
  * heading, and a drill-in sub-link. A "Download the Whitepaper" button sits at
  * the bottom-right.

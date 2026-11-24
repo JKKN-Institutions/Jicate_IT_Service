@@ -40,7 +40,7 @@ export interface CaseStudy {
 /* ---------------------------------- hero --------------------------------- */
 
 export const hero = {
-  title: "Foundry Process Mining & Automation",
+  title: "Jicate Data Platform Process Mining & Automation",
   subcopy: "Mine processes. Reveal inefficiencies. Drive change. Continuously optimize.",
   cta: { label: "Get in touch", href: "/enquiry-form" } as CTA,
   image: "/process-mining/Screenshot 2026-07-13 123052.png",
@@ -60,7 +60,7 @@ export const keyFeatures = {
     },
     {
       title: "Streamline processes.",
-      body: "Drill down into the causes of process bottlenecks with the Ontology, and evaluate alternatives with ML- and algorithm-agnostic forecasting and simulation.",
+      body: "Drill down into the causes of process bottlenecks with the Business Data Model, and evaluate alternatives with ML- and algorithm-agnostic forecasting and simulation.",
     },
     {
       title: "Insights drive action.",
@@ -84,7 +84,7 @@ export const howItWorks = {
   steps: [
     {
       title: "Connect.",
-      body: "Rapidly integrate business process data into the Ontology with built-in connectors, unlocking connectivity and insight that spans your entire organization.",
+      body: "Rapidly integrate business process data into the Business Data Model with built-in connectors, unlocking connectivity and insight that spans your entire organization.",
       images: ["/process-mining/Product_Images-01.png"],
     },
     {
@@ -94,7 +94,7 @@ export const howItWorks = {
     },
     {
       title: "Analyze.",
-      body: "With the Ontology, query related objects from across your business to understand the drivers of unexpected process transitions. Rapidly analyze deviations, diagnose bottlenecks, and perform root-cause analysis.",
+      body: "With the Business Data Model, query related objects from across your business to understand the drivers of unexpected process transitions. Rapidly analyze deviations, diagnose bottlenecks, and perform root-cause analysis.",
       images: ["/process-mining/Product_Images-02.png"],
     },
     {
@@ -189,7 +189,7 @@ export const exampleUseCases = {
 /* ------------------------- Reference architecture ------------------------ */
 
 export const referenceArchitecture = {
-  heading: "Foundry Process Mining & Automation: Reference Architecture",
+  heading: "Jicate Data Platform Process Mining & Automation: Reference Architecture",
   image: "/process-mining/Group_1.png",
   alt: "Process Mining & Automation Suite reference architecture diagram",
 };

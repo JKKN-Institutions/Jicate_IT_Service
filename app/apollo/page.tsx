@@ -13,9 +13,9 @@ import {
 import { demoForm } from "@/content/apollo";
 
 export const metadata: Metadata = {
-  title: "Apollo",
+  title: "Jicate Deployment Service",
   description:
-    "Apollo — deploy software beyond limits. Continuous delivery across every environment: cloud, on-prem, hybrid, air-gapped, and more.",
+    "Jicate Deployment Service — deploy software beyond limits. Continuous delivery across every environment: cloud, on-prem, hybrid, air-gapped, and more.",
 };
 
 export default function ApolloPage() {

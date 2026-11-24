@@ -1,6 +1,6 @@
 /**
  * Content for the /marketplace page — a faithful design rebuild of the
- * reference "Foundry Marketplace" page, mapped onto this project's design
+ * reference "Jicate Data Platform Marketplace" page, mapped onto this project's design
  * system. Layout/visual treatment matches the reference 1:1; long-form body
  * copy is ORIGINAL Jicate content (short functional labels/headings are kept).
  * The user edits final wording.
@@ -42,15 +42,15 @@ export interface Step {
 /* --------------------------------- hero ----------------------------------- */
 
 export const hero = {
-  title: "Foundry Marketplace",
+  title: "Jicate Data Platform Marketplace",
   body: "Build and launch data products as SaaS.",
 };
 
 /* ------------------------- hero media / spotlight band -------------------- */
 
 export const spotlightBand = {
-  eyebrow: "Foundry Marketplace",
-  title: "Find and deploy data products for Foundry",
+  eyebrow: "Jicate Data Platform Marketplace",
+  title: "Find and deploy data products for Jicate Data Platform",
   body: "Browse, install, and manage packaged data products from a single storefront.",
   playLabel: "Play Video",
   image: "/marketplace/Screenshot 2026-07-13 120515.png",
@@ -69,7 +69,7 @@ export const keyFeatures = {
   features: [
     {
       title: "Publish data products in a few clicks.",
-      body: "Rapidly develop and deploy packages of data-backed workflows built in Foundry — your organization’s ontology, AI models, pipelines, data connections, or end-to-end use cases.",
+      body: "Rapidly develop and deploy packages of data-backed workflows built in Jicate Data Platform — your organization’s ontology, AI models, pipelines, data connections, or end-to-end use cases.",
     },
     {
       title: "Integrated CI/CD for complex data products.",
@@ -93,7 +93,7 @@ export const howItWorks = {
   steps: [
     {
       title: "Develop",
-      body: "Select a data asset or workflow built in Foundry to publish.",
+      body: "Select a data asset or workflow built in Jicate Data Platform to publish.",
       image: "/marketplace/Asset_9TPM_Monitor.png",
       alt: "Develop a data product",
       mediaSide: "left",

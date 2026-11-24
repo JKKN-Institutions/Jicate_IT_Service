@@ -42,11 +42,11 @@ export const industryLinks: NavLink[] = [
 
 /** The five platform pages — order mirrors the Palantir site menu. */
 export const platformLinks: NavLink[] = [
-  { label: "AIP", href: "/aip" },
-  { label: "Foundry", href: "/foundry" },
+  { label: "Jicate AI Platform", href: "/aip" },
+  { label: "Jicate Data Platform", href: "/foundry" },
   { label: "Gotham", href: "/gotham" },
-  { label: "Ontology", href: "/ontology" },
-  { label: "Apollo", href: "/apollo" },
+  { label: "Business Data Model", href: "/ontology" },
+  { label: "Jicate Deployment Service", href: "/apollo" },
 ];
 
 /* ---------------------------------------------------------------------------
@@ -165,14 +165,14 @@ export const footerColumns: FooterColumn[] = [
     heading: "CAPABILITIES",
     links: [
       { label: "AI + ML", href: "/ai-ml" },
-      { label: "AIP for Developers", href: "/aip-developers" },
+      { label: "Jicate AI Platform for Developers", href: "/aip-developers" },
       { label: "Data Integration", href: "/data-integration" },
       { label: "Digital Twin", href: "/digital-twin" },
       { label: "Dynamic Scheduling", href: "/dynamic-scheduling" },
       { label: "Edge AI", href: "/edge-ai" },
       { label: "Marketplace", href: "/marketplace" },
       { label: "MetaConstellation", href: "/metaconstellation" },
-      { label: "Pipeline Builder", href: "/pipeline-builder" },
+      { label: "Data Pipelines", href: "/pipeline-builder" },
       { label: "Process Mining", href: "/process-mining" },
       { label: "Real-Time Alerting", href: "/foundry-rules" },
       { label: "Streaming", href: "/streaming" },

@@ -13,11 +13,11 @@ type Link = { label: string; href: string; arrow?: ArrowKind; external?: boolean
 /* — Hero (light, two-column: text left, image right) ------------------- */
 
 export const hero = {
-  title: "Apollo",
+  title: "Jicate Deployment Service",
   heading: "Deploy Software\nBeyond Limits.",
   cta: { label: "Request a demo", href: "#request-a-demo" } as Link,
   image: "/apollo/apollo-hero.jpg",
-  imageAlt: "Apollo",
+  imageAlt: "Jicate Deployment Service",
 };
 
 /* — Sticky in-page sub-nav --------------------------------------------- */
@@ -34,14 +34,14 @@ export const subNav: Link[] = [
 export const intro = {
   paragraphs: [
     "With today’s customer, security, and regulatory demands, software deployment is becoming more complex.",
-    "Apollo brings years of R&D across advanced deployments into an intelligent platform that is flexible and extensible to you — and your customers’ — particular needs.",
+    "Jicate Deployment Service brings years of R&D across advanced deployments into an intelligent platform that is flexible and extensible to you — and your customers’ — particular needs.",
   ],
 };
 
-/* — "Apollo allows you to:" 4-feature grid ----------------------------- */
+/* — "Jicate Deployment Service allows you to:" 4-feature grid ----------------------------- */
 
 export const features = {
-  heading: "Apollo allows you to:",
+  heading: "Jicate Deployment Service allows you to:",
   items: [
     {
       icon: "/apollo/no-code.png",
@@ -76,13 +76,13 @@ export const features = {
 export const devops = {
   heading: "Your DevOps strategy can make or break your ability to grow →",
   image: "/apollo/apollo-cube.jpg",
-  imageAlt: "Apollo Cube",
+  imageAlt: "Jicate Deployment Service Cube",
 };
 
 /* — Explore Apollo Solutions (list) ------------------------------------ */
 
 export const exploreSolutions = {
-  heading: "Explore Apollo Solutions",
+  heading: "Explore Jicate Deployment Service Solutions",
   // Row-wise order fills the 2-col grid: L/R, L/R, L/R (matches reference).
   items: [
     "Multi-cloud, Multi-prem, Private SaaS, and Single Tenant Deployment",
@@ -90,7 +90,7 @@ export const exploreSolutions = {
     "Airgapped + Highside SaaS",
     "Digital Transformation and DORA Metrics",
     "Microservice Orchestration",
-    "Apollo for Edge",
+    "Jicate Deployment Service for Edge",
   ],
   watchDemo: { label: "Watch the Demo", href: "#" } as Link,
 };

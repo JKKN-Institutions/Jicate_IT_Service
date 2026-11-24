@@ -11,7 +11,7 @@ import { GiantHeading, InkLink } from "./parts";
  */
 export function PbHero() {
   return (
-    <Section className="!pb-[60px] !pt-[80px] desktop:!pt-[100px]" aria-label="Next-Generation Pipeline Builder">
+    <Section className="!pb-[60px] !pt-[80px] desktop:!pt-[100px]" aria-label="Next-Generation Data Pipelines">
       <Container>
         <Reveal className="grid items-start gap-l desktop:grid-cols-[1fr_420px] desktop:gap-[60px]">
           <GiantHeading

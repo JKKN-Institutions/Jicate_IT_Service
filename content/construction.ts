@@ -79,12 +79,12 @@ export const intro = {
 /* ------------------------------ the ontology ------------------------------ */
 
 export const ontology = {
-  heading: "The Construction Ontology",
+  heading: "The Construction Business Data Model",
   paragraphs: [
-    "The Construction Ontology ties every core function together — from pre-construction and procurement to job-site execution and project closeout — through one unified semantic layer.",
+    "The Construction Business Data Model ties every core function together — from pre-construction and procurement to job-site execution and project closeout — through one unified semantic layer.",
     "At its heart, it gives departments a shared, consistent way to work with the same business objects — projects, activities, equipment, subcontractors — with common definitions and real-time synchronization across the organization.",
     "Designed field-first, it links what actually happens on the job site to the systems behind it, in a low/no-code environment that anyone can use regardless of technical background.",
-    "Foundry closes the gap between your foundational systems — ERP, project management, BIM, accounting, equipment management — and the use cases that matter, powering AI-driven decisions that anticipate scheduling delays before they hit and keep work moving.",
+    "Jicate Data Platform closes the gap between your foundational systems — ERP, project management, BIM, accounting, equipment management — and the use cases that matter, powering AI-driven decisions that anticipate scheduling delays before they hit and keep work moving.",
   ],
   image: `${BASE}/Industry_Domination_Construction_Ontology_Final2_4x.png`,
   alt: "Layered isometric diagram of the construction ontology",
@@ -94,7 +94,7 @@ export const ontology = {
 
 const placeholderIntro = [
   "This part of the business runs on precision under pressure — critical calls are often squeezed into tight, rigid timelines that leave little room for error.",
-  "Jicate AIP pulls together data that would otherwise stay scattered across systems, accelerating the whole process so teams can shift from manual data-gathering to strategic analysis and cut cycle time.",
+  "Jicate AI Platform pulls together data that would otherwise stay scattered across systems, accelerating the whole process so teams can shift from manual data-gathering to strategic analysis and cut cycle time.",
 ];
 
 export const capabilities = {

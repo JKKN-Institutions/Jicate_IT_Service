@@ -56,11 +56,11 @@ export const intro = {
 export const underwriting = {
   heading: "AI Underwriting Automation",
   features: [
-    { title: "Data Extraction", body: "AIP extracts relevant data attributes from thousands of structured and unstructured sources, including PDFs, emails, Excel spreadsheets, audio calls, and more." },
+    { title: "Data Extraction", body: "Jicate AI Platform extracts relevant data attributes from thousands of structured and unstructured sources, including PDFs, emails, Excel spreadsheets, audio calls, and more." },
     { title: "Augmented Decision-making", body: "Extracted submissions data is compared against numerous sources of information including historical performance data, similar cases, and predefined underwriting guidelines set by your organization, to inform accurate and compliant underwriting decisions." },
-    { title: "Actuarial Pricing and Reserving Integration", body: "AIP integrates bi-directionally with existing actuarial models, pricing raters, and reserving engines to provide proposed premium and reserve amounts." },
-    { title: "Auto-generated Responses", body: "AIP enables underwriters to generate suggested responses to brokers and agents based on a combination of automated flags generated and human-in-the-loop interventions." },
-    { title: "Auditability", body: "All actions taken by the user and by AI Agents are written back and recorded in AIP, ensuring traceability into the decision lineage." },
+    { title: "Actuarial Pricing and Reserving Integration", body: "Jicate AI Platform integrates bi-directionally with existing actuarial models, pricing raters, and reserving engines to provide proposed premium and reserve amounts." },
+    { title: "Auto-generated Responses", body: "Jicate AI Platform enables underwriters to generate suggested responses to brokers and agents based on a combination of automated flags generated and human-in-the-loop interventions." },
+    { title: "Auditability", body: "All actions taken by the user and by AI Agents are written back and recorded in Jicate AI Platform, ensuring traceability into the decision lineage." },
   ] as Feature[],
 };
 
@@ -68,11 +68,11 @@ export const smartClaims = {
   heading: "AI Smart Claims",
   features: [
     { title: "Claims FNOL Ingestion", body: "All sources of structured and unstructured information as part of the first notification of loss (FNOL) are centralized and integrated together — emails, call recordings, images, etc." },
-    { title: "Multimodal-AI Automated Review", body: "AIP leverages multimodal AI to automatically assess incoming claims against pre-defined and customizable coverage conditions, ensuring a rapid and accurate determination of coverage eligibility." },
+    { title: "Multimodal-AI Automated Review", body: "Jicate AI Platform leverages multimodal AI to automatically assess incoming claims against pre-defined and customizable coverage conditions, ensuring a rapid and accurate determination of coverage eligibility." },
     { title: "Smart Claims Assessment Routing", body: "For each incoming claim that needs assessment, a dynamic routing instruction matches each claim with the best claims assessment human or channel to minimize cost of review and complexity." },
     { title: "Rapid Automated Payouts", body: "AI Agents handle the claims that pass all appropriate coverage checks and perform direct integration with payout systems for immediate payout — encouraging customer satisfaction and retention." },
     { title: "AI Claims Analytics", body: "Surfacing trends across cohorts of the business to identify growing unexpected losses, perform actuals-vs-expected experience studies, and continuously update reserving and IBNR estimations." },
-    { title: "Ethical AI Guardrails", body: "AIP puts guardrails in place to assure the AI is not permitted to prevent the payout of a claim without satisfying human-enforced rules and human confirmation of its determinations." },
+    { title: "Ethical AI Guardrails", body: "Jicate AI Platform puts guardrails in place to assure the AI is not permitted to prevent the payout of a claim without satisfying human-enforced rules and human confirmation of its determinations." },
   ] as Feature[],
 };
 
@@ -81,9 +81,9 @@ export const customerIntelligence = {
   features: [
     { title: "AI-Powered Customer 360", body: "Integrate structured and unstructured data from internal, external, and open sources to create a holistic customer record, augmented with AI and model-driven data enrichments." },
     { title: "Next Best Action / Next Best Product", body: "Provide AI recommendations for marketing campaigns, propensity-to-purchase, propensity-to-bind, cross-sell, and up-sell across the customer base." },
-    { title: "Real-time audio-to-text transcription", body: "AIP transcribes and intelligently extracts information from live phone calls, with support for 50+ languages for use during customer interactions." },
-    { title: "AI-Powered Live Suggestions", body: "During live interactions, AIP automatically suggests follow-up questions for claim handlers and call-center employees to aid in accurate information capture and a first-class customer experience." },
-    { title: "Call Summary & Next Best Action", body: "AIP generates a summary of the phone call in a comprehensive, easy-to-read format, and suggests next best actions for the claims handler based on data from the interaction." },
+    { title: "Real-time audio-to-text transcription", body: "Jicate AI Platform transcribes and intelligently extracts information from live phone calls, with support for 50+ languages for use during customer interactions." },
+    { title: "AI-Powered Live Suggestions", body: "During live interactions, Jicate AI Platform automatically suggests follow-up questions for claim handlers and call-center employees to aid in accurate information capture and a first-class customer experience." },
+    { title: "Call Summary & Next Best Action", body: "Jicate AI Platform generates a summary of the phone call in a comprehensive, easy-to-read format, and suggests next best actions for the claims handler based on data from the interaction." },
   ] as Feature[],
 };
 
@@ -101,7 +101,7 @@ export const transformation = {
       points: [
         { strong: "Data-driven pricing strategy", body: "By leveraging Jicate’s data integration capabilities, the insurer is able to implement more appropriate pricing supported by a holistic view of data across various sources." },
         { strong: "Improved customer service", body: "As a result of being able to evaluate accidents through a single source of truth, sales representatives can more readily provide accurate explanations to customers regarding pricing changes." },
-        { strong: "AI-Powered recommendations", body: "AIP can provide premium pricing guidance based on its comprehensive view across previous accidents, client information, and more — generating a recommendation for a human in the loop to review and approve." },
+        { strong: "AI-Powered recommendations", body: "Jicate AI Platform can provide premium pricing guidance based on its comprehensive view across previous accidents, client information, and more — generating a recommendation for a human in the loop to review and approve." },
       ],
       image: "/insurance/murakami_sompo.jpg",
       imageAlt: "Speaker presenting at a conference",

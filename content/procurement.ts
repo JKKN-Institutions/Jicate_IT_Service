@@ -142,7 +142,7 @@ export const operationalizing = {
       no: "0.1",
       title: "AI-Driven Procurement Risk & Crisis Response",
       intro:
-        "AIP was built for unpredictable supply chains. It offers flexibility to adapt to changing environments and changing tariff rates by leveraging an understanding of tariff and business history, affected materials, and suppliers.",
+        "Jicate AI Platform was built for unpredictable supply chains. It offers flexibility to adapt to changing environments and changing tariff rates by leveraging an understanding of tariff and business history, affected materials, and suppliers.",
       toggles: [
         {
           label: "Supply Chain",

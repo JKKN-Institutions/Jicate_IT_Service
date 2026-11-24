@@ -12,7 +12,7 @@ import {
 import { featureBands } from "@/content/data-integration";
 
 export const metadata: Metadata = {
-  title: "Foundry Data Integration",
+  title: "Jicate Data Platform Data Integration",
   description:
     "Accelerate pipeline development and management with built-in automation. Deliver the full spectrum of use cases atop a trusted foundation.",
 };

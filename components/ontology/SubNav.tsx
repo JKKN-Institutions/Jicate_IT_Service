@@ -8,7 +8,7 @@ import { subnav } from "@/content/ontology";
 export function SubNav() {
   return (
     <nav
-      aria-label="Ontology sections"
+      aria-label="Business Data Model sections"
       className="sticky top-[var(--nav-height)] z-30 border-b border-ink/10 bg-canvas/85 backdrop-blur-md"
     >
       <Container>

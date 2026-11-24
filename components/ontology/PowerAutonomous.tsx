@@ -19,7 +19,7 @@ export function PowerAutonomous() {
           </GiantHeading>
         </Reveal>
         <Reveal index={1} className="mt-2xl">
-          <StackedVisual layers={p.layers} aspect={p.aspect} alt="Autonomous operations orchestrated by the Ontology" />
+          <StackedVisual layers={p.layers} aspect={p.aspect} alt="Autonomous operations orchestrated by the Business Data Model" />
         </Reveal>
       </Container>
     </Section>

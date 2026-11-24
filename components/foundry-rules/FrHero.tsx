@@ -10,7 +10,7 @@ import { GiantHeading } from "./parts";
  */
 export function FrHero() {
   return (
-    <Section className="!pb-[60px] !pt-[80px] desktop:!pt-[100px]" aria-label="Foundry Rules & Real-Time Alerting">
+    <Section className="!pb-[60px] !pt-[80px] desktop:!pt-[100px]" aria-label="Rules and Alerts & Real-Time Alerting">
       <Container>
         <Reveal className="grid items-start gap-l desktop:grid-cols-[1fr_420px] desktop:gap-[60px]">
           <GiantHeading className="max-w-[12ch]">{hero.title}</GiantHeading>

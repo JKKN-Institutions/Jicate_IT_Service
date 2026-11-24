@@ -10,7 +10,7 @@ import { subNav } from "@/content/digital-twin";
 export function SubNav() {
   return (
     <nav
-      aria-label="Foundry"
+      aria-label="Jicate Data Platform"
       className="sticky top-[88px] z-30 border-b border-ink/10 bg-canvas/90 backdrop-blur-sm"
     >
       <Container>

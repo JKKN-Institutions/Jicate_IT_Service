@@ -12,7 +12,7 @@ import {
 } from "@/components/dynamic-scheduling";
 
 export const metadata: Metadata = {
-  title: "Foundry Dynamic Scheduling",
+  title: "Jicate Data Platform Dynamic Scheduling",
   description:
     "Translate your real-world complexity into real-time adaptation. All while planning for the future.",
 };

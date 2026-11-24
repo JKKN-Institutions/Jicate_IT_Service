@@ -275,13 +275,13 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "We started with the goal of piloting 10 stores within about six months. However, leveraging Foundry and AIP, we began to see real promise quickly in composing AI-powered, end-to-end workflows that allowed us to get to about 4000 stores within eight months.",
+      "We started with the goal of piloting 10 stores within about six months. However, leveraging Jicate Data Platform and Jicate AI Platform, we began to see real promise quickly in composing AI-powered, end-to-end workflows that allowed us to get to about 4000 stores within eight months.",
     clientName: "WALGREENS",
     role: "Jeff Hoffman · VP, Product Pharmacy",
   },
   {
     quote:
-      "S.C.O.U.T began as a joint effort between AT&T and Jicate, and now has over 100 AT&T dedicated engineers and a dedicated support team for this application. It's just one of the 660 applications we have on Foundry today.",
+      "S.C.O.U.T began as a joint effort between AT&T and Jicate, and now has over 100 AT&T dedicated engineers and a dedicated support team for this application. It's just one of the 660 applications we have on Jicate Data Platform today.",
     clientName: "AT&T",
     role: "Dan Wagner · Dir. of Technology",
   },

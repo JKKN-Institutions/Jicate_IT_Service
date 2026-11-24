@@ -5,7 +5,7 @@ import { runAnyCode } from "@/content/aip-developers";
 import { StepRow, FeatureCards } from "./parts";
 
 /**
- * "Run any code, in any language, anywhere in AIP" — a three-step scrollytelling
+ * "Run any code, in any language, anywhere in Jicate AI Platform" — a three-step scrollytelling
  * sequence (container → Workshop → Ontology SDK) followed by a three-up feature
  * grid. Dark Section.
  */

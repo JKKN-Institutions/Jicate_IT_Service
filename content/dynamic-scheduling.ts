@@ -1,6 +1,6 @@
 /**
  * Content for the /dynamic-scheduling page — a faithful design rebuild of the
- * reference "Foundry Dynamic Scheduling" page, mapped onto this project's design
+ * reference "Jicate Data Platform Dynamic Scheduling" page, mapped onto this project's design
  * system. Layout/visual treatment matches the reference 1:1; long-form body copy
  * is ORIGINAL Jicate content (short functional labels/headings are kept). The
  * user edits final wording.
@@ -46,7 +46,7 @@ export interface Step {
 /* --------------------------------- hero ----------------------------------- */
 
 export const hero = {
-  title: "Foundry Dynamic Scheduling",
+  title: "Jicate Data Platform Dynamic Scheduling",
   body: "Translate your real-world complexity into real-time adaptation. All while planning for the future.",
 };
 
@@ -73,7 +73,7 @@ export const keyFeatures = {
   features: [
     {
       title: "Point and click problem formulation.",
-      body: "Encode your operational constraints and define permitted and optimal behavior in schedules with a point-and-click, low-code interface. Configure temporal and condition-based logic in the Foundry Rules app.",
+      body: "Encode your operational constraints and define permitted and optimal behavior in schedules with a point-and-click, low-code interface. Configure temporal and condition-based logic in the Rules and Alerts app.",
     },
     {
       title: "Full impact visibility and response.",
@@ -93,7 +93,7 @@ export const keyFeatures = {
     },
     {
       title: "Optimization.",
-      body: "Integrate with external third-party solvers using Foundry APIs, or build custom recommendation engines for dynamic plans in the long term and to identify incremental opportunities in real time.",
+      body: "Integrate with external third-party solvers using Jicate Data Platform APIs, or build custom recommendation engines for dynamic plans in the long term and to identify incremental opportunities in real time.",
     },
   ] as Feature[],
 };
@@ -102,9 +102,9 @@ export const keyFeatures = {
 
 export const spotlight = {
   heading: "Spotlight",
-  title: "AI-Powered Scheduling Optimization, Powered by Foundry Dynamic Scheduling",
+  title: "AI-Powered Scheduling Optimization, Powered by Jicate Data Platform Dynamic Scheduling",
   image: "/dynamic-scheduling/Asset_8TPM_Monitor.png" as string | null,
-  alt: "Foundry Rules app — editing a scheduling rule",
+  alt: "Rules and Alerts app — editing a scheduling rule",
   body: "A conversation on making AI operational across heavy industry — how dynamic scheduling turns real-time data into decisions for critical institutions across the globe.",
   link: { label: "Learn More", href: "#learn-more" } satisfies CTA,
 };
@@ -116,9 +116,9 @@ export const howItWorks = {
   steps: [
     {
       title: "Connect.",
-      body: "Establish a real-time common operating picture for your entire organization with the Foundry Ontology, integrating all relevant data and models with out-of-the-box connectors.",
+      body: "Establish a real-time common operating picture for your entire organization with the Jicate Data Platform Business Data Model, integrating all relevant data and models with out-of-the-box connectors.",
       image: "/dynamic-scheduling/Asset_28TPM_Monitor.png",
-      alt: "Ontology connecting data and models",
+      alt: "Business Data Model connecting data and models",
       mediaSide: "left",
     },
     {

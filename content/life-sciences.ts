@@ -75,8 +75,8 @@ export const transformation = {
       pointsLabel: "Examples of our work together",
       points: [
         {
-          strong: "Centralized Study Ontology",
-          body: "The CRO uses Jicate AIP to ingest and process hundreds of pages of diversified inputs — from PDFs to Excel and text files — into a centralized study Ontology.",
+          strong: "Centralized Study Business Data Model",
+          body: "The CRO uses Jicate AI Platform to ingest and process hundreds of pages of diversified inputs — from PDFs to Excel and text files — into a centralized study Business Data Model.",
         },
         {
           strong: "Automated Submission Processing",
@@ -137,7 +137,7 @@ export const clinicalDevelopment = {
     },
     {
       title: "Clinical Trial Planning and Design",
-      body: "Unify public databases, internal sources, and study documents into a single source of truth — the Ontology — to power next-generation trial designs. Connect financial data to serve as a foundation for future reporting, analytics, and data-driven operations.",
+      body: "Unify public databases, internal sources, and study documents into a single source of truth — the Business Data Model — to power next-generation trial designs. Connect financial data to serve as a foundation for future reporting, analytics, and data-driven operations.",
     },
     {
       title: "Gen AI Enabled Clinical Data Automapping",
@@ -154,7 +154,7 @@ export const commercialOperations = {
       body: "Generate insights from unstructured data to cohort providers and optimize sales-team interactions with different segments of customers.",
     },
     {
-      title: "AIP Powered Sales Co-Pilot",
+      title: "Jicate AI Platform Powered Sales Co-Pilot",
       body: "Using natural language, empower sales reps to leverage customer history and AI insights to customize the next best action.",
     },
     {
@@ -163,7 +163,7 @@ export const commercialOperations = {
     },
     {
       title: "Medical, Legal, Operational, & Regulatory (MLOR) Review Automation",
-      body: "AIP improves content quality and decreases the time required for MLOR reviews by acting as a review assistant — capable of flagging issues in real time, but also recommending solutions to enable rapid resolution.",
+      body: "Jicate AI Platform improves content quality and decreases the time required for MLOR reviews by acting as a review assistant — capable of flagging issues in real time, but also recommending solutions to enable rapid resolution.",
     },
   ] as Feature[],
 };

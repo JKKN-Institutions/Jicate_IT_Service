@@ -17,7 +17,7 @@ type Link = { label: string; href: string; arrow?: ArrowKind; external?: boolean
 
 export const aimlHero = {
   // Giant bottom-left wordmark.
-  wordmark: "AIP",
+  wordmark: "Jicate AI Platform",
   video: "/aip/aip-hero-video.mp4",
   // Bottom corner mono micro-label columns (neutral placeholder copy).
   metaGroups: [
@@ -39,7 +39,7 @@ export const statementIntro = {
 
 export const beyondChat = {
   heading: "Beyond Chat",
-  subtext: "Explore AIP",
+  subtext: "Explore Jicate AI Platform",
   tabs: [
     {
       key: "ai-app",
@@ -146,7 +146,7 @@ export const featureRows: FeatureRow[] = [
 
 export const industries = {
   heading: "Solving complex problems across all industries in days, not years.",
-  cta: { label: "Explore AIP Now", href: "/contact", arrow: "drillin" as ArrowKind },
+  cta: { label: "Explore Jicate AI Platform Now", href: "/contact", arrow: "drillin" as ArrowKind },
   items: [
     "Aerospace & Aviation",
     "Automotive",
@@ -166,7 +166,7 @@ export const industries = {
 
 /* — Closing CTA (heading + twin cards, dark) --------------------------- */
 
-export const ctaHeading = "Build now with AIP";
+export const ctaHeading = "Build now with Jicate AI Platform";
 
 export const ctaCards: {
   eyebrow: string;
@@ -177,16 +177,16 @@ export const ctaCards: {
 }[] = [
   {
     eyebrow: "GET STARTED",
-    title: "Build with AIP",
-    body: "Request access for AIP and start building. One-click install to begin, then customize as you wish.",
+    title: "Build with Jicate AI Platform",
+    body: "Request access for Jicate AI Platform and start building. One-click install to begin, then customize as you wish.",
     link: { label: "Start building", href: "/get-started", arrow: "cta" },
     video: "/aip/sign-up.mp4",
   },
   {
     eyebrow: "SEE IT LIVE",
-    title: "Explore AIP Now",
-    body: "Visit AIP Now to view dozens of AI use cases that power foundational institutions, available in one-click install.",
-    link: { label: "Explore AIP Now", href: "/contact/demo", arrow: "cta" },
+    title: "Explore Jicate AI Platform Now",
+    body: "Visit Jicate AI Platform Now to view dozens of AI use cases that power foundational institutions, available in one-click install.",
+    link: { label: "Explore Jicate AI Platform Now", href: "/contact/demo", arrow: "cta" },
     video: "/aip/explore.mp4",
   },
 ];
@@ -194,7 +194,7 @@ export const ctaCards: {
 /* — Closing band ------------------------------------------------------- */
 
 export const closingBand = {
-  wordmark: "AIP",
-  title: "Build now with AIP",
+  wordmark: "Jicate AI Platform",
+  title: "Build now with Jicate AI Platform",
   cta: { label: "Get Started", href: "/get-started", arrow: "cta" as ArrowKind },
 };

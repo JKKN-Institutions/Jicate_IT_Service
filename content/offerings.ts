@@ -18,7 +18,7 @@ export const ourSoftwareHeading = "Our Software";
 export const offerings: Offering[] = [
   {
     index: "/0.1",
-    name: "AIP",
+    name: "Jicate AI Platform",
     tagline: "Automate operations, from the factory floor to the front lines",
     href: "/aip",
     video: "/home/homepage-AIP.mp4",
@@ -32,7 +32,7 @@ export const offerings: Offering[] = [
   },
   {
     index: "/0.3",
-    name: "Foundry",
+    name: "Jicate Data Platform",
     tagline:
       "Build and manage Ontology-powered software, with a complete developer platform",
     href: "/foundry",
@@ -40,14 +40,14 @@ export const offerings: Offering[] = [
   },
   {
     index: "/0.4",
-    name: "Ontology",
+    name: "Business Data Model",
     tagline: "The central system for orchestrating decisions across Human+AI teams",
     href: "/ontology",
     video: "/home/homepage-Ontology.mp4",
   },
   {
     index: "/0.5",
-    name: "Apollo",
+    name: "Jicate Deployment Service",
     tagline:
       "Autonomously deploy, monitor, and manage software across any environment",
     href: "/apollo",

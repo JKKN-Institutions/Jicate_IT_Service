@@ -10,7 +10,7 @@ import { GiantHeading } from "./parts";
  */
 export function DsHero() {
   return (
-    <Section className="!pb-[60px] !pt-[80px] desktop:!pt-[100px]" aria-label="Foundry Dynamic Scheduling">
+    <Section className="!pb-[60px] !pt-[80px] desktop:!pt-[100px]" aria-label="Jicate Data Platform Dynamic Scheduling">
       <Container>
         <Reveal className="grid items-start gap-l desktop:grid-cols-[1fr_420px] desktop:gap-[60px]">
           <GiantHeading className="max-w-[10ch]">{hero.title}</GiantHeading>

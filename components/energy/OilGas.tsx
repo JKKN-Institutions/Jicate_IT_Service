@@ -15,7 +15,7 @@ export function OilGas() {
       <AnchorTitle id={oilGas.id}>{oilGas.title}</AnchorTitle>
 
       {/* Intro: ontology image left, text right */}
-      <Section className="bg-canvas" aria-label="Ontology">
+      <Section className="bg-canvas" aria-label="Business Data Model">
         <Container>
           <div className="grid-12 items-center gap-y-xl">
             <Reveal className="col-span-12 desktop:col-span-6">

@@ -43,12 +43,12 @@ export interface Shot {
 /* -------------------------------- sub-nav -------------------------------- */
 
 export const subNav = {
-  brand: { label: "Foundry", href: "#" } as CTA,
+  brand: { label: "Jicate Data Platform", href: "#" } as CTA,
   links: [
-    { label: "About the Ontology", href: "#" },
+    { label: "About the Business Data Model", href: "#" },
     { label: "Industries", href: "#" },
     { label: "Capabilities", href: "#" },
-    { label: "Learn Foundry", href: "#" },
+    { label: "Learn Jicate Data Platform", href: "#" },
   ] as CTA[],
   cta: { label: "Start Building Now", href: "#" } as CTA,
 };
@@ -56,7 +56,7 @@ export const subNav = {
 /* --------------------------------- hero ---------------------------------- */
 
 export const hero = {
-  title: "Foundry Digital Twin",
+  title: "Jicate Data Platform Digital Twin",
   subcopy:
     "Power next-generation operations with semantic data, AI/ML-based twins, and twin-based simulations.",
   cta: { label: "Get a Demo", href: "/enquiry-form" } as CTA,
@@ -105,7 +105,7 @@ export const expressed = {
     "Connect teams. Maximize data and model interpretability. Simulate future states of the world. Capture decisions.",
   image: "/digital-twin/Digital_Twin.png",
   alt: "Digital twin overview artwork",
-  body: "The Ontology underpins every digital twin, mapping your datasets and models to object types, properties, link types, and action types to build a complete, living picture of your organization's world.",
+  body: "The Business Data Model underpins every digital twin, mapping your datasets and models to object types, properties, link types, and action types to build a complete, living picture of your organization's world.",
 };
 
 /* --------------- Twins for Every Stage of Digital Transformation --------- */

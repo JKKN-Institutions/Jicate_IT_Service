@@ -42,7 +42,7 @@ export const showcase: Showcase = {
       id: "systems-migration",
       tab: "Systems Migration",
       earmark: "Systems Migration",
-      title: "Accelerate Enterprise Data Migration with Jicate AIP",
+      title: "Accelerate Enterprise Data Migration with Jicate AI Platform",
       href: "#",
       image:
         "https://images.ctfassets.net/xrfr7uokpv1b/203IJsHEcTS4wbltpHvTgz/adc2924a67059e22ed911586f1c7626d/SAP_Migration_-_Progress_Bars_-_Homepage_4x.png",
@@ -63,7 +63,7 @@ export const showcase: Showcase = {
       tab: "AIPCon 9",
       earmark: "AIPCon 9",
       title:
-        "How Foundry and AIP Create Magic on the Front Lines: 55 Speakers Including Indian Navy, CDAO, GE Aerospace, and more",
+        "How Jicate Data Platform and Jicate AI Platform Create Magic on the Front Lines: 55 Speakers Including Indian Navy, CDAO, GE Aerospace, and more",
       href: "https://www.youtube.com/playlist?list=PLmKm_LhXXgqQaVJ2k-YffD3SRzMygbSYK",
       image:
         "https://images.ctfassets.net/xrfr7uokpv1b/7GpnCN76IYKSNcG16Rlx6/9aefb430493f84c10c152386beafe209/007-Dr.Alex_Karp-AIPCon9__1_.jpg",

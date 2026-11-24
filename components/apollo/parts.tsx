@@ -18,7 +18,7 @@ export function GiantHeading({
   as?: "h1" | "h2" | "h3";
 }) {
   const scale = {
-    // ~64px hero title ("Apollo")
+    // ~64px hero title ("Jicate Deployment Service")
     hero: "text-[clamp(2.75rem,5vw,4rem)]/[1.05] tracking-[-0.02em]",
     // ~120px giant word ("environments")
     giant: "text-[clamp(3.5rem,9vw,7.5rem)]/[1.0] tracking-[-0.03em]",

@@ -16,7 +16,7 @@ export function Hero() {
       <div className="sticky top-[88px] z-30 bg-canvas/95 backdrop-blur-sm">
         <Container>
           <nav
-            aria-label="Apollo sections"
+            aria-label="Jicate Deployment Service sections"
             className="flex flex-wrap gap-x-l gap-y-xs border-b border-transparent py-s text-body text-ink-light"
           >
             {subNav.map((item) => (
