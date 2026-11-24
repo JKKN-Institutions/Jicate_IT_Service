@@ -4,7 +4,7 @@ import { SubNav, Hero, StatementBand, PowerAutonomous, FeatureSection } from "@/
 import { model, orchestrate, toolchain } from "@/content/ontology";
 
 export const metadata: Metadata = {
-  title: "Ontology",
+  title: "Business Data Model",
   description: "The central system for orchestrating decisions across Human+AI teams.",
 };
 
@@ -43,7 +43,7 @@ export default function OntologyPage() {
         aspect={toolchain.aspect}
         features={toolchain.features}
         cols={2}
-        ariaLabel="Empower developers and agents to treat the Ontology as a backend"
+        ariaLabel="Empower developers and agents to treat the Business Data Model as a backend"
       />
       {/* The shared site Footer renders from the root layout. */}
     </main>

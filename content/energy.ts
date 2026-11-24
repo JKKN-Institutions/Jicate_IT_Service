@@ -1,6 +1,6 @@
 /**
  * Content for the /energy page — a faithful DESIGN rebuild of the Palantir
- * "Foundry for Energy" reference page, mapped onto this project's design system.
+ * "Jicate Data Platform for Energy" reference page, mapped onto this project's design system.
  * Short functional headings/labels are kept; body copy is written in Jicate's own
  * voice (placeholder text the user will swap), not copied from the reference.
  * Types are local so the page touches no shared files.
@@ -65,8 +65,8 @@ export const about = {
   ],
   intro: [
     "The Jicate platform is an operating system for the modern enterprise. Built to deliver results with the speed of an out-of-the-box solution and the flexibility to fit unique businesses and use cases, it connects your data, analytics, and operations to fuel responsible, fully governed AI-powered operations.",
-    "At its core is the Ontology — a full-fidelity, dynamic representation of your business and the world around it. Shared by your entire organization, it enables coordination and interconnectivity across data, modeling, analytics, operational decisions, and end-user workflows.",
-    "With the Ontology, users can chain models together across workflows, teams, and organizational units to simulate operations and optimize decisions, and to orchestrate model-driven actions across existing systems.",
+    "At its core is the Business Data Model — a full-fidelity, dynamic representation of your business and the world around it. Shared by your entire organization, it enables coordination and interconnectivity across data, modeling, analytics, operational decisions, and end-user workflows.",
+    "With the Business Data Model, users can chain models together across workflows, teams, and organizational units to simulate operations and optimize decisions, and to orchestrate model-driven actions across existing systems.",
   ],
   diagram: "/energy/Asset_27energy.png",
   diagramAlt: "Energy ontology diagram",
@@ -129,7 +129,7 @@ export const oilGas = {
   intro: {
     image: "/energy/grid-platforms.png",
     alt: "Energy ontology thumbnail",
-    body: "The Ontology transforms your digital assets — including data, models, and processes — into a dynamic, actionable representation of your business for all users to leverage in operations.",
+    body: "The Business Data Model transforms your digital assets — including data, models, and processes — into a dynamic, actionable representation of your business for all users to leverage in operations.",
   },
   upstream: {
     heading: "Upstream",
@@ -156,7 +156,7 @@ export const oilGas = {
         items: [
           "Within an export compression subsystem, an engineer sees all sensor data associated with each piece of production equipment: control valves, compressors, scrubbers, and heat exchanges.",
           "The engineer clicks on an individual component to run a simulation — for example, increasing the suction pressure on a compressor.",
-          "The platform can provide the answer within minutes and, with the Ontology, show the impact of the change across the entire topside system.",
+          "The platform can provide the answer within minutes and, with the Business Data Model, show the impact of the change across the entire topside system.",
         ],
       },
       {
@@ -164,8 +164,8 @@ export const oilGas = {
         lead: "Chain together scenarios from distinct models to understand operational effects across the value chain.",
         items: [
           "With your ontology, you can see the consequences of a decision not only within one system but across the entire value chain — from sandface to export.",
-          "The Ontology integrates multiple simulation models and custom logic to give engineers a single language to understand and optimize facilities in their entirety.",
-          "The Ontology captures and stores the output of every simulation to better inform future engineering and business decisions.",
+          "The Business Data Model integrates multiple simulation models and custom logic to give engineers a single language to understand and optimize facilities in their entirety.",
+          "The Business Data Model captures and stores the output of every simulation to better inform future engineering and business decisions.",
         ],
       },
     ] as Column[],
@@ -174,7 +174,7 @@ export const oilGas = {
     heading: "Onshore",
     video: "/energy/Oil_Gas_Timeseries_V6__1_.mp4",
     lead: "Create a holistic view of your assets",
-    body: "Integrate accounting, land, planning, business development, reserves, and operations data into the Ontology.",
+    body: "Integrate accounting, land, planning, business development, reserves, and operations data into the Business Data Model.",
     bullets: [
       "Gain a deeper understanding of profitability using real-time lease operating statements.",
       "Manage your capital program leveraging process mining and automation.",
@@ -196,7 +196,7 @@ export const oilGas = {
       {
         title: "Asset management",
         items: [
-          "The Ontology enables visualization of asset performance on a granular level in near real-time, without time-consuming manual integration.",
+          "The Business Data Model enables visualization of asset performance on a granular level in near real-time, without time-consuming manual integration.",
         ],
       },
       {

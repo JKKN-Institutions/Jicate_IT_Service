@@ -1,6 +1,6 @@
 /**
  * Content for the /data-integration page — a faithful design rebuild of the
- * reference "Foundry Data Integration" page, mapped onto this project's design
+ * reference "Jicate Data Platform Data Integration" page, mapped onto this project's design
  * system. Layout/visual treatment matches the reference 1:1; body copy is
  * ORIGINAL Jicate content (short functional labels are kept). The user edits
  * final wording.
@@ -55,7 +55,7 @@ export interface FeatureBand {
 /* --------------------------------- hero ----------------------------------- */
 
 export const hero = {
-  title: "Foundry Data Integration",
+  title: "Jicate Data Platform Data Integration",
   body: "Accelerate pipeline development and management with built-in automation. Deliver the full spectrum of use cases atop a trusted foundation, solving problems as quickly as business needs evolve.",
   cta: { label: "Get a Demo", href: "/enquiry-form" } satisfies CTA,
 };
@@ -65,7 +65,7 @@ export const hero = {
 export const videoBand = {
   /** Full-width media-card image (Data Integration Journey title card). */
   image: "/data-integration/sddefault.png",
-  alt: "Foundry Data Integration Journey",
+  alt: "Jicate Data Platform Data Integration Journey",
 };
 
 /* ---------------------- "Data Integration, Supercharged." ------------------ */
@@ -81,21 +81,21 @@ export const productCards: ProductCard[] = [
   },
   {
     image: "/data-integration/Asset_107.png",
-    alt: "Pipeline Builder authoring",
+    alt: "Data Pipelines authoring",
     title: "Treat Data Like Code.",
-    body: "Foundry offers both code-based and no-code interfaces for authoring production-grade pipelines. In both cases, Foundry treats data like code — bringing the power of git-style branching, merging, and rich change management to data pipelines.",
+    body: "Jicate Data Platform offers both code-based and no-code interfaces for authoring production-grade pipelines. In both cases, Jicate Data Platform treats data like code — bringing the power of git-style branching, merging, and rich change management to data pipelines.",
   },
   {
     image: "/data-integration/Asset_105.png",
     alt: "Open connectors and interoperability",
     title: "Built Open.",
-    body: "Foundry is an open platform that connects to your existing data lakes, warehouses, lakehouses, data science environments, and BI tools. Beyond open interfaces, native connectors move every type of data and metadata — structured, unstructured, or streaming — in and out without lock-in.",
+    body: "Jicate Data Platform is an open platform that connects to your existing data lakes, warehouses, lakehouses, data science environments, and BI tools. Beyond open interfaces, native connectors move every type of data and metadata — structured, unstructured, or streaming — in and out without lock-in.",
   },
   {
     image: "/data-integration/Asset_110.png",
     alt: "Intelligent pipeline orchestration",
     title: "Designed for Efficiency.",
-    body: "Intelligent pipeline orchestration provides live data monitoring, temporal drift detection, and cost-effective refreshes. Foundry cuts spend and painful manual configuration with version tracking, job introspection, aggregate reporting, and alerting.",
+    body: "Intelligent pipeline orchestration provides live data monitoring, temporal drift detection, and cost-effective refreshes. Jicate Data Platform cuts spend and painful manual configuration with version tracking, job introspection, aggregate reporting, and alerting.",
   },
 ];
 
@@ -119,11 +119,11 @@ export const featureBands: FeatureBand[] = [
     features: [
       {
         eyebrow: "DYNAMIC DATA LINEAGE",
-        body: "Move past theoretical, best-guess lineage crawlers. Foundry captures active metadata and full user attribution to apply and maintain lineage across every data element automatically. Every version of every dataset records exactly which code and parent datasets produced it.",
+        body: "Move past theoretical, best-guess lineage crawlers. Jicate Data Platform captures active metadata and full user attribution to apply and maintain lineage across every data element automatically. Every version of every dataset records exactly which code and parent datasets produced it.",
       },
       {
         eyebrow: "MULTI-MODAL SECURITY",
-        body: "Eliminate “bolt-on” and legacy cloud security approaches. Foundry enforces role-, marking-, and purpose-based access controls as active, immutable metadata. Its security and lineage engines work in concert, giving a detailed account of who accessed what, and why, across data versions.",
+        body: "Eliminate “bolt-on” and legacy cloud security approaches. Jicate Data Platform enforces role-, marking-, and purpose-based access controls as active, immutable metadata. Its security and lineage engines work in concert, giving a detailed account of who accessed what, and why, across data versions.",
       },
       {
         eyebrow: "EMBEDDED DATA HEALTH",
@@ -135,7 +135,7 @@ export const featureBands: FeatureBand[] = [
     id: "collaboration",
     title: "Global Collaboration. Universal Impact.",
     image: "/data-integration/Foundry_Data_Catalog.png",
-    alt: "Foundry Data Catalog search",
+    alt: "Jicate Data Platform Data Catalog search",
     features: [
       {
         eyebrow: "TREAT DATA LIKE CODE",
@@ -143,7 +143,7 @@ export const featureBands: FeatureBand[] = [
       },
       {
         eyebrow: "DISCOVERABILITY AND CATALOGING",
-        body: "Leverage integrated applications like Foundry Data Catalog for search, cataloging, metadata management, and dataset and usage analytics. The catalog offers a curated view of data, while search traverses every key metadata field.",
+        body: "Leverage integrated applications like Jicate Data Platform Data Catalog for search, cataloging, metadata management, and dataset and usage analytics. The catalog offers a curated view of data, while search traverses every key metadata field.",
       },
       {
         eyebrow: "INTEGRATED PROJECT MANAGEMENT",
@@ -155,7 +155,7 @@ export const featureBands: FeatureBand[] = [
     id: "sql",
     title: "SQL. And Much More.",
     image: "/data-integration/Time_Series_1.png",
-    alt: "Quiver time-series analytics",
+    alt: "Time-series analysis time-series analytics",
     features: [
       {
         eyebrow: "BROAD SQL CONNECTIVITY",
@@ -163,7 +163,7 @@ export const featureBands: FeatureBand[] = [
       },
       {
         eyebrow: "CUTTING-EDGE TIME SERIES",
-        body: "Quiver puts time-series analytics in users’ hands like never before. On the backend, a next-generation time-series database eliminates the traditional trade-offs of warehouse and data-lake architectures, scaling horizontally as usage and data volume grow.",
+        body: "Time-series analysis puts time-series analytics in users’ hands like never before. On the backend, a next-generation time-series database eliminates the traditional trade-offs of warehouse and data-lake architectures, scaling horizontally as usage and data volume grow.",
       },
       {
         eyebrow: "POWERING DIGITAL TWINS",
@@ -183,11 +183,11 @@ export const featureBands: FeatureBand[] = [
       },
       {
         eyebrow: "CONTINUOUS DELIVERY AND ZERO DOWNTIME",
-        body: "Every component within Foundry is powered by Apollo, the next-generation platform for autonomous scaling, management, and monitoring of critical infrastructure.",
+        body: "Every component within Jicate Data Platform is powered by Jicate Deployment Service, the next-generation platform for autonomous scaling, management, and monitoring of critical infrastructure.",
       },
       {
         eyebrow: "MISSION CONTROL FOR YOUR DATA",
-        body: "Stay in command with Foundry’s full-spectrum governance that weaves together control planes for data and metadata governance, usage governance, rich reporting, and federated workflows.",
+        body: "Stay in command with Jicate Data Platform’s full-spectrum governance that weaves together control planes for data and metadata governance, usage governance, rich reporting, and federated workflows.",
       },
     ],
   },

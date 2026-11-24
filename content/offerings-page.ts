@@ -94,7 +94,7 @@ export const offerings: OfferingRow[] = [
     tagline: "Meet the demands of tomorrow's customers, regulators, and markets.",
   },
   {
-    name: "Pipeline Builder",
+    name: "Data Pipelines",
     href: "/pipeline-builder",
     tagline: "Let anyone build production-grade data pipelines — without writing code.",
   },
@@ -134,7 +134,7 @@ export const offerings: OfferingRow[] = [
     tagline: "A world-class AI software platform for startups and growing companies.",
   },
   {
-    name: "Jicate HyperAuto",
+    name: "Jicate Automatic data setup",
     href: "#",
     tagline: "Automatically build data pipelines from your systems in hours — not months.",
   },

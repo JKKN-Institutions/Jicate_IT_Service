@@ -10,7 +10,7 @@ import {
 } from "@/components/marketplace";
 
 export const metadata: Metadata = {
-  title: "Foundry Marketplace",
+  title: "Jicate Data Platform Marketplace",
   description: "Build and launch data products as SaaS.",
 };
 

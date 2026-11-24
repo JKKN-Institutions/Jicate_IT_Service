@@ -9,7 +9,7 @@ import { subNav } from "@/content/edge-ai";
 export function SubNav() {
   return (
     <nav
-      aria-label="Foundry"
+      aria-label="Jicate Data Platform"
       className="sticky top-nav z-30 border-b border-ink/10 bg-canvas/90 backdrop-blur-sm"
     >
       <Container>

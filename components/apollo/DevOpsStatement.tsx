@@ -6,7 +6,7 @@ import { GiantHeading } from "./parts";
 
 /**
  * DevOps statement band (light). A large statement heading on the left with a
- * top hairline rule, and the tall "Apollo Cube" image on the right.
+ * top hairline rule, and the tall "Jicate Deployment Service Cube" image on the right.
  */
 export function DevOpsStatement() {
   return (

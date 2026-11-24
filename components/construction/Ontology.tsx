@@ -5,7 +5,7 @@ import { ontology } from "@/content/construction";
 import { BigHeading } from "./parts";
 
 /**
- * "The Construction Ontology" — a two-column split (oversized heading left, a
+ * "The Construction Business Data Model" — a two-column split (oversized heading left, a
  * stack of paragraphs right), followed by a full-width isometric diagram.
  */
 export function Ontology() {

@@ -42,7 +42,7 @@ export const hero = {
 export const bigData = {
   heading: "Big data solutions shouldn’t just be for big companies.",
   intro:
-    "Jicate for Builders gives startups and small to mid-sized businesses full access to AIP and the Jicate platform — our enterprise-grade software.",
+    "Jicate for Builders gives startups and small to mid-sized businesses full access to Jicate AI Platform and the Jicate platform — our enterprise-grade software.",
   platformHeading: "Jicate’s enterprise-grade software platforms.",
   platformBody:
     "Backed by years of product development and proven across major organizations worldwide, Jicate delivers a modern, end-to-end AI platform that enables organizations to fully customize internal systems, integrate LLMs into operational workflows, build and scale customer-facing products, all while maintaining robust security and governance.",

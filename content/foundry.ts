@@ -3,8 +3,8 @@
  * Foundry platform page (https://www.palantir.com/platforms/foundry/). LIGHT
  * theme. Short functional headings/labels kept; body copy in Jicate's voice
  * (placeholder text the user will swap). IP-safe: Palantir → Jicate, the
- * "Foundry" product → "Jicate Platform" / "the platform"; the generic concept
- * "Ontology" is kept. Named customers/partners genericized. Types local.
+ * "Jicate Data Platform" product → "Jicate Platform" / "the platform"; the generic concept
+ * "Business Data Model" is kept. Named customers/partners genericized. Types local.
  *
  * Assets in /public/foundry: Hydrate_Ontology_General_V3.mp4 (hero video),
  * Ontology_Simple.png (ontology card), Personas.png (collaboration diagram),
@@ -53,18 +53,18 @@ export const hero = {
   title: "Jicate Platform",
   subcopy: "The Ontology-Powered Operating System for the Modern Enterprise",
   video: "/foundry/Hydrate_Ontology_General_V3.mp4",
-  videoLabel: "Ontology hydrating data, logic, and action into one operating system",
+  videoLabel: "Business Data Model hydrating data, logic, and action into one operating system",
 };
 
 /* -------------------------------- ontology ------------------------------- */
 
 export const ontology = {
-  heading: "The Jicate Ontology",
+  heading: "The Business Data Model",
   image: "/foundry/Ontology_Simple.png",
-  imageAlt: "Ontology core layered into Semantic, Kinetic, and Dynamic layers",
+  imageAlt: "Business Data Model core layered into Semantic, Kinetic, and Dynamic layers",
   statement: "Activate your data and analytics in a dynamic system for closed-loop operations.",
-  body: "The Jicate Ontology is the heart of the platform. It integrates the semantic, kinetic, and dynamic elements of your business — empowering your teams to harmonize and automate decision-making in complex settings.",
-  link: "Discover the Ontology",
+  body: "The Business Data Model is the heart of the platform. It integrates the semantic, kinetic, and dynamic elements of your business — empowering your teams to harmonize and automate decision-making in complex settings.",
+  link: "Discover the Business Data Model",
 };
 
 /* ----------------------------- collaboration ----------------------------- */
@@ -73,7 +73,7 @@ export const collaboration = {
   heading: "Step Into Real-Time Collaboration →",
   statement: "Execute faster with universal logic representing the objects, actions, and processes of your business.",
   image: "/foundry/Personas.png",
-  imageAlt: "Core business, data, and modeling teams collaborating through a shared Ontology",
+  imageAlt: "Core business, data, and modeling teams collaborating through a shared Business Data Model",
   features: [
     {
       label: "Activate the Power of Your Data and Analytics.",
@@ -297,7 +297,7 @@ export const awards = {
 
 export const form = {
   id: "get-started",
-  heading: "Get Started with the Ontology",
+  heading: "Get Started with the Business Data Model",
   fields: [
     { name: "firstName", label: "FIRST NAME:", type: "text", required: true },
     { name: "lastName", label: "LAST NAME:", type: "text", required: true },

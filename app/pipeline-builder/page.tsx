@@ -10,7 +10,7 @@ import {
 } from "@/components/pipeline-builder";
 
 export const metadata: Metadata = {
-  title: "Next-Generation Pipeline Builder",
+  title: "Next-Generation Data Pipelines",
   description:
     "Build production-grade data pipelines with integrated security, data quality, and governed collaboration. Coding skills not required.",
 };

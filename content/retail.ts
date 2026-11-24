@@ -57,15 +57,15 @@ export const about = {
     paragraphs: [
       "Jicate builds data-driven operations and decision-making software that empowers some of the world's most important institutions.",
       "We got our start in intelligence and defense, and brought those frontline lessons to bear across countless industries and commercial enterprises around the world.",
-      "Our core commercial platform, Jicate Foundry, is the AI-powered operating system for the modern enterprise — building on your existing technology investments to connect siloed planning and optimize for efficiency and agility.",
+      "Our core commercial platform, Jicate Data Platform, is the AI-powered operating system for the modern enterprise — building on your existing technology investments to connect siloed planning and optimize for efficiency and agility.",
     ],
   },
   right: {
     heading: "Jicate for Retail",
     paragraphs: [
       "To ride out today's swings in supply and demand, retailers need near-real-time visibility into demand — and the ability to adjust promotions, inventory, and operations on the fly.",
-      "Jicate Foundry lets retailers build a unified data foundation and tackle their toughest problems — optimizing inventory, building stronger supply chains, and delivering seamless omnichannel customer experiences.",
-      "The world's leading enterprise retailers use Jicate Foundry to drive digital transformation and get smarter, sharper value from their data.",
+      "Jicate Data Platform lets retailers build a unified data foundation and tackle their toughest problems — optimizing inventory, building stronger supply chains, and delivering seamless omnichannel customer experiences.",
+      "The world's leading enterprise retailers use Jicate Data Platform to drive digital transformation and get smarter, sharper value from their data.",
     ],
   },
 };
@@ -94,7 +94,7 @@ export const technology = {
   heading: "Technology built for dynamic and optimal operations",
   features: [
     { eyebrow: "DATA INTEGRATION", body: "Speed up pipeline development and management with built-in automation, while granular governance keeps data integrity intact so teams can collaborate without worry." },
-    { eyebrow: "ENTERPRISE ONTOLOGY", body: "The core Ontology links your data and models to the real-world business objects they represent, giving everyone — from analytics teams to decision-makers — a shared language for working intuitively with a digital picture of the enterprise." },
+    { eyebrow: "ENTERPRISE ONTOLOGY", body: "The core Business Data Model links your data and models to the real-world business objects they represent, giving everyone — from analytics teams to decision-makers — a shared language for working intuitively with a digital picture of the enterprise." },
     { eyebrow: "BI & ANALYTICS", body: "Let people of any technical skill level shape, analyse, and act on diverse data through intuitive, interactive applications." },
     { eyebrow: "DATA SCIENCE & MODELING", body: "Support full-stack data science with direct connections to both pipelines and applications — one integrated environment to build, test, and operationalize ML and AI models." },
     { eyebrow: "APPLICATION BUILDING", body: "Give teams across the organization a real way to contribute — build read-write applications, run simulations, and embed full-fidelity business rules and processes." },
@@ -110,7 +110,7 @@ export const inAction = {
       tab: "Working Capital Optimization",
       partner: "A global manufacturer",
       challenge: "The company was losing significant amounts of material to expiry — a costly problem — and needed to analyse data across a sprawling supply-chain network of hundreds of plants and more than 100,000 products to make deliberate inventory reductions.",
-      solution: "With Jicate Foundry, they brought production, equipment-capacity, plant-asset, and logistics data into a single layer, gaining visibility across every product and plant and the ability to fine-tune inventory at a granular level.",
+      solution: "With Jicate Data Platform, they brought production, equipment-capacity, plant-asset, and logistics data into a single layer, gaining visibility across every product and plant and the ability to fine-tune inventory at a granular level.",
       image: `${BASE}/shutterstock_1690489663.jpg`,
       alt: "Automated warehouse aisles",
     },

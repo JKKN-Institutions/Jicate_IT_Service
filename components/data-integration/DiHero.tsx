@@ -11,7 +11,7 @@ import { GiantHeading, InkLink } from "./parts";
  */
 export function DiHero() {
   return (
-    <Section className="!pb-[40px] !pt-[80px] desktop:!pt-[100px]" aria-label="Foundry Data Integration">
+    <Section className="!pb-[40px] !pt-[80px] desktop:!pt-[100px]" aria-label="Jicate Data Platform Data Integration">
       <Container>
         <Reveal className="grid items-start gap-l desktop:grid-cols-[1fr_460px] desktop:gap-[60px]">
           <GiantHeading as="h1">{hero.title}</GiantHeading>

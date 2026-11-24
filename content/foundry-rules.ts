@@ -1,6 +1,6 @@
 /**
  * Content for the /foundry-rules page — a faithful design rebuild of the
- * reference "Foundry Rules & Real-Time Alerting" page, mapped onto this
+ * reference "Rules and Alerts & Real-Time Alerting" page, mapped onto this
  * project's design system. Layout/visual treatment matches the reference 1:1;
  * all body copy is ORIGINAL Jicate content written in our own words (only short
  * functional labels/headings are kept). The testimonial is a neutral
@@ -48,7 +48,7 @@ export interface UseCase {
 /* --------------------------------- hero ----------------------------------- */
 
 export const hero = {
-  title: "Foundry Rules & Real-Time Alerting",
+  title: "Rules and Alerts & Real-Time Alerting",
   body: "Turn your experts' know-how into object-aware alerts, and wire those alerts straight to action across the business.",
 };
 
@@ -56,7 +56,7 @@ export const hero = {
 
 export const spotlightBand = {
   eyebrow: "Jicate Spotlight",
-  title: "Foundry Rules & Real-Time Alerting",
+  title: "Rules and Alerts & Real-Time Alerting",
   body: "Author rules, watch live data, and route alerts to the people who can act on them.",
   image: "/foundry-rules/Screenshot 2026-07-13 163943.png",
   imageAlt: "Robotic arms assembling car bodies on an automated production line",
@@ -71,8 +71,8 @@ export const quote = {
   logo: "/foundry-rules/Asset_25bp.png",
   logoAlt: "Customer logo",
   paragraphs: [
-    "We needed a way inside Foundry to surface trends and events across weeks or months from our streaming data. With well over a hundred rules already running, the team can monitor a huge range of equipment in real time.",
-    "Foundry Rules & Real-Time Alerting retired a pile of bespoke dashboards for us. Its flexible, low-code approach made it easy for people across the company to pick up and roll out.",
+    "We needed a way inside Jicate Data Platform to surface trends and events across weeks or months from our streaming data. With well over a hundred rules already running, the team can monitor a huge range of equipment in real time.",
+    "Rules and Alerts & Real-Time Alerting retired a pile of bespoke dashboards for us. Its flexible, low-code approach made it easy for people across the company to pick up and roll out.",
   ],
   attribution: "— Principal Product Manager, Energy",
 };
@@ -82,12 +82,12 @@ export const quote = {
 export const keyFeatures = {
   heading: "Key Features",
   image: "/foundry-rules/FoundryRules_KeyFeatures.png",
-  alt: "Foundry Rules key features",
-  ontologyLink: { label: "Foundry Ontology", href: "#foundry-ontology" } satisfies CTA,
+  alt: "Rules and Alerts key features",
+  ontologyLink: { label: "Jicate Data Platform Business Data Model", href: "#foundry-ontology" } satisfies CTA,
   features: [
     {
       title: "Flexible Rule Authoring.",
-      body: "Build rules on top of datasets, ontology objects, time series, and more — with the Foundry Ontology giving every rule a real-world picture of your business to work from.",
+      body: "Build rules on top of datasets, ontology objects, time series, and more — with the Jicate Data Platform Business Data Model giving every rule a real-world picture of your business to work from.",
     },
     {
       title: "Backtesting on Historical Data.",
@@ -122,14 +122,14 @@ export const howItWorks = {
     },
     {
       title: "Any data. Any time.",
-      body: "Run rules over datasets, objects, and time series with billions of streaming points for live monitoring and alerting — all inside the Foundry Ontology, so users always work against a real-world view.",
+      body: "Run rules over datasets, objects, and time series with billions of streaming points for live monitoring and alerting — all inside the Jicate Data Platform Business Data Model, so users always work against a real-world view.",
       image: "/foundry-rules/Asset_23RULES.png",
       alt: "Monitoring any data in real time",
       mediaSide: "right",
     },
     {
       title: "Connect alerts to action.",
-      body: "Act on alerts from Workshop apps. In-platform metrics show the impact of each choice as you resolve an alert, and the Foundry Ontology coordinates the systems involved — closing the loop and feeding what's learned back into the next decision.",
+      body: "Act on alerts from Workshop apps. In-platform metrics show the impact of each choice as you resolve an alert, and the Jicate Data Platform Business Data Model coordinates the systems involved — closing the loop and feeding what's learned back into the next decision.",
       image: "/foundry-rules/Asset_24RULES.png",
       alt: "Connecting alerts to action",
       mediaSide: "left",
@@ -142,7 +142,7 @@ export const howItWorks = {
 export const applications = {
   heading: "Applications",
   image: "/foundry-rules/Foundry_Rules_-_applications_2_-_cropped.jpg",
-  alt: "Foundry Rules applications",
+  alt: "Rules and Alerts applications",
   useCases: [
     {
       title: "Equipment Monitoring.",

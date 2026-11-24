@@ -31,12 +31,12 @@ export interface UseCase {
 /* -------------------------------- sub-nav -------------------------------- */
 
 export const subNav = {
-  brand: { label: "Foundry", href: "#" } as CTA,
+  brand: { label: "Jicate Data Platform", href: "#" } as CTA,
   links: [
-    { label: "About the Ontology", href: "#" },
+    { label: "About the Business Data Model", href: "#" },
     { label: "Industries", href: "#" },
     { label: "Capabilities", href: "#" },
-    { label: "Learn Foundry", href: "#" },
+    { label: "Learn Jicate Data Platform", href: "#" },
   ] as CTA[],
   cta: { label: "Start Building Now", href: "#" } as CTA,
 };

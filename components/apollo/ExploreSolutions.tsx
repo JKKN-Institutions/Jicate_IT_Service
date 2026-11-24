@@ -5,7 +5,7 @@ import { exploreSolutions } from "@/content/apollo";
 import { GiantHeading } from "./parts";
 
 /**
- * "Explore Apollo Solutions" (light). A section heading on the left and a
+ * "Explore Jicate Deployment Service Solutions" (light). A section heading on the left and a
  * two-column grid of solution links on the right — each cell is a drill-in link
  * with hairline dividers and a trailing arrow. A "Watch the Demo" button sits
  * at the bottom-right.

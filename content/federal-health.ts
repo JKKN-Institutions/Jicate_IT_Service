@@ -118,7 +118,7 @@ export const solutions = {
 
 export const capabilities = {
   heading: "Our Capabilities",
-  intro: "Foundry is designed to resolve some of the key challenges caused by a fragmented landscape",
+  intro: "Jicate Data Platform is designed to resolve some of the key challenges caused by a fragmented landscape",
   tabs: [
     {
       tab: "Data Integration + Harmonization",

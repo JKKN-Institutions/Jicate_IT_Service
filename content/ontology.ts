@@ -3,7 +3,7 @@
  * Ontology platform page (https://www.palantir.com/platforms/ontology/). LIGHT
  * theme with a lavender/purple accent (#967EFF). Short functional headings kept;
  * body copy in Jicate's voice (placeholder text the user will swap). IP-safe:
- * Palantir → Jicate; generic term "Ontology" kept. Types local.
+ * Palantir → Jicate; generic term "Business Data Model" kept. Types local.
  *
  * Assets in /public/ontology were scraped from the reference (layered SVG
  * animation frames + PNG diagrams) and stacked to form each section's composite
@@ -23,16 +23,16 @@ export interface SubNavItem {
 /* -------------------------------- sub-nav -------------------------------- */
 
 export const subnav: SubNavItem[] = [
-  { label: "Ontology Overview", href: "#overview" },
-  { label: "Ontology Language", href: "#language" },
-  { label: "Ontology Engine", href: "#engine" },
-  { label: "Ontology Toolchain", href: "#toolchain" },
+  { label: "Business Data Model Overview", href: "#overview" },
+  { label: "Business Data Model Language", href: "#language" },
+  { label: "Business Data Model Engine", href: "#engine" },
+  { label: "Business Data Model Toolchain", href: "#toolchain" },
 ];
 
 /* ---------------------------------- hero --------------------------------- */
 
 export const hero = {
-  title: "Ontology",
+  title: "Business Data Model",
   subcopy: "The central system for orchestrating decisions across Human+AI teams.",
   layers: [
     "/ontology/hero-circuits.svg",
@@ -47,10 +47,10 @@ export const hero = {
 /* ------------------------------- statement ------------------------------- */
 
 export const statement = {
-  text: "The Ontology encodes the data, logic, action, and security of your enterprise to automate decisions across your operations.",
-  cardTitle: "The Ontology System",
+  text: "The Business Data Model encodes the data, logic, action, and security of your enterprise to automate decisions across your operations.",
+  cardTitle: "The Business Data Model System",
   visual: "/ontology/ontology-system-visual.png",
-  visualAlt: "The Ontology System connecting data, logic, and action",
+  visualAlt: "The Business Data Model System connecting data, logic, and action",
 };
 
 /* -------------------------- power autonomous ----------------------------- */
@@ -138,7 +138,7 @@ export const orchestrate = {
 
 export const toolchain = {
   heading: "Empower developers and agents to treat the ",
-  accent: "Ontology as a backend.",
+  accent: "Business Data Model as a backend.",
   layers: ["/ontology/toolchain-1.svg", "/ontology/toolchain-2.svg"],
   aspect: "1303 / 600",
   features: [
@@ -151,7 +151,7 @@ export const toolchain = {
       body: "Define reusable tools that query any data, call any model or piece of logic, or run any action — all under one governance framework.",
     },
     {
-      title: "Power external agents with Ontology MCP.",
+      title: "Power external agents with Business Data Model MCP.",
       body: "Expose your ontology to external agents as MCP tools, so outside systems can read, query, and act through a governed interface.",
     },
     {

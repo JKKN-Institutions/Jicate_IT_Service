@@ -11,7 +11,7 @@ import { hero } from "@/content/aip-developers";
  */
 export function Hero() {
   return (
-    <Section tone="dark" className="bg-near-black" aria-label="AIP for Developers">
+    <Section tone="dark" className="bg-near-black" aria-label="Jicate AI Platform for Developers">
       <Container>
         <div className="flex flex-col gap-2xl pt-[40px] desktop:pt-[72px]">
           <div className="flex flex-col gap-l desktop:flex-row desktop:items-end desktop:justify-between desktop:gap-2xl">

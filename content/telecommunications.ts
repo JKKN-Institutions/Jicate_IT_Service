@@ -2,7 +2,7 @@
  * Content for the /telecommunications page — a faithful DESIGN rebuild of the
  * Palantir Telecommunications reference page. LIGHT theme. Short functional
  * headings/labels kept; body copy in Jicate's voice (placeholder text the user
- * will swap). Palantir→Jicate, "Foundry"→"the platform" (kept where it reads as a
+ * will swap). Palantir→Jicate, "Jicate Data Platform"→"the platform" (kept where it reads as a
  * product name → "Jicate"); named customers/partners genericized. Types local.
  *
  * Assets in /public/telecommunications: shutterstock_1606674793.jpg (hero towers)

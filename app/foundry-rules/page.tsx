@@ -11,7 +11,7 @@ import {
 } from "@/components/foundry-rules";
 
 export const metadata: Metadata = {
-  title: "Foundry Rules & Real-Time Alerting",
+  title: "Rules and Alerts & Real-Time Alerting",
   description:
     "Create object-aware alerts with rules made by your experts. Seamlessly connect alerts to action across your business.",
 };

@@ -33,7 +33,7 @@ export const hero = {
 /* -------------------------------- mission --------------------------------- */
 
 export const mission =
-  "Jicate was built to help intelligence agencies make better, more responsible use of their data. Today, governments around the world rely on Jicate Gotham and Jicate Foundry to understand and defend against evolving threats to national security — from cyberattacks, to disinformation, to insurgencies.";
+  "Jicate was built to help intelligence agencies make better, more responsible use of their data. Today, governments around the world rely on Jicate Gotham and Jicate Data Platform to understand and defend against evolving threats to national security — from cyberattacks, to disinformation, to insurgencies.";
 
 /* ----------------------------- content blocks ----------------------------- */
 

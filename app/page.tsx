@@ -4,7 +4,6 @@ import {
   StatementBand,
   OurSoftware,
   ManifestoBand,
-  Testimonials,
   SplitCTA,
 } from "@/components/home";
 
@@ -16,7 +15,6 @@ export default function Home() {
       <StatementBand />
       <OurSoftware />
       <ManifestoBand />
-      <Testimonials />
       <SplitCTA />
     </main>
   );

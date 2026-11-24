@@ -105,10 +105,10 @@ export const impact = {
 export const howItWorks = {
   heading: "How it Works",
   image: `${BASE}/Ontology_Image.png`,
-  imageAlt: "Ontology architecture diagram for rail",
+  imageAlt: "Business Data Model architecture diagram for rail",
   paragraphs: [
-    "Jicate software integrates your data and models into the Ontology, a real-world representation of your business — from individual railcars to throughput targets.",
-    "The Ontology serves as the foundation for tackling your highest-priority use cases quickly, but without sacrificing future scalability and flexibility.",
+    "Jicate software integrates your data and models into the Business Data Model, a real-world representation of your business — from individual railcars to throughput targets.",
+    "The Business Data Model serves as the foundation for tackling your highest-priority use cases quickly, but without sacrificing future scalability and flexibility.",
     "It enables you to simulate operations, automate processes, and federate decision-making across operators, devices, and environments, all while continuously capturing feedback and entrenched knowledge in a closed loop.",
   ],
 };

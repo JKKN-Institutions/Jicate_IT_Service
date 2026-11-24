@@ -59,53 +59,7 @@ export const program: ProgramTab[] = [
         type: "para",
         text: "For more information on compliance, accreditation, and trust, please visit our Trust Portal.",
       },
-      { type: "subhead", text: "Compliance Overview" },
-      {
-        type: "para",
-        text: "Our cloud platform's infrastructure, applications, and operations have been developed to comply and align with some of the most rigorous legal and regulatory requirements in industries today, including:",
-      },
-      {
-        type: "list",
-        label: "SSAE 18/ISAE 3000 Service Organization Control (SOC):",
-        items: ["SOC 1, Type 2", "SOC 2, Type 2 (Security, Confidentiality, and Availability)", "SOC 3"],
-      },
-      {
-        type: "list",
-        label: "International Organization for Standardization (ISO), including but not limited to:",
-        items: ["ISO 27001", "ISO 27017", "ISO 27018", "ISO 9001"],
-      },
-      {
-        type: "list",
-        label: "NIST 800-53 and NIST 800-171, including control sets for the following baselines:",
-        items: ["FedRAMP High", "FISMA High", "Impact Level 2 DoD SRG", "Impact Level 5 DoD SRG", "Impact Level 6 DoD SRG", "CMMC"],
-      },
-      {
-        type: "list",
-        label: "And others, including:",
-        items: [
-          "Cyber Essentials Plus",
-          "NCSC Cloud Security Principles",
-          "NHS Digital Data Security and Protection Toolkit",
-          "GDPR",
-          "Web Content Accessibility Guidelines (WCAG) 2.2, Section 508 and EN 301 549",
-          "Esquema Nacional de Seguridad (ENS)",
-          "Trusted Information Security Assessment Exchange (TISAX)",
-        ],
-      },
-      {
-        type: "para",
-        text: "Additionally, Jicate has extensive experience helping our customers meet specific regulatory and industry requirements. Our software provides functionality that customers can configure and operate to meet requirements such as those arising from:",
-      },
-      {
-        type: "list",
-        label: "",
-        items: ["SOC 1 / ISAE 3402", "GxP", "CCPA", "CJIS", "HIPAA", "ITAR"],
-      },
-      {
-        type: "para",
-        text: "For more information on compliance, accreditation reports, and trust, please visit our Trust Portal.",
-      },
-    ],
+      ],
   },
   {
     id: "open-source-contribution",

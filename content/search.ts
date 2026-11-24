@@ -22,10 +22,10 @@ export interface PopularSearch {
 
 /** Quick-pick queries shown under the input (mirrors the reference). */
 export const popularSearches: PopularSearch[] = [
-  { label: "Foundry", query: "Foundry" },
+  { label: "Jicate Data Platform", query: "Jicate Data Platform" },
   { label: "Gotham", query: "Gotham" },
-  { label: "Apollo", query: "Apollo" },
-  { label: "Ontology", query: "Ontology" },
+  { label: "Jicate Deployment Service", query: "Jicate Deployment Service" },
+  { label: "Business Data Model", query: "Business Data Model" },
   { label: "Artificial Intelligence (AI)", query: "AI" },
 ];
 

@@ -47,7 +47,7 @@ export interface CaseStudy {
 /* ---------------------------------- hero --------------------------------- */
 
 export const hero = {
-  title: "Foundry Streaming",
+  title: "Jicate Data Platform Streaming",
   subcopy:
     "Use real-time data to drive real-time decisions — with the full context of your organization.",
   image: "/streaming/shutterstock_1832815558_copy.jpg",
@@ -70,7 +70,7 @@ export const statement = {
     },
     {
       title: "Data in context, always.",
-      body: "Bind streaming data to your ontology's objects — such as a manufacturing robot, wind turbine, or hospital bed. The Ontology fully contextualizes low-latency data alongside other relevant batch data (e.g., ERP and MES systems), and enriches it with AI/ML models.",
+      body: "Bind streaming data to your ontology's objects — such as a manufacturing robot, wind turbine, or hospital bed. The Business Data Model fully contextualizes low-latency data alongside other relevant batch data (e.g., ERP and MES systems), and enriches it with AI/ML models.",
     },
     {
       title: "Power closed-loop action.",
@@ -82,38 +82,38 @@ export const statement = {
 /* --------------------------- Real-Time Ontology -------------------------- */
 
 export const realTimeOntology = {
-  heading: "Real-Time Ontology",
+  heading: "Real-Time Business Data Model",
   image: "/streaming/Real_Time_Illo__1_.png",
   alt: "Real-time ontology illustration",
   accordion: [
     {
       index: "01",
-      title: "Hydrate the Real-Time Ontology",
+      title: "Hydrate the Real-Time Business Data Model",
       body: "Out-of-the-box connectors make it easy to connect with all systems that generate relevant data and models — including Kafka, Google Pub/Sub, OSI PI, Kinesis, and more.",
       features: [
         {
-          title: "Transform Streaming Data with Pipeline Builder",
-          body: "Transform and process streaming data at scale. Pipeline Builder combines the ease of low-code with rigorous change management and health monitoring. Filter, join, and aggregate data streams, and land the outputs directly in your ontology.",
+          title: "Transform Streaming Data with Data Pipelines",
+          body: "Transform and process streaming data at scale. Data Pipelines combines the ease of low-code with rigorous change management and health monitoring. Filter, join, and aggregate data streams, and land the outputs directly in your ontology.",
         },
         {
           title: "Conduct Flink-Based Transforms",
           body: "Create custom, user-defined transformations atop open standards using a full code-based stream-processing workbench.",
         },
         {
-          title: "Hydrate the Ontology with AI/ML Models",
+          title: "Hydrate the Business Data Model with AI/ML Models",
           body: "Integrate your models with a suite of interoperable connectors, making them easily consumable by other users, pipelines, and operational applications.",
         },
       ],
     },
     {
       index: "02",
-      title: "Activate the Real-Time Ontology",
+      title: "Activate the Real-Time Business Data Model",
       body: "Bring low-latency data to life as live ontology objects, ready to power alerts, analytics, and the applications your operators use every day.",
     },
     {
       index: "03",
-      title: "Wield the Real-Time Ontology",
-      body: "Put the real-time Ontology to work across object-aware applications, closed-loop actions, and writeback to the systems that run your operations.",
+      title: "Wield the Real-Time Business Data Model",
+      body: "Put the real-time Business Data Model to work across object-aware applications, closed-loop actions, and writeback to the systems that run your operations.",
     },
   ] as AccordionItem[],
 };
@@ -171,21 +171,21 @@ export const useCases = {
 /* -------------------------- Streaming in Action -------------------------- */
 
 export const inAction = {
-  heading: "Foundry Streaming in Action",
+  heading: "Jicate Data Platform Streaming in Action",
   caseStudies: [
     {
       video: "/streaming/Sonnedix_-_Ontology_Modelling_-_Cutdown.mp4",
       title: "Powering the Global Energy Transition at Sonnedix",
-      body: "Sonnedix uses the Ontology to digitally represent its real-world assets in real-time and more fully understand production patterns. With remote monitoring of solar fields, asset managers can immediately detect and respond to solar trackers in need of maintenance.",
+      body: "Sonnedix uses the Business Data Model to digitally represent its real-world assets in real-time and more fully understand production patterns. With remote monitoring of solar fields, asset managers can immediately detect and respond to solar trackers in need of maintenance.",
       link: { label: "Learn More", href: "#" },
       quote:
-        "Being able to join all our data streams via the Ontology lets us model complex scenarios that were previously inaccessible to us.",
+        "Being able to join all our data streams via the Business Data Model lets us model complex scenarios that were previously inaccessible to us.",
       author: "Head of AI Implementation, Sonnedix",
     },
     {
       video: "/streaming/sompo_clip_01_.mov",
       title: "Improving Elder Care at SOMPO",
-      body: "The Ontology empowers SOMPO to understand residents' health holistically and to move from reactivity to proactivity with tailored sensor alerts that measure critical vital signs like sleep, breathing, and pulse rate. Reviewing care plans that once took 30–60 minutes now happens at a glance.",
+      body: "The Business Data Model empowers SOMPO to understand residents' health holistically and to move from reactivity to proactivity with tailored sensor alerts that measure critical vital signs like sleep, breathing, and pulse rate. Reviewing care plans that once took 30–60 minutes now happens at a glance.",
       link: { label: "Learn More", href: "#" },
       quote:
         "We had invested in various operational systems and sensor technologies, but the data was siloed and not fully utilized. That's when we came across the platform.",
@@ -197,7 +197,7 @@ export const inAction = {
 /* ------------------------------ White paper ------------------------------ */
 
 export const whitepaper = {
-  heading: "Learn More: Foundry Streaming White Paper",
+  heading: "Learn More: Jicate Data Platform Streaming White Paper",
   cta: { label: "Download", href: "#" } as CTA,
 };
 
@@ -205,7 +205,7 @@ export const whitepaper = {
 
 export const contact = {
   id: "get-started",
-  heading: "Get Started with the Ontology",
+  heading: "Get Started with the Business Data Model",
   fields: [
     { name: "firstName", label: "FIRST NAME:", type: "text", required: true },
     { name: "lastName", label: "LAST NAME:", type: "text", required: true },

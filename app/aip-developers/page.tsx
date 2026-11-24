@@ -13,7 +13,7 @@ import {
 import { SiteContactForm } from "@/components/shared/SiteContactForm";
 
 export const metadata: Metadata = {
-  title: "AIP for Developers",
+  title: "Jicate AI Platform for Developers",
   description:
     "The most powerful and flexible developer platform. Focus on alpha, not infra.",
 };

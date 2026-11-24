@@ -11,7 +11,7 @@ export function Closing() {
   const [line1, line2] = closing.heading.split(" / ");
 
   return (
-    <Section tone="dark" className="bg-near-black" aria-label="Why we built AIP">
+    <Section tone="dark" className="bg-near-black" aria-label="Why we built Jicate AI Platform">
       <Container>
         <Reveal>
           <h2 className="max-w-[24ch] font-display text-headline-lg font-normal leading-[1.12] tracking-[-0.02em] text-offwhite">
