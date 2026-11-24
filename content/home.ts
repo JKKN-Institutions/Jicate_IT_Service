@@ -266,38 +266,7 @@ export const manifesto: Manifesto = {
 
 /* §9 — Testimonials ------------------------------------------------------ */
 
-export const testimonials: Testimonial[] = [
-  {
-    quote:
-      "Now, we've not only fixed our inventory problem, we've now taken a problem that would go on for weeks and days and fixed it in five minutes, making our people incredibly efficient.",
-    clientName: "WENDY'S QUALITY SUPPLY CHAIN CO-OP",
-    role: "Pete Suerken · President & CEO",
-  },
-  {
-    quote:
-      "We started with the goal of piloting 10 stores within about six months. However, leveraging Jicate Data Platform and Jicate AI Platform, we began to see real promise quickly in composing AI-powered, end-to-end workflows that allowed us to get to about 4000 stores within eight months.",
-    clientName: "WALGREENS",
-    role: "Jeff Hoffman · VP, Product Pharmacy",
-  },
-  {
-    quote:
-      "S.C.O.U.T began as a joint effort between AT&T and Jicate, and now has over 100 AT&T dedicated engineers and a dedicated support team for this application. It's just one of the 660 applications we have on Jicate Data Platform today.",
-    clientName: "AT&T",
-    role: "Dan Wagner · Dir. of Technology",
-  },
-  {
-    quote:
-      "We estimate that this solution reduces our time to submission materials by over 50% — from the current 10-to-12-week average to around 3 to 4 weeks — and cuts in half the time required to get there.",
-    clientName: "PAREXEL",
-    role: "Dan Ballard · SVP Digital Innovation",
-  },
-  {
-    quote:
-      "We had a great chassis of the car, but our engine was underpowered. So we went to Jicate because we want the best engine out there. In three months, the teams built what took us three years before.",
-    clientName: "HEINEKEN",
-    role: "Laurens van de Rotte · COO, Heineken India",
-  },
-];
+export const testimonials: Testimonial[] = [];
 
 /* §10 — Split CTA -------------------------------------------------------- */
 
