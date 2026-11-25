@@ -4,7 +4,6 @@ import {
   Hero,
   About,
   Partners,
-  Impact,
   Capabilities,
   ContactForm,
 } from "@/components/utilities";
@@ -20,7 +19,6 @@ export default function UtilitiesPage() {
       <Hero />
       <About />
       <Partners />
-      <Impact />
       <Capabilities />
       <ContactForm />
       {/* The shared site Footer renders from the root layout. */}

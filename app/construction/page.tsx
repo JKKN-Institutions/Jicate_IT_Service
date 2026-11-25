@@ -6,7 +6,6 @@ import {
   Ontology,
   Capabilities,
   Impact,
-  Testimonials,
   CtaBand,
   ContactForm,
 } from "@/components/construction";
@@ -25,7 +24,6 @@ export default function ConstructionPage() {
       <Ontology />
       <Capabilities />
       <Impact />
-      <Testimonials />
       <CtaBand />
       <ContactForm />
       {/* The shared site Footer renders from the root layout. */}

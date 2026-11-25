@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { Hero, About, Partners, Impact, Industry, Products, ContactForm } from "@/components/supply-chain";
+import { Hero, About, Partners, Industry, Products, ContactForm } from "@/components/supply-chain";
 
 export const metadata: Metadata = {
   title: "Jicate Supply Chain Solutions",
@@ -13,7 +13,6 @@ export default function SupplyChainPage() {
       <Hero />
       <About />
       <Partners />
-      <Impact />
       <Industry />
       <Products />
       <ContactForm />

@@ -25,16 +25,6 @@ export interface PartnerCard {
   bullets: string[];
 }
 
-export interface ImpactCase {
-  title: string;
-  image: string;
-  alt: string;
-  eyebrow: string;
-  bullets: string[];
-  quote: string;
-  attribution: string;
-}
-
 export interface IndustryCard {
   eyebrow: string;
   image: string;
@@ -89,38 +79,6 @@ export const partners = {
     { eyebrow: "ENERGY OPERATOR", bullets: ["Secured cross-entity visibility into inventory and demand.", "Enabled more proactive, better-informed operational decisions."] },
   ] satisfies PartnerCard[],
   cta: { label: "Learn more", href: "#" },
-};
-
-/* ----------------------------- real-world impact -------------------------- */
-
-export const impact = {
-  heading: "Real-World Impact",
-  cases: [
-    {
-      title: "A Global Health Agency",
-      image: `${BASE}/shutterstock_1827506501 (1).jpg`,
-      alt: "Healthcare worker administering care",
-      eyebrow: "CRISIS RESPONSE",
-      bullets: [
-        "INTEGRATED AND OPERATIONALIZED DATA STREAMS FROM EVERY REGION IN A MATTER OF WEEKS.",
-        "HELPED PROTECT THE MOST VULNERABLE WITH MORE EFFECTIVE PRIORITIZATION.",
-      ],
-      quote: "In a matter of weeks we moved from a single spreadsheet to a full picture built on data from every region — and used it to reshape the entire supply chain.",
-      attribution: "Supply Chain Lead, Global Health Agency",
-    },
-    {
-      title: "A National Health System",
-      image: `${BASE}/shutterstock_1895452132.jpg`,
-      alt: "Supply materials",
-      eyebrow: "HEALTHCARE LOGISTICS",
-      bullets: [
-        "GAINED REAL-TIME VISIBILITY INTO SUPPLIES ACROSS THE ENTIRE NETWORK.",
-        "IMPROVED PRIORITIZATION AND RESPONSE WHEN DEMAND SHIFTED.",
-      ],
-      quote: "With one shared view of our supply network, our teams could act on shortages before they became emergencies.",
-      attribution: "Operations Director, National Health System",
-    },
-  ] satisfies ImpactCase[],
 };
 
 /* --------------------------- our industry impact -------------------------- */

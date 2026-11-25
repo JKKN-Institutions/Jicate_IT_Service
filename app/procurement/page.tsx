@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import {
   Hero,
   OperatingSystem,
-  Transformation,
   Operationalizing,
   DemoForm,
 } from "@/components/procurement";
@@ -18,7 +17,6 @@ export default function ProcurementPage() {
     <main className="flex-1 bg-canvas">
       <Hero />
       <OperatingSystem />
-      <Transformation />
       <Operationalizing />
       <DemoForm />
       {/* The shared site Footer renders from the root layout. */}

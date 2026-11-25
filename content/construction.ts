@@ -46,11 +46,6 @@ export interface ImpactStep {
   stats: string[];
 }
 
-export interface Testimonial {
-  n: string;
-  quote: string;
-}
-
 export interface ExploreCard {
   kind: string;
   title: string;
@@ -228,20 +223,6 @@ export const impact = {
       ],
     },
   ] satisfies ImpactStep[],
-};
-
-/* ------------------------------ testimonials ------------------------------ */
-
-export const testimonials = {
-  heading: "What Construction Leaders Are Saying",
-  items: [
-    { n: "01", quote: "It's the rare piece of software that everyone on the team can actually pick up and use — adoption was quick, from the field to the front office." },
-    { n: "02", quote: "The data model has become a genuine competitive advantage for us; it's the foundation everything else now runs on." },
-    { n: "03", quote: "It's not a system a few analysts log into — it's used across the company, every single day." },
-    { n: "04", quote: "What used to take months, we now deliver in days. The speed has completely changed how we plan." },
-    { n: "05", quote: "For the first time, the job site and the back office are truly looking at the same information at the same time." },
-    { n: "06", quote: "The cost savings paid the investment back fast, and they keep compounding as we scale it across projects." },
-  ] satisfies Testimonial[],
 };
 
 /* ------------------------------- continue --------------------------------- */

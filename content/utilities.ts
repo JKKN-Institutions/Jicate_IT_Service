@@ -97,51 +97,6 @@ export const partners = {
   ] satisfies Partner[],
 };
 
-/* ------------------------------- our impact ------------------------------- */
-
-export interface ImpactCase {
-  name: string;
-  video: string;
-  stat: string;
-  theme: string;
-  quote: string;
-  attribution: string;
-  link?: CTA;
-}
-
-export const impact = {
-  heading: "Our Impact",
-  cases: [
-    {
-      name: "Global Engineering Firm",
-      video: `${BASE}/Jacobs_Twitter_Cutdown.mov`,
-      stat: "SIGNIFICANT PLANT-WIDE POWER SAVINGS DELIVERED THROUGH PREDICTIVE OPERATIONS.",
-      theme: "Predictive Operations",
-      quote:
-        "“Being able to anticipate issues before they happen is where the real value sits — the efficiency gains add up quickly, both for us and for the clients we serve.”",
-      attribution: "— Engineering Leader",
-    },
-    {
-      name: "Solar Power Producer",
-      video: SONNEDIX_VIDEO,
-      stat: "AUTOMATIC NOTIFICATION OF ASSETS NEEDING MAINTENANCE, WITH PREVENTABLE MECHANICAL FAILURES SHARPLY REDUCED.",
-      theme: "Digitize Renewables",
-      quote:
-        "“Our aim is to run on real-time, fully integrated data across the whole business, so every clean-energy decision is backed by information our teams can trust.”",
-      attribution: "— Company Executive",
-    },
-    {
-      name: "Electric Utility",
-      video: `${BASE}/SC_Edison_Cutdown_7__1_.mov`,
-      stat: "MAJOR REDUCTION IN MISSED CUSTOMER NOTIFICATIONS FOR PROACTIVE POWER SHUTOFFS.",
-      theme: "Enhance Customer Experience",
-      quote:
-        "“We've moved from hardware-defined to software-defined operations across a growing set of use cases, and it's changing how we run and improve the grid.”",
-      attribution: "— Chief Information Officer",
-    },
-  ] satisfies ImpactCase[],
-};
-
 /* ---------------------------- our capabilities ---------------------------- */
 
 export interface Capability {

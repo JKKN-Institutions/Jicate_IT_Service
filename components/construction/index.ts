@@ -3,7 +3,6 @@ export { IntroBand } from "./IntroBand";
 export { Ontology } from "./Ontology";
 export { Capabilities } from "./Capabilities";
 export { Impact } from "./Impact";
-export { Testimonials } from "./Testimonials";
 export { Explore } from "./Explore";
 export { CtaBand } from "./CtaBand";
 export { ContactForm } from "./ContactForm";

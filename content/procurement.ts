@@ -14,18 +14,6 @@ export interface CasePoint {
   body: string;
 }
 
-export interface CaseTab {
-  tab: string;
-  partner: string;
-  quote: string;
-  cite: string;
-  overview: string;
-  pointsLabel: string;
-  points: CasePoint[];
-  logoLabel: string;
-  watchLabel: string;
-}
-
 export interface StepToggle {
   label: string;
   items: CasePoint[];
@@ -56,81 +44,6 @@ export const operatingSystem = {
   body: "Infuse your complex procurement workflows with AI-driven automations.",
   diagram: "/procurement/Procurement_Website_Image-01.png",
   diagramAlt: "Procurement operating-system diagram",
-};
-
-/* --------------------------- transformation ------------------------------ */
-
-export const transformation = {
-  heading: "Transformation Journeys Start with Jicate.",
-  tabs: [
-    {
-      tab: "Global Rail Manufacturer",
-      partner: "Global Rail Manufacturer",
-      quote: "“This fully integrated system allows us to build better, faster.”",
-      cite: "Vice President of Data & Analytics",
-      overview:
-        "With billions of dollars worth of materials being procured each year, this legacy rail company leverages Jicate to revolutionize their procurement landscape.",
-      pointsLabel: "Examples of our work together",
-      points: [
-        {
-          strong: "Material Needs Forecasting",
-          body: "AI-powered agents identify relevant purchasing information from previous projects to perform a quick BOM, quantities, and costing assessment of upcoming projects.",
-        },
-        {
-          strong: "Supplier Portal",
-          body: "After 6 months of deployment, the procurement application built with Jicate is used by 100+ vendors and is in production for all buyers.",
-        },
-        {
-          strong: "Automated Supplier Communications",
-          body: "90% of the manufacturer’s supplier-buyer interactions are automated. Agentic workflows automate repetitive email exchanges, allowing teams to focus on priority purchases.",
-        },
-      ],
-      logoLabel: "Global Rail Manufacturer",
-      watchLabel: "Overcoming Challenges Amidst Supply Chain Disruptions: Listen to the full keynote",
-    },
-    {
-      tab: "Global Foodservice Leader",
-      partner: "Global Foodservice Leader",
-      quote: "“We finally have one operating picture across thousands of suppliers and sites.”",
-      cite: "Head of Procurement",
-      overview:
-        "A global foodservice and facilities leader uses Jicate to unify spend, supplier, and operations data across a vast network — turning fragmented sourcing into coordinated, data-driven decisions.",
-      pointsLabel: "Examples of our work together",
-      points: [
-        {
-          strong: "Spend Visibility",
-          body: "Consolidated spend across categories and regions surfaces savings opportunities that were previously invisible.",
-        },
-        {
-          strong: "Supplier Performance",
-          body: "Live scorecards track delivery, quality, and risk so category managers can act before issues escalate.",
-        },
-      ],
-      logoLabel: "Global Foodservice Leader",
-      watchLabel: "Watch: Foodservice procurement case study",
-    },
-    {
-      tab: "Global Pharma",
-      partner: "Global Pharma",
-      quote: "“Decisions that used to take weeks of manual analysis now take hours.”",
-      cite: "Director of Strategic Sourcing",
-      overview:
-        "A leading pharmaceutical company deployed Jicate to integrate sourcing, contract, and supply data into a single governed environment — accelerating decisions while preserving strict compliance.",
-      pointsLabel: "Examples of our work together",
-      points: [
-        {
-          strong: "Contract Intelligence",
-          body: "AI agents surface obligations, rebates, and risks across thousands of supplier contracts.",
-        },
-        {
-          strong: "Resilient Supply",
-          body: "Scenario models flag exposure early so teams can secure alternative supply ahead of disruption.",
-        },
-      ],
-      logoLabel: "Global Pharma",
-      watchLabel: "Watch: Pharma procurement case study",
-    },
-  ] as CaseTab[],
 };
 
 /* --------------------------- operationalizing ---------------------------- */

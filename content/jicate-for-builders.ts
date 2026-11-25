@@ -49,8 +49,6 @@ export const bigData = {
   image: "/jicate-for-builders/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg",
   videoAlt: "Builder measuring and cutting timber on a job site",
   videoCaption: "Our team discusses the Jicate for Builders program and mission.",
-  quote: "“It is the same enterprise-grade software, but we’re leaning on the talent of our customers to do the building.”",
-  attribution: "— Product Lead, Jicate",
 };
 
 /* ----------------------------- infrastructure ---------------------------- */

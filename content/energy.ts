@@ -131,14 +131,6 @@ export const oilGas = {
     alt: "Energy ontology thumbnail",
     body: "The Business Data Model transforms your digital assets — including data, models, and processes — into a dynamic, actionable representation of your business for all users to leverage in operations.",
   },
-  upstream: {
-    heading: "Upstream",
-    video: "/energy/Energy_Page_Apache_Cutdown.mp4",
-    quoteEyebrow: "Partnership-Driven Transformation",
-    quote:
-      "“When problems come to us, or there is a situation in the business or a trend or a development, those now get judged against the platform as a ‘Tier 1’ solution.”",
-    attribution: "— CIO, Energy Operator",
-  },
   offshore: {
     heading: "Offshore",
     columns: [
@@ -265,11 +257,6 @@ export const oilGas = {
   },
   downstream: {
     heading: "Downstream",
-    video: "/energy/Energy_Page_Castrol_Cutdown__1_.mp4",
-    quoteEyebrow: "Smoothing Supply Chain Shocks",
-    quote:
-      "“The combination of flexibility and velocity enables us to move ahead of disruption and get back from a crisis situation into business as usual really quickly — and that’s important, especially in difficult times when resources are limited.”",
-    attribution: "— SVP Marketing, Lubricants Brand",
     refineryHeading: "Refinery / Chemical Plant Operations",
     refineryColumns: [
       {
@@ -316,12 +303,6 @@ export const oilGas = {
 export const renewables = {
   id: "renewables",
   title: "Renewables",
-  videoThumb: "/energy/shutterstock_1663557949.jpg",
-  logo: "/energy/Asset_46son2.png",
-  logoAlt: "Partner logo",
-  quote:
-    "As the world transitions to renewable energy sources, our goal is to implement the platform across every facet of the company so our teams can rely on real-time data and fully integrated tools to make critical business decisions around producing clean energy.",
-  link: { label: "Learn more about how our partner is deploying the platform", href: "#" } as CTA,
   image: "/energy/shutterstock_1454940068.jpg",
   imageAlt: "Wind turbines at sunset",
   columns: [

@@ -26,11 +26,6 @@ export interface CTA {
   href: string;
 }
 
-export interface WorkExample {
-  title: string;
-  body: string;
-}
-
 export interface Step {
   id: string;
   title: string;
@@ -55,28 +50,6 @@ export const operatingSystem = {
   headingRight: "Infuse your complex healthcare workflows with AI-driven automations.",
   diagram: `${BASE}/image__37_.png`,
   diagramAlt: "Layered operating-system diagram for hospitals",
-};
-
-/* --------------------------- transformation (case) ------------------------ */
-
-export const transformation = {
-  heading: "Transformation Journeys Start with Jicate.",
-  quote: "The more our teams work with Jicate, the more uses we find for it — the possibilities really are open-ended.",
-  attribution: "Chief Information Officer, a large hospital network",
-  overview: "A large hospital network turned to Jicate to build solutions across many of its workflows — helping teams make decisions grounded in data, and improving both financial performance and patient outcomes.",
-  examples: [
-    {
-      title: "Determining Program Eligibility",
-      body: "Building a system to evaluate patient records in real-time to determine which patients might be eligible for at-home care, allowing clinicians to make data-enhanced decisions about eligibility.",
-    },
-    {
-      title: "Clinical Denials Management",
-      body: "Automating the review and appeal of denied claims — flagging denials early, assembling the right supporting information, and helping teams respond faster and recover more revenue.",
-    },
-  ] satisfies WorkExample[],
-  video: `${BASE}/Screenshot_2025-01-26_at_6.20.57_PM.png`,
-  videoAlt: "Keynote video thumbnail",
-  videoLink: { label: "Deploying an AI Arsenal: Listen to the full keynote", href: "#" } satisfies CTA,
 };
 
 /* --------------------------- operationalizing ai -------------------------- */

@@ -65,18 +65,6 @@ export const spotlightBand = {
     "© 2026 Jicate IT Service. The information in this video is provided for informational purposes only. Actual results and experiences may vary.",
 };
 
-/* ------------------------------- quote band ------------------------------- */
-
-export const quote = {
-  logo: "/foundry-rules/Asset_25bp.png",
-  logoAlt: "Customer logo",
-  paragraphs: [
-    "We needed a way inside Jicate Data Platform to surface trends and events across weeks or months from our streaming data. With well over a hundred rules already running, the team can monitor a huge range of equipment in real time.",
-    "Rules and Alerts & Real-Time Alerting retired a pile of bespoke dashboards for us. Its flexible, low-code approach made it easy for people across the company to pick up and roll out.",
-  ],
-  attribution: "— Principal Product Manager, Energy",
-};
-
 /* ------------------------------ key features ------------------------------ */
 
 export const keyFeatures = {

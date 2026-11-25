@@ -18,7 +18,6 @@ import type {
   ServiceSlide,
   Manifesto,
   SoftwareStatement,
-  Testimonial,
   SplitCTAHalf,
 } from "@/types";
 
@@ -263,10 +262,6 @@ export const manifesto: Manifesto = {
   image: "/home/onsite.jpg",
   imageAlt: "Jicate team on-site",
 };
-
-/* §9 — Testimonials ------------------------------------------------------ */
-
-export const testimonials: Testimonial[] = [];
 
 /* §10 — Split CTA -------------------------------------------------------- */
 

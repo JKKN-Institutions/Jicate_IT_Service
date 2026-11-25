@@ -7,7 +7,7 @@ import { GiantHeading } from "./parts";
 /**
  * Big Data band — a 2-column layout: a giant statement heading on the left
  * (sticky on desktop), with the intro, platform sub-block (heading + body +
- * platform links), and an interview video + pull-quote stacked on the right.
+ * platform links), and an image with caption stacked on the right.
  */
 export function BigData() {
   return (
@@ -43,10 +43,6 @@ export function BigData() {
                 />
               </div>
               <p className="text-body text-ink-light">{bigData.videoCaption}</p>
-              <p className="font-display text-[clamp(1.35rem,1rem+1.3vw,1.875rem)] font-normal leading-[1.2] tracking-[-0.01em] text-ink">
-                {bigData.quote}
-              </p>
-              <p className="text-body text-ink-light">{bigData.attribution}</p>
             </Reveal>
           </div>
         </div>

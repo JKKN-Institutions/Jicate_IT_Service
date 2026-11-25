@@ -6,5 +6,4 @@ export { ServicesSlider } from "./ServicesSlider";
 export { OurSoftware } from "./OurSoftware";
 export { StatementBand } from "./StatementBand";
 export { ManifestoBand } from "./ManifestoBand";
-export { Testimonials } from "./Testimonials";
 export { SplitCTA } from "./SplitCTA";

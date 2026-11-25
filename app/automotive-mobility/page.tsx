@@ -4,7 +4,6 @@ import {
   AmHero,
   AboutWork,
   Offerings,
-  Impact,
   DefineFuture,
 } from "@/components/automotive-mobility";
 
@@ -19,7 +18,6 @@ export default function AutomotiveMobilityPage() {
       <AmHero />
       <AboutWork />
       <Offerings />
-      <Impact />
       <DefineFuture />
       {/* The shared site Footer renders from the root layout. */}
     </main>

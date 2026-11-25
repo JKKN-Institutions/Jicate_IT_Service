@@ -3,7 +3,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { oilGas } from "@/content/energy";
 
 import { GiantHeading, ArrowItem, Eyebrow } from "./parts";
-import { AnchorTitle, ColumnsBlock, VideoQuote, VideoBlock } from "./blocks";
+import { AnchorTitle, ColumnsBlock, VideoBlock } from "./blocks";
 
 const subHead =
   "font-display text-[clamp(1.75rem,1rem+2.6vw,2.75rem)] font-normal leading-[1.05] tracking-[-0.02em] text-ink";
@@ -32,23 +32,6 @@ export function OilGas() {
           </div>
         </Container>
       </Section>
-
-      {/* Upstream */}
-      <Section className="bg-canvas !pb-0" aria-label={oilGas.upstream.heading}>
-        <Container>
-          <Reveal>
-            <h3 className={subHead}>
-              {oilGas.upstream.heading} <span aria-hidden className="text-ink-light">↘</span>
-            </h3>
-          </Reveal>
-        </Container>
-      </Section>
-      <VideoQuote
-        eyebrow={oilGas.upstream.quoteEyebrow}
-        video={oilGas.upstream.video}
-        quote={oilGas.upstream.quote}
-        attribution={oilGas.upstream.attribution}
-      />
 
       {/* Offshore — 3-col capabilities */}
       <ColumnsBlock heading={oilGas.offshore.heading} columns={oilGas.offshore.columns} cols={3} />
@@ -180,12 +163,6 @@ export function OilGas() {
           </Reveal>
         </Container>
       </Section>
-      <VideoQuote
-        eyebrow={oilGas.downstream.quoteEyebrow}
-        video={oilGas.downstream.video}
-        quote={oilGas.downstream.quote}
-        attribution={oilGas.downstream.attribution}
-      />
       <ColumnsBlock heading={oilGas.downstream.refineryHeading} columns={oilGas.downstream.refineryColumns} cols={3} />
     </>
   );

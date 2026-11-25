@@ -20,26 +20,6 @@ export interface Feature {
   body: string;
 }
 
-export interface CasePoint {
-  strong: string;
-  body: string;
-}
-
-export interface CaseTab {
-  tab: string;
-  partner: string;
-  quote: string;
-  cite: string;
-  overview: string;
-  pointsLabel: string;
-  points: CasePoint[];
-  image: string;
-  /** Optional case-study video — takes priority over `image` when present. */
-  video?: string;
-  imageAlt: string;
-  watchLabel: string;
-}
-
 /* ---------------------------------- hero --------------------------------- */
 
 export const hero = {
@@ -57,73 +37,6 @@ export const intro = {
     "Life Science companies require the highest levels of data security and usage governance, while needing to accelerate the development and application of new therapies to improve the lives of patients.",
     "Our partners’ critical workflows are powered by Jicate software, enabling the latest AI advancements to generate new insights and automate decision-making — while keeping a human in the loop and powering strategic, scalable impact.",
   ],
-};
-
-/* --------------------------- transformation ------------------------------ */
-
-export const transformation = {
-  heading: "Real AI Transformation Starts with Jicate",
-  tabs: [
-    {
-      tab: "At a Global CRO",
-      partner: "Global CRO",
-      quote:
-        "“We estimate that this solution reduces our time to submission materials by over 50%, from the current 10 to 12 week average to around 3 to 4 weeks… we can create this process, standardize it… and cut half the time that is required to get there.”",
-      cite: "Digital Innovation Lead, Global CRO",
-      overview:
-        "This global CRO is among the world’s largest clinical research organizations. They run the clinical trials essential for testing new medicines in patients on behalf of biopharma clients, accelerating delivery of life-changing treatments. Historically, their process involved manually creating comprehensive submission packages for regulatory review — time-consuming and labor-intensive, typically involving ~1,500 employees. They sought to modernize this process to improve efficiency and reduce time to market while maintaining quality and traceability, keeping patient safety at the core.",
-      pointsLabel: "Examples of our work together",
-      points: [
-        {
-          strong: "Centralized Study Business Data Model",
-          body: "The CRO uses Jicate AI Platform to ingest and process hundreds of pages of diversified inputs — from PDFs to Excel and text files — into a centralized study Business Data Model.",
-        },
-        {
-          strong: "Automated Submission Processing",
-          body: "The CRO automated production of submission deliverables, tabular datasets, annotated documents, and reproducible code by orchestrating a series of AI agents across the process — reducing the time to prepare submission materials by over 50%, from 10–12 weeks to 3–4 weeks, for quicker approval and market access.",
-        },
-        {
-          strong: "Data Mapping & Annotation",
-          body: "AI agents annotate and map study data into standardized forms, with a human in the loop to manually override any model decisions.",
-        },
-        {
-          strong: "Increased Data Visibility",
-          body: "The system provides earlier access to standardized data, accelerating downstream operations with better first-time-quality data to support safety trends, signaling, and medical reviews — enabling faster patient access to new drugs and improving overall healthcare outcomes.",
-        },
-      ],
-      image: "/life-sciences/Asset_13Industries.png",
-      imageAlt: "Researcher using a laboratory microscope",
-      watchLabel: "Watch: Keynote Session at the AI Conference",
-    },
-    {
-      tab: "At a Large Pharma",
-      partner: "Large Pharma",
-      quote:
-        "“The platform gave our R&D and commercial teams one trusted source of truth — work that used to take weeks now takes days.”",
-      cite: "Head of Data Science, Large Pharma",
-      overview:
-        "A leading global pharmaceutical company deployed the platform to unify research, clinical, manufacturing, and commercial data into a single governed environment — accelerating decisions while preserving strict compliance and patient privacy.",
-      pointsLabel: "Examples of our work together",
-      points: [
-        {
-          strong: "Faster Discovery",
-          body: "Integrated research and real-world data shorten the path from hypothesis to validated insight across therapeutic areas.",
-        },
-        {
-          strong: "Connected Operations",
-          body: "Manufacturing, quality, and supply data feed live models, surfacing issues before they disrupt production.",
-        },
-        {
-          strong: "Trusted Governance",
-          body: "Granular, purpose-based access controls and full data lineage give compliance teams confidence in every automated action.",
-        },
-      ],
-      image: "",
-      video: "/life-sciences/Pharma2 (1).mov",
-      imageAlt: "Large pharma case study visual",
-      watchLabel: "Watch: Large Pharma case study",
-    },
-  ] as CaseTab[],
 };
 
 /* ------------------------- capability sections --------------------------- */

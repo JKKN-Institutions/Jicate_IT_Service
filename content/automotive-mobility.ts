@@ -33,22 +33,6 @@ export interface Offering {
   cta?: string;
 }
 
-export interface ImpactTab {
-  tab: string;
-  quote: string;
-  attribution: string;
-  intro: string;
-  challenge: string;
-  outcome: string;
-  link?: CTA;
-  /** Media on the right — video or image (placeholder when null). */
-  video?: string | null;
-  image?: string | null;
-  alt: string;
-  /** Optional tag row under the media. */
-  tags?: string[];
-}
-
 /* --------------------------------- hero ----------------------------------- */
 
 export const hero = {
@@ -84,53 +68,6 @@ export const offerings = {
     { title: "New Vehicle Launch", body: "Support the critical, time-sensitive work behind every launch — from smooth production ramp-ups to sharper sales campaigns and close monitoring of early in-service performance — with data at the center of it all." },
     { title: "Net Zero", body: "Get an accurate, transparent account of CO2 across your entire supply chain, from raw-material processing to distribution and in-service use. Build a carbon-reduction roadmap and test “what-if” scenarios to find the best path to your targets." },
   ] satisfies Offering[],
-};
-
-/* ------------------------------- our impact ------------------------------- */
-
-export const impact = {
-  heading: "Our Impact",
-  tabs: [
-    {
-      tab: "Electric Aviation",
-      quote: "Our partner's commitment to zero operating emissions is accelerating the decarbonization of air travel, and we're putting the full power of our software behind that mission.",
-      attribution: "— Chief Technology Officer, Jicate",
-      intro: "A pioneering electric aviation company set out to unlock fast, affordable, and sustainable air mobility, building an entire data ecosystem around its electric vertical take-off and landing (eVTOL) jets.",
-      challenge: "With Jicate Data Platform, the company's jets stream terabytes of raw sensor data into a single platform. That unified sensor foundation powers predictive maintenance, battery-lifetime modeling, faster flight-readiness reviews, and rapid defect management.",
-      outcome: "With Jicate Data Platform, the team turned data into insight six times faster than before — freeing engineers to focus on action and innovation instead of wrangling data.",
-      link: { label: "Learn more about our Edge AI offering", href: "/edge-ai" },
-      video: `${BASE}/Lilium___High-Speed_Electric_Jets__20-02-23_.mp4`,
-      image: null,
-      alt: "Electric vertical take-off jet in flight",
-      tags: [],
-    },
-    {
-      tab: "Heavy Equipment",
-      quote: "Connecting our data end to end changed how quickly we can see problems coming and act on them across every plant.",
-      attribution: "— Head of Digital Transformation",
-      intro: "A global heavy-equipment manufacturer wanted to break down data silos and bring information together across its entire value chain.",
-      challenge: "The team needed to integrate data spanning suppliers, production lines, and connected machines so that insight — not manual reconciliation — drove day-to-day decisions.",
-      outcome: "By unifying that data on Jicate Data Platform, the manufacturer improved production quality and responsiveness while giving engineers a single, trusted view to work from.",
-      link: { label: "Learn More", href: "#" },
-      video: null,
-      image: `${BASE}/Doosan_Thumbnail.jpg`,
-      alt: "Construction vehicles overhead",
-      tags: ["Integration", "IoT", "Production", "Quality"],
-    },
-    {
-      tab: "Automotive Supplier",
-      quote: "We wanted a carbon-neutral future built on the systems we already run — not a rip-and-replace — and the software made that possible.",
-      attribution: "— Head of Sustainability",
-      intro: "A major automotive technology supplier set an ambitious digital-transformation and CO2-neutral agenda across its global operations.",
-      challenge: "Reaching that goal meant integrating sustainability and operational data on top of an existing IT portfolio, without disrupting the systems already keeping the business running.",
-      outcome: "Building on Jicate Data Platform, the supplier gained transparent carbon accounting and a clearer path to its net-zero targets while preserving its prior technology investments.",
-      link: { label: "Learn More", href: "#" },
-      video: null,
-      image: `${BASE}/shutterstock_699756580.jpg`,
-      alt: "City",
-      tags: ["CO2 Monitoring", "Data Integration", "Supply Chain Management"],
-    },
-  ] satisfies ImpactTab[],
 };
 
 /* --------------------------------- form ----------------------------------- */

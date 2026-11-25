@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { Hero, Intro, Capability, Transformation, ContactForm } from "@/components/life-sciences";
+import { Hero, Intro, Capability, ContactForm } from "@/components/life-sciences";
 import {
   clinicalDevelopment,
   commercialOperations,
@@ -18,7 +18,6 @@ export default function LifeSciencesPage() {
     <main className="flex-1 bg-canvas">
       <Hero />
       <Intro />
-      <Transformation />
       <Capability heading={clinicalDevelopment.heading} features={clinicalDevelopment.features} />
       <Capability heading={commercialOperations.heading} features={commercialOperations.features} />
       <Capability heading={researchDiscovery.heading} features={researchDiscovery.features} />
