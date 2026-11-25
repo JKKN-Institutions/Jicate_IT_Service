@@ -6,7 +6,7 @@ import { SubHeading, Eyebrow } from "./parts";
 
 /**
  * "Technology built for dynamic and optimal operations" — a top hairline, a 34px
- * heading, then a five-column feature grid (eyebrow + body) (reference parity).
+ * heading, then a five-column feature grid (eyebrow + body).
  */
 export function Technology() {
   return (

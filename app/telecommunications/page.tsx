@@ -5,8 +5,6 @@ import {
   Intro,
   DesignCards,
   WhereWeWork,
-  ImpactStudies,
-  Partnerships,
   GetStartedForm,
 } from "@/components/telecommunications";
 
@@ -22,8 +20,6 @@ export default function TelecommunicationsPage() {
       <Intro />
       <DesignCards />
       <WhereWeWork />
-      <ImpactStudies />
-      <Partnerships />
       <GetStartedForm />
       {/* The shared site Footer renders from the root layout. */}
     </main>

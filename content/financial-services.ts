@@ -1,19 +1,4 @@
-/**
- * Content for the /financial-services page — a faithful DESIGN rebuild of the
- * reference "Palantir for Financial Services" page, mapped onto this project's
- * design system. Layout matches the reference 1:1; a DARK hero band over a
- * LIGHT body.
- *
- * IMPORTANT: the reference's marketing prose, customer case studies, and the
- * executive quote are the source's own content — they are NOT reproduced here.
- * Long-form copy, the quote, and partner/case details below are neutral
- * PLACEHOLDER text; short functional labels (section titles, tab/feature names,
- * form fields) are kept for parity. User replaces all copy.
- *
- * Local media (in /public/financial-services):
- *   img.webp                          — full-bleed hero image
- *   AIPCon7_YouTubeThumbail_Citi__1_.jpg — Driving Outcomes tab-1 video thumb
- */
+/** Content for the /financial-services page. */
 
 const BASE = "/financial-services";
 
@@ -22,19 +7,6 @@ const BASE = "/financial-services";
 export interface CTA {
   label: string;
   href: string;
-}
-
-export interface OutcomeTab {
-  tab: string;
-  quote: string;
-  attribution: string;
-  partner: string;
-  challenge: string;
-  solution: string;
-  bullets: string[];
-  image: string | null;
-  alt: string;
-  link: CTA;
 }
 
 export interface WorkFeature {
@@ -64,65 +36,6 @@ export const intro = {
     "Jicate is built to operate inside highly regulated environments. With security, governance, and data at its core, it gives your analysts and engineers the operational efficiency to move quickly without cutting corners.",
     "Go beyond dashboards and one-off analytics: drive real organizational change with a platform that ties your data directly to business outcomes.",
   ],
-};
-
-/* -------------------------- driving industry outcomes --------------------- */
-
-export const outcomes = {
-  heading: "Driving Industry Outcomes",
-  tabs: [
-    {
-      tab: "Redefining Wealth Management",
-      quote: "What used to take days now takes seconds.",
-      attribution: "Head of Data Analytics & Innovation",
-      partner: "A global wealth manager",
-      challenge: "To streamline key customer-service workflows, the firm needed a single operational source of truth for customer data — one that would end inconsistencies across systems and remove the reliance on manual processes.",
-      solution: "Working with Jicate, the firm built a federated customer master: one interface for running agentic workflows on top of customer data to streamline and automate the workflows that matter most.",
-      bullets: [
-        "Account-opening time cut from days to seconds",
-        "The number of people needed to open a new account reduced dramatically",
-      ],
-      image: `${BASE}/AIPCon7_YouTubeThumbail_Citi__1_.jpg`,
-      alt: "Keynote video thumbnail",
-      link: { label: "Watch full keynote", href: "#" },
-    },
-    {
-      tab: "Accelerating Compliance with Single Client View",
-      quote: "For the first time, everyone is working from the same view of the client.",
-      attribution: "Head of Compliance",
-      partner: "A global bank",
-      challenge: "Fragmented client data spread across systems made compliance slow and error-prone, forcing teams to reconcile records by hand before they could act.",
-      solution: "Jicate unified that data into a single client view, giving compliance and front-office teams one trusted, up-to-date picture of every client to work from.",
-      bullets: ["Faster, more consistent compliance reviews", "Manual reconciliation across systems largely eliminated"],
-      image: `${BASE}/magnus-andersson-v9-fvMrkZLo-unsplash.jpg`,
-      alt: "Financial-district skyscrapers of a global banking hub",
-      link: { label: "Learn More", href: "#" },
-    },
-    {
-      tab: "Digitizing a Global Bank",
-      quote: "We've turned scattered, manual processes into connected digital workflows.",
-      attribution: "Chief Operating Officer",
-      partner: "A global bank",
-      challenge: "Core operations still ran on disconnected systems and manual steps, making it hard to scale, adapt, or see what was happening end to end.",
-      solution: "Jicate integrated the bank's data and operations into connected, automated workflows, giving teams a real-time operational picture and a foundation to build on.",
-      bullets: ["Key operational workflows automated end to end", "A single, real-time view across the business"],
-      image: `${BASE}/My_project__22_ (1).jpg`,
-      alt: "Data-center corridor powering connected digital banking workflows",
-      link: { label: "Learn More", href: "#" },
-    },
-    {
-      tab: "Streamlining Next Best Offer Marketing",
-      quote: "Our campaigns are now driven by data, not guesswork.",
-      attribution: "Head of Marketing",
-      partner: "A retail bank",
-      challenge: "Marketing teams struggled to target the right customers with the right offers, relying on broad segments and slow, disconnected data.",
-      solution: "Jicate brought propensity and segmentation models together with live customer data, so teams can build precise next-best-offer campaigns and improve them with direct feedback.",
-      bullets: ["Sharper targeting across granular customer segments", "Faster campaign iteration informed by real results"],
-      image: `${BASE}/colin-watts-64Mg5CD6WVM-unsplash.jpg`,
-      alt: "Crowds of people crossing a city bridge, representing customer segments",
-      link: { label: "Learn More", href: "#" },
-    },
-  ] satisfies OutcomeTab[],
 };
 
 /* ------------------------------ where we work ----------------------------- */

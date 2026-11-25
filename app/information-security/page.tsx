@@ -5,7 +5,7 @@ import { Hero, Objectives, Program, Resources } from "@/components/information-s
 export const metadata: Metadata = {
   title: "Information Security",
   description:
-    "InfoSec at Jicate — our Information Security Program, compliance and accreditation, open source contribution, and penetration testing.",
+    "InfoSec at Jicate — our Information Security Program and open source contribution.",
 };
 
 export default function InformationSecurityPage() {

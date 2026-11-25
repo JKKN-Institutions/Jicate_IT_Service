@@ -6,7 +6,7 @@ import { GiantHeading } from "./parts";
 
 /**
  * Hero — a two-column split (oversized title left, a lead tagline right), then a
- * full-width image (reference parity).
+ * full-width image.
  */
 export function Hero() {
   return (

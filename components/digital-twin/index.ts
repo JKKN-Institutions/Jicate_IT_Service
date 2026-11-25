@@ -5,5 +5,4 @@ export { Expressed } from "./Expressed";
 export { TwinsStages } from "./TwinsStages";
 export { Analytics } from "./Analytics";
 export { OpsDataScience } from "./OpsDataScience";
-export { InAction } from "./InAction";
 export { ContactForm } from "./ContactForm";

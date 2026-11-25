@@ -7,7 +7,7 @@ import { SectionHeading, InkLink } from "./parts";
 /**
  * "Key Features" — section heading, then a 2-column split: a sticky isometric
  * image on the left and a stack of feature entries (bold lead phrase + body +
- * optional inline links) on the right (reference parity).
+ * optional inline links) on the right.
  */
 export function KeyFeatures() {
   return (

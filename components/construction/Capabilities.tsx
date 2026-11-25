@@ -11,7 +11,7 @@ import { FeatureHeading } from "./parts";
 /**
  * Capabilities — a wrapping rail of toggle pills (one per construction
  * function), then a three-column panel for the active tab: a labelled box, two
- * intro paragraphs, and the tab's feature list (reference parity).
+ * intro paragraphs, and the tab's feature list.
  */
 export function Capabilities() {
   const [active, setActive] = useState(0);

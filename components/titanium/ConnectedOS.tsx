@@ -8,7 +8,7 @@ import { SectionHeading, BlockHeading } from "./parts";
  * "A Connected Operating System" — a section heading, then four sub-sections.
  * Each sub-section is a 2-column split: a "↳ " block heading and its lead text
  * on the left, with the secondary lead and a body paragraph on the right
- * (reference parity, dark theme).
+ * (dark theme).
  */
 export function ConnectedOS() {
   return (

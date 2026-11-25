@@ -1,14 +1,4 @@
-/**
- * Content for the /offerings index page — a faithful DESIGN rebuild of the
- * Palantir Offerings index (https://www.palantir.com/offerings/). DARK theme,
- * text-only: a giant hero + a long list of offering rows (name ↳ / short
- * tagline / Learn More →). Short functional offering names kept; taglines are
- * original Jicate one-liners (the user will swap). IP-safe: Palantir → Jicate;
- * hrefs point at this site's own pages where they exist, else "#". Types local.
- *
- * NOTE: distinct from `content/offerings.ts` (the homepage "Our Software"
- * product list) — do not merge the two.
- */
+/** Content for the /offerings index page. */
 
 export interface OfferingRow {
   name: string;
@@ -64,11 +54,6 @@ export const offerings: OfferingRow[] = [
     tagline: "A comprehensive approach to privacy and governance.",
   },
   {
-    name: "Defense",
-    href: "/defense",
-    tagline: "A tactical edge — by land, air, sea, and space.",
-  },
-  {
     name: "Edge AI",
     href: "/edge-ai",
     tagline: "Unmatched technology, pushed all the way to the edge.",
@@ -79,16 +64,6 @@ export const offerings: OfferingRow[] = [
     tagline: "Helping energy companies build lasting competitive advantage.",
   },
   {
-    name: "Federal Health",
-    href: "/federal-health",
-    tagline: "Connectivity across the entire health data ecosystem.",
-  },
-  {
-    name: "FedStart",
-    href: "/fedstart",
-    tagline: "Deliver solutions to government at the speed of innovation.",
-  },
-  {
     name: "Financial Services",
     href: "/financial-services",
     tagline: "Meet the demands of tomorrow's customers, regulators, and markets.",
@@ -97,11 +72,6 @@ export const offerings: OfferingRow[] = [
     name: "Data Pipelines",
     href: "/pipeline-builder",
     tagline: "Let anyone build production-grade data pipelines — without writing code.",
-  },
-  {
-    name: "Gov't Financial Management",
-    href: "/government-financial-management",
-    tagline: "A secure, collaborative foundation for financial management.",
   },
   {
     name: "Life Sciences",
@@ -117,16 +87,6 @@ export const offerings: OfferingRow[] = [
     name: "Insurance",
     href: "/insurance",
     tagline: "Unlocking efficiency across the insurance value chain.",
-  },
-  {
-    name: "Intelligence",
-    href: "/intelligence",
-    tagline: "Turn sensitive data into actionable insight and operational advantage.",
-  },
-  {
-    name: "MetaConstellation",
-    href: "/metaconstellation",
-    tagline: "Harness satellite constellations to empower decision-makers on Earth.",
   },
   {
     name: "Jicate for Builders",
@@ -146,12 +106,7 @@ export const offerings: OfferingRow[] = [
   {
     name: "Rail",
     href: "/jicate-for-rail",
-    tagline: "Powering workflows for some of the largest rail companies in the world.",
-  },
-  {
-    name: "Readiness",
-    href: "/readiness",
-    tagline: "For organizational asset, personnel, and financial management.",
+    tagline: "A connected operating picture across commercial, transportation, track engineering, and mechanical functions.",
   },
   {
     name: "Retail",

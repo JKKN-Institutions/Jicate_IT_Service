@@ -1,19 +1,4 @@
-/**
- * Content for the /data-integration page — a faithful design rebuild of the
- * reference "Jicate Data Platform Data Integration" page, mapped onto this project's design
- * system. Layout/visual treatment matches the reference 1:1; body copy is
- * ORIGINAL Jicate content (short functional labels are kept). The user edits
- * final wording.
- *
- * Types are declared locally so the page is fully self-contained and touches no
- * shared files.
- *
- * Local media (in /public/data-integration):
- *   Asset_109.png, Asset_107.png, Asset_105.png, Asset_110.png   — supercharged grid art
- *   Data_Lineage_1.png, Foundry_Data_Catalog.png,
- *   Time_Series_1.png, Autoscaling_2.png                          — feature-band screenshots
- *   Energy_New.jpg                                                — impact-study photo
- */
+/** Content for the /data-integration page. */
 
 /* ------------------------------ shared shapes ----------------------------- */
 
@@ -60,14 +45,6 @@ export const hero = {
   cta: { label: "Get a Demo", href: "/enquiry-form" } satisfies CTA,
 };
 
-/* ------------------------------- image band ------------------------------- */
-
-export const videoBand = {
-  /** Full-width media-card image (Data Integration Journey title card). */
-  image: "/data-integration/sddefault.png",
-  alt: "Jicate Data Platform Data Integration Journey",
-};
-
 /* ---------------------- "Data Integration, Supercharged." ------------------ */
 
 export const superchargedTitle = "Data Integration, Supercharged.";
@@ -75,9 +52,9 @@ export const superchargedTitle = "Data Integration, Supercharged.";
 export const productCards: ProductCard[] = [
   {
     image: "/data-integration/Asset_109.png",
-    alt: "Hyperauto pipeline generation",
+    alt: "Automatic pipeline generation",
     title: "Groundbreaking Time to Value.",
-    body: "Unlock complex data estates in hours. Jicate Hyperauto enables automatic and dynamic pipeline generation for the most common ERP, CRM, and SQL stores.",
+    body: "Unlock complex data estates in hours. Automatic data setup enables dynamic pipeline generation for the most common ERP, CRM, and SQL stores.",
   },
   {
     image: "/data-integration/Asset_107.png",
@@ -134,8 +111,6 @@ export const featureBands: FeatureBand[] = [
   {
     id: "collaboration",
     title: "Global Collaboration. Universal Impact.",
-    image: "/data-integration/Foundry_Data_Catalog.png",
-    alt: "Jicate Data Platform Data Catalog search",
     features: [
       {
         eyebrow: "TREAT DATA LIKE CODE",
@@ -192,26 +167,6 @@ export const featureBands: FeatureBand[] = [
     ],
   },
 ];
-
-/* ------------------------------ impact study ------------------------------ */
-
-export const impactStudy = {
-  eyebrow: "IMPACT STUDY",
-  partner: "Global Energy Company",
-  heading: "The Challenge",
-  body: "A global energy company uses Jicate to integrate more than 300 ERP datasets and flag attempts to buy materials already held in inventory. With all ERP data unified, an alerting workflow identifies surplus materials and catches duplicate orders before they are placed — surfacing tens of millions in recoverable working capital.",
-  image: "/data-integration/Energy_New.jpg",
-  alt: "Energy company operations",
-  metrics: [
-    { value: "300+", label: "ERP data sets integrated" },
-    { value: "$50M+", label: "in working capital identified in weeks" },
-  ],
-  tags: [
-    { label: "ERP Integration", href: "#erp-integration" },
-    { label: "Cost of Goods Sold", href: "#cogs" },
-    { label: "Inventory Optimization", href: "#inventory" },
-  ] satisfies CTA[],
-};
 
 /* --------------------------------- form ----------------------------------- */
 

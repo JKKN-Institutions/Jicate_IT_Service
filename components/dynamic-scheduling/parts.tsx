@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 /**
  * Giant hero heading — Space Grotesk, ~100px desktop, -0.02em tracking,
- * 1.15 line-height (reference parity). Fluid floor for mobile.
+ * 1.15 line-height. Fluid floor for mobile.
  */
 export function GiantHeading({
   children,

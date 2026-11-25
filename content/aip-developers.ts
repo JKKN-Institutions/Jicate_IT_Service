@@ -1,14 +1,4 @@
-/**
- * Content for the /aip-developers page — a faithful rebuild of the reference
- * "Jicate AI Platform for Developers" page, mapped onto this project's design system.
- *
- * Types are declared locally (not in `@/types`) so the page is fully
- * self-contained and touches no shared files.
- *
- * Local media (in /public/aip-developers):
- *   videos — aipnow-product.mp4, aip-osdk.mp4, workflow-builder.mp4, automation.mp4
- *   svgs   — ontology-sdk.svg, ontology.svg, pipelining.svg, connectivity.svg
- */
+/** Content for the /aip-developers page. */
 
 /* ----------------------------- shared shapes ----------------------------- */
 
@@ -64,8 +54,6 @@ export const hero = {
   scroll: ["SCROLL", "TO EXPLORE"],
   pricingLabel: "PRICING",
   signUp: { label: "SIGN UP FOR Jicate AI Platform", href: "#sign-up" } as CTA,
-  /** Looping product clip shown under the headline. */
-  video: "/aip-developers/aipnow-product.mp4",
 };
 
 /* ------------------ §1  SDK for your Business (anchor) -------------------- */
@@ -80,7 +68,7 @@ export const sdkSection = {
     },
     {
       caption: "…and Jicate AI Platform generates a custom SDK for your business",
-      video: "/aip-developers/aip-osdk.mp4",
+      video: null,
     },
   ],
   cards: [
@@ -101,7 +89,7 @@ export const sdkSection = {
       body: "Available as an NPM package for TypeScript, Pip or Conda for Python, or through OpenAPI for any language.",
     },
     {
-      title: "POWERED BY THE ONTOLOGY",
+      title: "POWERED BY THE BUSINESS DATA MODEL",
       body: "Engage with your data in the standard business terms, in language shared by all of your company’s developers.",
     },
     {
@@ -184,7 +172,7 @@ export const runAnyCode = {
       index: "03",
       title: "…or call it from your custom Business Data Model SDK.",
       body: "Your functions get their own endpoint in the Business Data Model SDK, so you can write custom code against them.",
-      video: "/aip-developers/aip-osdk.mp4",
+      video: null,
     },
   ] as MediaStep[],
   cards: [
@@ -221,7 +209,7 @@ export const focusAlpha = {
   panel: {
     title: "The AI platform that takes you from prototype to production.",
     body: "Prototype, build, and deploy your AI-enabled app in hours.",
-    video: "/aip-developers/aipnow-product.mp4",
+    video: null,
   },
   aiCards: [
     {
@@ -244,7 +232,7 @@ export const focusAlpha = {
   cards: [
     {
       title: "SENSIBLE AND POWERFUL DEFAULTS",
-      body: "Jicate AI Platform’s default infrastructure has been stress-tested by some of the largest enterprises and governments in the world. Only configure what you care about, only when you need to.",
+      body: "Only configure what you care about, only when you need to.",
     },
     {
       title: "BUILD COMPLEX PRODUCTS QUICKLY",
@@ -276,7 +264,7 @@ export const rapidDeploy = {
       index: "03",
       title: "Build and test powerful LLM functions",
       body: "Use Jicate AI Platform Logic to test and deploy AI-enabled functions in minutes.",
-      video: "/aip-developers/aip-osdk.mp4",
+      video: null,
     },
   ] as MediaStep[],
 };
@@ -286,7 +274,7 @@ export const rapidDeploy = {
 export const closing = {
   heading: "We built Jicate AI Platform for ourselves / And it is now available to every developer.",
   paragraphs: [
-    "We build complex applications in the field, from factory floors to the front lines.",
+    "We build complex applications in the field.",
     "We needed a tool to handle connectivity, scaling, and security – so we could focus on the mission.",
   ],
   // Emphasis line rendered with highlighted fragments.
@@ -297,7 +285,6 @@ export const closing = {
     b: "prototype to production",
     after: " in hours.",
   },
-  tagline: "It is the most powerful developer platform in the world.",
 };
 
 /* ------------------------------ §7  Final CTA ---------------------------- */

@@ -47,16 +47,6 @@ export function Hero() {
             </a>
           </div>
 
-          <video
-            className="w-full rounded-[6px] border border-offwhite/10"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-          >
-            <source src={hero.video} type="video/mp4" />
-          </video>
         </div>
       </Container>
     </Section>

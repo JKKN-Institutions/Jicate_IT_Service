@@ -1,15 +1,4 @@
-/**
- * Content for the /data-protection page — a faithful DESIGN rebuild of the
- * Palantir "Data Protection" offering reference page, mapped onto this project's
- * design system. Short functional headings/labels are kept; all body copy is
- * written in Jicate's own voice (placeholder text the user will swap), not copied
- * from the reference. Types are local so the page touches no shared files.
- *
- * Assets in /public/data-protection: shutterstock_255556879.jpg (hero image),
- * ncmec-graph.svg (Data Subject Access Request module image), Beyond_Anonymisation.png
- * (Handling Personal Data card). The Right-to-be-Forgotten module image
- * (values-graph) is not shipped — rendered as a placeholder.
- */
+/** Content for the /data-protection page. */
 
 export interface CTA {
   label: string;
@@ -60,7 +49,7 @@ export const modules = {
       eyebrow: "01 — DATA SUBJECT ACCESS REQUEST MODULE",
       description:
         "This module helps organizations satisfy Article 15 of the GDPR and comparable privacy regulations, giving data subjects the right to obtain confirmation from the controller as to whether any data is being processed about them, as well as access to basic information about that data.",
-      image: "/data-protection/ncmec-graph.svg",
+      image: "/data-protection/network-graph.svg",
       alt: "Network graph of linked data sources",
     },
     {
@@ -82,8 +71,6 @@ export const modules = {
 /* ------------------------- Handling Personal Data ------------------------ */
 
 export const handling = {
-  image: "/data-protection/Beyond_Anonymisation.png",
-  imageAlt: "Beyond Anonymisation — a comprehensive approach to handling personal data",
   heading: "Handling Personal Data",
   bodyLead: "Learn more about our approach to helping customers ",
   bodyLink: "reduce data re-identification risk",

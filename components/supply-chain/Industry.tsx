@@ -7,7 +7,7 @@ import { GiantHeading, Eyebrow } from "./parts";
 /**
  * "Our Industry Impact" — a top hairline, a giant heading, then a four-column
  * grid of industry cards (eyebrow, image, body, and a "Learn more" link)
- * (reference parity).
+ *.
  */
 export function Industry() {
   return (

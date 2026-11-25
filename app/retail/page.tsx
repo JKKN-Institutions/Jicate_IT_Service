@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { Hero, About, Capabilities, Technology, InAction, ContactForm } from "@/components/retail";
+import { Hero, About, Capabilities, Technology, ContactForm } from "@/components/retail";
 
 export const metadata: Metadata = {
   title: "Jicate for Retail",
@@ -14,7 +14,6 @@ export default function RetailPage() {
       <About />
       <Capabilities />
       <Technology />
-      <InAction />
       <ContactForm />
       {/* The shared site Footer renders from the root layout. */}
     </main>

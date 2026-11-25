@@ -1,20 +1,4 @@
-/**
- * Content for the /dynamic-scheduling page — a faithful design rebuild of the
- * reference "Jicate Data Platform Dynamic Scheduling" page, mapped onto this project's design
- * system. Layout/visual treatment matches the reference 1:1; long-form body copy
- * is ORIGINAL Jicate content (short functional labels/headings are kept). The
- * user edits final wording.
- *
- * Types are declared locally so the page is fully self-contained.
- *
- * Local media (in /public/dynamic-scheduling):
- *   Screenshot_2023-01-27_at_11.09.56_AM_copy_2.png — Key Features isometric art
- *   Asset_28TPM_Monitor.png                         — How It Works "Connect" diagram
- *   Asset_8TPM_Monitor.png                          — How It Works "Define" screenshot
- *   Gantt.mp4                                       — How It Works "Optimize" clip
- *   Scenarios.mp4                                   — How It Works "Learn" clip
- *   (hero spotlight poster + CERAWeek photo not shipped — placeholders used)
- */
+/** Content for the /dynamic-scheduling page. */
 
 /* ------------------------------ shared shapes ----------------------------- */
 
@@ -98,17 +82,6 @@ export const keyFeatures = {
   ] as Feature[],
 };
 
-/* -------------------------------- spotlight ------------------------------- */
-
-export const spotlight = {
-  heading: "Spotlight",
-  title: "AI-Powered Scheduling Optimization, Powered by Jicate Data Platform Dynamic Scheduling",
-  image: "/dynamic-scheduling/Asset_8TPM_Monitor.png" as string | null,
-  alt: "Rules and Alerts app — editing a scheduling rule",
-  body: "A conversation on making AI operational across heavy industry — how dynamic scheduling turns real-time data into decisions for critical institutions across the globe.",
-  link: { label: "Learn More", href: "#learn-more" } satisfies CTA,
-};
-
 /* ------------------------------ how it works ------------------------------ */
 
 export const howItWorks = {
@@ -153,7 +126,6 @@ export const exampleIndustries = {
     "Transportation",
     "Heavy Industry",
     "CPG",
-    "Defense",
     "Health & Life Sciences",
     "Hospital Ops",
     "Telecommunications",

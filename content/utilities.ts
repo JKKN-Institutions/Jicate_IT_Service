@@ -1,25 +1,6 @@
-/**
- * Content for the /utilities page — a faithful DESIGN rebuild of the reference
- * "Palantir Utility Solutions" page, mapped onto this project's design system.
- * Layout matches the reference 1:1; the page is LIGHT (canvas bg, ink text).
- *
- * IMPORTANT: the reference's marketing prose, customer stats, and named-executive
- * quotes are the source's own content — they are NOT reproduced verbatim. Brand
- * names are swapped to Jicate; customer stats and quotes are neutral PLACEHOLDER
- * text; short functional labels (section/capability/theme names, form fields) and
- * the user-provided case-study video subjects are kept. User replaces all copy.
- *
- * Local media (in /public/utilities):
- *   Ontology_stack_-_Utilities__JD_Edits_.png — About section diagram
- *   Jacobs_X_Palantir_Twitter_Cutdown.mov     — Impact case 1 video
- *   -ENGLISH_SUBTITLES-_..._Sonnedix_..._.mov — Impact case 2 video (+ hero loop)
- *   SC_Edison_Cutdown_7__1_.mov               — Impact case 3 video
- *   Slide1 (1).jpg / Slide2 (1).jpg / Slide2 (2).jpg / Slide4 (1).jpg /
- *   Utilities_1.png / Utilities_2.png         — Capability tab images
- */
+/** Content for the /utilities page. */
 
 const BASE = "/utilities";
-const SONNEDIX_VIDEO = `${BASE}/-ENGLISH_SUBTITLES-_Sonnedix_-_Foundry_Impact_-_Cutdown___1_.mov`;
 
 /* ------------------------------ shared shapes ----------------------------- */
 
@@ -46,8 +27,6 @@ export const hero = {
   title: "Jicate for Utilities",
   tagline: "AI-powered operations for the connected utility of the future.",
   cta: { label: "Schedule a Demo", href: "#utilities-demo-form" } satisfies CTA,
-  video: SONNEDIX_VIDEO,
-  playLabel: "Play Video",
 };
 
 /* ----------------------------- about our work ----------------------------- */
@@ -58,88 +37,10 @@ export const about = {
     "Extreme weather, the shift to renewables, and new ways of producing and consuming energy are just a few of the real-world pressures facing utilities today.",
   paragraphs: [
     "Utilities now have to draw on enormous volumes of data spread across ever more complex digital ecosystems — and, crucially, turn that insight into action. Jicate's Business Data Model brings together data from distribution management systems, asset records, inspections, geographic layouts, and IoT devices, alongside risk and connectivity models, so teams can make better-informed decisions across the grid.",
-    "Utility operators around the world use Jicate to rapidly build and ship flexible, production-ready applications — predicting operations, automating processes, simulating scenarios, and coordinating decisions across teams and environments. The result is more reliable, more efficient utilities, from grid management right through to customer care.",
+    "Utility operators can use Jicate to rapidly build and ship flexible, production-ready applications — predicting operations, automating processes, simulating scenarios, and coordinating decisions across teams and environments. The result is more reliable, more efficient utilities, from grid management right through to customer care.",
   ],
   image: `${BASE}/Ontology_stack_-_Utilities__JD_Edits_.png`,
-  imageAlt: "Utilities ontology stack diagram",
-};
-
-/* ------------------------------ our partners ------------------------------ */
-
-export interface Partner {
-  name: string;
-  stat: string;
-  note: string;
-  link: CTA;
-}
-
-export const partners = {
-  heading: "Our Partners",
-  items: [
-    {
-      name: "A major electric utility",
-      stat: "Integrated data from millions of grid assets across its digital grid into the platform.",
-      note: "Sharply reduced missed customer notifications for proactive power shutoffs, cutting notification time from hours to minutes.",
-      link: { label: "Learn more", href: "#" },
-    },
-    {
-      name: "A global engineering firm",
-      stat: "Combined Jicate with its own proprietary algorithms to lift staff productivity.",
-      note: "Eliminated operational fines while also reducing greenhouse-gas emissions.",
-      link: { label: "Learn more", href: "#" },
-    },
-    {
-      name: "A global solar power producer",
-      stat: "Uses Jicate and machine-learning models to remotely monitor its solar farms.",
-      note: "Expects a meaningful reduction in revenue lost to tracker failures.",
-      link: { label: "Learn more", href: "#" },
-    },
-  ] satisfies Partner[],
-};
-
-/* ------------------------------- our impact ------------------------------- */
-
-export interface ImpactCase {
-  name: string;
-  video: string;
-  stat: string;
-  theme: string;
-  quote: string;
-  attribution: string;
-  link?: CTA;
-}
-
-export const impact = {
-  heading: "Our Impact",
-  cases: [
-    {
-      name: "Global Engineering Firm",
-      video: `${BASE}/Jacobs_Twitter_Cutdown.mov`,
-      stat: "SIGNIFICANT PLANT-WIDE POWER SAVINGS DELIVERED THROUGH PREDICTIVE OPERATIONS.",
-      theme: "Predictive Operations",
-      quote:
-        "“Being able to anticipate issues before they happen is where the real value sits — the efficiency gains add up quickly, both for us and for the clients we serve.”",
-      attribution: "— Engineering Leader",
-    },
-    {
-      name: "Solar Power Producer",
-      video: SONNEDIX_VIDEO,
-      stat: "AUTOMATIC NOTIFICATION OF ASSETS NEEDING MAINTENANCE, WITH PREVENTABLE MECHANICAL FAILURES SHARPLY REDUCED.",
-      theme: "Digitize Renewables",
-      quote:
-        "“Our aim is to run on real-time, fully integrated data across the whole business, so every clean-energy decision is backed by information our teams can trust.”",
-      attribution: "— Company Executive",
-    },
-    {
-      name: "Electric Utility",
-      video: `${BASE}/SC_Edison_Cutdown_7__1_.mov`,
-      stat: "MAJOR REDUCTION IN MISSED CUSTOMER NOTIFICATIONS FOR PROACTIVE POWER SHUTOFFS.",
-      theme: "Enhance Customer Experience",
-      quote:
-        "“We've moved from hardware-defined to software-defined operations across a growing set of use cases, and it's changing how we run and improve the grid.”",
-      attribution: "— Chief Information Officer",
-    },
-  ] satisfies ImpactCase[],
+  imageAlt: "Utilities data model stack diagram",
 };
 
 /* ---------------------------- our capabilities ---------------------------- */

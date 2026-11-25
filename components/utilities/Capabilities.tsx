@@ -14,7 +14,7 @@ import { SectionHeading } from "./parts";
  * on the left (each labelled with a superscript number, the active one marked
  * with a dot) selects a capability; the right column shows a tiny 10px uppercase
  * title, an 18px body, the capability screenshot, and a "Learn more" link
- * (reference parity). LIGHT.
+ *. LIGHT.
  */
 export function Capabilities() {
   const [active, setActive] = useState(0);

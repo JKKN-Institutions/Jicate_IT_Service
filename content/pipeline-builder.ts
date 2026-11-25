@@ -1,18 +1,4 @@
-/**
- * Content for the /pipeline-builder page — a faithful design rebuild of the
- * reference "Jicate Data Platform Data Pipelines" page, mapped onto this project's design
- * system. Layout/visual treatment matches the reference 1:1; all body copy is
- * ORIGINAL Jicate content written in our own words (only short functional
- * labels/headings are kept). The user edits final wording.
- *
- * Types are declared locally so the page is fully self-contained.
- *
- * Local media (in /public/pipeline-builder):
- *   2-AI_ML (1).png            — "Data, Democratized." artwork
- *   pipeline-add-data--01.png  — How It Works "Add Data" image
- *   (video poster + Transforms / sequence / layers / 3D diagram not shipped —
- *    placeholders used)
- */
+/** Content for the /pipeline-builder page. */
 
 /* ------------------------------ shared shapes ----------------------------- */
 
@@ -99,7 +85,7 @@ export const howItWorks = {
         "Pull data in from virtually any source system — structured, unstructured, IoT, or geospatial — with minimal setup.",
         "Need a quick one-off? Drag and drop raw files straight into Jicate Data Platform.",
       ],
-      image: "/pipeline-builder/pipeline-add-data--01.png",
+      image: null,
       alt: "Adding data in Data Pipelines",
     },
     {

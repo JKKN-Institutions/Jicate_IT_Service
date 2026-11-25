@@ -3,8 +3,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { manifesto } from "@/content/home";
 
 /**
- * Section 6 — Value / manifesto band (design/07 §8; reference: the Palantir
- * two-up "There is so much left to build" band).
+ * Section 6 — Value / manifesto band (design/07 §8).
  *
  * A grey (#efefef) full-bleed frame holds an inset two-up card: a dark
  * photographic image on the left and a WHITE panel on the right, split ~50/50

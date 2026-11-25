@@ -6,7 +6,7 @@ import { InkLink } from "./parts";
 
 /**
  * A slim CTA band between the resource grid and the closing form — a single
- * lead line with a link, bracketed by hairline rules (reference parity).
+ * lead line with a link, bracketed by hairline rules.
  */
 export function CtaBand() {
   return (

@@ -1,22 +1,4 @@
-/**
- * Content for the /construction page — a faithful DESIGN rebuild of the
- * reference "Palantir for Construction" offering page, mapped onto this
- * project's design system. Layout/visual treatment matches the reference 1:1;
- * the page is DARK (rgb(30,33,36) background, white text).
- *
- * IMPORTANT: the reference's marketing prose, customer quotes, and specific
- * statistics are the source's own content — they are NOT reproduced here.
- * Long-form copy, testimonials, and stats below are neutral PLACEHOLDER text;
- * short functional labels (tab/feature names, form fields) are kept for parity.
- * The user replaces all copy.
- *
- * Types are declared locally so the page is fully self-contained.
- *
- * Local media (in /public/construction):
- *   shutterstock_1173398077.jpg                              — hero background
- *   Construction_Landing_Page_-_Product_montage2_4x.png      — intro montage
- *   Industry_Domination_Construction_Ontology_Final2_4x.png  — ontology diagram
- */
+/** Content for the /construction page. */
 
 const BASE = "/construction";
 
@@ -38,17 +20,6 @@ export interface CapabilityTab {
   /** Two short intro paragraphs shown in the middle column. */
   intro: string[];
   features: Feature[];
-}
-
-export interface ImpactStep {
-  id: string;
-  label: string;
-  stats: string[];
-}
-
-export interface Testimonial {
-  n: string;
-  quote: string;
 }
 
 export interface ExploreCard {
@@ -87,7 +58,7 @@ export const ontology = {
     "Jicate Data Platform closes the gap between your foundational systems — ERP, project management, BIM, accounting, equipment management — and the use cases that matter, powering AI-driven decisions that anticipate scheduling delays before they hit and keep work moving.",
   ],
   image: `${BASE}/Industry_Domination_Construction_Ontology_Final2_4x.png`,
-  alt: "Layered isometric diagram of the construction ontology",
+  alt: "Layered isometric diagram of the construction data model",
 };
 
 /* ------------------------------ capabilities ------------------------------ */
@@ -186,76 +157,6 @@ export const capabilities = {
       ],
     },
   ] satisfies CapabilityTab[],
-};
-
-/* -------------------------------- impact ---------------------------------- */
-
-export const impact = {
-  heading: "Jicate Drives Real Impact at Scale",
-  subhead: "We help leading construction & engineering firms dominate the market.",
-  steps: [
-    {
-      id: "0.1",
-      label: "Gain an Unfair Advantage",
-      stats: [
-        "Unlock major multi-year savings across supply chain and inventory by optimizing day-to-day operations.",
-        "Drive substantial procurement cost savings with a strong return on investment and a short payback period.",
-      ],
-    },
-    {
-      id: "0.2",
-      label: "Deliver at Speed",
-      stats: [
-        "Stand up a digital twin for a large, multi-project portfolio in days rather than months.",
-        "Build a production-ready savings use case for a construction firm in a matter of days.",
-      ],
-    },
-    {
-      id: "0.3",
-      label: "Save Time",
-      stats: [
-        "Cut material and crew allocation from weeks to minutes with automated decision workflows.",
-        "Shrink project reporting cycles from days to real time, so teams and contractors collaborate instantly.",
-        "Help foremen reduce timecard collection from roughly an hour to just a few minutes.",
-      ],
-    },
-    {
-      id: "0.4",
-      label: "Fortify Your Supply Chain",
-      stats: [
-        "Reduce material shortages and out-of-stock risk through predictive alerts and integrated vendor management.",
-        "Respond proactively to disruptions, heading off costly delays and sharpening supplier performance monitoring.",
-      ],
-    },
-  ] satisfies ImpactStep[],
-};
-
-/* ------------------------------ testimonials ------------------------------ */
-
-export const testimonials = {
-  heading: "What Construction Leaders Are Saying",
-  items: [
-    { n: "01", quote: "It's the rare piece of software that everyone on the team can actually pick up and use — adoption was quick, from the field to the front office." },
-    { n: "02", quote: "The data model has become a genuine competitive advantage for us; it's the foundation everything else now runs on." },
-    { n: "03", quote: "It's not a system a few analysts log into — it's used across the company, every single day." },
-    { n: "04", quote: "What used to take months, we now deliver in days. The speed has completely changed how we plan." },
-    { n: "05", quote: "For the first time, the job site and the back office are truly looking at the same information at the same time." },
-    { n: "06", quote: "The cost savings paid the investment back fast, and they keep compounding as we scale it across projects." },
-  ] satisfies Testimonial[],
-};
-
-/* ------------------------------- continue --------------------------------- */
-
-export const explore = {
-  heading: "Continue Exploring",
-  cards: [
-    { kind: "KEYNOTE VIDEO", title: "A leading general contractor reveals how they bring generations of tradecraft to every project.", cta: "Watch the Video", href: "#" },
-    { kind: "KEYNOTE VIDEO", title: "A general contractor shares how they use the platform to drive dramatic efficiency gains.", cta: "Watch the Video", href: "#" },
-    { kind: "KEYNOTE VIDEO", title: "An operations leader showcases total operations management and daily site reporting in action.", cta: "Watch the Video", href: "#" },
-    { kind: "BLOG", title: "Read how partners are building construction's operating system for the 21st century.", cta: "Read the Blog", href: "#" },
-    { kind: "PODCAST", title: "Leaders discuss how great software can bend to fit the most physical of industries — and drive real ROI.", cta: "Watch the Podcast", href: "#" },
-    { kind: "INTERVIEW", title: "A forward-deployed architect shares how AI is powering operations across construction and utilities.", cta: "Watch the Video", href: "#" },
-  ] satisfies ExploreCard[],
 };
 
 /* -------------------------------- cta band -------------------------------- */

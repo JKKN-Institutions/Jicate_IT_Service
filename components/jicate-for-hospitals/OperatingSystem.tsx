@@ -6,7 +6,7 @@ import { SectionHeading } from "./parts";
 
 /**
  * "An AI-Powered Operating System for Hospitals" — a two-column heading band,
- * then a full-width operating-system diagram (reference parity).
+ * then a full-width operating-system diagram.
  */
 export function OperatingSystem() {
   return (
@@ -20,12 +20,6 @@ export function OperatingSystem() {
         </Reveal>
       </Container>
 
-      <Container className="mt-[64px] desktop:mt-[96px]">
-        <Reveal className="w-full overflow-hidden rounded-[4px] bg-ink/[0.03]">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={operatingSystem.diagram} alt={operatingSystem.diagramAlt} className="h-auto w-full" loading="lazy" />
-        </Reveal>
-      </Container>
     </Section>
   );
 }

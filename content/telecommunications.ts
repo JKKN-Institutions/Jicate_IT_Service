@@ -1,15 +1,4 @@
-/**
- * Content for the /telecommunications page — a faithful DESIGN rebuild of the
- * Palantir Telecommunications reference page. LIGHT theme. Short functional
- * headings/labels kept; body copy in Jicate's voice (placeholder text the user
- * will swap). Palantir→Jicate, "Jicate Data Platform"→"the platform" (kept where it reads as a
- * product name → "Jicate"); named customers/partners genericized. Types local.
- *
- * Assets in /public/telecommunications: shutterstock_1606674793.jpg (hero towers)
- * + (1).jpg (reuse), Telco_*__1_.png (5 isometric design cards),
- * image_multicard_2.jpeg (Where-we-work diagram),
- * Telco_Ad_Campaign_LI_…jpg (impact study), Picture1.png (DISH case stage).
- */
+/** Content for the /telecommunications page. */
 
 export interface DesignCard {
   no: string;
@@ -60,7 +49,7 @@ export const hero = {
 
 export const intro = {
   heading: "Jicate for Telecommunications",
-  body: "Some of the world’s leading telecommunications companies use Jicate software to help drive digital transformation at scale across their business.",
+  body: "Jicate enables telcos to deploy applications against their most pressing challenges — from intelligent fault prediction and pinpointing the root cause of a customer problem to improving provisioning and lead-to-cash processes.",
   link: "Request a Demo",
 };
 
@@ -106,30 +95,13 @@ export const design = {
 
 export const whereWeWork = {
   heading: "Where we work",
-  lead: "Decision makers across the telco industry use Jicate to help solve their most complex network challenges.",
+  lead: "Helping solve the most complex network challenges.",
   diagram: "/telecommunications/image_multicard_2.jpeg",
   diagramAlt: "Network and platform connectivity diagram",
   tabs: [
     {
-      tab: "RAN Energy Savings",
-      no: "01",
-      lead: "Reduce power usage in your network — without impacting your customers.",
-      body: "Energy Optimizer powered by Jicate is a cloud-based, scalable SaaS that empowers mobile operators to navigate energy-consumption challenges with data-driven decisions, reducing power usage and carbon emissions. It is delivered in partnership with a RAN specialist that has more than three decades of experience building, operating, and optimizing radio access networks (RAN) at major Indian CSPs.",
-      subhead: "Energy Optimizer Powered by Jicate",
-      subleadline: "Minimize power usage up to 15% per site in your Radio Area Networks",
-      bullets: [
-        "Optimize operational configurations for power savings in RAN",
-        "Mitigate escalating power consumption in RAN due to increased spectrum in 4G and 5G",
-        "Synchronize data, models, and applications to achieve operational connectivity",
-        "Empower network operators with foresight over your energy profile",
-        "Gain meaningful insight into network device performance and trigger upgrades at the edge of your network",
-      ],
-      image: "/telecommunications/Telco_RAN_Energy_Savings_Diagram.jpeg",
-      imageAlt: "RAN energy-savings data flow from the network into the platform",
-    },
-    {
       tab: "Customer-Centric Network Management",
-      no: "02",
+      no: "01",
       lead: "Manage the network around the customer experience, not just the cell site.",
       body: "Unify network, service, and customer data into a single operational picture so teams can prioritize the issues that matter most to subscribers and resolve them faster.",
       subhead: "Customer-Centric Network Management",
@@ -142,7 +114,7 @@ export const whereWeWork = {
     },
     {
       tab: "Customer Service",
-      no: "03",
+      no: "02",
       lead: "Give agents a complete, real-time view of every customer.",
       body: "Integrate billing, network, and interaction data so customer-service teams can resolve issues on first contact and proactively reach out before problems escalate.",
       subhead: "AI-Assisted Customer Service",
@@ -155,7 +127,7 @@ export const whereWeWork = {
     },
     {
       tab: "Field Engineering Support",
-      no: "04",
+      no: "03",
       lead: "Get the right technician to the right site with the right parts.",
       body: "Optimize dispatch, routing, and inventory so field teams spend less time travelling and more time resolving — improving first-time-fix rates across the network.",
       subhead: "Connected Field Operations",
@@ -168,7 +140,7 @@ export const whereWeWork = {
     },
     {
       tab: "Supply Chain",
-      no: "05",
+      no: "04",
       lead: "Build a resilient supply chain for network buildout and operations.",
       body: "Create a holistic view of suppliers, inventory, and demand so planners can anticipate shortages, manage lead times, and keep network rollout on schedule.",
       subhead: "Network Supply Chain",
@@ -181,7 +153,7 @@ export const whereWeWork = {
     },
     {
       tab: "Sales & Marketing",
-      no: "06",
+      no: "05",
       lead: "Grow revenue with data-driven sales and marketing.",
       body: "Bring together customer, usage, and market data to target the right offers, reduce churn, and measure the impact of every campaign.",
       subhead: "Revenue Intelligence",
@@ -193,61 +165,6 @@ export const whereWeWork = {
       ],
     },
   ] as WorkTab[],
-};
-
-/* ----------------------------- impact studies ---------------------------- */
-
-export const impact = {
-  heading: "Impact Studies",
-  tabs: [
-    {
-      tab: "Improving Network Reliability",
-      no: "01",
-      lead: "A leading operator improved network reliability and cut downtime with Jicate.",
-      body: "By unifying fragmented network data into a single operational picture, the operator’s engineers could predict faults earlier, pinpoint root causes faster, and resolve incidents before customers were affected — measurably improving reliability across the network.",
-      image: "/telecommunications/Telco_Ad_Campaign_LI_C1V1-1200x1200_Cropped__1_.jpg",
-    },
-    {
-      tab: "Supply Chain",
-      no: "02",
-      lead: "A global carrier de-risked network buildout with a connected supply chain.",
-      body: "A holistic view of suppliers, inventory, and demand let planners anticipate shortages and keep a multi-region rollout on schedule, even through supplier disruption.",
-      image: "/telecommunications/Telco_Ad_Campaign_LI_C1V1-1200x1200_Cropped__1_.jpg",
-    },
-    {
-      tab: "RAN Energy Savings",
-      no: "03",
-      lead: "A mobile operator cut RAN power usage without impacting customers.",
-      body: "Energy Optimizer powered by Jicate reduced power usage by up to 15% per site across the operator’s Radio Area Networks — lowering both costs and carbon emissions.",
-      image: "/telecommunications/Telco_Ad_Campaign_LI_C1V1-1200x1200_Cropped__1_.jpg",
-    },
-  ] as ImpactTab[],
-};
-
-/* ------------------------------ partnerships ----------------------------- */
-
-export const partnerships = {
-  heading: "Partnerships",
-  intro: [
-    "Jicate works across the telecom ecosystem — with hyperscalers, systems integrators, and specialist technology partners — to deliver outcomes faster.",
-    "The platform can be utilised as a SaaS offering on top of most hyperscalers’ infrastructure, and integrates with partner solutions through well-documented, open APIs.",
-  ],
-  cases: [
-    {
-      heading: "US 5G Operator | Dynamic 5G Connectivity",
-      body: "A US operator’s Jicate-powered 5G network offering helps facilitate Connectivity as a Service (CaaS) and can unlock the value of data, even in limited-bandwidth or low-infrastructure environments.",
-      image: "/telecommunications/Picture1.png",
-      imageAlt: "Keynote presentation on a conference stage",
-      link: "Request a Demo",
-    },
-    {
-      heading: "Jicate & an Indian Telecom Leader",
-      body: "Leaders from Jicate and a major Indian telecom operator discuss software, sovereignty, and the future of connectivity on stage at a leading technology conference in India.",
-      image: "/telecommunications/shutterstock_1606674793 (1).jpg",
-      imageAlt: "Leaders speaking at a technology conference",
-      link: "Request a Demo",
-    },
-  ],
 };
 
 /* ------------------------------ get started ------------------------------ */

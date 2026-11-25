@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import {
   Hero,
   OperatingSystem,
-  Transformation,
   Operationalizing,
   ContactForm,
 } from "@/components/jicate-for-hospitals";
@@ -18,7 +17,6 @@ export default function JicateForHospitalsPage() {
     <main className="flex-1">
       <Hero />
       <OperatingSystem />
-      <Transformation />
       <Operationalizing />
       <ContactForm />
       {/* The shared site Footer renders from the root layout. */}

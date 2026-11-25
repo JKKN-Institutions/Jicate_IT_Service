@@ -1,15 +1,4 @@
-/**
- * Content for the /process-mining page — a faithful DESIGN rebuild of the
- * Foundry Process Mining & Automation reference page, mapped onto this
- * project's design system. Match the layout/visuals and keep the short
- * functional headings/labels; body copy is written in Jicate's own voice.
- * Types are local so the page touches no shared files.
- *
- * Assets in /public/process-mining: Screenshot_2023-01-27_at_11.18.55_AM.png,
- * Product_Images-01/02/03/05/06.png, Machinery_Impact_2.jpg,
- * Machinery_Impact_4.jpg, Group_1.png. The hero video thumbnail is not shipped
- * → poster placeholder.
- */
+/** Content for the /process-mining page. */
 
 export interface CTA {
   label: string;
@@ -110,70 +99,6 @@ export const howItWorks = {
   ] as Step[],
 };
 
-/* -------------------------------- Impact --------------------------------- */
-
-export const impact = {
-  heading: "Impact",
-  caseStudies: [
-    {
-      title: "Reducing Vehicle Downtime at a Multi-National Car Rental Company",
-      image: "/process-mining/Machinery_Impact_2.jpg",
-      alt: "Vehicle maintenance facility",
-      groups: [
-        {
-          label: "Challenge",
-          bullets: [
-            "Vehicle out-of-service events are the biggest drag on rental-car profitability.",
-            "Planning and executing efficient maintenance is key to uptime across fleets of hundreds of thousands of vehicles.",
-          ],
-        },
-        {
-          label: "Solution",
-          bullets: [
-            "Process Mining & Automation lets every level of the maintenance organization — from location managers to regional fleet managers — diagnose which parts of the process drive the most downtime.",
-            "Every layer of management can understand location performance and diagnose specific breakdowns by vehicle characteristic, such as body dimensions or class.",
-          ],
-        },
-        {
-          label: "Impact",
-          bullets: [
-            "$15 million / year | Target savings by reducing out-of-service time by 2%",
-            "500K vehicles | Global fleet size under maintenance responsibility",
-          ],
-        },
-      ],
-    },
-    {
-      title: "Accelerating Resolution of Quality Defects at a Global Manufacturer",
-      image: "/process-mining/Machinery_Impact_4.jpg",
-      alt: "Manufacturing quality inspection",
-      groups: [
-        {
-          label: "Challenge",
-          bullets: [
-            "Throughout production, quality defects arise in the form of non-conformities.",
-            "These defects must be eliminated quickly to reduce the cost of non-quality and hits to production targets.",
-            "Lead time can be lengthy for complex issues requiring input from quality, production, logistics, and procurement teams.",
-          ],
-        },
-        {
-          label: "Solution",
-          bullets: [
-            "Process Mining & Automation was deployed to quality managers in two weeks, reducing the lead time to resolve defects.",
-          ],
-        },
-        {
-          label: "Impact",
-          bullets: [
-            "10% | Reduction in lead time to resolve defects, achieved in two weeks",
-            "25% | Head of Quality's target lead-time reduction as the tool rolls out across the team",
-          ],
-        },
-      ],
-    },
-  ] as CaseStudy[],
-};
-
 /* --------------------------- Example lists ------------------------------- */
 
 export const exampleIndustries = {
@@ -184,14 +109,6 @@ export const exampleIndustries = {
 export const exampleUseCases = {
   heading: "Example Use Cases",
   items: ["Purchase-to-pay", "Quality control", "Export control", "Customer journeys", "Order-to-cash"],
-};
-
-/* ------------------------- Reference architecture ------------------------ */
-
-export const referenceArchitecture = {
-  heading: "Jicate Data Platform Process Mining & Automation: Reference Architecture",
-  image: "/process-mining/Group_1.png",
-  alt: "Process Mining & Automation Suite reference architecture diagram",
 };
 
 /* ------------------------------ Contact form ----------------------------- */

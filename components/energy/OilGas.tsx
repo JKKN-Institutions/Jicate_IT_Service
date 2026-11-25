@@ -2,8 +2,8 @@ import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
 import { oilGas } from "@/content/energy";
 
-import { GiantHeading, ArrowItem, Eyebrow } from "./parts";
-import { AnchorTitle, ColumnsBlock, VideoQuote, VideoBlock } from "./blocks";
+import { ArrowItem } from "./parts";
+import { AnchorTitle, ColumnsBlock } from "./blocks";
 
 const subHead =
   "font-display text-[clamp(1.75rem,1rem+2.6vw,2.75rem)] font-normal leading-[1.05] tracking-[-0.02em] text-ink";
@@ -33,27 +33,10 @@ export function OilGas() {
         </Container>
       </Section>
 
-      {/* Upstream */}
-      <Section className="bg-canvas !pb-0" aria-label={oilGas.upstream.heading}>
-        <Container>
-          <Reveal>
-            <h3 className={subHead}>
-              {oilGas.upstream.heading} <span aria-hidden className="text-ink-light">↘</span>
-            </h3>
-          </Reveal>
-        </Container>
-      </Section>
-      <VideoQuote
-        eyebrow={oilGas.upstream.quoteEyebrow}
-        video={oilGas.upstream.video}
-        quote={oilGas.upstream.quote}
-        attribution={oilGas.upstream.attribution}
-      />
-
       {/* Offshore — 3-col capabilities */}
       <ColumnsBlock heading={oilGas.offshore.heading} columns={oilGas.offshore.columns} cols={3} />
 
-      {/* Onshore — video + lead + bullets */}
+      {/* Onshore — lead + bullets */}
       <Section className="bg-canvas" aria-label={oilGas.onshore.heading}>
         <Container>
           <Reveal className="mb-2xl">
@@ -61,10 +44,7 @@ export function OilGas() {
               {oilGas.onshore.heading} <span aria-hidden className="text-ink-light">↘</span>
             </h3>
           </Reveal>
-          <Reveal>
-            <VideoBlock src={oilGas.onshore.video} />
-          </Reveal>
-          <div className="mt-2xl grid grid-cols-1 gap-x-2xl gap-y-l desktop:grid-cols-2">
+          <div className="grid grid-cols-1 gap-x-2xl gap-y-l desktop:grid-cols-2">
             <Reveal className="flex flex-col gap-m">
               <h4 className="text-body-lg font-semibold text-ink">{oilGas.onshore.lead}</h4>
               <p className="text-body leading-[1.45] text-ink">{oilGas.onshore.body}</p>
@@ -78,32 +58,8 @@ export function OilGas() {
         </Container>
       </Section>
 
-      {/* Finance — 5 short capability rows + Spotlight */}
+      {/* Finance — 5 short capability rows */}
       <ColumnsBlock heading={oilGas.finance.heading} columns={oilGas.finance.columns} cols={3} />
-
-      <Section className="bg-canvas" aria-label={oilGas.finance.spotlight.eyebrow}>
-        <Container>
-          <Reveal className="mb-l">
-            <Eyebrow>{oilGas.finance.spotlight.eyebrow}</Eyebrow>
-          </Reveal>
-          <Reveal>
-            <div className="aspect-[16/9] w-full overflow-hidden rounded-[2px] bg-ink/[0.06]">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={oilGas.finance.spotlight.image}
-                alt={oilGas.finance.spotlight.alt}
-                className="h-full w-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          </Reveal>
-          <Reveal index={1} className="mt-l">
-            <p className="max-w-[70ch] text-body leading-[1.5] text-ink-light">
-              {oilGas.finance.spotlight.caption}
-            </p>
-          </Reveal>
-        </Container>
-      </Section>
 
       {/* Midstream */}
       <Section className="bg-canvas" aria-label={oilGas.midstream.heading}>
@@ -112,22 +68,8 @@ export function OilGas() {
             <h3 className={subHead}>{oilGas.midstream.heading}</h3>
           </Reveal>
 
-          {/* Chart + decision support tool */}
-          <Reveal>
-            <div className="aspect-[16/9] w-full overflow-hidden rounded-[2px] bg-ink/[0.04]">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={oilGas.midstream.chart} alt={oilGas.midstream.chartAlt} className="h-full w-full object-contain" loading="lazy" />
-            </div>
-          </Reveal>
-          <Reveal index={1} className="mt-2xl max-w-[60ch]">
-            <h4 className="mb-m font-display text-[clamp(1.4rem,1rem+1.4vw,2rem)] font-normal leading-[1.1] tracking-[-0.01em] text-ink">
-              {oilGas.midstream.chartHeading}
-            </h4>
-            <p className="text-body leading-[1.5] text-ink">{oilGas.midstream.chartBody}</p>
-          </Reveal>
-
           {/* Liquids & Gas */}
-          <div className="mt-3xl grid grid-cols-1 gap-x-2xl gap-y-l desktop:grid-cols-[auto_1fr] desktop:items-start">
+          <div className="grid grid-cols-1 gap-x-2xl gap-y-l desktop:grid-cols-[auto_1fr] desktop:items-start">
             <Reveal>
               <h4 className={subHead}>
                 {oilGas.midstream.liquidsHeading} <span aria-hidden className="text-ink-light">↘</span>
@@ -137,20 +79,6 @@ export function OilGas() {
               {oilGas.midstream.liquidsBody.map((p) => (
                 <p key={p.slice(0, 24)} className="text-body leading-[1.5] text-ink">{p}</p>
               ))}
-            </Reveal>
-          </div>
-
-          {/* Case study image + text */}
-          <div className="mt-3xl grid grid-cols-1 items-center gap-y-xl desktop:grid-cols-12">
-            <Reveal className="desktop:col-span-6">
-              <div className="aspect-[16/10] w-full overflow-hidden rounded-[2px] bg-ink/[0.06]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={oilGas.midstream.caseImage} alt="Midstream case study" className="h-full w-full object-cover" loading="lazy" />
-              </div>
-            </Reveal>
-            <Reveal className="flex flex-col gap-l desktop:col-span-5 desktop:col-start-8">
-              <h4 className="text-body-lg font-semibold text-ink">{oilGas.midstream.caseHeading}</h4>
-              <p className="text-body leading-[1.5] text-ink">{oilGas.midstream.caseBody}</p>
             </Reveal>
           </div>
 
@@ -180,12 +108,6 @@ export function OilGas() {
           </Reveal>
         </Container>
       </Section>
-      <VideoQuote
-        eyebrow={oilGas.downstream.quoteEyebrow}
-        video={oilGas.downstream.video}
-        quote={oilGas.downstream.quote}
-        attribution={oilGas.downstream.attribution}
-      />
       <ColumnsBlock heading={oilGas.downstream.refineryHeading} columns={oilGas.downstream.refineryColumns} cols={3} />
     </>
   );

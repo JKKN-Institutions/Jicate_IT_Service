@@ -31,7 +31,9 @@ export function FeatureRows() {
 }
 
 function Row({ row, activeIndex }: { row: FeatureRow; activeIndex: number }) {
-  const [showDetails, setShowDetails] = useState(false);
+  const [detailsChosen, setShowDetails] = useState(false);
+  const hasVideo = Boolean(row.video);
+  const showDetails = !hasVideo || detailsChosen;
 
   return (
     <div className="grid items-start gap-l desktop:grid-cols-[563fr_703fr] desktop:gap-[40px]">
@@ -50,6 +52,7 @@ function Row({ row, activeIndex }: { row: FeatureRow; activeIndex: number }) {
             {row.lead}
           </p>
 
+          {hasVideo ? (
           <div className="inline-flex items-center self-start rounded-full border-[0.8px] border-ink/15 bg-canvas p-tiny">
             <Toggle active={!showDetails} onClick={() => setShowDetails(false)}>
               Video
@@ -58,6 +61,7 @@ function Row({ row, activeIndex }: { row: FeatureRow; activeIndex: number }) {
               Details
             </Toggle>
           </div>
+          ) : null}
         </div>
 
         {showDetails ? (
@@ -73,7 +77,7 @@ function Row({ row, activeIndex }: { row: FeatureRow; activeIndex: number }) {
           </div>
         ) : (
           <div className="relative aspect-[16/10] w-full overflow-hidden rounded-[8px] border border-ink/10 bg-surface-medium shadow-[0_24px_60px_-30px_rgba(30,33,36,0.45)]">
-            <LoopingVideo src={row.video} />
+            {row.video ? <LoopingVideo src={row.video} /> : null}
           </div>
         )}
       </div>

@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 /**
- * Heading helpers for the Palantir-for-Hospitals page. The hero sits on a dark
+ * Heading helpers for the /jicate-for-hospitals page. The hero sits on a dark
  * band (white text); the rest of the page is light (ink text). Line-height is
  * baked into the size token so tailwind-merge can't strip a standalone
  * `leading-*` class.

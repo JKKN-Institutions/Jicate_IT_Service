@@ -7,7 +7,6 @@ import {
   TwinsStages,
   Analytics,
   OpsDataScience,
-  InAction,
   ContactForm,
 } from "@/components/digital-twin";
 
@@ -26,7 +25,6 @@ export default function DigitalTwinPage() {
       <TwinsStages />
       <Analytics />
       <OpsDataScience />
-      <InAction />
       <ContactForm />
       {/* The shared site Footer renders from the root layout. */}
     </main>

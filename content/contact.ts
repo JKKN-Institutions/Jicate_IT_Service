@@ -1,13 +1,4 @@
-/**
- * Content for the /contact page — a faithful DESIGN rebuild of the Contact Us
- * reference page, mapped onto this project's design system. Short functional
- * headings/labels are kept; contact links are Jicate-voiced and the office list
- * is placeholder location data the user will swap. Types are local so the page
- * touches no shared files.
- *
- * Assets in /public/contact: Whiteboard_Collaboration_copy.png (hero),
- * Offices_Map.png (office locations map).
- */
+/** Content for the /contact page. */
 
 export interface CTA {
   label: string;

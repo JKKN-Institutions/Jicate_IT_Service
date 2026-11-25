@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import {
   FrHero,
   SpotlightVideo,
-  QuoteBand,
   KeyFeatures,
   HowItWorks,
   Applications,
@@ -21,7 +20,6 @@ export default function FoundryRulesPage() {
     <main className="flex-1">
       <FrHero />
       <SpotlightVideo />
-      <QuoteBand />
       <KeyFeatures />
       <HowItWorks />
       <Applications />

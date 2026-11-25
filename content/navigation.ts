@@ -40,17 +40,16 @@ export const industryLinks: NavLink[] = [
   { label: "Education", href: "/industries/education" },
 ];
 
-/** The five platform pages — order mirrors the Palantir site menu. */
+/** The platform pages. */
 export const platformLinks: NavLink[] = [
   { label: "Jicate AI Platform", href: "/aip" },
   { label: "Jicate Data Platform", href: "/foundry" },
-  { label: "Gotham", href: "/gotham" },
   { label: "Business Data Model", href: "/ontology" },
   { label: "Jicate Deployment Service", href: "/apollo" },
 ];
 
 /* ---------------------------------------------------------------------------
- * §4 — Top-level nav items (canonical IA for this clone).
+ * §4 — Top-level nav items (canonical IA).
  * ------------------------------------------------------------------------- */
 
 export const primaryNav: NavItem[] = [
@@ -124,37 +123,25 @@ export const megaMenuFeatured: FeaturedCard[] = [
  * Company / Legal). Service + Industry columns reuse the shared arrays above.
  * ------------------------------------------------------------------------- */
 
-/* Footer mega-directory columns — transcribed VERBATIM from the reference
- * footer screenshot (OFFERINGS / IMPACT STUDIOS / CAPABILITIES / DOCUMENTS).
- * `href: "#"` is an intentional placeholder: the reference link targets are not
- * known, so we don't fabricate URLs — only the visible labels are reproduced. */
+/* Footer directory columns. */
 export const footerColumns: FooterColumn[] = [
   {
     heading: "OFFERINGS",
     links: [
-      { label: "Indian Tech Fellowship", href: "/american-tech-fellowship" },
       { label: "Anti-Money Laundering", href: "/anti-money-laundering" },
       { label: "Automotive & Mobility", href: "/automotive-mobility" },
       { label: "Construction", href: "/construction" },
       { label: "Data Protection", href: "/data-protection" },
-      { label: "Defense", href: "/defense" },
       { label: "Energy", href: "/energy" },
-      { label: "Federal Health", href: "/federal-health" },
-      { label: "FedStart", href: "/fedstart" },
       { label: "Financial Services", href: "/financial-services" },
       { label: "Food & Beverage", href: "/food-and-beverage" },
       { label: "Jicate for Builders", href: "/jicate-for-builders" },
-      { label: "Govt Financial Management", href: "/government-financial-management" },
       { label: "Hospital Operations", href: "/jicate-for-hospitals" },
       { label: "Insurance", href: "/insurance" },
-      { label: "Intelligence", href: "/intelligence" },
       { label: "Life Sciences", href: "/life-sciences" },
-      { label: "Mission Manager", href: "/mission-manager" },
       { label: "Procurement", href: "/procurement" },
       { label: "Rail", href: "/jicate-for-rail" },
-      { label: "Readiness", href: "/readiness" },
       { label: "Retail", href: "/retail" },
-      { label: "Secure Collaboration", href: "/secure-collaboration" },
       { label: "Semiconductors", href: "/semiconductors" },
       { label: "Supply Chain", href: "/supply-chain" },
       { label: "Telecommunications", href: "/telecommunications" },
@@ -171,7 +158,6 @@ export const footerColumns: FooterColumn[] = [
       { label: "Dynamic Scheduling", href: "/dynamic-scheduling" },
       { label: "Edge AI", href: "/edge-ai" },
       { label: "Marketplace", href: "/marketplace" },
-      { label: "MetaConstellation", href: "/metaconstellation" },
       { label: "Data Pipelines", href: "/pipeline-builder" },
       { label: "Process Mining", href: "/process-mining" },
       { label: "Real-Time Alerting", href: "/foundry-rules" },

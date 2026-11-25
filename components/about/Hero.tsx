@@ -9,7 +9,7 @@ import { GiantHeading } from "./parts";
 /**
  * Hero — "Why We're Here": a 100px H1 on the left with a 34px belief line on
  * the right, then a full-width header image, then an inset (col 2) block of
- * lead + body paragraphs. LIGHT. Matches palantir.com/about top section.
+ * lead + body paragraphs. LIGHT.
  */
 export function Hero() {
   return (

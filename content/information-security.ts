@@ -1,9 +1,4 @@
-/**
- * Content for the /information-security page — a design clone of
- * palantir.com/information-security. LIGHT theme, brand swapped to Jicate.
- * Marketing prose is genericised PLACEHOLDER (user will swap); the compliance
- * framework NAMES are industry standards kept as illustrative placeholders.
- */
+/** Content for the /information-security page. */
 
 const BASE = "/information-security";
 
@@ -43,28 +38,9 @@ export type ProgramTab = {
 
 export const program: ProgramTab[] = [
   {
-    id: "compliance-and-accreditation",
-    label: "Compliance and Accreditation",
-    eyebrow: "01 — Compliance and Accreditation",
-    blocks: [
-      {
-        type: "para",
-        text: "Our customers rely on Jicate to power their most critical work, and we're dedicated to building platforms they can trust. Our cloud offerings are managed, standardized, tested, and externally audited, with robust access controls that scale to meet customer demand.",
-      },
-      {
-        type: "para",
-        text: "Jicate is an active member of leading vendor-security alliances and partners with respected red-team and security-research organizations.",
-      },
-      {
-        type: "para",
-        text: "For more information on compliance, accreditation, and trust, please visit our Trust Portal.",
-      },
-      ],
-  },
-  {
     id: "open-source-contribution",
     label: "Open Source Contribution",
-    eyebrow: "02 — Open Source Contribution",
+    eyebrow: "01 — Open Source Contribution",
     blocks: [
       {
         type: "para",
@@ -77,25 +53,6 @@ export const program: ProgramTab[] = [
       {
         type: "para",
         text: "Explore our work on our public repositories.",
-      },
-    ],
-  },
-  {
-    id: "penetration-testing",
-    label: "Penetration Testing",
-    eyebrow: "03 — Penetration Testing",
-    blocks: [
-      {
-        type: "para",
-        text: "Our platforms are continuously tested by internal red teams and independent third-party assessors. We treat every finding as an opportunity to improve.",
-      },
-      {
-        type: "para",
-        text: "We run a responsible-disclosure and bug-bounty program that invites security researchers to test our systems and report issues directly to our team.",
-      },
-      {
-        type: "para",
-        text: "Testing is performed against production-grade environments so that results reflect real-world conditions.",
       },
     ],
   },

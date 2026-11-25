@@ -7,7 +7,7 @@ import { GiantHeading, InkLink } from "./parts";
 /**
  * Hero — an oversized title, then a two-column split: a hero image on the left
  * and a stack of lead paragraphs with a "Start the conversation" link on the
- * right (reference parity).
+ * right.
  */
 export function Hero() {
   return (

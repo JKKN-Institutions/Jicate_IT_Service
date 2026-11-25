@@ -31,7 +31,6 @@ export function Closing() {
             <span className="text-offwhite">{closing.emphasis.b}</span>
             {closing.emphasis.after}
           </p>
-          <p className="text-offwhite">{closing.tagline}</p>
         </Reveal>
       </Container>
     </Section>

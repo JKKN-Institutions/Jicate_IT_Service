@@ -3,7 +3,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { spotlightBand } from "@/content/marketplace";
 
 /**
- * Full-width media band under the hero (reference parity). Renders a single
+ * Full-width media band under the hero. Renders a single
  * full-width image; the earlier "Play Video" affordance and gradient placeholder
  * were removed per request so only the image shows.
  */

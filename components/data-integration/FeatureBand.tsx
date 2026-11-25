@@ -6,7 +6,7 @@ import type { FeatureBand as FeatureBandData } from "@/content/data-integration"
 import { GiantHeading, InkLink } from "./parts";
 
 /**
- * Reusable big-headline capability band (reference parity).
+ * Reusable big-headline capability band.
  *
  * Layout: a giant section heading, then a 2-column split — a sticky product
  * screenshot on one side and a stack of capability blocks (uppercase label +

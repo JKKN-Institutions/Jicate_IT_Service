@@ -1,24 +1,8 @@
-/**
- * Content for the /energy page — a faithful DESIGN rebuild of the Palantir
- * "Jicate Data Platform for Energy" reference page, mapped onto this project's design system.
- * Short functional headings/labels are kept; body copy is written in Jicate's own
- * voice (placeholder text the user will swap), not copied from the reference.
- * Types are local so the page touches no shared files.
- *
- * Assets in /public/energy: partner logos (Asset_37BP / Asset_32KM / Asset_44Exx /
- * Asset_46son2 / Asset_45tra), Asset_27energy diagram, grid-platforms, several
- * shutterstock_* photos and the *_Cutdown / Timeseries .mp4 videos.
- */
+/** Content for the /energy page. */
 
 export interface CTA {
   label: string;
   href: string;
-}
-
-export interface Partner {
-  logo: string;
-  alt: string;
-  bullets: string[];
 }
 
 export interface Column {
@@ -37,7 +21,6 @@ export interface ImageCard {
 /* ------------------------------- sub-nav --------------------------------- */
 
 export const subNav: CTA[] = [
-  { label: "Our Partners", href: "#our-partners" },
   { label: "Oil & Gas", href: "#oil-and-gas" },
   { label: "Renewables", href: "#renewables" },
   { label: "Carbon", href: "#carbon" },
@@ -69,56 +52,7 @@ export const about = {
     "With the Business Data Model, users can chain models together across workflows, teams, and organizational units to simulate operations and optimize decisions, and to orchestrate model-driven actions across existing systems.",
   ],
   diagram: "/energy/Asset_27energy.png",
-  diagramAlt: "Energy ontology diagram",
-};
-
-/* ------------------------------- partners -------------------------------- */
-
-export const partners = {
-  heading: "Our Partners",
-  items: [
-    {
-      logo: "/energy/Asset_37BP.png",
-      alt: "Partner logo",
-      bullets: [
-        "Jicate and our partner have worked together for years, with our software acting as a key accelerant in their digital transformation.",
-        "The partnership has yielded concrete results in operations management, asset allocation, strategic planning, and procurement.",
-        "Through model chaining and optimization, the platform has helped capture significant additional production and revenue per year.",
-      ],
-    },
-    {
-      logo: "/energy/Asset_32KM.png",
-      alt: "Partner logo",
-      bullets: [
-        "Our partner deployed the platform to address challenges ranging from meeting volatile energy demands to integrating disparate datasets.",
-        "Their Decision Support Tool for a regional energy market, built on the platform, led to better data consistency and speed of extraction, improving response to market needs.",
-      ],
-    },
-    {
-      logo: "/energy/Asset_44Exx.png",
-      alt: "Partner logo",
-      bullets: [
-        "Our partner is adding powerful new features to its condition-monitoring service through working with Jicate.",
-        "With the platform, they can use a much greater range of historical data to generate insights and recommendations, while fleet managers compare performance across the fleet in a fully anonymous way.",
-      ],
-    },
-    {
-      logo: "/energy/Asset_46son2.png",
-      alt: "Partner logo",
-      bullets: [
-        "A global renewable energy producer deployed the platform across solar sites to radically digitize production processes and reduce plant downtime.",
-        "They now receive immediate notification of trackers in need of maintenance and expect to reduce revenue losses associated with tracker failures.",
-      ],
-    },
-    {
-      logo: "/energy/Asset_45tra.png",
-      alt: "Partner logo",
-      bullets: [
-        "Our partner adopted the platform to create a Global Carbon Data Consortium.",
-        "The platform is configured to provide consortium partners with an accurate calculation of carbon intensity across supply chains, beginning with crude oil and refined products.",
-      ],
-    },
-  ] as Partner[],
+  diagramAlt: "Energy data model diagram",
 };
 
 /* -------------------------------- oil & gas ------------------------------ */
@@ -128,16 +62,8 @@ export const oilGas = {
   title: "Oil & Gas",
   intro: {
     image: "/energy/grid-platforms.png",
-    alt: "Energy ontology thumbnail",
+    alt: "Energy data model thumbnail",
     body: "The Business Data Model transforms your digital assets — including data, models, and processes — into a dynamic, actionable representation of your business for all users to leverage in operations.",
-  },
-  upstream: {
-    heading: "Upstream",
-    video: "/energy/Energy_Page_Apache_Cutdown.mp4",
-    quoteEyebrow: "Partnership-Driven Transformation",
-    quote:
-      "“When problems come to us, or there is a situation in the business or a trend or a development, those now get judged against the platform as a ‘Tier 1’ solution.”",
-    attribution: "— CIO, Energy Operator",
   },
   offshore: {
     heading: "Offshore",
@@ -145,14 +71,14 @@ export const oilGas = {
       {
         title: "Monitoring",
         items: [
-          "By integrating data and models into your ontology, visualize all the subsystems that comprise the production value chain — from wells to the topside facility.",
+          "By integrating data and models into your data model, visualize all the subsystems that comprise the production value chain — from wells to the topside facility.",
           "Navigate through interactive process flow diagrams to see equipment links and real-time sensor data that shows how fluids travel through the network.",
           "Physics-based models that run every hour compare real sensor data with simulated data to estimate model accuracy and health.",
         ],
       },
       {
         title: "Simulation",
-        lead: "Using your ontology, perform “what-if” simulations within individual systems — from subsea networks through topside export.",
+        lead: "Using your data model, perform “what-if” simulations within individual systems — from subsea networks through topside export.",
         items: [
           "Within an export compression subsystem, an engineer sees all sensor data associated with each piece of production equipment: control valves, compressors, scrubbers, and heat exchanges.",
           "The engineer clicks on an individual component to run a simulation — for example, increasing the suction pressure on a compressor.",
@@ -163,7 +89,7 @@ export const oilGas = {
         title: "Optimization",
         lead: "Chain together scenarios from distinct models to understand operational effects across the value chain.",
         items: [
-          "With your ontology, you can see the consequences of a decision not only within one system but across the entire value chain — from sandface to export.",
+          "With your data model, you can see the consequences of a decision not only within one system but across the entire value chain — from sandface to export.",
           "The Business Data Model integrates multiple simulation models and custom logic to give engineers a single language to understand and optimize facilities in their entirety.",
           "The Business Data Model captures and stores the output of every simulation to better inform future engineering and business decisions.",
         ],
@@ -172,7 +98,6 @@ export const oilGas = {
   },
   onshore: {
     heading: "Onshore",
-    video: "/energy/Oil_Gas_Timeseries_V6__1_.mp4",
     lead: "Create a holistic view of your assets",
     body: "Integrate accounting, land, planning, business development, reserves, and operations data into the Business Data Model.",
     bullets: [
@@ -214,34 +139,18 @@ export const oilGas = {
       {
         title: "Identification of irregularities",
         items: [
-          "With your ontology you have an all-encompassing picture of financial, land, and operational data — making it easy to identify, investigate, and correct discrepancies.",
+          "With your data model you have an all-encompassing picture of financial, land, and operational data — making it easy to identify, investigate, and correct discrepancies.",
         ],
       },
     ] as Column[],
-    spotlight: {
-      eyebrow: "Spotlight: AI-Powered Drill Rig Optimization",
-      image: "/energy/shutterstock_361926230.jpg",
-      alt: "Scheduling spotlight",
-      caption:
-        "↳ In conversation at a leading industry forum, our leaders discuss how Jicate is making AI operational in the oil and gas sector, and for critical institutions across the globe.",
-    },
   },
   midstream: {
     heading: "Midstream",
-    chart: "/energy/2022_10_Santa_Gertrudis_Impact_Study_chart_vF.png",
-    chartAlt: "Decision support tool chart",
-    chartHeading: "Building a Decision Support Tool",
-    chartBody:
-      "A Decision Support Tool, created on the platform, combines weather data and the power forecast to predict gas demand for a regional market, improving the ability to meet demand for rapid-response fuel.",
     liquidsHeading: "Liquids & Gas",
     liquidsBody: [
       "Companies spend immense amounts of time and money on manual, siloed programs to manage DRA, power costs and contracts, flow rates and production, and maintenance.",
       "While the silos between operational and financial programs cause significant value degradation, they also present opportunities for integration and optimization. Integrating systems, however, can be a labor-intensive, manual process.",
     ],
-    caseImage: "/energy/shutterstock_1811876539.jpg",
-    caseHeading: "Case Study: Energy Transportation & Midstream Service Provider",
-    caseBody:
-      "A leading energy transportation and midstream service provider deployed the platform to digitally connect and model their value chain — from gas processing plants to storage to land and sea shipping routes — with the goal of identifying breaks before they cause disruption.",
     cards: [
       {
         title: "Preventative Maintenance",
@@ -265,24 +174,19 @@ export const oilGas = {
   },
   downstream: {
     heading: "Downstream",
-    video: "/energy/Energy_Page_Castrol_Cutdown__1_.mp4",
-    quoteEyebrow: "Smoothing Supply Chain Shocks",
-    quote:
-      "“The combination of flexibility and velocity enables us to move ahead of disruption and get back from a crisis situation into business as usual really quickly — and that’s important, especially in difficult times when resources are limited.”",
-    attribution: "— SVP Marketing, Lubricants Brand",
     refineryHeading: "Refinery / Chemical Plant Operations",
     refineryColumns: [
       {
         title: "Process Monitoring & Loss Categorization",
         items: [
-          "Integrate sensor data into your ontology and use rules & real-time alerting to monitor your plant’s day-to-day operations.",
-          "Detect and action any deviations, with full writeback to your ontology for continuous improvement and streamlined reporting.",
+          "Integrate sensor data into your data model and use rules & real-time alerting to monitor your plant’s day-to-day operations.",
+          "Detect and action any deviations, with full writeback to your data model for continuous improvement and streamlined reporting.",
         ],
       },
       {
         title: "Advanced Analytics",
         items: [
-          "With all your data and models integrated into your ontology, perform analyses using sources that have never been connected before.",
+          "With all your data and models integrated into your data model, perform analyses using sources that have never been connected before.",
           "This empowers engineers to run analyses from run-length optimization to predictive maintenance, and to connect production processes with executive decision-making.",
         ],
       },
@@ -296,7 +200,7 @@ export const oilGas = {
       {
         title: "Simulation",
         items: [
-          "Engineers build process flow diagrams using the plant ontology, linked to external physics-based models.",
+          "Engineers build process flow diagrams using the plant data model, linked to external physics-based models.",
           "They can pose “what-if” questions to test and optimize set points, run times, and maintenance plans, comparing theoretical values with actuals.",
         ],
       },
@@ -316,12 +220,6 @@ export const oilGas = {
 export const renewables = {
   id: "renewables",
   title: "Renewables",
-  videoThumb: "/energy/shutterstock_1663557949.jpg",
-  logo: "/energy/Asset_46son2.png",
-  logoAlt: "Partner logo",
-  quote:
-    "As the world transitions to renewable energy sources, our goal is to implement the platform across every facet of the company so our teams can rely on real-time data and fully integrated tools to make critical business decisions around producing clean energy.",
-  link: { label: "Learn more about how our partner is deploying the platform", href: "#" } as CTA,
   image: "/energy/shutterstock_1454940068.jpg",
   imageAlt: "Wind turbines at sunset",
   columns: [
@@ -349,11 +247,6 @@ export const renewables = {
 export const carbon = {
   id: "carbon",
   title: "Carbon",
-  videoThumb: "/energy/shutterstock_1811876539.jpg",
-  logos: [
-    { src: "/energy/Asset_37BP.png", alt: "Partner logo", caption: "Jicate supports our partner as it works toward its ambition to become a net-zero company, and to help the world get to net zero." },
-    { src: "/energy/Asset_44Exx.png", alt: "Partner logo", caption: "An aviation ecosystem powered by the platform serves thousands of users across many participating airlines." },
-  ],
   sustainability: {
     heading: "Sustainability",
     lead: "Understand your footprint. Stay ahead of regulations. Make informed decarbonization decisions.",
@@ -384,32 +277,6 @@ export const carbon = {
         ],
       },
     ] as Column[],
-  },
-  caseStudies: {
-    heading: "Emissions Tracking & Decarbonization for Oil & Gas",
-    eyebrow: "Case Studies",
-    items: [
-      {
-        title: "Strategic Decarbonization",
-        body: "Senior decision-makers use the platform to assess alternative decarbonization pathways, simulating how their businesses perform in a range of future conditions and adjusting portfolios to meet decarbonization goals.",
-      },
-      {
-        title: "Real-Time Emissions Metrics",
-        body: "A major energy company uses the platform to track Scope 1 and 2 emissions across every part of its business — derived from granular operational information and refreshed automatically as the business changes.",
-      },
-    ],
-  },
-  agora: {
-    heading: "Carbon Supply Chain Ecosystem",
-    productName: "Agora by Jicate",
-    body: "Understand your commodity supply-chain emissions to enable private benchmarking, alternative-pathway analysis, and carbon-price modeling.",
-    image: "/energy/grid-platforms.png",
-    alt: "Agora demo thumbnail",
-    paragraphs: [
-      "Customers increasingly ask us for visibility into the lifecycle emissions of the commodities they move as they prepare for regulated Scope 3 reporting and, more generally, for net zero.",
-      "Our partner adopted the platform to create a Global Carbon Data Consortium: Agora. Consortium partners bring together data from across their supply chains into a collaborative environment and model it around existing operational structures.",
-      "As more data is integrated, the platform enables rapid scaling and iteration — pathways have scaled from tens of thousands to millions in a matter of weeks.",
-    ],
   },
 };
 

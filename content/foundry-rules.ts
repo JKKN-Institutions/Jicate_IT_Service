@@ -1,21 +1,4 @@
-/**
- * Content for the /foundry-rules page — a faithful design rebuild of the
- * reference "Rules and Alerts & Real-Time Alerting" page, mapped onto this
- * project's design system. Layout/visual treatment matches the reference 1:1;
- * all body copy is ORIGINAL Jicate content written in our own words (only short
- * functional labels/headings are kept). The testimonial is a neutral
- * placeholder. The user edits final wording.
- *
- * Types are declared locally so the page is fully self-contained.
- *
- * Local media (in /public/foundry-rules):
- *   FoundryRules_KeyFeatures.png                    — Key Features image
- *   Asset_22RULES.png / Asset_23RULES.png /
- *   Asset_24RULES.png                               — How It Works step images
- *   Asset_25bp.png                                  — testimonial logo
- *   Foundry_Rules_-_applications_2_-_cropped.jpg    — Applications image
- *   (hero video poster Asset_21RULES not shipped — placeholder used)
- */
+/** Content for the /foundry-rules page. */
 
 /* ------------------------------ shared shapes ----------------------------- */
 
@@ -65,29 +48,17 @@ export const spotlightBand = {
     "© 2026 Jicate IT Service. The information in this video is provided for informational purposes only. Actual results and experiences may vary.",
 };
 
-/* ------------------------------- quote band ------------------------------- */
-
-export const quote = {
-  logo: "/foundry-rules/Asset_25bp.png",
-  logoAlt: "Customer logo",
-  paragraphs: [
-    "We needed a way inside Jicate Data Platform to surface trends and events across weeks or months from our streaming data. With well over a hundred rules already running, the team can monitor a huge range of equipment in real time.",
-    "Rules and Alerts & Real-Time Alerting retired a pile of bespoke dashboards for us. Its flexible, low-code approach made it easy for people across the company to pick up and roll out.",
-  ],
-  attribution: "— Principal Product Manager, Energy",
-};
-
 /* ------------------------------ key features ------------------------------ */
 
 export const keyFeatures = {
   heading: "Key Features",
-  image: "/foundry-rules/FoundryRules_KeyFeatures.png",
+  image: "/foundry-rules/key-features.png",
   alt: "Rules and Alerts key features",
   ontologyLink: { label: "Jicate Data Platform Business Data Model", href: "#foundry-ontology" } satisfies CTA,
   features: [
     {
       title: "Flexible Rule Authoring.",
-      body: "Build rules on top of datasets, ontology objects, time series, and more — with the Jicate Data Platform Business Data Model giving every rule a real-world picture of your business to work from.",
+      body: "Build rules on top of datasets, data model objects, time series, and more — with the Jicate Data Platform Business Data Model giving every rule a real-world picture of your business to work from.",
     },
     {
       title: "Backtesting on Historical Data.",
@@ -141,7 +112,7 @@ export const howItWorks = {
 
 export const applications = {
   heading: "Applications",
-  image: "/foundry-rules/Foundry_Rules_-_applications_2_-_cropped.jpg",
+  image: "/foundry-rules/applications.jpg",
   alt: "Rules and Alerts applications",
   useCases: [
     {

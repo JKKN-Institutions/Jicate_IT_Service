@@ -3,7 +3,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { spotlightBand } from "@/content/dynamic-scheduling";
 
 /**
- * Full-width media band under the hero (reference parity). The reference is a
+ * Full-width media band under the hero. The reference is a
  * LIGHT composition: a product screenshot fills the left, a dark-text caption
  * sits on the right, a "Play Video" affordance anchors the bottom-left, and a
  * small wordmark + copyright line sits bottom-right. The product poster isn't

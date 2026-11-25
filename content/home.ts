@@ -1,41 +1,13 @@
-/**
- * Homepage section content for Jicate IT Service.
- *
- * All copy is ORIGINAL Jicate IT Service content, transcribed verbatim from
- * design/07-homepage-content-architecture.md:
- *   §3  announcement   ·  §5 hero       ·  §6 caseStudy
- *   §7  servicesIntro + services        ·  §8 manifesto
- *   §9  testimonials   ·  §10 splitCTA
- *
- * Import with: import { hero, services, ... } from "@/content/home";
- */
+/** Content for the /home page. */
 import type {
-  Announcement,
   Hero,
-  CaseStudy,
   ServicesIntro,
   ServiceItem,
   ServiceSlide,
   Manifesto,
   SoftwareStatement,
-  Testimonial,
   SplitCTAHalf,
 } from "@/types";
-
-/* §3 — Announcement bar -------------------------------------------------- */
-
-export const announcement: Announcement = {
-  message:
-    "Jicate is now SOC 2 Type II certified — see what it means for your data.",
-  link: {
-    label: "Read the report",
-    href: "/resources/soc-2-report",
-    arrow: "external",
-    external: true,
-  },
-  dismissLabel: "Dismiss announcement",
-  storageKey: "jicate.announcement.v1",
-};
 
 /* §5 — Hero -------------------------------------------------------------- */
 
@@ -55,24 +27,6 @@ export const hero: Hero = {
     arrow: "drillin",
   },
   poster: "/hero/poster.svg",
-};
-
-/* §6 — Featured case-study band ------------------------------------------ */
-
-export const caseStudy: CaseStudy = {
-  eyebrow: "CASE STUDY · HEALTHCARE",
-  headline: "A regional clinic network cut unplanned downtime by 40%",
-  caption:
-    "Jicate consolidated three help desks into one managed service, hardened the network, and moved records to a compliant cloud — without a single missed appointment.",
-  metrics: [
-    { value: "40%", label: "LESS DOWNTIME" },
-    { value: "< 8 min", label: "AVG. RESPONSE" },
-  ],
-  link: {
-    label: "Read the case study",
-    href: "/case-studies/clinic-network-downtime",
-    arrow: "drillin",
-  },
 };
 
 /* §7 — Services numbered scrolly ----------------------------------------- */
@@ -207,7 +161,7 @@ export const services: ServiceItem[] = [
     index: "/0.3",
     earmark: "circle",
     title: "Cybersecurity",
-    body: "Layered defense built around your risk: managed detection and response, identity, endpoint hardening, and audit-ready compliance for SOC 2, HIPAA, and ISO 27001.",
+    body: "Layered defense built around your risk: managed detection and response, identity, and endpoint hardening.",
     link: {
       label: "Explore security",
       href: "/services/cybersecurity",
@@ -248,7 +202,7 @@ export const softwareStatement: SoftwareStatement = {
   before: "Our software powers real-time, ",
   highlight: "AI-driven",
   after:
-    " decisions in critical government and commercial enterprises in the West, from the factory floors to the front lines.",
+    " decisions.",
 };
 
 export const manifesto: Manifesto = {
@@ -263,10 +217,6 @@ export const manifesto: Manifesto = {
   image: "/home/onsite.jpg",
   imageAlt: "Jicate team on-site",
 };
-
-/* §9 — Testimonials ------------------------------------------------------ */
-
-export const testimonials: Testimonial[] = [];
 
 /* §10 — Split CTA -------------------------------------------------------- */
 

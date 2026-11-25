@@ -7,7 +7,7 @@ import { SectionHeading } from "./parts";
 /**
  * "How it Works" — a top hairline, a 50px heading, then a two-column split: the
  * Ontology diagram on the left and a stack of explanatory paragraphs on the
- * right (reference parity).
+ * right.
  */
 export function HowItWorks() {
   return (

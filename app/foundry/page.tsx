@@ -5,14 +5,12 @@ import {
   OntologySection,
   Collaboration,
   IndustriesSection,
-  GlobalImpact,
-  Awards,
   GetStartedForm,
 } from "@/components/foundry";
 
 export const metadata: Metadata = {
   title: "Jicate Platform",
-  description: "The Ontology-Powered Operating System for the Modern Enterprise.",
+  description: "The Operating System for the Modern Enterprise, Powered by the Business Data Model.",
 };
 
 export default function FoundryPage() {
@@ -22,8 +20,6 @@ export default function FoundryPage() {
       <OntologySection />
       <Collaboration />
       <IndustriesSection />
-      <GlobalImpact />
-      <Awards />
       <GetStartedForm />
       {/* The shared site Footer renders from the root layout. */}
     </main>

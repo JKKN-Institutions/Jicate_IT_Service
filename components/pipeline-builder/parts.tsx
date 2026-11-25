@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 /**
  * Giant heading — Space Grotesk, ~100px desktop, -0.02em tracking, 1.15
- * line-height (reference parity). All major section titles on this page use
+ * line-height. All major section titles on this page use
  * this scale. Line-height is baked into the size token so tailwind-merge can't
  * strip a standalone `leading-*` class.
  */

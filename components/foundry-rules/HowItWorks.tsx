@@ -8,7 +8,7 @@ import { SectionHeading } from "./parts";
 /**
  * "How It Works" — a section heading, then three steps. Each step is a
  * 2-column row: a 34px heading + body on one side and the supporting screenshot
- * on the other. Media side alternates per step (reference parity).
+ * on the other. Media side alternates per step.
  */
 export function HowItWorks() {
   return (

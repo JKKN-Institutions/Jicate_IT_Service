@@ -6,7 +6,7 @@ import { SubHeading } from "./parts";
 
 /**
  * Intro — a large tagline on the left and two body paragraphs on the right
- * (reference parity).
+ *.
  */
 export function Intro() {
   return (

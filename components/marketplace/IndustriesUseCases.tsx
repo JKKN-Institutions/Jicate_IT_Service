@@ -1,17 +1,15 @@
 import { Container, Section } from "@/components/ui";
 import { Reveal } from "@/components/motion/Reveal";
-import { industries, useCases } from "@/content/marketplace";
+import { industries } from "@/content/marketplace";
 
 import { MidHeading } from "./parts";
 
 /**
- * "Industries" + "Example Use Cases" — two side-by-side columns, each a 34px
- * heading over a vertical list (industries as plain items, use cases as links)
- * with `↳` markers (reference parity).
+ * "Industries" — a 34px heading over a vertical list with `↳` markers.
  */
 export function IndustriesUseCases() {
   return (
-    <Section className="!pt-0 !pb-[100px]" aria-label="Industries and use cases">
+    <Section className="!pt-0 !pb-[100px]" aria-label="Industries">
       <Container>
         <div className="grid grid-cols-1 gap-x-[60px] gap-y-[48px] desktop:grid-cols-2">
           {/* Industries */}
@@ -29,20 +27,6 @@ export function IndustriesUseCases() {
             </ul>
           </Reveal>
 
-          {/* Example Use Cases */}
-          <Reveal index={1} className="flex flex-col gap-[28px]">
-            <MidHeading>{useCases.heading}</MidHeading>
-            <ul className="flex flex-col gap-[12px]">
-              {useCases.items.map((item) => (
-                <li key={item.label} className="flex items-baseline gap-[10px] text-body text-ink">
-                  <span aria-hidden className="text-ink-light">
-                    ↳
-                  </span>
-                  {item.label}
-                </li>
-              ))}
-            </ul>
-          </Reveal>
         </div>
       </Container>
     </Section>

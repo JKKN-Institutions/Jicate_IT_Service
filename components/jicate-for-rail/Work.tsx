@@ -7,7 +7,7 @@ import { SectionHeading, Eyebrow } from "./parts";
 /**
  * "Our Work" — a top hairline, a 50px heading, then a four-column grid of
  * categories, each with an eyebrow label and a list of workflow items
- * (reference parity).
+ *.
  */
 export function Work() {
   return (

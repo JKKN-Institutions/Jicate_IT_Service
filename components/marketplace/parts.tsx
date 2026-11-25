@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 /**
  * Giant hero heading — Space Grotesk, ~100px desktop, -0.02em tracking,
- * 1.15 line-height (reference parity). Line-height is baked into the size token
+ * 1.15 line-height. Line-height is baked into the size token
  * so tailwind-merge can't strip a standalone `leading-*` class.
  */
 export function GiantHeading({

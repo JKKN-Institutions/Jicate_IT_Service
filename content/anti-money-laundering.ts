@@ -1,14 +1,4 @@
-/**
- * Content for the /anti-money-laundering page — a faithful DESIGN rebuild of the
- * AML offering reference page, mapped onto this project's design system. Short
- * functional headings/labels are kept; all body copy is written in Jicate's own
- * voice (placeholder text the user will swap), not copied from the reference.
- * Types are local so the page touches no shared files.
- *
- * Assets in /public/anti-money-laundering: Security.jpg, shutterstock_354301223.jpg,
- * SDDI.jpg (the three "AML in Action" stat cards). The hero video thumbnail and
- * the "What sets us apart" image are not shipped — rendered as placeholders.
- */
+/** Content for the /anti-money-laundering page. */
 
 export interface CTA {
   label: string;
@@ -129,7 +119,7 @@ export const whatSetsApart = {
       ],
     },
     {
-      title: "Government-Grade Security",
+      title: "Security",
       paragraphs: [
         "Built from the start with privacy and civil-liberties concerns front of mind, the platform includes unusually granular security controls.",
         "All data is encrypted in transit and at rest, with high auditability and role-based access control, so teams can access and share the data they need without compromising security.",

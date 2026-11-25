@@ -6,7 +6,7 @@ import { GiantHeading } from "./parts";
 
 /**
  * "About Our Work" — a giant heading, then a two-column split: a lead paragraph
- * on the left and a supply-chain network diagram on the right (reference parity).
+ * on the left and a supply-chain network diagram on the right.
  */
 export function About() {
   return (

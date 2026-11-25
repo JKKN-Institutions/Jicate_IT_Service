@@ -3,7 +3,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { cn } from "@/lib/utils";
 import type { Column } from "@/content/energy";
 
-import { GiantHeading, ArrowItem, Eyebrow } from "./parts";
+import { GiantHeading, ArrowItem } from "./parts";
 
 /** Giant anchor section divider heading (Oil & Gas / Renewables / Carbon). */
 export function AnchorTitle({ id, children }: { id: string; children: React.ReactNode }) {
@@ -96,42 +96,3 @@ export function VideoBlock({
   );
 }
 
-/** Video + large pull-quote + attribution (Upstream / Downstream case studies). */
-export function VideoQuote({
-  eyebrow,
-  heading,
-  video,
-  quote,
-  attribution,
-}: {
-  eyebrow?: string;
-  heading?: string;
-  video: string;
-  quote: string;
-  attribution: string;
-}) {
-  return (
-    <Section className="bg-canvas" aria-label={heading ?? "Case study"}>
-      <Container>
-        {eyebrow && (
-          <Reveal className="mb-l">
-            <Eyebrow>{eyebrow}</Eyebrow>
-          </Reveal>
-        )}
-        <Reveal>
-          <VideoBlock src={video} />
-        </Reveal>
-        <div className="mt-2xl grid grid-cols-1 gap-l desktop:grid-cols-[1fr_auto] desktop:items-end">
-          <Reveal>
-            <p className="max-w-[40ch] font-display text-[clamp(1.5rem,1rem+1.7vw,2.25rem)] font-normal leading-[1.12] tracking-[-0.01em] text-ink">
-              {quote}
-            </p>
-          </Reveal>
-          <Reveal index={1}>
-            <p className="text-body-lg text-ink-light desktop:text-right">{attribution}</p>
-          </Reveal>
-        </div>
-      </Container>
-    </Section>
-  );
-}

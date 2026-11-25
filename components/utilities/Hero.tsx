@@ -3,13 +3,12 @@ import { Reveal } from "@/components/motion/Reveal";
 import { hero } from "@/content/utilities";
 
 import { GiantHeading } from "./parts";
-import { LoopVideo } from "./media";
 import { ScheduleDemoLink } from "./ScheduleDemoLink";
 
 /**
  * Hero — an oversized title on the left with a tagline + "Schedule a Demo" link
  * on the right, then a full-width hero video band with a "Play Video" pill
- * (reference parity). LIGHT.
+ *. LIGHT.
  */
 export function Hero() {
   return (
@@ -26,14 +25,6 @@ export function Hero() {
           </div>
         </Reveal>
 
-        <Reveal className="relative mt-[clamp(40px,5vw,64px)] aspect-[1382/755] w-full overflow-hidden rounded-[2px] bg-ink">
-          <LoopVideo src={hero.video} />
-
-          <span className="pointer-events-none absolute bottom-[20px] left-[20px] inline-flex items-center gap-xs rounded-[2px] bg-black/55 px-[14px] py-[10px] text-[14px] text-white backdrop-blur-sm">
-            <span aria-hidden className="grid size-[18px] place-items-center">▶</span>
-            {hero.playLabel}
-          </span>
-        </Reveal>
       </Container>
     </Section>
   );

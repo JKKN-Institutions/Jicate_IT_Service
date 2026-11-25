@@ -1,15 +1,4 @@
-/**
- * Content for the /streaming page — a faithful DESIGN rebuild of the Foundry
- * Streaming reference page, mapped onto this project's design system. Match the
- * layout/visuals and keep the short functional headings/labels; body copy and
- * testimonial quotes are written in Jicate's own voice (placeholders the user
- * can swap). Types are local so the page touches no shared files.
- *
- * Assets in /public/streaming: shutterstock_1832815558_copy.jpg (hero),
- * Puddle.png, Real_Time_Illo__1_.png, My_project__2_/4_/12_/7_/11_/13_.jpg,
- * shutterstock_1189545343.jpg (use-case cards),
- * Palantir_and_Sonnedix_-_Ontology_Modelling_-_Cutdown.mp4, sompo_palantir_clip_01_.mov.
- */
+/** Content for the /streaming page. */
 
 export interface CTA {
   label: string;
@@ -33,15 +22,6 @@ export interface AccordionItem {
   title: string;
   body: string;
   features?: Feature[];
-}
-
-export interface CaseStudy {
-  video: string;
-  title: string;
-  body: string;
-  link: CTA;
-  quote: string;
-  author: string;
 }
 
 /* ---------------------------------- hero --------------------------------- */
@@ -70,7 +50,7 @@ export const statement = {
     },
     {
       title: "Data in context, always.",
-      body: "Bind streaming data to your ontology's objects — such as a manufacturing robot, wind turbine, or hospital bed. The Business Data Model fully contextualizes low-latency data alongside other relevant batch data (e.g., ERP and MES systems), and enriches it with AI/ML models.",
+      body: "Bind streaming data to your data model's objects — such as a manufacturing robot, wind turbine, or hospital bed. The Business Data Model fully contextualizes low-latency data alongside other relevant batch data (e.g., ERP and MES systems), and enriches it with AI/ML models.",
     },
     {
       title: "Power closed-loop action.",
@@ -84,7 +64,7 @@ export const statement = {
 export const realTimeOntology = {
   heading: "Real-Time Business Data Model",
   image: "/streaming/Real_Time_Illo__1_.png",
-  alt: "Real-time ontology illustration",
+  alt: "Real-time data model illustration",
   accordion: [
     {
       index: "01",
@@ -93,7 +73,7 @@ export const realTimeOntology = {
       features: [
         {
           title: "Transform Streaming Data with Data Pipelines",
-          body: "Transform and process streaming data at scale. Data Pipelines combines the ease of low-code with rigorous change management and health monitoring. Filter, join, and aggregate data streams, and land the outputs directly in your ontology.",
+          body: "Transform and process streaming data at scale. Data Pipelines combines the ease of low-code with rigorous change management and health monitoring. Filter, join, and aggregate data streams, and land the outputs directly in your data model.",
         },
         {
           title: "Conduct Flink-Based Transforms",
@@ -108,7 +88,7 @@ export const realTimeOntology = {
     {
       index: "02",
       title: "Activate the Real-Time Business Data Model",
-      body: "Bring low-latency data to life as live ontology objects, ready to power alerts, analytics, and the applications your operators use every day.",
+      body: "Bring low-latency data to life as live data model objects, ready to power alerts, analytics, and the applications your operators use every day.",
     },
     {
       index: "03",
@@ -166,32 +146,6 @@ export const useCases = {
       body: "Quickly triage fraud alerts with a holistic understanding across transaction, relationship, counter-party, KYC, and sanctions risk.",
     },
   ] as UseCase[],
-};
-
-/* -------------------------- Streaming in Action -------------------------- */
-
-export const inAction = {
-  heading: "Jicate Data Platform Streaming in Action",
-  caseStudies: [
-    {
-      video: "/streaming/Sonnedix_-_Ontology_Modelling_-_Cutdown.mp4",
-      title: "Powering the Global Energy Transition at Sonnedix",
-      body: "Sonnedix uses the Business Data Model to digitally represent its real-world assets in real-time and more fully understand production patterns. With remote monitoring of solar fields, asset managers can immediately detect and respond to solar trackers in need of maintenance.",
-      link: { label: "Learn More", href: "#" },
-      quote:
-        "Being able to join all our data streams via the Business Data Model lets us model complex scenarios that were previously inaccessible to us.",
-      author: "Head of AI Implementation, Sonnedix",
-    },
-    {
-      video: "/streaming/sompo_clip_01_.mov",
-      title: "Improving Elder Care at SOMPO",
-      body: "The Business Data Model empowers SOMPO to understand residents' health holistically and to move from reactivity to proactivity with tailored sensor alerts that measure critical vital signs like sleep, breathing, and pulse rate. Reviewing care plans that once took 30–60 minutes now happens at a glance.",
-      link: { label: "Learn More", href: "#" },
-      quote:
-        "We had invested in various operational systems and sensor technologies, but the data was siloed and not fully utilized. That's when we came across the platform.",
-      author: "CEO of Nursing Care and Seniors Business, SOMPO",
-    },
-  ] as CaseStudy[],
 };
 
 /* ------------------------------ White paper ------------------------------ */

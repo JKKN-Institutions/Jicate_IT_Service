@@ -7,7 +7,7 @@ import { GiantHeading, InkLink } from "./parts";
 /**
  * "Data Integration, Supercharged." — giant heading followed by a 2x2 grid of
  * product cards. Each card: a colored art block on top, a 34px heading, body
- * copy, and an optional inked "Learn more" link (reference parity).
+ * copy, and an optional inked "Learn more" link.
  */
 export function Supercharged() {
   return (

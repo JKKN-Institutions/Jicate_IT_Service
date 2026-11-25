@@ -5,7 +5,7 @@ import { hero } from "@/content/foundry-rules";
 import { GiantHeading } from "./parts";
 
 /**
- * Hero — two-column split (reference parity): the oversized title fills the
+ * Hero — two-column split: the oversized title fills the
  * left rail; a short lead paragraph sits top-right.
  */
 export function FrHero() {

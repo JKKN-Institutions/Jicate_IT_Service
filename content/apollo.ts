@@ -1,11 +1,4 @@
-/**
- * Apollo platform page content for Jicate IT Service (`/apollo`).
- *
- * Layout/structure design-clones the reference Apollo platform page. Short
- * functional labels (section titles, feature names, environment names, nav
- * labels) mirror the reference; longer copy is neutral placeholder — swap
- * before launch. Assets live under `/public/apollo` (scraped from reference).
- */
+/** Content for the /apollo page. */
 import type { ArrowKind } from "@/types";
 
 type Link = { label: string; href: string; arrow?: ArrowKind; external?: boolean };
@@ -16,7 +9,7 @@ export const hero = {
   title: "Jicate Deployment Service",
   heading: "Deploy Software\nBeyond Limits.",
   cta: { label: "Request a demo", href: "#request-a-demo" } as Link,
-  image: "/apollo/apollo-hero.jpg",
+  image: "/apollo/hero.jpg",
   imageAlt: "Jicate Deployment Service",
 };
 
@@ -75,7 +68,7 @@ export const features = {
 
 export const devops = {
   heading: "Your DevOps strategy can make or break your ability to grow →",
-  image: "/apollo/apollo-cube.jpg",
+  image: "/apollo/cube.jpg",
   imageAlt: "Jicate Deployment Service Cube",
 };
 
@@ -83,7 +76,7 @@ export const devops = {
 
 export const exploreSolutions = {
   heading: "Explore Jicate Deployment Service Solutions",
-  // Row-wise order fills the 2-col grid: L/R, L/R, L/R (matches reference).
+  // Row-wise order fills the 2-col grid: L/R, L/R, L/R.
   items: [
     "Multi-cloud, Multi-prem, Private SaaS, and Single Tenant Deployment",
     "Continuous Security & Compliance",
@@ -95,22 +88,15 @@ export const exploreSolutions = {
   watchDemo: { label: "Watch the Demo", href: "#" } as Link,
 };
 
-/* — Federal Government CTA --------------------------------------------- */
-
-export const federal = {
-  heading: "Looking to Deploy Software to the Federal Government?",
-  link: { label: "FedStart", href: "/fedstart", arrow: "drillin" as ArrowKind },
-};
-
 /* — "From one to many environments" carousel --------------------------- */
 
 export const environments = {
   heading: "From one to many environments",
   cards: [
-    { label: "Amazon Web Services", img: "/apollo/env-aws.svg" },
-    { label: "AWS Outposts", img: "/apollo/env-aws-outposts.svg" },
-    { label: "Microsoft Azure", img: "/apollo/env-azure.svg" },
-    { label: "Google Cloud Platform", img: "/apollo/env-gcp.svg" },
+    { label: "Amazon Web Services", img: "/apollo/env-private-cloud.svg" },
+    { label: "AWS Outposts", img: "/apollo/env-private-cloud.svg" },
+    { label: "Microsoft Azure", img: "/apollo/env-private-cloud.svg" },
+    { label: "Google Cloud Platform", img: "/apollo/env-private-cloud.svg" },
     { label: "Private Cloud", img: "/apollo/env-private-cloud.svg" },
     { label: "On-Premises", img: "/apollo/env-on-prem.svg" },
     { label: "Hybrid Cloud", img: "/apollo/env-hybrid.svg" },

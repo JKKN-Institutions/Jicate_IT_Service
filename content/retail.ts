@@ -1,18 +1,4 @@
-/**
- * Content for the /retail page — a faithful DESIGN rebuild of the reference
- * "Palantir for Retail" page, mapped onto this project's design system. Layout
- * matches the reference 1:1; LIGHT theme.
- *
- * IMPORTANT: the reference's marketing prose, the "founded in 2003" history, and
- * the case-study statistics are the source's own content — they are NOT
- * reproduced here. Long-form copy and case details below are neutral PLACEHOLDER
- * text; short functional labels (section titles, capability tab names, technology
- * categories, case-study pill names, form fields) are kept for parity. User
- * replaces all copy.
- *
- * Local media (in /public/retail): 1 diagram + 5 photos mapped across hero,
- * capabilities diagram, and the 4 case-study tabs.
- */
+/** Content for the /retail page. */
 
 const BASE = "/retail";
 
@@ -56,7 +42,6 @@ export const about = {
     heading: "About Us",
     paragraphs: [
       "Jicate builds data-driven operations and decision-making software that empowers some of the world's most important institutions.",
-      "We got our start in intelligence and defense, and brought those frontline lessons to bear across countless industries and commercial enterprises around the world.",
       "Our core commercial platform, Jicate Data Platform, is the AI-powered operating system for the modern enterprise — building on your existing technology investments to connect siloed planning and optimize for efficiency and agility.",
     ],
   },
@@ -65,7 +50,6 @@ export const about = {
     paragraphs: [
       "To ride out today's swings in supply and demand, retailers need near-real-time visibility into demand — and the ability to adjust promotions, inventory, and operations on the fly.",
       "Jicate Data Platform lets retailers build a unified data foundation and tackle their toughest problems — optimizing inventory, building stronger supply chains, and delivering seamless omnichannel customer experiences.",
-      "The world's leading enterprise retailers use Jicate Data Platform to drive digital transformation and get smarter, sharper value from their data.",
     ],
   },
 };
@@ -94,51 +78,11 @@ export const technology = {
   heading: "Technology built for dynamic and optimal operations",
   features: [
     { eyebrow: "DATA INTEGRATION", body: "Speed up pipeline development and management with built-in automation, while granular governance keeps data integrity intact so teams can collaborate without worry." },
-    { eyebrow: "ENTERPRISE ONTOLOGY", body: "The core Business Data Model links your data and models to the real-world business objects they represent, giving everyone — from analytics teams to decision-makers — a shared language for working intuitively with a digital picture of the enterprise." },
+    { eyebrow: "ENTERPRISE DATA MODEL", body: "The core Business Data Model links your data and models to the real-world business objects they represent, giving everyone — from analytics teams to decision-makers — a shared language for working intuitively with a digital picture of the enterprise." },
     { eyebrow: "BI & ANALYTICS", body: "Let people of any technical skill level shape, analyse, and act on diverse data through intuitive, interactive applications." },
     { eyebrow: "DATA SCIENCE & MODELING", body: "Support full-stack data science with direct connections to both pipelines and applications — one integrated environment to build, test, and operationalize ML and AI models." },
     { eyebrow: "APPLICATION BUILDING", body: "Give teams across the organization a real way to contribute — build read-write applications, run simulations, and embed full-fidelity business rules and processes." },
   ] satisfies TechFeature[],
-};
-
-/* --------------------------- platform in action --------------------------- */
-
-export const inAction = {
-  heading: "The Platform in Action",
-  tabs: [
-    {
-      tab: "Working Capital Optimization",
-      partner: "A global manufacturer",
-      challenge: "The company was losing significant amounts of material to expiry — a costly problem — and needed to analyse data across a sprawling supply-chain network of hundreds of plants and more than 100,000 products to make deliberate inventory reductions.",
-      solution: "With Jicate Data Platform, they brought production, equipment-capacity, plant-asset, and logistics data into a single layer, gaining visibility across every product and plant and the ability to fine-tune inventory at a granular level.",
-      image: `${BASE}/shutterstock_1690489663.jpg`,
-      alt: "Automated warehouse aisles",
-    },
-    {
-      tab: "Out-of-Stock & Overstock",
-      partner: "A global retailer",
-      challenge: "The retailer struggled to keep shelves stocked without tying up cash in excess inventory, as disconnected systems made it hard to see real demand and react in time.",
-      solution: "Jicate unified demand, inventory, and replenishment data into a single view, so teams could predict shortages and overstocks early and rebalance stock proactively across the network.",
-      image: `${BASE}/shutterstock_1877244763_copy.jpg`,
-      alt: "Retail shelves",
-    },
-    {
-      tab: "Holistic Pricing Optimization",
-      partner: "A global retailer",
-      challenge: "Pricing decisions were made in silos, without a clear, connected view of cost, demand, competition, and margin across the assortment.",
-      solution: "Jicate brought those signals together so teams could set and adjust prices holistically — protecting margin while staying competitive and responsive to demand.",
-      image: `${BASE}/shutterstock_2036950148.jpg`,
-      alt: "Shopping",
-    },
-    {
-      tab: "Product & Assortment Selection",
-      partner: "A global retailer",
-      challenge: "Choosing the right products and assortments for each market meant reconciling sales, trend, and customer data that lived in separate systems.",
-      solution: "Jicate unified that data so merchandising teams could shape assortments around real demand by segment and location, and adapt them as customer preferences shift.",
-      image: `${BASE}/shutterstock_682632547.jpg`,
-      alt: "Product assortment",
-    },
-  ] satisfies CaseTab[],
 };
 
 /* --------------------------------- form ----------------------------------- */

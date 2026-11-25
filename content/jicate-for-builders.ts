@@ -1,12 +1,4 @@
-/**
- * Content for the /jicate-for-builders page — a faithful DESIGN rebuild of the
- * Palantir for Builders reference page, mapped onto this project's design system.
- * Short functional headings/labels are kept; body copy is written in Jicate's own
- * voice (placeholder text the user will swap), not copied from the reference.
- * Types are local so the page touches no shared files.
- *
- * No assets shipped — every image/video renders as a styled placeholder block.
- */
+/** Content for the /jicate-for-builders page. */
 
 export interface CTA {
   label: string;
@@ -49,8 +41,6 @@ export const bigData = {
   image: "/jicate-for-builders/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg",
   videoAlt: "Builder measuring and cutting timber on a job site",
   videoCaption: "Our team discusses the Jicate for Builders program and mission.",
-  quote: "“It is the same enterprise-grade software, but we’re leaning on the talent of our customers to do the building.”",
-  attribution: "— Product Lead, Jicate",
 };
 
 /* ----------------------------- infrastructure ---------------------------- */
@@ -64,15 +54,6 @@ export const infrastructure = {
     { title: "Agent building and application deployment", icon: "agent" },
     { title: "Operational decision-making and capture", icon: "decision" },
   ] as InfraCard[],
-};
-
-/* ------------------------------- regulatory ------------------------------ */
-
-export const regulatory = {
-  heading:
-    "Our solutions also meet rigorous regulatory and industry requirements, including GDPR, HIPAA, FedRAMP, IL5/6, and SOC 2.",
-  image: "/jicate-for-builders/danist-soh-8Gg2Ne_uTcM-unsplash.jpg",
-  logoAlt: "Tower cranes rising over a high-rise building under construction",
 };
 
 /* ------------------------------- empowering ------------------------------ */

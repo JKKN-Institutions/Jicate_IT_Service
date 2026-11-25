@@ -6,7 +6,7 @@ import { HeroHeading } from "./parts";
 
 /**
  * Hero — a full-bleed dark construction photo, then an oversized title and a
- * muted subtitle on the dark surface below (reference parity).
+ * muted subtitle on the dark surface below.
  */
 export function Hero() {
   return (

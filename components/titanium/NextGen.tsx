@@ -6,7 +6,7 @@ import { SectionHeading } from "./parts";
 
 /**
  * "Next-Generation Software" — a section heading on the left and an intro
- * paragraph on the right (reference parity, dark theme).
+ * paragraph on the right (dark theme).
  */
 export function NextGen() {
   return (

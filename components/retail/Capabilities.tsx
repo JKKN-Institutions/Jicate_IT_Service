@@ -12,7 +12,7 @@ import { SectionHeading, SubHeading } from "./parts";
  * "Our Capabilities" — a 50px heading and a 34px intro, then a vertical-tab
  * walkthrough: a numbered tab rail on the left (active marked with a dot) and the
  * active tab's eyebrow, body, and the connected-retail diagram on the right
- * (reference parity).
+ *.
  */
 export function Capabilities() {
   const [active, setActive] = useState(0);

@@ -5,7 +5,7 @@ import { hero } from "@/content/titanium";
 import { GiantHeading } from "./parts";
 
 /**
- * Hero — dark two-column split (reference parity): the oversized title fills the
+ * Hero — dark two-column split: the oversized title fills the
  * left rail; a short lead paragraph sits top-right. A full-width terrain image
  * follows below.
  */

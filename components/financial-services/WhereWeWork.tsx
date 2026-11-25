@@ -7,7 +7,7 @@ import { GiantHeading, SectionHeading, SubHeading } from "./parts";
 /**
  * "Where We Work" — a giant heading, then per business area: a 50px title with
  * a tagline, and a list of capability rows (boxed icon + title on the left, a
- * description on the right), separated by hairlines (reference parity).
+ * description on the right), separated by hairlines.
  */
 export function WhereWeWork() {
   return (

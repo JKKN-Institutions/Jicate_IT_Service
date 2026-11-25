@@ -7,7 +7,7 @@ import { GiantHeading } from "./parts";
 /**
  * Hero — a LIGHT full-height band. A giant display title sits top-left; a
  * centred sub-statement is framed by two corner brackets (top-left + bottom-
- * right) with a dark filled "Schedule a Demo" button beneath (reference parity).
+ * right) with a dark filled "Schedule a Demo" button beneath.
  */
 export function Hero() {
   return (

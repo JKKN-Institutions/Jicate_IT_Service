@@ -6,7 +6,7 @@ import { SectionHeading } from "./parts";
 
 /**
  * "A Verified Solution" — a closing section heading on the left and a summary
- * paragraph on the right (reference parity, dark theme).
+ * paragraph on the right (dark theme).
  */
 export function VerifiedSolution() {
   return (
