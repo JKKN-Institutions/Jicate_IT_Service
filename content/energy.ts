@@ -98,7 +98,6 @@ export const oilGas = {
   },
   onshore: {
     heading: "Onshore",
-    video: "/energy/Oil_Gas_Timeseries_V6__1_.mp4",
     lead: "Create a holistic view of your assets",
     body: "Integrate accounting, land, planning, business development, reserves, and operations data into the Business Data Model.",
     bullets: [

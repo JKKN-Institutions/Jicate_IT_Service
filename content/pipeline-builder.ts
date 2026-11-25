@@ -85,7 +85,7 @@ export const howItWorks = {
         "Pull data in from virtually any source system — structured, unstructured, IoT, or geospatial — with minimal setup.",
         "Need a quick one-off? Drag and drop raw files straight into Jicate Data Platform.",
       ],
-      image: "/pipeline-builder/pipeline-add-data--01.png",
+      image: null,
       alt: "Adding data in Data Pipelines",
     },
     {

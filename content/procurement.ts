@@ -33,8 +33,6 @@ export const operatingSystem = {
   heading:
     "An AI-Powered Operating System for direct and indirect Procurement, Finance, and Supply Chain Teams.",
   body: "Infuse your complex procurement workflows with AI-driven automations.",
-  diagram: "/procurement/Procurement_Website_Image-01.png",
-  diagramAlt: "Procurement operating-system diagram",
 };
 
 /* --------------------------- operationalizing ---------------------------- */

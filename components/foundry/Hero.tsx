@@ -1,12 +1,10 @@
 import { Container, Section } from "@/components/ui";
-import { LoopingVideo } from "@/components/ai-ml/LoopingVideo";
 import { hero } from "@/content/foundry";
 
 import { GiantHeading } from "./parts";
 
 /**
- * Hero — a 100px title on the left, a 34px subhead on the right, then a
- * full-width looping ontology video. Light theme.
+ * Hero — a 100px title on the left and a 34px subhead on the right. Light theme.
  */
 export function Hero() {
   return (
@@ -24,11 +22,6 @@ export function Hero() {
         </Container>
       </Section>
 
-      <Container>
-        <div className="aspect-[16/8] w-full overflow-hidden bg-ink/[0.03]">
-          <LoopingVideo src={hero.video} label={hero.videoLabel} className="object-contain" />
-        </div>
-      </Container>
     </section>
   );
 }

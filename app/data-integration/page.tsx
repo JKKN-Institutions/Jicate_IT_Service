@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 
 import {
   DiHero,
-  VideoBand,
   Supercharged,
   FutureIntro,
   FeatureBand,
@@ -20,7 +19,6 @@ export default function DataIntegrationPage() {
   return (
     <main className="flex-1">
       <DiHero />
-      <VideoBand />
       <Supercharged />
       <FutureIntro />
       {featureBands.map((band, i) => (

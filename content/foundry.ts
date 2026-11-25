@@ -40,16 +40,12 @@ export interface Field {
 export const hero = {
   title: "Jicate Platform",
   subcopy: "The Operating System for the Modern Enterprise, Powered by the Business Data Model",
-  video: "/foundry/Hydrate_Ontology_General_V3.mp4",
-  videoLabel: "Business Data Model hydrating data, logic, and action into one operating system",
 };
 
 /* -------------------------------- ontology ------------------------------- */
 
 export const ontology = {
   heading: "The Business Data Model",
-  image: "/foundry/Ontology_Simple.png",
-  imageAlt: "Business Data Model core layered into Semantic, Kinetic, and Dynamic layers",
   statement: "Activate your data and analytics in a dynamic system for closed-loop operations.",
   body: "The Business Data Model is the heart of the platform. It integrates the semantic, kinetic, and dynamic elements of your business — empowering your teams to harmonize and automate decision-making in complex settings.",
   link: "Discover the Business Data Model",

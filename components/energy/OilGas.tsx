@@ -3,7 +3,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { oilGas } from "@/content/energy";
 
 import { ArrowItem } from "./parts";
-import { AnchorTitle, ColumnsBlock, VideoBlock } from "./blocks";
+import { AnchorTitle, ColumnsBlock } from "./blocks";
 
 const subHead =
   "font-display text-[clamp(1.75rem,1rem+2.6vw,2.75rem)] font-normal leading-[1.05] tracking-[-0.02em] text-ink";
@@ -36,7 +36,7 @@ export function OilGas() {
       {/* Offshore — 3-col capabilities */}
       <ColumnsBlock heading={oilGas.offshore.heading} columns={oilGas.offshore.columns} cols={3} />
 
-      {/* Onshore — video + lead + bullets */}
+      {/* Onshore — lead + bullets */}
       <Section className="bg-canvas" aria-label={oilGas.onshore.heading}>
         <Container>
           <Reveal className="mb-2xl">
@@ -44,10 +44,7 @@ export function OilGas() {
               {oilGas.onshore.heading} <span aria-hidden className="text-ink-light">↘</span>
             </h3>
           </Reveal>
-          <Reveal>
-            <VideoBlock src={oilGas.onshore.video} />
-          </Reveal>
-          <div className="mt-2xl grid grid-cols-1 gap-x-2xl gap-y-l desktop:grid-cols-2">
+          <div className="grid grid-cols-1 gap-x-2xl gap-y-l desktop:grid-cols-2">
             <Reveal className="flex flex-col gap-m">
               <h4 className="text-body-lg font-semibold text-ink">{oilGas.onshore.lead}</h4>
               <p className="text-body leading-[1.45] text-ink">{oilGas.onshore.body}</p>

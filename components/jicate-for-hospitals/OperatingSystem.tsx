@@ -20,12 +20,6 @@ export function OperatingSystem() {
         </Reveal>
       </Container>
 
-      <Container className="mt-[64px] desktop:mt-[96px]">
-        <Reveal className="w-full overflow-hidden rounded-[4px] bg-ink/[0.03]">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={operatingSystem.diagram} alt={operatingSystem.diagramAlt} className="h-auto w-full" loading="lazy" />
-        </Reveal>
-      </Container>
     </Section>
   );
 }

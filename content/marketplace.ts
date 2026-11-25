@@ -78,8 +78,6 @@ export const howItWorks = {
     {
       title: "Develop",
       body: "Select a data asset or workflow built in Jicate Data Platform to publish.",
-      image: "/marketplace/Asset_9TPM_Monitor.png",
-      alt: "Develop a data product",
       mediaSide: "left",
     },
     {
@@ -92,8 +90,6 @@ export const howItWorks = {
     {
       title: "Discover",
       body: "Consumers discover and install your data product on Marketplace.",
-      image: "/marketplace/Asset_11TPM_Monitor.png",
-      alt: "Discover data products",
       mediaSide: "left",
     },
     {

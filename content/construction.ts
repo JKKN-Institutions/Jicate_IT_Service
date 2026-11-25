@@ -22,12 +22,6 @@ export interface CapabilityTab {
   features: Feature[];
 }
 
-export interface ImpactStep {
-  id: string;
-  label: string;
-  stats: string[];
-}
-
 export interface ExploreCard {
   kind: string;
   title: string;
@@ -163,47 +157,6 @@ export const capabilities = {
       ],
     },
   ] satisfies CapabilityTab[],
-};
-
-/* -------------------------------- impact ---------------------------------- */
-
-export const impact = {
-  heading: "Jicate Drives Real Impact at Scale",
-  steps: [
-    {
-      id: "0.1",
-      label: "Gain an Unfair Advantage",
-      stats: [
-        "Unlock major multi-year savings across supply chain and inventory by optimizing day-to-day operations.",
-        "Drive substantial procurement cost savings with a strong return on investment and a short payback period.",
-      ],
-    },
-    {
-      id: "0.2",
-      label: "Deliver at Speed",
-      stats: [
-        "Stand up a digital twin for a large, multi-project portfolio in days rather than months.",
-        "Build a production-ready savings use case for a construction firm in a matter of days.",
-      ],
-    },
-    {
-      id: "0.3",
-      label: "Save Time",
-      stats: [
-        "Cut material and crew allocation from weeks to minutes with automated decision workflows.",
-        "Shrink project reporting cycles from days to real time, so teams and contractors collaborate instantly.",
-        "Help foremen reduce timecard collection from roughly an hour to just a few minutes.",
-      ],
-    },
-    {
-      id: "0.4",
-      label: "Fortify Your Supply Chain",
-      stats: [
-        "Reduce material shortages and out-of-stock risk through predictive alerts and integrated vendor management.",
-        "Respond proactively to disruptions, heading off costly delays and sharpening supplier performance monitoring.",
-      ],
-    },
-  ] satisfies ImpactStep[],
 };
 
 /* -------------------------------- cta band -------------------------------- */

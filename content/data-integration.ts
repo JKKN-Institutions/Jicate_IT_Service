@@ -45,14 +45,6 @@ export const hero = {
   cta: { label: "Get a Demo", href: "/enquiry-form" } satisfies CTA,
 };
 
-/* ------------------------------- image band ------------------------------- */
-
-export const videoBand = {
-  /** Full-width media-card image (Data Integration Journey title card). */
-  image: "/data-integration/sddefault.png",
-  alt: "Jicate Data Platform Data Integration Journey",
-};
-
 /* ---------------------- "Data Integration, Supercharged." ------------------ */
 
 export const superchargedTitle = "Data Integration, Supercharged.";

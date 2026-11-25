@@ -19,14 +19,7 @@ export function OntologySection() {
         </Reveal>
 
         <div className="grid grid-cols-1 items-start gap-x-2xl gap-y-2xl desktop:grid-cols-12">
-          <Reveal className="desktop:col-span-6">
-            <div className="w-full overflow-hidden rounded-[6px]">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={ontology.image} alt={ontology.imageAlt} className="h-auto w-full" />
-            </div>
-          </Reveal>
-
-          <Reveal index={1} className="flex flex-col gap-l desktop:col-span-5 desktop:col-start-8">
+          <Reveal className="flex flex-col gap-l desktop:col-span-7">
             <p className="text-[clamp(1.5rem,1rem+1.4vw,1.889rem)] leading-[1.18] text-ink">
               {ontology.statement}
             </p>

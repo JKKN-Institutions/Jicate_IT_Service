@@ -5,7 +5,6 @@ import {
   KeyFeatures,
   HowItWorks,
   ExampleLists,
-  ReferenceArchitecture,
   ContactForm,
 } from "@/components/process-mining";
 
@@ -21,7 +20,6 @@ export default function ProcessMiningPage() {
       <KeyFeatures />
       <HowItWorks />
       <ExampleLists />
-      <ReferenceArchitecture />
       <ContactForm />
       {/* The shared site Footer renders from the root layout. */}
     </main>

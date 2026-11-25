@@ -23,10 +23,6 @@ export function StatementBand() {
             <p className="font-display text-[clamp(1.5rem,1rem+1.6vw,2.222rem)] leading-[1.1] tracking-[-0.02em] text-ink">
               {statement.cardTitle}
             </p>
-            <div className="mt-l w-full overflow-hidden">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={statement.visual} alt={statement.visualAlt} className="h-auto w-full object-contain" />
-            </div>
           </div>
         </Reveal>
       </Container>

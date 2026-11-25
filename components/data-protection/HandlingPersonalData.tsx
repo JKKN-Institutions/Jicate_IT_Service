@@ -12,19 +12,7 @@ export function HandlingPersonalData() {
     <Section className="bg-canvas" aria-label={handling.heading}>
       <Container>
         <div className="grid-12 items-center gap-y-2xl">
-          <Reveal className="col-span-12 desktop:col-span-6">
-            <div className="aspect-[16/10] w-full overflow-hidden rounded-[2px] bg-ink/[0.06]">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={handling.image}
-                alt={handling.imageAlt}
-                className="h-full w-full object-contain"
-                loading="lazy"
-              />
-            </div>
-          </Reveal>
-
-          <div className="col-span-12 flex flex-col gap-l desktop:col-span-5 desktop:col-start-8">
+          <div className="col-span-12 flex flex-col gap-l desktop:col-span-7">
             <Reveal>
               <h2 className="font-display text-[clamp(2rem,1rem+3.4vw,3.25rem)] font-normal leading-[1.05] tracking-[-0.02em] text-ink">
                 {handling.heading}

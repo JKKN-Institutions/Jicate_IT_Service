@@ -111,14 +111,6 @@ export const exampleUseCases = {
   items: ["Purchase-to-pay", "Quality control", "Export control", "Customer journeys", "Order-to-cash"],
 };
 
-/* ------------------------- Reference architecture ------------------------ */
-
-export const referenceArchitecture = {
-  heading: "Jicate Data Platform Process Mining & Automation: Reference Architecture",
-  image: "/process-mining/Group_1.png",
-  alt: "Process Mining & Automation Suite reference architecture diagram",
-};
-
 /* ------------------------------ Contact form ----------------------------- */
 
 export const contact = {

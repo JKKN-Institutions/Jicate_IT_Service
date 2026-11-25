@@ -17,15 +17,7 @@ export function PostList() {
               {post.title}
             </h2>
 
-            <div className="mt-[48px] grid gap-l desktop:grid-cols-2 desktop:gap-2xl">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={post.image}
-                alt={post.imageAlt}
-                className="h-auto w-full object-cover"
-                loading="lazy"
-              />
-
+            <div className="mt-[48px] grid gap-l">
               <div className="flex flex-col justify-between gap-2xl">
                 <p className="max-w-[22ch] font-display text-[clamp(1.6rem,2.65vw,2.125rem)]/[1.176] font-normal tracking-[-0.01em] text-ink">
                   {post.desc}

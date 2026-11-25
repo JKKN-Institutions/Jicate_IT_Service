@@ -71,8 +71,6 @@ export const modules = {
 /* ------------------------- Handling Personal Data ------------------------ */
 
 export const handling = {
-  image: "/data-protection/Beyond_Anonymisation.png",
-  imageAlt: "Beyond Anonymisation — a comprehensive approach to handling personal data",
   heading: "Handling Personal Data",
   bodyLead: "Learn more about our approach to helping customers ",
   bodyLink: "reduce data re-identification risk",

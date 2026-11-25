@@ -39,8 +39,6 @@ export const hero = {
 export const statement = {
   text: "The Business Data Model encodes the data, logic, action, and security of your enterprise to automate decisions across your operations.",
   cardTitle: "The Business Data Model System",
-  visual: "/ontology/ontology-system-visual.png",
-  visualAlt: "The Business Data Model System connecting data, logic, and action",
 };
 
 /* -------------------------- power autonomous ----------------------------- */
