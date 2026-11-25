@@ -5,7 +5,6 @@ import {
   Hero,
   BigData,
   Infrastructure,
-  Regulatory,
   Empowering,
   BuildForm,
 } from "@/components/jicate-for-builders";
@@ -22,7 +21,6 @@ export default function JicateForBuildersPage() {
       <Hero />
       <BigData />
       <Infrastructure />
-      <Regulatory />
       <Empowering />
       <BuildForm />
       {/* The shared site Footer renders from the root layout. */}

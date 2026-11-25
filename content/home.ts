@@ -10,7 +10,6 @@
  * Import with: import { hero, services, ... } from "@/content/home";
  */
 import type {
-  Announcement,
   Hero,
   ServicesIntro,
   ServiceItem,
@@ -19,21 +18,6 @@ import type {
   SoftwareStatement,
   SplitCTAHalf,
 } from "@/types";
-
-/* §3 — Announcement bar -------------------------------------------------- */
-
-export const announcement: Announcement = {
-  message:
-    "Jicate is now SOC 2 Type II certified — see what it means for your data.",
-  link: {
-    label: "Read the report",
-    href: "/resources/soc-2-report",
-    arrow: "external",
-    external: true,
-  },
-  dismissLabel: "Dismiss announcement",
-  storageKey: "jicate.announcement.v1",
-};
 
 /* §5 — Hero -------------------------------------------------------------- */
 
@@ -187,7 +171,7 @@ export const services: ServiceItem[] = [
     index: "/0.3",
     earmark: "circle",
     title: "Cybersecurity",
-    body: "Layered defense built around your risk: managed detection and response, identity, endpoint hardening, and audit-ready compliance for SOC 2, HIPAA, and ISO 27001.",
+    body: "Layered defense built around your risk: managed detection and response, identity, and endpoint hardening.",
     link: {
       label: "Explore security",
       href: "/services/cybersecurity",

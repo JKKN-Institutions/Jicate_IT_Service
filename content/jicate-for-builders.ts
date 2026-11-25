@@ -64,15 +64,6 @@ export const infrastructure = {
   ] as InfraCard[],
 };
 
-/* ------------------------------- regulatory ------------------------------ */
-
-export const regulatory = {
-  heading:
-    "Our solutions also meet rigorous regulatory and industry requirements, including GDPR, HIPAA, FedRAMP, IL5/6, and SOC 2.",
-  image: "/jicate-for-builders/danist-soh-8Gg2Ne_uTcM-unsplash.jpg",
-  logoAlt: "Tower cranes rising over a high-rise building under construction",
-};
-
 /* ------------------------------- empowering ------------------------------ */
 
 export const empowering = {

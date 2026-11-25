@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 /**
  * Program — the interactive vertical-tab walkthrough. A sticky left rail lists
- * the three program areas (Compliance / Open Source / Penetration Testing) with
+ * the program areas with
  * a superscript number + active dot; the right column swaps to the active tab's
  * content (intro paragraphs, a bold grey subhead, and ↳ lists). LIGHT.
  */

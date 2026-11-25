@@ -1,6 +1,5 @@
 import type { NavLink, ArrowKind } from "./navigation";
 export interface CTA { label: string; href: string; arrow?: ArrowKind; }
-export interface Announcement { message: string; link: NavLink; dismissLabel: string; storageKey: string; }
 export interface Hero { eyebrow: string; headline: string; subcopy: string; primaryCTA: CTA; secondaryLink: NavLink; poster?: string; video?: string; }
 export interface Metric { value: string; label: string; }
 export type EarmarkVariant = "circle" | "triangle";

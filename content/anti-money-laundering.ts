@@ -129,7 +129,7 @@ export const whatSetsApart = {
       ],
     },
     {
-      title: "Government-Grade Security",
+      title: "Security",
       paragraphs: [
         "Built from the start with privacy and civil-liberties concerns front of mind, the platform includes unusually granular security controls.",
         "All data is encrypted in transit and at rest, with high auditability and role-based access control, so teams can access and share the data they need without compromising security.",
