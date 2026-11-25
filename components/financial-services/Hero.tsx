@@ -5,7 +5,7 @@ import { HeroHeading } from "./parts";
 
 /**
  * Hero — a full-bleed image, then a dark band carrying the oversized title
- * (reference parity).
+ *.
  */
 export function Hero() {
   return (

@@ -5,7 +5,7 @@ import { hero } from "@/content/dynamic-scheduling";
 import { GiantHeading } from "./parts";
 
 /**
- * Hero — two-column split (reference parity): oversized title fills the left
+ * Hero — two-column split: oversized title fills the left
  * rail; a short lead paragraph sits top-right.
  */
 export function DsHero() {

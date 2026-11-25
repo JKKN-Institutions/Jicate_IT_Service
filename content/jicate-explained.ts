@@ -1,12 +1,4 @@
-/**
- * "Jicate Explained" page content (`/jicate-explained`).
- *
- * Design-clones the reference "Palantir Explained" listing page. Layout mirrors
- * the reference; product/brand names are swapped Palantir → Jicate and the
- * marketing prose is neutral placeholder (swap before launch). Cover images
- * live under `/public/jicate-explained` (scraped from the reference — user will
- * replace with Jicate artwork).
- */
+/** Content for the /jicate-explained page. */
 
 export interface ExplainedPost {
   /** Issue number (1–7). */

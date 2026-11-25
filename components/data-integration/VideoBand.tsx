@@ -3,7 +3,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { videoBand } from "@/content/data-integration";
 
 /**
- * Full-width media card (reference parity). Renders the Data Integration Journey
+ * Full-width media card. Renders the Data Integration Journey
  * title image inside the same rounded 16:7 card frame. The earlier video-poster
  * chrome (play affordance, speaker caption, product tags) was removed per request
  * so only the image shows.

@@ -6,7 +6,7 @@ import { SectionHeading } from "./parts";
 
 /**
  * "Key Features" — a section heading, a wide product screenshot, then a stack of
- * feature entries (bold lead label + body) on the right (reference parity, dark
+ * feature entries (bold lead label + body) on the right (dark
  * theme).
  */
 export function KeyFeatures() {

@@ -1,15 +1,4 @@
-/**
- * Content for the /insurance page — a faithful DESIGN rebuild of the Palantir for
- * Insurance reference page, mapped onto this project's design system. Short
- * functional headings/labels are kept; body copy is written in Jicate's own voice
- * (placeholder text the user will swap), not copied from the reference. Types are
- * local so the page touches no shared files.
- *
- * Assets in /public/insurance: sean-pollock-...jpg (hero buildings),
- * murakami_sompo.jpg (case-study speaker), shutterstock_354301223 (1).jpg and
- * image (7).png (case-study / abstract). Filenames keep spaces/parens — the
- * browser URL-encodes them when serving from /public.
- */
+/** Content for the /insurance page. */
 
 export interface CTA {
   label: string;

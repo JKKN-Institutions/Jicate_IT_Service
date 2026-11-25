@@ -1,13 +1,4 @@
-/**
- * Content for the /procurement page — a faithful DESIGN rebuild of the Palantir
- * for Procurement reference page, mapped onto this project's design system. Short
- * functional headings/labels are kept; body copy is written in Jicate's own voice
- * (placeholder text the user will swap). Brand names are renamed (Palantir→Jicate)
- * and the named customer is genericized. Types are local — no shared files touched.
- *
- * Assets in /public/procurement: shutterstock_1824643964.jpg (hero — glass towers),
- * Procurement_Website_Image-01.png (the operating-system diagram).
- */
+/** Content for the /procurement page. */
 
 export interface CasePoint {
   strong: string;

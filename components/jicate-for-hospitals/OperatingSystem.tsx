@@ -6,7 +6,7 @@ import { SectionHeading } from "./parts";
 
 /**
  * "An AI-Powered Operating System for Hospitals" — a two-column heading band,
- * then a full-width operating-system diagram (reference parity).
+ * then a full-width operating-system diagram.
  */
 export function OperatingSystem() {
   return (

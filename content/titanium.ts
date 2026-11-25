@@ -1,17 +1,4 @@
-/**
- * Content for the /titanium page — a faithful design rebuild of the reference
- * "Titanium" page, mapped onto this project's design system. The reference is a
- * DARK page (white text on rgb(30,33,36)). Layout/visual treatment matches the
- * reference 1:1; all body copy is ORIGINAL Jicate content written in our own
- * words (only short functional labels/headings are kept). The user edits final
- * wording.
- *
- * Types are declared locally so the page is fully self-contained.
- *
- * Local media (in /public/titanium):
- *   shutterstock_1230095911.jpg            — hero terrain image
- *   Screenshot_2024-12-04_at_2.20.22_PM.png — Key Features image
- */
+/** Content for the /titanium page. */
 
 /* ------------------------------ shared shapes ----------------------------- */
 
@@ -54,7 +41,7 @@ export const keyFeatures = {
   features: [
     {
       title: "Next-Level Infrastructure:",
-      body: "Built on Jicate's foundation, Titanium delivers tight data integrations, a robust ontology, and a secure base — raising the reliability and performance you can count on.",
+      body: "Built on Jicate's foundation, Titanium delivers tight data integrations, a robust data model, and a secure base — raising the reliability and performance you can count on.",
     },
     {
       title: "Configurable Setup:",
@@ -77,7 +64,7 @@ export const connectedOs = {
       leadLeft: "Get the most speed and reach from one stable, unified workspace.",
       leadRight:
         "Titanium ties multi-application workflows together, easing the learning curve for newcomers with intuitive drag-and-drop, while offering shortcuts for power users.",
-      body: "Surface new workflows and data insights through Titanium's Ontology-aware interface.",
+      body: "Surface new workflows and data insights through Titanium's Business Data Model-aware interface.",
     },
     {
       title: "Customize your workspace.",

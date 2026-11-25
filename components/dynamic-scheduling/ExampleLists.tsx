@@ -6,7 +6,7 @@ import { SectionHeading } from "./parts";
 
 /**
  * Reusable "Example …" band: a section heading on the left and a two-column
- * bulleted list of items on the right (reference parity).
+ * bulleted list of items on the right.
  */
 function ExampleList({ heading, items }: { heading: string; items: string[] }) {
   return (

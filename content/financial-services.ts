@@ -1,19 +1,4 @@
-/**
- * Content for the /financial-services page — a faithful DESIGN rebuild of the
- * reference "Palantir for Financial Services" page, mapped onto this project's
- * design system. Layout matches the reference 1:1; a DARK hero band over a
- * LIGHT body.
- *
- * IMPORTANT: the reference's marketing prose, customer case studies, and the
- * executive quote are the source's own content — they are NOT reproduced here.
- * Long-form copy, the quote, and partner/case details below are neutral
- * PLACEHOLDER text; short functional labels (section titles, tab/feature names,
- * form fields) are kept for parity. User replaces all copy.
- *
- * Local media (in /public/financial-services):
- *   img.webp                          — full-bleed hero image
- *   AIPCon7_YouTubeThumbail_Citi__1_.jpg — Driving Outcomes tab-1 video thumb
- */
+/** Content for the /financial-services page. */
 
 const BASE = "/financial-services";
 

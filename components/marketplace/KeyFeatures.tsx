@@ -7,7 +7,7 @@ import { SectionHeading } from "./parts";
 /**
  * "Key Features" — section heading, then a 2-column split: a sticky isometric
  * image on the left and a stack of feature entries (bold lead phrase + body)
- * on the right (reference parity).
+ * on the right.
  */
 export function KeyFeatures() {
   return (

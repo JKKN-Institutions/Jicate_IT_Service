@@ -1,14 +1,4 @@
-/**
- * Content for the /food-and-beverage page — a faithful DESIGN rebuild of the
- * Palantir Food and Beverage reference page, mapped onto this project's design
- * system. Short functional headings/labels are kept; body copy is written in
- * Jicate's own voice (placeholder text the user will swap), not copied from the
- * reference. Types are local so the page touches no shared files.
- *
- * Assets in /public/food-and-beverage: shutterstock_1352875706.jpg (hero image),
- * image__11_.png (intro image). Partner logos, offering/card images are not
- * shipped — rendered as placeholders. Partner/client names are placeholders.
- */
+/** Content for the /food-and-beverage page. */
 
 export interface CTA {
   label: string;

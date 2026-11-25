@@ -1,12 +1,4 @@
-/**
- * Content for the /jicate-for-builders page — a faithful DESIGN rebuild of the
- * Palantir for Builders reference page, mapped onto this project's design system.
- * Short functional headings/labels are kept; body copy is written in Jicate's own
- * voice (placeholder text the user will swap), not copied from the reference.
- * Types are local so the page touches no shared files.
- *
- * No assets shipped — every image/video renders as a styled placeholder block.
- */
+/** Content for the /jicate-for-builders page. */
 
 export interface CTA {
   label: string;

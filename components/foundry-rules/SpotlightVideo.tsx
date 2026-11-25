@@ -3,7 +3,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { spotlightBand } from "@/content/foundry-rules";
 
 /**
- * Full-width media band under the hero (reference parity). LIGHT composition: a
+ * Full-width media band under the hero. LIGHT composition: a
  * product image fills the left and a dark-text caption sits on the right, with a
  * small wordmark + copyright line bottom-right.
  */

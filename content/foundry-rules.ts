@@ -1,21 +1,4 @@
-/**
- * Content for the /foundry-rules page — a faithful design rebuild of the
- * reference "Rules and Alerts & Real-Time Alerting" page, mapped onto this
- * project's design system. Layout/visual treatment matches the reference 1:1;
- * all body copy is ORIGINAL Jicate content written in our own words (only short
- * functional labels/headings are kept). The testimonial is a neutral
- * placeholder. The user edits final wording.
- *
- * Types are declared locally so the page is fully self-contained.
- *
- * Local media (in /public/foundry-rules):
- *   FoundryRules_KeyFeatures.png                    — Key Features image
- *   Asset_22RULES.png / Asset_23RULES.png /
- *   Asset_24RULES.png                               — How It Works step images
- *   Asset_25bp.png                                  — testimonial logo
- *   Foundry_Rules_-_applications_2_-_cropped.jpg    — Applications image
- *   (hero video poster Asset_21RULES not shipped — placeholder used)
- */
+/** Content for the /foundry-rules page. */
 
 /* ------------------------------ shared shapes ----------------------------- */
 
@@ -75,7 +58,7 @@ export const keyFeatures = {
   features: [
     {
       title: "Flexible Rule Authoring.",
-      body: "Build rules on top of datasets, ontology objects, time series, and more — with the Jicate Data Platform Business Data Model giving every rule a real-world picture of your business to work from.",
+      body: "Build rules on top of datasets, data model objects, time series, and more — with the Jicate Data Platform Business Data Model giving every rule a real-world picture of your business to work from.",
     },
     {
       title: "Backtesting on Historical Data.",

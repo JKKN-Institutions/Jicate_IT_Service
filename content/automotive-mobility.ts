@@ -1,22 +1,4 @@
-/**
- * Content for the /automotive-mobility page — a faithful DESIGN rebuild of the
- * reference "Automotive & Mobility" offering page, mapped onto this project's
- * design system. Layout/visual treatment matches the reference 1:1.
- *
- * IMPORTANT: the reference's marketing prose, partner case studies, and
- * customer/executive quotes are the source's own content — they are NOT
- * reproduced here. Every paragraph and quote below is neutral PLACEHOLDER text;
- * the user replaces all copy.
- *
- * Types are declared locally so the page is fully self-contained.
- *
- * Local media (in /public/automotive-mobility):
- *   Auto_Feature_Image_copy.png — About Our Work feature image
- *   Doosan_Thumbnail.jpg        — Impact (Doosan) image
- *   shutterstock_699756580.jpg  — Impact (Forvia) image
- *   Palantir_and_Lilium…mp4     — Impact (Lilium) video
- *   (partner logos/photos + offering icons not shipped — placeholders used)
- */
+/** Content for the /automotive-mobility page. */
 
 const BASE = "/automotive-mobility";
 

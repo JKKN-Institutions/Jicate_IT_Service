@@ -1,14 +1,4 @@
-/**
- * AIP platform page content for Jicate IT Service (`/aip`).
- *
- * Layout/structure design-clones the reference AIP platform page, but the
- * marketing prose here is ORIGINAL / neutral placeholder copy (swap before
- * launch) — only short functional labels (section titles, tab names, feature
- * headings, industry names) mirror the reference. Asset clips live under
- * `/public/aip`.
- *
- * Import with: import { aimlHero, beyondChat, ... } from "@/content/aip";
- */
+/** Content for the /aip page. */
 import type { ArrowKind } from "@/types";
 
 type Link = { label: string; href: string; arrow?: ArrowKind; external?: boolean };

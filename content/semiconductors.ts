@@ -1,20 +1,4 @@
-/**
- * Content for the /semiconductors page — a faithful DESIGN rebuild of the
- * reference "Offerings | Semiconductors" page, mapped onto this project's
- * design system. Layout matches the reference 1:1; the page is LIGHT
- * (canvas background, ink text).
- *
- * IMPORTANT: the reference's marketing prose, brand/product names, and the
- * third-party press releases are the source's own content — they are NOT
- * reproduced verbatim. Brand names are swapped to Jicate, the news items are
- * neutral PLACEHOLDER headlines, and long-form copy is lightly Jicate-voiced.
- * Short functional labels (section titles, form fields) are kept for parity.
- * User replaces all copy.
- *
- * Local media (in /public/semiconductors):
- *   Image__35_.png  — knowledge-graph diagram (section 2, row A)
- *   Figure3__1_.jpg — product screenshot on a laptop (section 2, row B)
- */
+/** Content for the /semiconductors page. */
 
 const BASE = "/semiconductors";
 
@@ -63,7 +47,7 @@ export const accelerating = {
 
   heading: "Accelerating Research & Development Time",
   lead:
-    "Help drive future hypothesis testing by leveraging our AI platform and data ontology to rapidly query and develop Research Insights of your business.",
+    "Help drive future hypothesis testing by leveraging our AI platform and data model to rapidly query and develop Research Insights of your business.",
   whitepaperPrompt:
     "Learn more about accelerating research and development in the semiconductor industry:",
   whitepaperCta: { label: "Download the Whitepaper", href: "#" } satisfies CTA,

@@ -1,21 +1,4 @@
-/**
- * Content for the /jicate-for-hospitals page — a faithful DESIGN rebuild of
- * the reference "Palantir for Hospitals" page, mapped onto this project's design
- * system. Layout matches the reference 1:1; a DARK hero band over a LIGHT body.
- *
- * IMPORTANT (IP): the reference's marketing prose, its named case study, and its
- * statistics are the source's own copyrighted content and are NOT reproduced. The
- * long-form copy, the quote, and the impact statements below are ORIGINAL,
- * Jicate-voiced text conveying the same general substance in fresh wording; the
- * case study is genericized (no real named health system, person, or quote, and no
- * fabricated precise statistics). Short functional labels (section titles,
- * step/toggle names, form fields) are kept for design parity.
- *
- * Local media (in /public/jicate-for-hospitals):
- *   shutterstock_381286231.jpg            — hero image
- *   image__37_.png                        — operating-system diagram
- *   Screenshot_2025-01-26_at_6.20.57_PM.png — transformation video thumbnail
- */
+/** Content for the /jicate-for-hospitals page. */
 
 const BASE = "/jicate-for-hospitals";
 

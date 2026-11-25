@@ -1,10 +1,4 @@
-/**
- * Content for the /about page — a design clone of palantir.com/about.
- *
- * ALL copy here is ORIGINAL, Jicate-flavoured placeholder text written to
- * mirror the reference layout/length. It intentionally does NOT reproduce
- * Palantir's copyrighted manifesto prose. Swap freely later.
- */
+/** Content for the /about page. */
 
 export type AboutLink = { label: string; href: string };
 

@@ -1,16 +1,4 @@
-/**
- * Content for the /foundry page — a faithful DESIGN rebuild of the Palantir
- * Foundry platform page (https://www.palantir.com/platforms/foundry/). LIGHT
- * theme. Short functional headings/labels kept; body copy in Jicate's voice
- * (placeholder text the user will swap). IP-safe: Palantir → Jicate, the
- * "Jicate Data Platform" product → "Jicate Platform" / "the platform"; the generic concept
- * "Business Data Model" is kept. Named customers/partners genericized. Types local.
- *
- * Assets in /public/foundry: Hydrate_Ontology_General_V3.mp4 (hero video),
- * Ontology_Simple.png (ontology card), Personas.png (collaboration diagram),
- * My_project__*.png/.jpg + Screen_Shot_…png + Doosan_Thumbnail (1).jpg +
- * My_project__2_ (1).jpg + Palantir_NBO.jpg (18 Global-Impact case cards).
- */
+/** Content for the /foundry page. */
 
 export interface FeatureItem {
   label: string;
@@ -51,7 +39,7 @@ export interface Field {
 
 export const hero = {
   title: "Jicate Platform",
-  subcopy: "The Ontology-Powered Operating System for the Modern Enterprise",
+  subcopy: "The Operating System for the Modern Enterprise, Powered by the Business Data Model",
   video: "/foundry/Hydrate_Ontology_General_V3.mp4",
   videoLabel: "Business Data Model hydrating data, logic, and action into one operating system",
 };
@@ -85,7 +73,7 @@ export const collaboration = {
     },
     {
       label: "The Best Way to Build.",
-      body: "Compose AI-powered workflows on a scalable architecture that re-uses your ontology’s multi-modal objects, actions, and processes.",
+      body: "Compose AI-powered workflows on a scalable architecture that re-uses your data model’s multi-modal objects, actions, and processes.",
     },
     {
       label: "No Duplication.",
@@ -97,7 +85,7 @@ export const collaboration = {
 /* ------------------------------ industries ------------------------------- */
 
 export const industries = {
-  heading: "Ontology-powered Operations Across Industries",
+  heading: "Operations Across Industries, Powered by the Business Data Model",
   links: [
     { label: "AI + ML", href: "/ai-ml" },
     { label: "Anti Money Laundering", href: "/anti-money-laundering" },

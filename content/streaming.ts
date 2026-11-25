@@ -1,15 +1,4 @@
-/**
- * Content for the /streaming page — a faithful DESIGN rebuild of the Foundry
- * Streaming reference page, mapped onto this project's design system. Match the
- * layout/visuals and keep the short functional headings/labels; body copy and
- * testimonial quotes are written in Jicate's own voice (placeholders the user
- * can swap). Types are local so the page touches no shared files.
- *
- * Assets in /public/streaming: shutterstock_1832815558_copy.jpg (hero),
- * Puddle.png, Real_Time_Illo__1_.png, My_project__2_/4_/12_/7_/11_/13_.jpg,
- * shutterstock_1189545343.jpg (use-case cards),
- * Palantir_and_Sonnedix_-_Ontology_Modelling_-_Cutdown.mp4, sompo_palantir_clip_01_.mov.
- */
+/** Content for the /streaming page. */
 
 export interface CTA {
   label: string;
@@ -61,7 +50,7 @@ export const statement = {
     },
     {
       title: "Data in context, always.",
-      body: "Bind streaming data to your ontology's objects — such as a manufacturing robot, wind turbine, or hospital bed. The Business Data Model fully contextualizes low-latency data alongside other relevant batch data (e.g., ERP and MES systems), and enriches it with AI/ML models.",
+      body: "Bind streaming data to your data model's objects — such as a manufacturing robot, wind turbine, or hospital bed. The Business Data Model fully contextualizes low-latency data alongside other relevant batch data (e.g., ERP and MES systems), and enriches it with AI/ML models.",
     },
     {
       title: "Power closed-loop action.",
@@ -75,7 +64,7 @@ export const statement = {
 export const realTimeOntology = {
   heading: "Real-Time Business Data Model",
   image: "/streaming/Real_Time_Illo__1_.png",
-  alt: "Real-time ontology illustration",
+  alt: "Real-time data model illustration",
   accordion: [
     {
       index: "01",
@@ -84,7 +73,7 @@ export const realTimeOntology = {
       features: [
         {
           title: "Transform Streaming Data with Data Pipelines",
-          body: "Transform and process streaming data at scale. Data Pipelines combines the ease of low-code with rigorous change management and health monitoring. Filter, join, and aggregate data streams, and land the outputs directly in your ontology.",
+          body: "Transform and process streaming data at scale. Data Pipelines combines the ease of low-code with rigorous change management and health monitoring. Filter, join, and aggregate data streams, and land the outputs directly in your data model.",
         },
         {
           title: "Conduct Flink-Based Transforms",
@@ -99,7 +88,7 @@ export const realTimeOntology = {
     {
       index: "02",
       title: "Activate the Real-Time Business Data Model",
-      body: "Bring low-latency data to life as live ontology objects, ready to power alerts, analytics, and the applications your operators use every day.",
+      body: "Bring low-latency data to life as live data model objects, ready to power alerts, analytics, and the applications your operators use every day.",
     },
     {
       index: "03",

@@ -1,14 +1,4 @@
-/**
- * Content for the /energy page — a faithful DESIGN rebuild of the Palantir
- * "Jicate Data Platform for Energy" reference page, mapped onto this project's design system.
- * Short functional headings/labels are kept; body copy is written in Jicate's own
- * voice (placeholder text the user will swap), not copied from the reference.
- * Types are local so the page touches no shared files.
- *
- * Assets in /public/energy: partner logos (Asset_37BP / Asset_32KM / Asset_44Exx /
- * Asset_46son2 / Asset_45tra), Asset_27energy diagram, grid-platforms, several
- * shutterstock_* photos and the *_Cutdown / Timeseries .mp4 videos.
- */
+/** Content for the /energy page. */
 
 export interface CTA {
   label: string;
@@ -62,7 +52,7 @@ export const about = {
     "With the Business Data Model, users can chain models together across workflows, teams, and organizational units to simulate operations and optimize decisions, and to orchestrate model-driven actions across existing systems.",
   ],
   diagram: "/energy/Asset_27energy.png",
-  diagramAlt: "Energy ontology diagram",
+  diagramAlt: "Energy data model diagram",
 };
 
 /* -------------------------------- oil & gas ------------------------------ */
@@ -72,7 +62,7 @@ export const oilGas = {
   title: "Oil & Gas",
   intro: {
     image: "/energy/grid-platforms.png",
-    alt: "Energy ontology thumbnail",
+    alt: "Energy data model thumbnail",
     body: "The Business Data Model transforms your digital assets — including data, models, and processes — into a dynamic, actionable representation of your business for all users to leverage in operations.",
   },
   offshore: {
@@ -81,14 +71,14 @@ export const oilGas = {
       {
         title: "Monitoring",
         items: [
-          "By integrating data and models into your ontology, visualize all the subsystems that comprise the production value chain — from wells to the topside facility.",
+          "By integrating data and models into your data model, visualize all the subsystems that comprise the production value chain — from wells to the topside facility.",
           "Navigate through interactive process flow diagrams to see equipment links and real-time sensor data that shows how fluids travel through the network.",
           "Physics-based models that run every hour compare real sensor data with simulated data to estimate model accuracy and health.",
         ],
       },
       {
         title: "Simulation",
-        lead: "Using your ontology, perform “what-if” simulations within individual systems — from subsea networks through topside export.",
+        lead: "Using your data model, perform “what-if” simulations within individual systems — from subsea networks through topside export.",
         items: [
           "Within an export compression subsystem, an engineer sees all sensor data associated with each piece of production equipment: control valves, compressors, scrubbers, and heat exchanges.",
           "The engineer clicks on an individual component to run a simulation — for example, increasing the suction pressure on a compressor.",
@@ -99,7 +89,7 @@ export const oilGas = {
         title: "Optimization",
         lead: "Chain together scenarios from distinct models to understand operational effects across the value chain.",
         items: [
-          "With your ontology, you can see the consequences of a decision not only within one system but across the entire value chain — from sandface to export.",
+          "With your data model, you can see the consequences of a decision not only within one system but across the entire value chain — from sandface to export.",
           "The Business Data Model integrates multiple simulation models and custom logic to give engineers a single language to understand and optimize facilities in their entirety.",
           "The Business Data Model captures and stores the output of every simulation to better inform future engineering and business decisions.",
         ],
@@ -150,7 +140,7 @@ export const oilGas = {
       {
         title: "Identification of irregularities",
         items: [
-          "With your ontology you have an all-encompassing picture of financial, land, and operational data — making it easy to identify, investigate, and correct discrepancies.",
+          "With your data model you have an all-encompassing picture of financial, land, and operational data — making it easy to identify, investigate, and correct discrepancies.",
         ],
       },
     ] as Column[],
@@ -190,14 +180,14 @@ export const oilGas = {
       {
         title: "Process Monitoring & Loss Categorization",
         items: [
-          "Integrate sensor data into your ontology and use rules & real-time alerting to monitor your plant’s day-to-day operations.",
-          "Detect and action any deviations, with full writeback to your ontology for continuous improvement and streamlined reporting.",
+          "Integrate sensor data into your data model and use rules & real-time alerting to monitor your plant’s day-to-day operations.",
+          "Detect and action any deviations, with full writeback to your data model for continuous improvement and streamlined reporting.",
         ],
       },
       {
         title: "Advanced Analytics",
         items: [
-          "With all your data and models integrated into your ontology, perform analyses using sources that have never been connected before.",
+          "With all your data and models integrated into your data model, perform analyses using sources that have never been connected before.",
           "This empowers engineers to run analyses from run-length optimization to predictive maintenance, and to connect production processes with executive decision-making.",
         ],
       },
@@ -211,7 +201,7 @@ export const oilGas = {
       {
         title: "Simulation",
         items: [
-          "Engineers build process flow diagrams using the plant ontology, linked to external physics-based models.",
+          "Engineers build process flow diagrams using the plant data model, linked to external physics-based models.",
           "They can pose “what-if” questions to test and optimize set points, run times, and maintenance plans, comparing theoretical values with actuals.",
         ],
       },

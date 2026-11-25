@@ -1,9 +1,4 @@
-/**
- * Content for the /information-security page — a design clone of
- * palantir.com/information-security. LIGHT theme, brand swapped to Jicate.
- * Marketing prose is genericised PLACEHOLDER (user will swap); the compliance
- * framework NAMES are industry standards kept as illustrative placeholders.
- */
+/** Content for the /information-security page. */
 
 const BASE = "/information-security";
 

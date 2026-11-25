@@ -5,7 +5,7 @@ import { hero } from "@/content/data-integration";
 import { GiantHeading, InkLink } from "./parts";
 
 /**
- * Hero — two-column split (reference parity): the oversized title fills the
+ * Hero — two-column split: the oversized title fills the
  * left rail, while a right column holds the lead paragraph and a "Get a Demo"
  * link aligned to the top.
  */

@@ -11,7 +11,7 @@ import { BigHeading, StepHeading } from "./parts";
 /**
  * Impact — an intro heading, a numbered step indicator
  * ([0.1] — 0.2 — 0.3 — 0.4), and the active step's content: an oversized label
- * on the left and a bordered stat card on the right (reference parity).
+ * on the left and a bordered stat card on the right.
  */
 export function Impact() {
   const [active, setActive] = useState(0);

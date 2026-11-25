@@ -6,7 +6,7 @@ import { SectionHeading } from "./parts";
 
 /**
  * "Applications" — a section heading, a two-column grid of use-cases (bold title
- * + body), and a wide product screenshot (reference parity).
+ * + body), and a wide product screenshot.
  */
 export function Applications() {
   return (

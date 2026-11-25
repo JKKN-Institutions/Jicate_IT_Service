@@ -1,15 +1,4 @@
-/**
- * Content for the /data-protection page — a faithful DESIGN rebuild of the
- * Palantir "Data Protection" offering reference page, mapped onto this project's
- * design system. Short functional headings/labels are kept; all body copy is
- * written in Jicate's own voice (placeholder text the user will swap), not copied
- * from the reference. Types are local so the page touches no shared files.
- *
- * Assets in /public/data-protection: shutterstock_255556879.jpg (hero image),
- * ncmec-graph.svg (Data Subject Access Request module image), Beyond_Anonymisation.png
- * (Handling Personal Data card). The Right-to-be-Forgotten module image
- * (values-graph) is not shipped — rendered as a placeholder.
- */
+/** Content for the /data-protection page. */
 
 export interface CTA {
   label: string;

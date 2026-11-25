@@ -14,7 +14,7 @@ import { MegaMenu } from "./MegaMenu";
 /**
  * Site header / primary navigation (design 04 §2, 07 §4).
  *
- * Fixed at the top as a floating frosted-glass bar (Palantir `headerBg`): a
+ * Fixed at the top as a floating frosted-glass bar: a
  * light-gray tint at 10% over a 10px backdrop blur, 10px radius, soft drop
  * shadow, 70px tall — it stays over the hero and page content (no solid swap
  * on scroll). The tinted background is a separate 0.9-opacity layer so it
@@ -53,7 +53,7 @@ export function SiteHeader() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 p-4 text-offwhite">
       <nav aria-label="Primary" className="relative h-[70px]">
-        {/* Frosted-glass header bar (Palantir `headerBg`): light-gray tint at
+        {/* Frosted-glass header bar: light-gray tint at
             10% over a 10px backdrop blur, 10px radius, soft drop shadow. A
             separate layer behind the content, so its 0.9 opacity never dims
             the logo or buttons. */}

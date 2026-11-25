@@ -1,11 +1,4 @@
-/**
- * Apollo platform page content for Jicate IT Service (`/apollo`).
- *
- * Layout/structure design-clones the reference Apollo platform page. Short
- * functional labels (section titles, feature names, environment names, nav
- * labels) mirror the reference; longer copy is neutral placeholder — swap
- * before launch. Assets live under `/public/apollo` (scraped from reference).
- */
+/** Content for the /apollo page. */
 import type { ArrowKind } from "@/types";
 
 type Link = { label: string; href: string; arrow?: ArrowKind; external?: boolean };
@@ -83,7 +76,7 @@ export const devops = {
 
 export const exploreSolutions = {
   heading: "Explore Jicate Deployment Service Solutions",
-  // Row-wise order fills the 2-col grid: L/R, L/R, L/R (matches reference).
+  // Row-wise order fills the 2-col grid: L/R, L/R, L/R.
   items: [
     "Multi-cloud, Multi-prem, Private SaaS, and Single Tenant Deployment",
     "Continuous Security & Compliance",

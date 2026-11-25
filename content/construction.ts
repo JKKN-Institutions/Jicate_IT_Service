@@ -1,22 +1,4 @@
-/**
- * Content for the /construction page — a faithful DESIGN rebuild of the
- * reference "Palantir for Construction" offering page, mapped onto this
- * project's design system. Layout/visual treatment matches the reference 1:1;
- * the page is DARK (rgb(30,33,36) background, white text).
- *
- * IMPORTANT: the reference's marketing prose, customer quotes, and specific
- * statistics are the source's own content — they are NOT reproduced here.
- * Long-form copy, testimonials, and stats below are neutral PLACEHOLDER text;
- * short functional labels (tab/feature names, form fields) are kept for parity.
- * The user replaces all copy.
- *
- * Types are declared locally so the page is fully self-contained.
- *
- * Local media (in /public/construction):
- *   shutterstock_1173398077.jpg                              — hero background
- *   Construction_Landing_Page_-_Product_montage2_4x.png      — intro montage
- *   Industry_Domination_Construction_Ontology_Final2_4x.png  — ontology diagram
- */
+/** Content for the /construction page. */
 
 const BASE = "/construction";
 
@@ -82,7 +64,7 @@ export const ontology = {
     "Jicate Data Platform closes the gap between your foundational systems — ERP, project management, BIM, accounting, equipment management — and the use cases that matter, powering AI-driven decisions that anticipate scheduling delays before they hit and keep work moving.",
   ],
   image: `${BASE}/Industry_Domination_Construction_Ontology_Final2_4x.png`,
-  alt: "Layered isometric diagram of the construction ontology",
+  alt: "Layered isometric diagram of the construction data model",
 };
 
 /* ------------------------------ capabilities ------------------------------ */

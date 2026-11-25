@@ -1,14 +1,4 @@
-/**
- * Homepage section content for Jicate IT Service.
- *
- * All copy is ORIGINAL Jicate IT Service content, transcribed verbatim from
- * design/07-homepage-content-architecture.md:
- *   §3  announcement   ·  §5 hero       ·  §6 caseStudy
- *   §7  servicesIntro + services        ·  §8 manifesto
- *   §9  testimonials   ·  §10 splitCTA
- *
- * Import with: import { hero, services, ... } from "@/content/home";
- */
+/** Content for the /home page. */
 import type {
   Hero,
   ServicesIntro,

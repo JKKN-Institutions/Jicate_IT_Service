@@ -7,7 +7,7 @@ import { GiantHeading, InkLink } from "./parts";
 /**
  * Hero — a two-column split (oversized title left; a tagline and a "Schedule a
  * Demo" link right), then a full-width dark video-poster band with an eyebrow,
- * a statement, and a Play-Video control (reference parity).
+ * a statement, and a Play-Video control.
  */
 export function Hero() {
   return (

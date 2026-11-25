@@ -8,7 +8,7 @@ import { ScheduleDemoLink } from "./ScheduleDemoLink";
 /**
  * Hero — an oversized title on the left with a tagline + "Schedule a Demo" link
  * on the right, then a full-width hero video band with a "Play Video" pill
- * (reference parity). LIGHT.
+ *. LIGHT.
  */
 export function Hero() {
   return (

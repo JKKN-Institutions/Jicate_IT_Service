@@ -10,7 +10,7 @@ import { ContactFormBody } from "@/components/shared/ContactFormBody";
  * "Get Started" button. A dimmed overlay covers the page; the panel holds the
  * site's shared contact form (<ContactFormBody>) under an eyebrow + heading.
  * Closes on overlay click, the × button, or the Escape key; locks body scroll
- * while open. Light panel over a dark scrim (reference parity).
+ * while open. Light panel over a dark scrim.
  */
 export function GetStartedDrawer({ open, onClose }: { open: boolean; onClose: () => void }) {
   useEffect(() => {

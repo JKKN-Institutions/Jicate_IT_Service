@@ -7,13 +7,11 @@ import { offerings, ourSoftwareHeading } from "@/content/offerings";
 import { Container, EarmarkGlyph, NumberedIndex } from "@/components/ui";
 
 /**
- * "Our Software" — the numbered offerings list (reference: Palantir homepage
- * "Our Software"). Each row is laid out as: tagline + /0.x index on the left,
+ * "Our Software" — the numbered offerings list. Each row is laid out as: tagline + /0.x index on the left,
  * a preview in the middle, and the large product name on the right.
  *
- * Interaction: hovering (or keyboard-focusing) a product reveals its looping
- * video preview in the middle slot and lights its name + index to ink; the
- * other rows show a quiet earmark glyph in place of the preview. The first
+ * Interaction: hovering (or keyboard-focusing) a product lights its name +
+ * index to ink; each row shows a quiet earmark glyph in the middle slot. The first
  * product is active by default, so the section is never empty.
  */
 export function OurSoftware() {

@@ -3,7 +3,7 @@ import { subNav } from "@/content/jicate-for-rail";
 
 /**
  * Sticky in-page sub-nav — anchor links to each major section, pinned below the
- * site header (reference parity).
+ * site header.
  */
 export function SubNav() {
   return (

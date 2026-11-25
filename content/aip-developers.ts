@@ -1,14 +1,4 @@
-/**
- * Content for the /aip-developers page — a faithful rebuild of the reference
- * "Jicate AI Platform for Developers" page, mapped onto this project's design system.
- *
- * Types are declared locally (not in `@/types`) so the page is fully
- * self-contained and touches no shared files.
- *
- * Local media (in /public/aip-developers):
- *   videos — aipnow-product.mp4, aip-osdk.mp4, workflow-builder.mp4, automation.mp4
- *   svgs   — ontology-sdk.svg, ontology.svg, pipelining.svg, connectivity.svg
- */
+/** Content for the /aip-developers page. */
 
 /* ----------------------------- shared shapes ----------------------------- */
 
@@ -99,7 +89,7 @@ export const sdkSection = {
       body: "Available as an NPM package for TypeScript, Pip or Conda for Python, or through OpenAPI for any language.",
     },
     {
-      title: "POWERED BY THE ONTOLOGY",
+      title: "POWERED BY THE BUSINESS DATA MODEL",
       body: "Engage with your data in the standard business terms, in language shared by all of your company’s developers.",
     },
     {

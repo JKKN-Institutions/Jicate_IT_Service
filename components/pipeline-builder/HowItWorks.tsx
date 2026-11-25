@@ -12,7 +12,7 @@ import { GiantHeading } from "./parts";
 /**
  * "How It Works" — a giant heading, a 34px subheading + body, then a
  * vertical-tab walkthrough: a tab rail on the left selects a step; the right
- * column shows that step's eyebrow, text lines, and image (reference parity).
+ * column shows that step's eyebrow, text lines, and image.
  */
 export function HowItWorks() {
   const [active, setActive] = useState(0);

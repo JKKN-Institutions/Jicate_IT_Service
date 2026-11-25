@@ -5,7 +5,7 @@ import { hero } from "@/content/pipeline-builder";
 import { GiantHeading, InkLink } from "./parts";
 
 /**
- * Hero — two-column split (reference parity): oversized title fills the left
+ * Hero — two-column split: oversized title fills the left
  * rail; a right column holds the lead paragraph, a short note, and the
  * "Get a demo" link.
  */

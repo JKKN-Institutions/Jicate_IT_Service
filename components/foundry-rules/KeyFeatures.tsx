@@ -7,7 +7,7 @@ import { SectionHeading } from "./parts";
 /**
  * "Key Features" — a section heading, then a 2-column split: a sticky product
  * image on the left and a stack of feature entries (bold lead phrase + body) on
- * the right, with a trailing Foundry Ontology link (reference parity).
+ * the right, with a trailing Foundry Ontology link.
  */
 export function KeyFeatures() {
   return (

@@ -40,7 +40,7 @@ export const industryLinks: NavLink[] = [
   { label: "Education", href: "/industries/education" },
 ];
 
-/** The five platform pages — order mirrors the Palantir site menu. */
+/** The platform pages. */
 export const platformLinks: NavLink[] = [
   { label: "Jicate AI Platform", href: "/aip" },
   { label: "Jicate Data Platform", href: "/foundry" },
@@ -49,7 +49,7 @@ export const platformLinks: NavLink[] = [
 ];
 
 /* ---------------------------------------------------------------------------
- * §4 — Top-level nav items (canonical IA for this clone).
+ * §4 — Top-level nav items (canonical IA).
  * ------------------------------------------------------------------------- */
 
 export const primaryNav: NavItem[] = [
@@ -123,10 +123,7 @@ export const megaMenuFeatured: FeaturedCard[] = [
  * Company / Legal). Service + Industry columns reuse the shared arrays above.
  * ------------------------------------------------------------------------- */
 
-/* Footer mega-directory columns — transcribed VERBATIM from the reference
- * footer screenshot (OFFERINGS / IMPACT STUDIOS / CAPABILITIES / DOCUMENTS).
- * `href: "#"` is an intentional placeholder: the reference link targets are not
- * known, so we don't fabricate URLs — only the visible labels are reproduced. */
+/* Footer directory columns. */
 export const footerColumns: FooterColumn[] = [
   {
     heading: "OFFERINGS",

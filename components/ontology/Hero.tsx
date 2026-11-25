@@ -16,7 +16,7 @@ export function Hero() {
     >
       {/* Layered stack visual, centered behind the title. */}
       <div className="pointer-events-none absolute inset-x-0 top-1/2 mx-auto flex max-w-[780px] -translate-y-1/2 justify-center px-l opacity-90">
-        <StackedVisual layers={hero.layers} aspect="1400 / 900" alt="Layered ontology stack" />
+        <StackedVisual layers={hero.layers} aspect="1400 / 900" alt="Layered data model stack" />
       </div>
 
       <Container className="relative">

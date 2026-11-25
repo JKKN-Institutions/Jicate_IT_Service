@@ -1,15 +1,4 @@
-/**
- * Content for the /process-mining page — a faithful DESIGN rebuild of the
- * Foundry Process Mining & Automation reference page, mapped onto this
- * project's design system. Match the layout/visuals and keep the short
- * functional headings/labels; body copy is written in Jicate's own voice.
- * Types are local so the page touches no shared files.
- *
- * Assets in /public/process-mining: Screenshot_2023-01-27_at_11.18.55_AM.png,
- * Product_Images-01/02/03/05/06.png, Machinery_Impact_2.jpg,
- * Machinery_Impact_4.jpg, Group_1.png. The hero video thumbnail is not shipped
- * → poster placeholder.
- */
+/** Content for the /process-mining page. */
 
 export interface CTA {
   label: string;

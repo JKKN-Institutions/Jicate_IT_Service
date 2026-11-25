@@ -7,7 +7,7 @@ import { SectionHeading, SubHeading } from "./parts";
 /**
  * About Our Work — a 50px section heading, then a two-column split: a 34px lead
  * over two body paragraphs on the left, and the ontology-stack diagram on the
- * right (reference parity). LIGHT.
+ * right. LIGHT.
  */
 export function About() {
   return (

@@ -6,7 +6,7 @@ import { SubHeading } from "./parts";
 
 /**
  * "About Us" / "Jicate for Retail" — a top hairline, then a two-column split:
- * each column has a 34px heading over a stack of paragraphs (reference parity).
+ * each column has a 34px heading over a stack of paragraphs.
  */
 export function About() {
   return (

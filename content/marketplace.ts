@@ -1,20 +1,4 @@
-/**
- * Content for the /marketplace page — a faithful design rebuild of the
- * reference "Jicate Data Platform Marketplace" page, mapped onto this project's design
- * system. Layout/visual treatment matches the reference 1:1; long-form body
- * copy is ORIGINAL Jicate content (short functional labels/headings are kept).
- * The user edits final wording.
- *
- * Types are declared locally so the page is fully self-contained.
- *
- * Local media (in /public/marketplace):
- *   Screenshot_2023-01-27_at_11.09.56_AM_copy.png — Key Features isometric art
- *   Asset_9TPM_Monitor.png                         — How It Works "Develop"
- *   GanttChart_4__1_.mp4                           — How It Works "Deploy" clip
- *   Asset_11TPM_Monitor.png                        — How It Works "Discover"
- *   Asset_10TPM_Monitor.png                        — How It Works "Manage"
- *   (hero band poster Asset_27Marketplace not shipped — placeholder used)
- */
+/** Content for the /marketplace page. */
 
 /* ------------------------------ shared shapes ----------------------------- */
 
@@ -54,7 +38,7 @@ export const spotlightBand = {
   body: "Browse, install, and manage packaged data products from a single storefront.",
   playLabel: "Play Video",
   image: "/marketplace/Screenshot 2026-07-13 120515.png",
-  alt: "Healthcare Marketplace — connectors, ontology, and solutions",
+  alt: "Healthcare Marketplace — connectors, data model, and solutions",
   wordmark: "Jicate",
   copyright:
     "© 2026 Jicate IT Service. The information in this video is provided for informational purposes only. Actual results and experiences may vary.",
@@ -69,7 +53,7 @@ export const keyFeatures = {
   features: [
     {
       title: "Publish data products in a few clicks.",
-      body: "Rapidly develop and deploy packages of data-backed workflows built in Jicate Data Platform — your organization’s ontology, AI models, pipelines, data connections, or end-to-end use cases.",
+      body: "Rapidly develop and deploy packages of data-backed workflows built in Jicate Data Platform — your organization’s data model, AI models, pipelines, data connections, or end-to-end use cases.",
     },
     {
       title: "Integrated CI/CD for complex data products.",

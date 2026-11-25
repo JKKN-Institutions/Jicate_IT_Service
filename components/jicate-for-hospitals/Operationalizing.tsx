@@ -12,7 +12,7 @@ import { GiantHeading, StepHeading } from "./parts";
  * "Operationalizing AI…" — a giant heading, a numbered step indicator
  * ([0.1] — 0.2 — 0.3), and the active step's content: an oversized title on the
  * left and, on the right, a lead paragraph, an Impact/In-Action pill toggle, and
- * a bordered card with the selected view's content (reference parity).
+ * a bordered card with the selected view's content.
  */
 export function Operationalizing() {
   const [active, setActive] = useState(0);

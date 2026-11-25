@@ -3,7 +3,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { videoBand } from "@/content/pipeline-builder";
 
 /**
- * Full-width media band under the hero (reference parity). Renders the Pipeline
+ * Full-width media band under the hero. Renders the Pipeline
  * Builder stage diagram as a single full-width image. The earlier video-card
  * chrome (brand breadcrumb, product tag, speaker caption, play affordance) was
  * removed per request so only the image shows.

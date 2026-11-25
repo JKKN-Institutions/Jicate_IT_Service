@@ -7,7 +7,7 @@ import { GiantHeading } from "./parts";
 /**
  * "Engineered for Speed, Scale, & Stability" — a giant heading over a stacked
  * list of capability items, each a small glyph beside a 20px title and body
- * (reference parity).
+ *.
  */
 export function EngineeredGrid() {
   return (

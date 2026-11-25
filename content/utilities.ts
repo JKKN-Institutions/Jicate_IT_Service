@@ -1,22 +1,4 @@
-/**
- * Content for the /utilities page — a faithful DESIGN rebuild of the reference
- * "Palantir Utility Solutions" page, mapped onto this project's design system.
- * Layout matches the reference 1:1; the page is LIGHT (canvas bg, ink text).
- *
- * IMPORTANT: the reference's marketing prose, customer stats, and named-executive
- * quotes are the source's own content — they are NOT reproduced verbatim. Brand
- * names are swapped to Jicate; customer stats and quotes are neutral PLACEHOLDER
- * text; short functional labels (section/capability/theme names, form fields) and
- * the user-provided case-study video subjects are kept. User replaces all copy.
- *
- * Local media (in /public/utilities):
- *   Ontology_stack_-_Utilities__JD_Edits_.png — About section diagram
- *   Jacobs_X_Palantir_Twitter_Cutdown.mov     — Impact case 1 video
- *   -ENGLISH_SUBTITLES-_..._Sonnedix_..._.mov — Impact case 2 video (+ hero loop)
- *   SC_Edison_Cutdown_7__1_.mov               — Impact case 3 video
- *   Slide1 (1).jpg / Slide2 (1).jpg / Slide2 (2).jpg / Slide4 (1).jpg /
- *   Utilities_1.png / Utilities_2.png         — Capability tab images
- */
+/** Content for the /utilities page. */
 
 const BASE = "/utilities";
 
@@ -58,7 +40,7 @@ export const about = {
     "Utility operators can use Jicate to rapidly build and ship flexible, production-ready applications — predicting operations, automating processes, simulating scenarios, and coordinating decisions across teams and environments. The result is more reliable, more efficient utilities, from grid management right through to customer care.",
   ],
   image: `${BASE}/Ontology_stack_-_Utilities__JD_Edits_.png`,
-  imageAlt: "Utilities ontology stack diagram",
+  imageAlt: "Utilities data model stack diagram",
 };
 
 /* ---------------------------- our capabilities ---------------------------- */

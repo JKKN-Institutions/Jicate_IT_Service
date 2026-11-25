@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 /**
- * Light-theme heading helpers for the Palantir-for-Rail page (ink text on
+ * Light-theme heading helpers for the /jicate-for-rail page (ink text on
  * white). Line-height is baked into the size token so tailwind-merge can't strip
  * a standalone `leading-*` class.
  */

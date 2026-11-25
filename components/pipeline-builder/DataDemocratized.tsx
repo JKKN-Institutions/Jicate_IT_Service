@@ -7,7 +7,7 @@ import { GiantHeading } from "./parts";
 /**
  * "Data, Democratized." — a giant heading and supporting artwork, followed by a
  * stack of feature rows. Each row is a 2-column split: an arrow heading on the
- * left and a body paragraph on the right (reference parity).
+ * left and a body paragraph on the right.
  */
 export function DataDemocratized() {
   return (

@@ -1,14 +1,4 @@
-/**
- * Content for the /life-sciences page — a faithful DESIGN rebuild of the Palantir
- * for Life Sciences reference page, mapped onto this project's design system.
- * Short functional headings/labels are kept; body copy is written in Jicate's own
- * voice (placeholder text the user will swap), not copied verbatim. Brand names are
- * renamed (Palantir→Jicate, Foundry→"the platform") and the named CRO is
- * genericized. Types are local so the page touches no shared files.
- *
- * Assets in /public/life-sciences: image__2_.png (hero — lab pipettes / well plate),
- * Asset_13Industries.png (case-study — microscope), Pharma2.mov (unused video).
- */
+/** Content for the /life-sciences page. */
 
 export interface CTA {
   label: string;

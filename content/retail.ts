@@ -1,18 +1,4 @@
-/**
- * Content for the /retail page — a faithful DESIGN rebuild of the reference
- * "Palantir for Retail" page, mapped onto this project's design system. Layout
- * matches the reference 1:1; LIGHT theme.
- *
- * IMPORTANT: the reference's marketing prose, the "founded in 2003" history, and
- * the case-study statistics are the source's own content — they are NOT
- * reproduced here. Long-form copy and case details below are neutral PLACEHOLDER
- * text; short functional labels (section titles, capability tab names, technology
- * categories, case-study pill names, form fields) are kept for parity. User
- * replaces all copy.
- *
- * Local media (in /public/retail): 1 diagram + 5 photos mapped across hero,
- * capabilities diagram, and the 4 case-study tabs.
- */
+/** Content for the /retail page. */
 
 const BASE = "/retail";
 
@@ -92,7 +78,7 @@ export const technology = {
   heading: "Technology built for dynamic and optimal operations",
   features: [
     { eyebrow: "DATA INTEGRATION", body: "Speed up pipeline development and management with built-in automation, while granular governance keeps data integrity intact so teams can collaborate without worry." },
-    { eyebrow: "ENTERPRISE ONTOLOGY", body: "The core Business Data Model links your data and models to the real-world business objects they represent, giving everyone — from analytics teams to decision-makers — a shared language for working intuitively with a digital picture of the enterprise." },
+    { eyebrow: "ENTERPRISE DATA MODEL", body: "The core Business Data Model links your data and models to the real-world business objects they represent, giving everyone — from analytics teams to decision-makers — a shared language for working intuitively with a digital picture of the enterprise." },
     { eyebrow: "BI & ANALYTICS", body: "Let people of any technical skill level shape, analyse, and act on diverse data through intuitive, interactive applications." },
     { eyebrow: "DATA SCIENCE & MODELING", body: "Support full-stack data science with direct connections to both pipelines and applications — one integrated environment to build, test, and operationalize ML and AI models." },
     { eyebrow: "APPLICATION BUILDING", body: "Give teams across the organization a real way to contribute — build read-write applications, run simulations, and embed full-fidelity business rules and processes." },

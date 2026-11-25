@@ -1,16 +1,4 @@
-/**
- * "Our Software" offerings content.
- *
- * NOTE: Placeholder content reproduced verbatim from Palantir's homepage
- * "Our Software" section — names, taglines, links, and video previews all
- * point at palantir.com / its CDN. Swap these for original Jicate offerings
- * before launch.
- *
- * Video normalization: the reference serves previews as site-relative
- * `/assets/{spaceId}/…/*.mov` paths (some already `?format=mp4`). We use the
- * absolute `https://www.palantir.com/...` form and force `?format=mp4` on all
- * five so they decode in browsers that won't play raw QuickTime `.mov`.
- */
+/** Home page "Our Software" list. */
 import type { Offering } from "@/types";
 
 export const ourSoftwareHeading = "Our Software";
@@ -26,7 +14,7 @@ export const offerings: Offering[] = [
     index: "/0.2",
     name: "Jicate Data Platform",
     tagline:
-      "Build and manage Ontology-powered software, with a complete developer platform",
+      "Build and manage software powered by the Business Data Model, with a complete developer platform",
     href: "/foundry",
   },
   {

@@ -10,7 +10,7 @@ import { SectionHeading } from "./parts";
  * "How It Works" — section heading, then a stack of numbered-feel steps. Each
  * step is a 2-column row: a 34px label + body on one side and the supporting
  * screenshot or looping clip on the other. Media side alternates per step
- * (reference parity).
+ *.
  */
 export function HowItWorks() {
   return (

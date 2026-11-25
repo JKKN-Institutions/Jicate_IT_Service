@@ -7,7 +7,7 @@ import { GiantHeading, Eyebrow } from "./parts";
 /**
  * "Learn about Jicate Supply Chain Solutions" — a top hairline, a giant heading,
  * then a three-column grid of product cards (eyebrow, screenshot, body, and a
- * "Learn more" link) (reference parity).
+ * "Learn more" link).
  */
 export function Products() {
   return (

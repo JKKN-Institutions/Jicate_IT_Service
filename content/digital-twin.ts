@@ -1,17 +1,4 @@
-/**
- * Content for the /digital-twin page — a faithful DESIGN rebuild of the Foundry
- * Digital Twin reference page, mapped onto this project's design system.
- *
- * Approach (same as the other clone pages): match the layout/visuals 100% and
- * keep the short functional headings/labels, but the body copy is written in
- * Jicate's own voice rather than copied verbatim. Types are local so the page
- * is self-contained and touches no shared files.
- *
- * Assets in /public/digital-twin:
- *   foundry_1.gif · 1-Interactive_Twin.png · 2-AI_ML.png · 3-Read_Write_Apps.png
- *   4-Next_Gen_Analytics.png · Digital_Twin.png · screenshot_digital_twin.png
- *   screenshot_code_workbook.png
- */
+/** Content for the /digital-twin page. */
 
 export interface CTA {
   label: string;

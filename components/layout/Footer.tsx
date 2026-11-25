@@ -13,7 +13,7 @@ import { SocialPill } from "./SocialPill";
 /**
  * FooterLink — a single directory entry (reference footer §11).
  *
- * Hover effect (Palantir-parity): a leading `→` glyph is hidden by default
+ * Hover effect: a leading `→` glyph is hidden by default
  * (absolutely positioned at the left edge, faded out, nudged left) and on
  * hover/focus it fades in while the label slides right to make room. The arrow
  * is `absolute` so the reveal never reflows neighbouring links.
@@ -46,7 +46,7 @@ function FooterLink({ label, href, arrow, external, dimmed }: NavLink) {
 }
 
 /**
- * Footer — the page's closing infrastructure, matched to the reference footer.
+ * Footer — the page's closing infrastructure.
  *
  * Server Component: a LIGHT band (white canvas, ink text). Two-up layout —
  *   • LEFT RAIL: copyright, a hairline rule, and the outlined social pills

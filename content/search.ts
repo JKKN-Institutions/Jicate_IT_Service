@@ -20,7 +20,7 @@ export interface PopularSearch {
   query: string;
 }
 
-/** Quick-pick queries shown under the input (mirrors the reference). */
+/** Quick-pick queries shown under the input. */
 export const popularSearches: PopularSearch[] = [
   { label: "Jicate Data Platform", query: "Jicate Data Platform" },
   { label: "Jicate Deployment Service", query: "Jicate Deployment Service" },
@@ -28,20 +28,13 @@ export const popularSearches: PopularSearch[] = [
   { label: "Artificial Intelligence (AI)", query: "AI" },
 ];
 
-const platformTaglines: Record<string, string> = {
-  AIP: "Automate operations across your enterprise, from the factory floor to the front lines.",
-  Foundry: "Build and manage Ontology-powered software with a complete developer platform.",
-  Ontology: "The central system for orchestrating decisions across Human+AI teams.",
-  Apollo: "Autonomously deploy, monitor, and manage software across any environment.",
-};
-
 const linksOf = (heading: string) =>
   footerColumns.find((c) => c.heading === heading)?.links ?? [];
 
 const platforms: SearchItem[] = platformLinks.map((l) => ({
   title: l.label,
   href: l.href,
-  description: platformTaglines[l.label] ?? `Explore ${l.label} on the Jicate platform.`,
+  description: `Explore ${l.label} on the Jicate platform.`,
   category: "Platform",
 }));
 

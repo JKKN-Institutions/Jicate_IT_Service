@@ -1,14 +1,4 @@
-/**
- * Content for the /ontology page — a faithful DESIGN rebuild of the Palantir
- * Ontology platform page (https://www.palantir.com/platforms/ontology/). LIGHT
- * theme with a lavender/purple accent (#967EFF). Short functional headings kept;
- * body copy in Jicate's voice (placeholder text the user will swap). IP-safe:
- * Palantir → Jicate; generic term "Business Data Model" kept. Types local.
- *
- * Assets in /public/ontology were scraped from the reference (layered SVG
- * animation frames + PNG diagrams) and stacked to form each section's composite
- * visual. The user will swap these later.
- */
+/** Content for the /ontology page. */
 
 export interface Feature {
   title: string;
@@ -152,7 +142,7 @@ export const toolchain = {
     },
     {
       title: "Power external agents with Business Data Model MCP.",
-      body: "Expose your ontology to external agents as MCP tools, so outside systems can read, query, and act through a governed interface.",
+      body: "Expose your data model to external agents as MCP tools, so outside systems can read, query, and act through a governed interface.",
     },
     {
       title: "Turn specialized expertise into shared infrastructure.",

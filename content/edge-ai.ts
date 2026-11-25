@@ -1,14 +1,4 @@
-/**
- * Content for the /edge-ai page — a faithful DESIGN rebuild of the Edge AI
- * offering reference page, mapped onto this project's design system.
- *
- * Approach (same as the other clone pages): match the layout/visuals and keep
- * the short functional headings/labels, but the body copy is written in
- * Jicate's own voice. Types are local so the page touches no shared files.
- *
- * Assets in /public/edge-ai: Energy.jpg (only asset shipped). Everything else
- * (hero video + poster) renders as a labelled placeholder until supplied.
- */
+/** Content for the /edge-ai page. */
 
 export interface CTA {
   label: string;

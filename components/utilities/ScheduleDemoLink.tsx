@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 /**
  * ScheduleDemoLink — same visual as the InkLink used elsewhere on this page, but
  * with a client-side smooth scroll. Native `<a href="#id">` anchor jumps proved
- * unreliable on this cloned page, so the click is intercepted and the target is
+ * unreliable on this page, so the click is intercepted and the target is
  * scrolled into view manually, offset for the fixed ~120px site header. Falls
  * back to the plain hash navigation if the target isn't found.
  */

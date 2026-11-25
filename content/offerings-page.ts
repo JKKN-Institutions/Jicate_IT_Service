@@ -1,14 +1,4 @@
-/**
- * Content for the /offerings index page — a faithful DESIGN rebuild of the
- * Palantir Offerings index (https://www.palantir.com/offerings/). DARK theme,
- * text-only: a giant hero + a long list of offering rows (name ↳ / short
- * tagline / Learn More →). Short functional offering names kept; taglines are
- * original Jicate one-liners (the user will swap). IP-safe: Palantir → Jicate;
- * hrefs point at this site's own pages where they exist, else "#". Types local.
- *
- * NOTE: distinct from `content/offerings.ts` (the homepage "Our Software"
- * product list) — do not merge the two.
- */
+/** Content for the /offerings index page. */
 
 export interface OfferingRow {
   name: string;

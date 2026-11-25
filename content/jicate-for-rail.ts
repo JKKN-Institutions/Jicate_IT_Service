@@ -1,20 +1,4 @@
-/**
- * Content for the /jicate-for-rail page — a faithful DESIGN rebuild of the
- * reference "Palantir for Rail" page, mapped onto this project's design system.
- * Layout matches the reference 1:1; LIGHT theme, with a sticky sub-nav.
- *
- * IMPORTANT (IP): the reference's marketing prose, partner names/logos, and case
- * statistics are the source's own copyrighted content and are NOT reproduced. The
- * long-form copy below is ORIGINAL, Jicate-voiced prose conveying the same general
- * substance in fresh wording; partners and case studies are genericized (no real
- * names or verbatim stats). Short functional labels (section titles, work
- * categories/items, differentiator titles, form fields) are kept for design parity.
- *
- * Local media (in /public/jicate-for-rail):
- *   Hero_Image.jpg     — intro image
- *   Ontology_Image.png — How it Works diagram
- *   Master_Classes…AIPCon…-4821_(2).jpg — Spotlight AIPCon photo
- */
+/** Content for the /jicate-for-rail page. */
 
 const BASE = "/jicate-for-rail";
 
