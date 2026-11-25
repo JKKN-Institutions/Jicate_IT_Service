@@ -1,7 +1,6 @@
 import { Container } from "@/components/ui";
 import { aimlHero } from "@/content/ai-ml";
 
-import { LoopingVideo } from "./LoopingVideo";
 
 /**
  * AI/ML Hero — full-bleed dark media moment.
@@ -16,7 +15,6 @@ import { LoopingVideo } from "./LoopingVideo";
 export function AiMlHero() {
   return (
     <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden bg-near-black text-offwhite">
-      <LoopingVideo src={aimlHero.video} className="absolute inset-0 -z-10" />
       <div aria-hidden className="absolute inset-0 -z-10 bg-near-black/25" />
       <div
         aria-hidden

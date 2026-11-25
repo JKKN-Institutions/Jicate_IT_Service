@@ -31,7 +31,7 @@ export function SdkSection() {
               className="col-span-12 flex flex-col gap-s desktop:col-span-6"
             >
               <p className="text-body-lg text-offwhite/80">{step.caption}</p>
-              <MediaFrame src={step.video} />
+              {step.video ? <MediaFrame src={step.video} /> : null}
             </Reveal>
           ))}
         </div>

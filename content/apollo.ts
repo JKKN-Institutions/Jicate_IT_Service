@@ -16,7 +16,7 @@ export const hero = {
   title: "Jicate Deployment Service",
   heading: "Deploy Software\nBeyond Limits.",
   cta: { label: "Request a demo", href: "#request-a-demo" } as Link,
-  image: "/apollo/apollo-hero.jpg",
+  image: "/apollo/hero.jpg",
   imageAlt: "Jicate Deployment Service",
 };
 
@@ -75,7 +75,7 @@ export const features = {
 
 export const devops = {
   heading: "Your DevOps strategy can make or break your ability to grow →",
-  image: "/apollo/apollo-cube.jpg",
+  image: "/apollo/cube.jpg",
   imageAlt: "Jicate Deployment Service Cube",
 };
 
@@ -100,10 +100,10 @@ export const exploreSolutions = {
 export const environments = {
   heading: "From one to many environments",
   cards: [
-    { label: "Amazon Web Services", img: "/apollo/env-aws.svg" },
-    { label: "AWS Outposts", img: "/apollo/env-aws-outposts.svg" },
-    { label: "Microsoft Azure", img: "/apollo/env-azure.svg" },
-    { label: "Google Cloud Platform", img: "/apollo/env-gcp.svg" },
+    { label: "Amazon Web Services", img: "/apollo/env-private-cloud.svg" },
+    { label: "AWS Outposts", img: "/apollo/env-private-cloud.svg" },
+    { label: "Microsoft Azure", img: "/apollo/env-private-cloud.svg" },
+    { label: "Google Cloud Platform", img: "/apollo/env-private-cloud.svg" },
     { label: "Private Cloud", img: "/apollo/env-private-cloud.svg" },
     { label: "On-Premises", img: "/apollo/env-on-prem.svg" },
     { label: "Hybrid Cloud", img: "/apollo/env-hybrid.svg" },

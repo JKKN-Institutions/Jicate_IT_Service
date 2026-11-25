@@ -25,15 +25,6 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="mt-2xl">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={hero.media}
-            alt={hero.mediaAlt}
-            className="w-full select-none"
-            draggable={false}
-          />
-        </div>
       </Container>
     </Section>
   );

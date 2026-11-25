@@ -60,7 +60,7 @@ export const modules = {
       eyebrow: "01 — DATA SUBJECT ACCESS REQUEST MODULE",
       description:
         "This module helps organizations satisfy Article 15 of the GDPR and comparable privacy regulations, giving data subjects the right to obtain confirmation from the controller as to whether any data is being processed about them, as well as access to basic information about that data.",
-      image: "/data-protection/ncmec-graph.svg",
+      image: "/data-protection/network-graph.svg",
       alt: "Network graph of linked data sources",
     },
     {

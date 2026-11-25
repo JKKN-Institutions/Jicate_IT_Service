@@ -18,7 +18,6 @@ type Link = { label: string; href: string; arrow?: ArrowKind; external?: boolean
 export const aimlHero = {
   // Giant bottom-left wordmark.
   wordmark: "Jicate AI Platform",
-  video: "/aip/aip-hero-video.mp4",
   // Bottom corner mono micro-label columns (neutral placeholder copy).
   metaGroups: [
     ["Explore", "our artificial", "intelligence platform"],
@@ -46,7 +45,6 @@ export const beyondChat = {
       label: "AI APP",
       blurb:
         "AI reviews alerts and proposes resolutions, while human operators stay in the loop to review and approve.",
-      video: "/aip/aipnow-product.mp4",
     },
     {
       key: "action-logic",
@@ -72,7 +70,7 @@ export type FeatureRow = {
   title: string; // big display heading
   lead: string; // lead paragraph in the right column
   details: { title: string; body: string }[]; // DETAILS panel sub-items
-  video: string;
+  video?: string;
 };
 
 export const featureRows: FeatureRow[] = [
@@ -106,7 +104,6 @@ export const featureRows: FeatureRow[] = [
         body: "Catch regressions early with repeatable, end-to-end test coverage across your workflows.",
       },
     ],
-    video: "/aip/aip-evals-product.mp4",
   },
   {
     index: "0.3",
@@ -122,7 +119,6 @@ export const featureRows: FeatureRow[] = [
         body: "Drop down to full code for the parts that demand it, no-code for the rest.",
       },
     ],
-    video: "/aip/aip-osdk.mp4",
   },
   {
     index: "0.4",
@@ -138,7 +134,6 @@ export const featureRows: FeatureRow[] = [
         body: "Learn from end-to-end reference implementations built for real operations.",
       },
     ],
-    video: "/aip/aipnow-product.mp4",
   },
 ];
 

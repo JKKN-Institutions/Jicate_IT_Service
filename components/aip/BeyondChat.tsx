@@ -69,8 +69,10 @@ export function BeyondChat() {
         </div>
 
         {/* Full-width framed product clip. */}
+        {beyondChat.tabs[active].video ? (
         <div className="relative aspect-[16/9] w-full overflow-hidden rounded-none border border-offwhite/10 bg-black">
-          {beyondChat.tabs.map((tab, i) => (
+          {beyondChat.tabs.map((tab, i) =>
+            tab.video ? (
             <LoopingVideo
               key={tab.key}
               src={tab.video}
@@ -79,8 +81,10 @@ export function BeyondChat() {
                 i === active ? "opacity-100" : "pointer-events-none opacity-0",
               )}
             />
-          ))}
+            ) : null,
+          )}
         </div>
+        ) : null}
       </Container>
     </section>
   );

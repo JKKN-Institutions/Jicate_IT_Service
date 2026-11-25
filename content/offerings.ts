@@ -21,7 +21,6 @@ export const offerings: Offering[] = [
     name: "Jicate AI Platform",
     tagline: "Automate operations, from the factory floor to the front lines",
     href: "/aip",
-    video: "/home/homepage-AIP.mp4",
   },
   {
     index: "/0.2",
@@ -29,14 +28,12 @@ export const offerings: Offering[] = [
     tagline:
       "Build and manage Ontology-powered software, with a complete developer platform",
     href: "/foundry",
-    video: "/home/homepage-Foundry.mp4",
   },
   {
     index: "/0.3",
     name: "Business Data Model",
     tagline: "The central system for orchestrating decisions across Human+AI teams",
     href: "/ontology",
-    video: "/home/homepage-Ontology.mp4",
   },
   {
     index: "/0.4",
@@ -44,6 +41,5 @@ export const offerings: Offering[] = [
     tagline:
       "Autonomously deploy, monitor, and manage software across any environment",
     href: "/apollo",
-    video: "/home/homepage-Apollo.mp4",
   },
 ];

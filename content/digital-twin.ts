@@ -60,8 +60,6 @@ export const hero = {
   subcopy:
     "Power next-generation operations with semantic data, AI/ML-based twins, and twin-based simulations.",
   cta: { label: "Get a Demo", href: "/enquiry-form" } as CTA,
-  media: "/digital-twin/foundry_1.gif",
-  mediaAlt: "Artistic rendering of the Jicate Digital Twin",
 };
 
 /* ----------------------- Virtualized Operations -------------------------- */

@@ -18,7 +18,6 @@ export const aimlHero = {
   // Giant bottom-left wordmark. PLACEHOLDER mark + letters — swap for Jicate
   // branding. (Generic placeholder, not any third-party product name/logo.)
   wordmark: "AI",
-  video: "/ai-ml-page/aip-hero-video.mp4",
   // Bottom-right mono micro-label column (placeholder copy).
   metaGroups: [
     ["Explore", "our artificial", "intelligence platform"],
@@ -46,7 +45,6 @@ export const beyondChat = {
       label: "AI APP",
       blurb:
         "Ship decision-support apps your teams actually use, grounded in your own knowledge and guardrails.",
-      video: "/ai-ml-page/aipnow-product.mp4",
     },
     {
       key: "action-logic",
@@ -72,7 +70,7 @@ export type FeatureRow = {
   title: string; // big display heading
   lead: string; // lead paragraph in the right column
   details: { title: string; body: string }[]; // DETAILS panel sub-items
-  video: string;
+  video?: string;
 };
 
 // All copy below is original PLACEHOLDER text — swap for Jicate content.
@@ -107,7 +105,6 @@ export const featureRows: FeatureRow[] = [
         body: "Catch regressions early with repeatable, end-to-end test coverage across your workflows.",
       },
     ],
-    video: "/ai-ml-page/aipnow-product.mp4",
   },
   {
     index: "0.3",
@@ -123,7 +120,6 @@ export const featureRows: FeatureRow[] = [
         body: "Drop down to full code for the parts that demand it, no-code for the rest.",
       },
     ],
-    video: "/ai-ml-page/aip-osdk.mp4",
   },
   {
     index: "0.4",

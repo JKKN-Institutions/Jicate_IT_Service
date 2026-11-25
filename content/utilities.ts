@@ -19,7 +19,6 @@
  */
 
 const BASE = "/utilities";
-const SONNEDIX_VIDEO = `${BASE}/-ENGLISH_SUBTITLES-_Sonnedix_-_Foundry_Impact_-_Cutdown___1_.mov`;
 
 /* ------------------------------ shared shapes ----------------------------- */
 
@@ -46,8 +45,6 @@ export const hero = {
   title: "Jicate for Utilities",
   tagline: "AI-powered operations for the connected utility of the future.",
   cta: { label: "Schedule a Demo", href: "#utilities-demo-form" } satisfies CTA,
-  video: SONNEDIX_VIDEO,
-  playLabel: "Play Video",
 };
 
 /* ----------------------------- about our work ----------------------------- */

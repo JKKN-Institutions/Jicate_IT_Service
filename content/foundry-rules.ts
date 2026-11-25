@@ -69,7 +69,7 @@ export const spotlightBand = {
 
 export const keyFeatures = {
   heading: "Key Features",
-  image: "/foundry-rules/FoundryRules_KeyFeatures.png",
+  image: "/foundry-rules/key-features.png",
   alt: "Rules and Alerts key features",
   ontologyLink: { label: "Jicate Data Platform Business Data Model", href: "#foundry-ontology" } satisfies CTA,
   features: [
@@ -129,7 +129,7 @@ export const howItWorks = {
 
 export const applications = {
   heading: "Applications",
-  image: "/foundry-rules/Foundry_Rules_-_applications_2_-_cropped.jpg",
+  image: "/foundry-rules/applications.jpg",
   alt: "Rules and Alerts applications",
   useCases: [
     {

@@ -134,8 +134,6 @@ export const featureBands: FeatureBand[] = [
   {
     id: "collaboration",
     title: "Global Collaboration. Universal Impact.",
-    image: "/data-integration/Foundry_Data_Catalog.png",
-    alt: "Jicate Data Platform Data Catalog search",
     features: [
       {
         eyebrow: "TREAT DATA LIKE CODE",

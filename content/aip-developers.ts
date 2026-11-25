@@ -64,8 +64,6 @@ export const hero = {
   scroll: ["SCROLL", "TO EXPLORE"],
   pricingLabel: "PRICING",
   signUp: { label: "SIGN UP FOR Jicate AI Platform", href: "#sign-up" } as CTA,
-  /** Looping product clip shown under the headline. */
-  video: "/aip-developers/aipnow-product.mp4",
 };
 
 /* ------------------ §1  SDK for your Business (anchor) -------------------- */
@@ -80,7 +78,7 @@ export const sdkSection = {
     },
     {
       caption: "…and Jicate AI Platform generates a custom SDK for your business",
-      video: "/aip-developers/aip-osdk.mp4",
+      video: null,
     },
   ],
   cards: [
@@ -184,7 +182,7 @@ export const runAnyCode = {
       index: "03",
       title: "…or call it from your custom Business Data Model SDK.",
       body: "Your functions get their own endpoint in the Business Data Model SDK, so you can write custom code against them.",
-      video: "/aip-developers/aip-osdk.mp4",
+      video: null,
     },
   ] as MediaStep[],
   cards: [
@@ -221,7 +219,7 @@ export const focusAlpha = {
   panel: {
     title: "The AI platform that takes you from prototype to production.",
     body: "Prototype, build, and deploy your AI-enabled app in hours.",
-    video: "/aip-developers/aipnow-product.mp4",
+    video: null,
   },
   aiCards: [
     {
@@ -276,7 +274,7 @@ export const rapidDeploy = {
       index: "03",
       title: "Build and test powerful LLM functions",
       body: "Use Jicate AI Platform Logic to test and deploy AI-enabled functions in minutes.",
-      video: "/aip-developers/aip-osdk.mp4",
+      video: null,
     },
   ] as MediaStep[],
 };

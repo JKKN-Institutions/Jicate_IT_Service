@@ -9,4 +9,4 @@ export interface ServiceSlide { index: string; earmark: EarmarkVariant; group: s
 export interface Manifesto { statement: string; support?: string; link?: NavLink; image?: string; imageAlt?: string; }
 export interface SoftwareStatement { before: string; highlight: string; after: string; }
 export interface SplitCTAHalf { label: string; sublabel?: string; href: string; tone: "light" | "dark"; }
-export interface Offering { index: string; name: string; tagline: string; href: string; video: string; poster?: string; }
+export interface Offering { index: string; name: string; tagline: string; href: string; }
