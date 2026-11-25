@@ -79,25 +79,6 @@ export const accelerating = {
   screenshotAlt: "Semiconductor product screenshot",
 };
 
-/* ------------------------------ latest news ------------------------------- */
-
-export const latestNews = {
-  heading: "The Latest News",
-  items: [
-    {
-      date: "DECEMBER 7, 2021",
-      title:
-        "Placeholder headline — accelerating the use of AI and big data to solve critical semiconductor challenges.",
-      href: "#",
-    },
-    {
-      date: "JULY 13, 2022",
-      title: "Placeholder headline — a pioneering data collaboration for semiconductor manufacturing.",
-      href: "#",
-    },
-  ] satisfies NewsItem[],
-};
-
 /* ------------------------------ demo form --------------------------------- */
 
 export const demoForm = {

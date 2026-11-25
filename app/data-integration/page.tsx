@@ -6,7 +6,6 @@ import {
   Supercharged,
   FutureIntro,
   FeatureBand,
-  ImpactStudy,
   ExpertForm,
 } from "@/components/data-integration";
 import { featureBands } from "@/content/data-integration";
@@ -27,7 +26,6 @@ export default function DataIntegrationPage() {
       {featureBands.map((band, i) => (
         <FeatureBand key={band.id} band={band} imageSide={i % 2 === 0 ? "left" : "right"} />
       ))}
-      <ImpactStudy />
       <ExpertForm />
       {/* The shared site Footer renders from the root layout. */}
     </main>

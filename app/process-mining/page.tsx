@@ -4,7 +4,6 @@ import {
   Hero,
   KeyFeatures,
   HowItWorks,
-  Impact,
   ExampleLists,
   ReferenceArchitecture,
   ContactForm,
@@ -21,7 +20,6 @@ export default function ProcessMiningPage() {
       <Hero />
       <KeyFeatures />
       <HowItWorks />
-      <Impact />
       <ExampleLists />
       <ReferenceArchitecture />
       <ContactForm />

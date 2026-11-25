@@ -3,7 +3,6 @@ export interface CTA { label: string; href: string; arrow?: ArrowKind; }
 export interface Announcement { message: string; link: NavLink; dismissLabel: string; storageKey: string; }
 export interface Hero { eyebrow: string; headline: string; subcopy: string; primaryCTA: CTA; secondaryLink: NavLink; poster?: string; video?: string; }
 export interface Metric { value: string; label: string; }
-export interface CaseStudy { eyebrow: string; headline: string; caption: string; metrics: Metric[]; link: NavLink; }
 export type EarmarkVariant = "circle" | "triangle";
 export interface ServiceItem { index: string; earmark: EarmarkVariant; title: string; body: string; link: NavLink; }
 export interface ServicesIntro { eyebrow: string; headline: string; }
@@ -11,6 +10,4 @@ export interface ServiceSlide { index: string; earmark: EarmarkVariant; group: s
 export interface Manifesto { statement: string; support?: string; link?: NavLink; image?: string; imageAlt?: string; }
 export interface SoftwareStatement { before: string; highlight: string; after: string; }
 export interface SplitCTAHalf { label: string; sublabel?: string; href: string; tone: "light" | "dark"; }
-export interface ShowcaseCard { id: string; tab: string; earmark: string; title: string; href: string; image: string; alt: string; }
-export interface Showcase { ctaLabel: string; ctaHref: string; cards: ShowcaseCard[]; }
 export interface Offering { index: string; name: string; tagline: string; href: string; video: string; poster?: string; }

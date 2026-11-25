@@ -4,7 +4,6 @@ import {
   DsHero,
   SpotlightVideo,
   KeyFeatures,
-  Spotlight,
   HowItWorks,
   ExampleIndustries,
   ExampleUseCases,
@@ -23,7 +22,6 @@ export default function DynamicSchedulingPage() {
       <DsHero />
       <SpotlightVideo />
       <KeyFeatures />
-      <Spotlight />
       <HowItWorks />
       <ExampleIndustries />
       <ExampleUseCases />

@@ -244,7 +244,7 @@ export const focusAlpha = {
   cards: [
     {
       title: "SENSIBLE AND POWERFUL DEFAULTS",
-      body: "Jicate AI Platform’s default infrastructure has been stress-tested by some of the largest enterprises and governments in the world. Only configure what you care about, only when you need to.",
+      body: "Only configure what you care about, only when you need to.",
     },
     {
       title: "BUILD COMPLEX PRODUCTS QUICKLY",
@@ -286,7 +286,7 @@ export const rapidDeploy = {
 export const closing = {
   heading: "We built Jicate AI Platform for ourselves / And it is now available to every developer.",
   paragraphs: [
-    "We build complex applications in the field, from factory floors to the front lines.",
+    "We build complex applications in the field.",
     "We needed a tool to handle connectivity, scaling, and security – so we could focus on the mission.",
   ],
   // Emphasis line rendered with highlighted fragments.
@@ -297,7 +297,6 @@ export const closing = {
     b: "prototype to production",
     after: " in hours.",
   },
-  tagline: "It is the most powerful developer platform in the world.",
 };
 
 /* ------------------------------ §7  Final CTA ---------------------------- */

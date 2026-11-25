@@ -43,9 +43,7 @@ export interface Differentiator {
 /* -------------------------------- sub-nav --------------------------------- */
 
 export const subNav: NavItem[] = [
-  { label: "Our Partners", href: "#our-partners" },
   { label: "Our Work", href: "#our-work" },
-  { label: "Impact", href: "#impact" },
   { label: "How it Works", href: "#how-it-works" },
   { label: "Key Differentiators", href: "#key-differentiators" },
 ];
@@ -57,19 +55,10 @@ export const hero = {
   image: `${BASE}/Hero_Image.jpg`,
   alt: "High-speed rail and overhead lines",
   paragraphs: [
-    "Jicate software is powering workflows for some of the largest rail companies in the world.",
     "Our flexible, configurable platform enables organizations to create a connected operating picture across commercial, transportation, track engineering, and mechanical functions.",
     "All in a single platform.",
   ],
   cta: { label: "Start the conversation", href: "#contact" },
-};
-
-/* ------------------------------ our partners ------------------------------ */
-
-export const partners = {
-  heading: "Our Partners",
-  logos: ["Partner One", "Partner Two", "Partner Three"],
-  note: "& other Class I and international railroads",
 };
 
 /* -------------------------------- our work -------------------------------- */
@@ -84,22 +73,6 @@ export const work = {
   ] satisfies WorkGroup[],
 };
 
-/* --------------------------------- impact --------------------------------- */
-
-export const impact = {
-  heading: "Impact",
-  stats: [
-    {
-      stat: "Multi-million-dollar annual recovery & double-digit material-spend reduction",
-      body: "A major railroad brought part details together from across its financial and operational systems, so warranty opportunities that used to slip through the cracks were surfaced automatically. With claims streamlined, the railroad recovered significant value and cut its annual material spend.",
-    },
-    {
-      stat: "0 to deployment — in months",
-      body: "A major railroad compressed its build timeline to stand up a safety-critical application for real-time wayside-detector alerts and equipment-health diagnostics — reaching a production-ready system in a matter of months, not years.",
-    },
-  ] satisfies ImpactStat[],
-};
-
 /* ------------------------------ how it works ------------------------------ */
 
 export const howItWorks = {
@@ -111,16 +84,6 @@ export const howItWorks = {
     "The Business Data Model serves as the foundation for tackling your highest-priority use cases quickly, but without sacrificing future scalability and flexibility.",
     "It enables you to simulate operations, automate processes, and federate decision-making across operators, devices, and environments, all while continuously capturing feedback and entrenched knowledge in a closed loop.",
   ],
-};
-
-/* ------------------------------- spotlight -------------------------------- */
-
-export const spotlight = {
-  heading: "Spotlight: Jicate for Rail at AIPCon",
-  intro: "AIPCon has become a landmark event for the rail industry. Leaders from across major rail companies — spanning operations, technology, business, and innovation — come together to trade ideas on where the industry is headed and what the latest technology makes possible, and leave with concrete, actionable steps they can put to work in their own organizations.",
-  photo: `${BASE}/Master_Classes___AIP_Bootcamp_AIPCon_Sept_14_2023__Steven_Gregory_Photography-4821__2_.jpg`,
-  photoAlt: "Attendees at AIPCon",
-  keynote: { label: "Watch the keynote", href: "#" },
 };
 
 /* --------------------------- key differentiators -------------------------- */

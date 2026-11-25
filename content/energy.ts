@@ -15,12 +15,6 @@ export interface CTA {
   href: string;
 }
 
-export interface Partner {
-  logo: string;
-  alt: string;
-  bullets: string[];
-}
-
 export interface Column {
   title: string;
   lead?: string;
@@ -37,7 +31,6 @@ export interface ImageCard {
 /* ------------------------------- sub-nav --------------------------------- */
 
 export const subNav: CTA[] = [
-  { label: "Our Partners", href: "#our-partners" },
   { label: "Oil & Gas", href: "#oil-and-gas" },
   { label: "Renewables", href: "#renewables" },
   { label: "Carbon", href: "#carbon" },
@@ -70,55 +63,6 @@ export const about = {
   ],
   diagram: "/energy/Asset_27energy.png",
   diagramAlt: "Energy ontology diagram",
-};
-
-/* ------------------------------- partners -------------------------------- */
-
-export const partners = {
-  heading: "Our Partners",
-  items: [
-    {
-      logo: "/energy/Asset_37BP.png",
-      alt: "Partner logo",
-      bullets: [
-        "Jicate and our partner have worked together for years, with our software acting as a key accelerant in their digital transformation.",
-        "The partnership has yielded concrete results in operations management, asset allocation, strategic planning, and procurement.",
-        "Through model chaining and optimization, the platform has helped capture significant additional production and revenue per year.",
-      ],
-    },
-    {
-      logo: "/energy/Asset_32KM.png",
-      alt: "Partner logo",
-      bullets: [
-        "Our partner deployed the platform to address challenges ranging from meeting volatile energy demands to integrating disparate datasets.",
-        "Their Decision Support Tool for a regional energy market, built on the platform, led to better data consistency and speed of extraction, improving response to market needs.",
-      ],
-    },
-    {
-      logo: "/energy/Asset_44Exx.png",
-      alt: "Partner logo",
-      bullets: [
-        "Our partner is adding powerful new features to its condition-monitoring service through working with Jicate.",
-        "With the platform, they can use a much greater range of historical data to generate insights and recommendations, while fleet managers compare performance across the fleet in a fully anonymous way.",
-      ],
-    },
-    {
-      logo: "/energy/Asset_46son2.png",
-      alt: "Partner logo",
-      bullets: [
-        "A global renewable energy producer deployed the platform across solar sites to radically digitize production processes and reduce plant downtime.",
-        "They now receive immediate notification of trackers in need of maintenance and expect to reduce revenue losses associated with tracker failures.",
-      ],
-    },
-    {
-      logo: "/energy/Asset_45tra.png",
-      alt: "Partner logo",
-      bullets: [
-        "Our partner adopted the platform to create a Global Carbon Data Consortium.",
-        "The platform is configured to provide consortium partners with an accurate calculation of carbon intensity across supply chains, beginning with crude oil and refined products.",
-      ],
-    },
-  ] as Partner[],
 };
 
 /* -------------------------------- oil & gas ------------------------------ */
@@ -210,30 +154,14 @@ export const oilGas = {
         ],
       },
     ] as Column[],
-    spotlight: {
-      eyebrow: "Spotlight: AI-Powered Drill Rig Optimization",
-      image: "/energy/shutterstock_361926230.jpg",
-      alt: "Scheduling spotlight",
-      caption:
-        "↳ In conversation at a leading industry forum, our leaders discuss how Jicate is making AI operational in the oil and gas sector, and for critical institutions across the globe.",
-    },
   },
   midstream: {
     heading: "Midstream",
-    chart: "/energy/2022_10_Santa_Gertrudis_Impact_Study_chart_vF.png",
-    chartAlt: "Decision support tool chart",
-    chartHeading: "Building a Decision Support Tool",
-    chartBody:
-      "A Decision Support Tool, created on the platform, combines weather data and the power forecast to predict gas demand for a regional market, improving the ability to meet demand for rapid-response fuel.",
     liquidsHeading: "Liquids & Gas",
     liquidsBody: [
       "Companies spend immense amounts of time and money on manual, siloed programs to manage DRA, power costs and contracts, flow rates and production, and maintenance.",
       "While the silos between operational and financial programs cause significant value degradation, they also present opportunities for integration and optimization. Integrating systems, however, can be a labor-intensive, manual process.",
     ],
-    caseImage: "/energy/shutterstock_1811876539.jpg",
-    caseHeading: "Case Study: Energy Transportation & Midstream Service Provider",
-    caseBody:
-      "A leading energy transportation and midstream service provider deployed the platform to digitally connect and model their value chain — from gas processing plants to storage to land and sea shipping routes — with the goal of identifying breaks before they cause disruption.",
     cards: [
       {
         title: "Preventative Maintenance",
@@ -330,11 +258,6 @@ export const renewables = {
 export const carbon = {
   id: "carbon",
   title: "Carbon",
-  videoThumb: "/energy/shutterstock_1811876539.jpg",
-  logos: [
-    { src: "/energy/Asset_37BP.png", alt: "Partner logo", caption: "Jicate supports our partner as it works toward its ambition to become a net-zero company, and to help the world get to net zero." },
-    { src: "/energy/Asset_44Exx.png", alt: "Partner logo", caption: "An aviation ecosystem powered by the platform serves thousands of users across many participating airlines." },
-  ],
   sustainability: {
     heading: "Sustainability",
     lead: "Understand your footprint. Stay ahead of regulations. Make informed decarbonization decisions.",
@@ -365,32 +288,6 @@ export const carbon = {
         ],
       },
     ] as Column[],
-  },
-  caseStudies: {
-    heading: "Emissions Tracking & Decarbonization for Oil & Gas",
-    eyebrow: "Case Studies",
-    items: [
-      {
-        title: "Strategic Decarbonization",
-        body: "Senior decision-makers use the platform to assess alternative decarbonization pathways, simulating how their businesses perform in a range of future conditions and adjusting portfolios to meet decarbonization goals.",
-      },
-      {
-        title: "Real-Time Emissions Metrics",
-        body: "A major energy company uses the platform to track Scope 1 and 2 emissions across every part of its business — derived from granular operational information and refreshed automatically as the business changes.",
-      },
-    ],
-  },
-  agora: {
-    heading: "Carbon Supply Chain Ecosystem",
-    productName: "Agora by Jicate",
-    body: "Understand your commodity supply-chain emissions to enable private benchmarking, alternative-pathway analysis, and carbon-price modeling.",
-    image: "/energy/grid-platforms.png",
-    alt: "Agora demo thumbnail",
-    paragraphs: [
-      "Customers increasingly ask us for visibility into the lifecycle emissions of the commodities they move as they prepare for regulated Scope 3 reporting and, more generally, for net zero.",
-      "Our partner adopted the platform to create a Global Carbon Data Consortium: Agora. Consortium partners bring together data from across their supply chains into a collaborative environment and model it around existing operational structures.",
-      "As more data is integrated, the platform enables rapid scaling and iteration — pathways have scaled from tens of thousands to millions in a matter of weeks.",
-    ],
   },
 };
 

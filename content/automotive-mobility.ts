@@ -47,7 +47,6 @@ export const aboutWork = {
   image: `${BASE}/Auto_Feature_Image_copy.png`,
   alt: "Cars moving at sunset",
   paragraphs: [
-    "Jicate Data Platform is one of the world's leading automotive software platforms, and it is helping drive the mobility revolution forward. A majority of the world's top-ten OEMs — along with more than thirty major automotive parts suppliers — rely on it to make sense of their data and turn it into decisions.",
     "Every vehicle generates enormous volumes of data at each stage of its life: design, assembly, marketing, sales, and everyday use on the road. Jicate Data Platform brings all of it together in a single, end-to-end solution built for the entire automotive ecosystem.",
     "By uniting the full lifecycle of vehicle data in one collaborative workspace, Jicate Data Platform lets OEMs, suppliers, dealers, and other mobility players start unlocking value within weeks — accelerating growth, reducing costs, and helping shape what mobility becomes next.",
   ],

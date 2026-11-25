@@ -58,43 +58,10 @@ export const about = {
     "Extreme weather, the shift to renewables, and new ways of producing and consuming energy are just a few of the real-world pressures facing utilities today.",
   paragraphs: [
     "Utilities now have to draw on enormous volumes of data spread across ever more complex digital ecosystems — and, crucially, turn that insight into action. Jicate's Business Data Model brings together data from distribution management systems, asset records, inspections, geographic layouts, and IoT devices, alongside risk and connectivity models, so teams can make better-informed decisions across the grid.",
-    "Utility operators around the world use Jicate to rapidly build and ship flexible, production-ready applications — predicting operations, automating processes, simulating scenarios, and coordinating decisions across teams and environments. The result is more reliable, more efficient utilities, from grid management right through to customer care.",
+    "Utility operators can use Jicate to rapidly build and ship flexible, production-ready applications — predicting operations, automating processes, simulating scenarios, and coordinating decisions across teams and environments. The result is more reliable, more efficient utilities, from grid management right through to customer care.",
   ],
   image: `${BASE}/Ontology_stack_-_Utilities__JD_Edits_.png`,
   imageAlt: "Utilities ontology stack diagram",
-};
-
-/* ------------------------------ our partners ------------------------------ */
-
-export interface Partner {
-  name: string;
-  stat: string;
-  note: string;
-  link: CTA;
-}
-
-export const partners = {
-  heading: "Our Partners",
-  items: [
-    {
-      name: "A major electric utility",
-      stat: "Integrated data from millions of grid assets across its digital grid into the platform.",
-      note: "Sharply reduced missed customer notifications for proactive power shutoffs, cutting notification time from hours to minutes.",
-      link: { label: "Learn more", href: "#" },
-    },
-    {
-      name: "A global engineering firm",
-      stat: "Combined Jicate with its own proprietary algorithms to lift staff productivity.",
-      note: "Eliminated operational fines while also reducing greenhouse-gas emissions.",
-      link: { label: "Learn more", href: "#" },
-    },
-    {
-      name: "A global solar power producer",
-      stat: "Uses Jicate and machine-learning models to remotely monitor its solar farms.",
-      note: "Expects a meaningful reduction in revenue lost to tracker failures.",
-      link: { label: "Learn more", href: "#" },
-    },
-  ] satisfies Partner[],
 };
 
 /* ---------------------------- our capabilities ---------------------------- */

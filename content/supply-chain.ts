@@ -18,13 +18,6 @@
 
 const BASE = "/supply-chain";
 
-/* ------------------------------ shared shapes ----------------------------- */
-
-export interface PartnerCard {
-  eyebrow: string;
-  bullets: string[];
-}
-
 export interface IndustryCard {
   eyebrow: string;
   image: string;
@@ -64,21 +57,6 @@ export const about = {
   body: "Whether the mission is delivering humanitarian aid or securing critical manufacturing components, Jicate helps organizations run their supply chains with confidence. The platform builds on the technology you already have — connecting siloed planning and execution, sharpening inventory management, and giving teams the resilience to keep operating through economic shocks and geopolitical uncertainty.",
   image: `${BASE}/image__12_.png`,
   imageAlt: "Smart factory supply-chain network diagram",
-};
-
-/* ------------------------------ our partners ------------------------------ */
-
-export const partners = {
-  heading: "Our Partners",
-  cards: [
-    { eyebrow: "GLOBAL AID ORGANIZATION", bullets: ["Gained near-real-time visibility to track relief supplies as a crisis unfolded.", "Delivered cargo at scale while surfacing significant savings along the way."] },
-    { eyebrow: "GLOBAL MANUFACTURER", bullets: ["Accelerated supply-chain collaboration by working from one shared, connected platform.", "Lifted production output and pinpointed recurring annual savings."] },
-    { eyebrow: "CONSUMER GOODS LEADER", bullets: ["Brought sales and operations planning together to resolve disruptions faster.", "Realized multi-million savings and streamlined logistics across the network."] },
-    { eyebrow: "AEROSPACE & DEFENSE FIRM", bullets: ["Connected workforce and resource data to keep complex programs on schedule.", "Reduced idle inventory and improved on-time delivery."] },
-    { eyebrow: "HEALTHCARE NETWORK", bullets: ["Built a shared view of drug manufacturing and distribution across sites.", "Improved responsiveness and prioritization when demand shifted."] },
-    { eyebrow: "ENERGY OPERATOR", bullets: ["Secured cross-entity visibility into inventory and demand.", "Enabled more proactive, better-informed operational decisions."] },
-  ] satisfies PartnerCard[],
-  cta: { label: "Learn more", href: "#" },
 };
 
 /* --------------------------- our industry impact -------------------------- */

@@ -193,26 +193,6 @@ export const featureBands: FeatureBand[] = [
   },
 ];
 
-/* ------------------------------ impact study ------------------------------ */
-
-export const impactStudy = {
-  eyebrow: "IMPACT STUDY",
-  partner: "Global Energy Company",
-  heading: "The Challenge",
-  body: "A global energy company uses Jicate to integrate more than 300 ERP datasets and flag attempts to buy materials already held in inventory. With all ERP data unified, an alerting workflow identifies surplus materials and catches duplicate orders before they are placed — surfacing tens of millions in recoverable working capital.",
-  image: "/data-integration/Energy_New.jpg",
-  alt: "Energy company operations",
-  metrics: [
-    { value: "300+", label: "ERP data sets integrated" },
-    { value: "$50M+", label: "in working capital identified in weeks" },
-  ],
-  tags: [
-    { label: "ERP Integration", href: "#erp-integration" },
-    { label: "Cost of Goods Sold", href: "#cogs" },
-    { label: "Inventory Optimization", href: "#inventory" },
-  ] satisfies CTA[],
-};
-
 /* --------------------------------- form ----------------------------------- */
 
 export const expertForm = {

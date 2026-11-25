@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import {
   Hero,
   About,
-  Partners,
   Capabilities,
   ContactForm,
 } from "@/components/utilities";
@@ -18,7 +17,6 @@ export default function UtilitiesPage() {
     <main className="flex-1 bg-canvas">
       <Hero />
       <About />
-      <Partners />
       <Capabilities />
       <ContactForm />
       {/* The shared site Footer renders from the root layout. */}

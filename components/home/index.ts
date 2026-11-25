@@ -1,6 +1,4 @@
 export { Hero } from "./Hero";
-export { FeaturedCaseStudy } from "./FeaturedCaseStudy";
-export { ProductCarousel } from "./ProductCarousel";
 export { ServicesScrolly } from "./ServicesScrolly";
 export { ServicesSlider } from "./ServicesSlider";
 export { OurSoftware } from "./OurSoftware";

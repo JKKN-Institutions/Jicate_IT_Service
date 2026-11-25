@@ -12,7 +12,6 @@
 import type {
   Announcement,
   Hero,
-  CaseStudy,
   ServicesIntro,
   ServiceItem,
   ServiceSlide,
@@ -54,24 +53,6 @@ export const hero: Hero = {
     arrow: "drillin",
   },
   poster: "/hero/poster.svg",
-};
-
-/* §6 — Featured case-study band ------------------------------------------ */
-
-export const caseStudy: CaseStudy = {
-  eyebrow: "CASE STUDY · HEALTHCARE",
-  headline: "A regional clinic network cut unplanned downtime by 40%",
-  caption:
-    "Jicate consolidated three help desks into one managed service, hardened the network, and moved records to a compliant cloud — without a single missed appointment.",
-  metrics: [
-    { value: "40%", label: "LESS DOWNTIME" },
-    { value: "< 8 min", label: "AVG. RESPONSE" },
-  ],
-  link: {
-    label: "Read the case study",
-    href: "/case-studies/clinic-network-downtime",
-    arrow: "drillin",
-  },
 };
 
 /* §7 — Services numbered scrolly ----------------------------------------- */
@@ -247,7 +228,7 @@ export const softwareStatement: SoftwareStatement = {
   before: "Our software powers real-time, ",
   highlight: "AI-driven",
   after:
-    " decisions in critical government and commercial enterprises in the West, from the factory floors to the front lines.",
+    " decisions.",
 };
 
 export const manifesto: Manifesto = {

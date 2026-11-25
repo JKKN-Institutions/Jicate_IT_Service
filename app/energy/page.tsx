@@ -4,7 +4,6 @@ import {
   SubNav,
   Hero,
   About,
-  Partners,
   OilGas,
   Renewables,
   Carbon,
@@ -22,7 +21,6 @@ export default function EnergyPage() {
       <SubNav />
       <Hero />
       <About />
-      <Partners />
       <OilGas />
       <Renewables />
       <Carbon />

@@ -98,17 +98,6 @@ export const keyFeatures = {
   ] as Feature[],
 };
 
-/* -------------------------------- spotlight ------------------------------- */
-
-export const spotlight = {
-  heading: "Spotlight",
-  title: "AI-Powered Scheduling Optimization, Powered by Jicate Data Platform Dynamic Scheduling",
-  image: "/dynamic-scheduling/Asset_8TPM_Monitor.png" as string | null,
-  alt: "Rules and Alerts app — editing a scheduling rule",
-  body: "A conversation on making AI operational across heavy industry — how dynamic scheduling turns real-time data into decisions for critical institutions across the globe.",
-  link: { label: "Learn More", href: "#learn-more" } satisfies CTA,
-};
-
 /* ------------------------------ how it works ------------------------------ */
 
 export const howItWorks = {

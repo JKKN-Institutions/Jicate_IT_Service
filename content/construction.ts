@@ -187,7 +187,6 @@ export const capabilities = {
 
 export const impact = {
   heading: "Jicate Drives Real Impact at Scale",
-  subhead: "We help leading construction & engineering firms dominate the market.",
   steps: [
     {
       id: "0.1",
@@ -223,20 +222,6 @@ export const impact = {
       ],
     },
   ] satisfies ImpactStep[],
-};
-
-/* ------------------------------- continue --------------------------------- */
-
-export const explore = {
-  heading: "Continue Exploring",
-  cards: [
-    { kind: "KEYNOTE VIDEO", title: "A leading general contractor reveals how they bring generations of tradecraft to every project.", cta: "Watch the Video", href: "#" },
-    { kind: "KEYNOTE VIDEO", title: "A general contractor shares how they use the platform to drive dramatic efficiency gains.", cta: "Watch the Video", href: "#" },
-    { kind: "KEYNOTE VIDEO", title: "An operations leader showcases total operations management and daily site reporting in action.", cta: "Watch the Video", href: "#" },
-    { kind: "BLOG", title: "Read how partners are building construction's operating system for the 21st century.", cta: "Read the Blog", href: "#" },
-    { kind: "PODCAST", title: "Leaders discuss how great software can bend to fit the most physical of industries — and drive real ROI.", cta: "Watch the Podcast", href: "#" },
-    { kind: "INTERVIEW", title: "A forward-deployed architect shares how AI is powering operations across construction and utilities.", cta: "Watch the Video", href: "#" },
-  ] satisfies ExploreCard[],
 };
 
 /* -------------------------------- cta band -------------------------------- */

@@ -1,6 +1,5 @@
 import {
   Hero,
-  ProductCarousel,
   StatementBand,
   OurSoftware,
   ManifestoBand,
@@ -11,7 +10,6 @@ export default function Home() {
   return (
     <main className="flex-1">
       <Hero />
-      <ProductCarousel />
       <StatementBand />
       <OurSoftware />
       <ManifestoBand />

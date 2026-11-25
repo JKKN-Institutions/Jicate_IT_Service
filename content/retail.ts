@@ -56,7 +56,6 @@ export const about = {
     heading: "About Us",
     paragraphs: [
       "Jicate builds data-driven operations and decision-making software that empowers some of the world's most important institutions.",
-      "We got our start in intelligence and defense, and brought those frontline lessons to bear across countless industries and commercial enterprises around the world.",
       "Our core commercial platform, Jicate Data Platform, is the AI-powered operating system for the modern enterprise — building on your existing technology investments to connect siloed planning and optimize for efficiency and agility.",
     ],
   },
@@ -65,7 +64,6 @@ export const about = {
     paragraphs: [
       "To ride out today's swings in supply and demand, retailers need near-real-time visibility into demand — and the ability to adjust promotions, inventory, and operations on the fly.",
       "Jicate Data Platform lets retailers build a unified data foundation and tackle their toughest problems — optimizing inventory, building stronger supply chains, and delivering seamless omnichannel customer experiences.",
-      "The world's leading enterprise retailers use Jicate Data Platform to drive digital transformation and get smarter, sharper value from their data.",
     ],
   },
 };
@@ -99,46 +97,6 @@ export const technology = {
     { eyebrow: "DATA SCIENCE & MODELING", body: "Support full-stack data science with direct connections to both pipelines and applications — one integrated environment to build, test, and operationalize ML and AI models." },
     { eyebrow: "APPLICATION BUILDING", body: "Give teams across the organization a real way to contribute — build read-write applications, run simulations, and embed full-fidelity business rules and processes." },
   ] satisfies TechFeature[],
-};
-
-/* --------------------------- platform in action --------------------------- */
-
-export const inAction = {
-  heading: "The Platform in Action",
-  tabs: [
-    {
-      tab: "Working Capital Optimization",
-      partner: "A global manufacturer",
-      challenge: "The company was losing significant amounts of material to expiry — a costly problem — and needed to analyse data across a sprawling supply-chain network of hundreds of plants and more than 100,000 products to make deliberate inventory reductions.",
-      solution: "With Jicate Data Platform, they brought production, equipment-capacity, plant-asset, and logistics data into a single layer, gaining visibility across every product and plant and the ability to fine-tune inventory at a granular level.",
-      image: `${BASE}/shutterstock_1690489663.jpg`,
-      alt: "Automated warehouse aisles",
-    },
-    {
-      tab: "Out-of-Stock & Overstock",
-      partner: "A global retailer",
-      challenge: "The retailer struggled to keep shelves stocked without tying up cash in excess inventory, as disconnected systems made it hard to see real demand and react in time.",
-      solution: "Jicate unified demand, inventory, and replenishment data into a single view, so teams could predict shortages and overstocks early and rebalance stock proactively across the network.",
-      image: `${BASE}/shutterstock_1877244763_copy.jpg`,
-      alt: "Retail shelves",
-    },
-    {
-      tab: "Holistic Pricing Optimization",
-      partner: "A global retailer",
-      challenge: "Pricing decisions were made in silos, without a clear, connected view of cost, demand, competition, and margin across the assortment.",
-      solution: "Jicate brought those signals together so teams could set and adjust prices holistically — protecting margin while staying competitive and responsive to demand.",
-      image: `${BASE}/shutterstock_2036950148.jpg`,
-      alt: "Shopping",
-    },
-    {
-      tab: "Product & Assortment Selection",
-      partner: "A global retailer",
-      challenge: "Choosing the right products and assortments for each market meant reconciling sales, trend, and customer data that lived in separate systems.",
-      solution: "Jicate unified that data so merchandising teams could shape assortments around real demand by segment and location, and adapt them as customer preferences shift.",
-      image: `${BASE}/shutterstock_682632547.jpg`,
-      alt: "Product assortment",
-    },
-  ] satisfies CaseTab[],
 };
 
 /* --------------------------------- form ----------------------------------- */

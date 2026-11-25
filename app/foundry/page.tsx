@@ -5,8 +5,6 @@ import {
   OntologySection,
   Collaboration,
   IndustriesSection,
-  GlobalImpact,
-  Awards,
   GetStartedForm,
 } from "@/components/foundry";
 
@@ -22,8 +20,6 @@ export default function FoundryPage() {
       <OntologySection />
       <Collaboration />
       <IndustriesSection />
-      <GlobalImpact />
-      <Awards />
       <GetStartedForm />
       {/* The shared site Footer renders from the root layout. */}
     </main>

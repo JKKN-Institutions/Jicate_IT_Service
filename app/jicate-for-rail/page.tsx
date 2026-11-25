@@ -3,9 +3,7 @@ import type { Metadata } from "next";
 import {
   SubNav,
   Hero,
-  Partners,
   Work,
-  Impact,
   HowItWorks,
   Differentiators,
   ContactForm,
@@ -13,7 +11,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Jicate for Rail",
-  description: "Jicate software is powering workflows for some of the largest rail companies in the world.",
+  description: "A connected operating picture across commercial, transportation, track engineering, and mechanical functions.",
 };
 
 export default function JicateForRailPage() {
@@ -21,9 +19,7 @@ export default function JicateForRailPage() {
     <main className="flex-1">
       <Hero />
       <SubNav />
-      <Partners />
       <Work />
-      <Impact />
       <HowItWorks />
       <Differentiators />
       <ContactForm />

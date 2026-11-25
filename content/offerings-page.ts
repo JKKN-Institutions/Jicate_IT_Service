@@ -146,7 +146,7 @@ export const offerings: OfferingRow[] = [
   {
     name: "Rail",
     href: "/jicate-for-rail",
-    tagline: "Powering workflows for some of the largest rail companies in the world.",
+    tagline: "A connected operating picture across commercial, transportation, track engineering, and mechanical functions.",
   },
   {
     name: "Readiness",

@@ -9,7 +9,7 @@ import { impact } from "@/content/construction";
 import { BigHeading, StepHeading } from "./parts";
 
 /**
- * Impact — an intro heading and subhead, a numbered step indicator
+ * Impact — an intro heading, a numbered step indicator
  * ([0.1] — 0.2 — 0.3 — 0.4), and the active step's content: an oversized label
  * on the left and a bordered stat card on the right (reference parity).
  */
@@ -21,9 +21,6 @@ export function Impact() {
     <section aria-label={impact.heading} className="pt-[120px] desktop:pt-[180px]">
       <Container>
         <BigHeading className="max-w-[12ch]">{impact.heading}</BigHeading>
-        <p className="mt-[24px] max-w-[34ch] font-display text-[clamp(1.6rem,2.36vw,2.125rem)]/[1.176] text-white">
-          {impact.subhead}
-        </p>
 
         {/* Step indicator */}
         <div className="mt-[80px] flex items-center gap-[16px]" role="tablist">

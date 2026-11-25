@@ -182,52 +182,6 @@ export const opsDataScience = {
   ] as Capability[],
 };
 
-/* --------------------------- Digital Twin In Action ---------------------- */
-
-export const inAction = {
-  heading: "Digital Twin In Action",
-  video: {
-    // Featured image for the section (replaces the earlier video placeholder).
-    image: "/data-integration/opentex-image-what-is-digital-twin-en.avif",
-    alt: "What is a digital twin",
-  },
-  caseStudy: {
-    title: "Twin-based COGS and Production Optimization",
-    intro: [
-      "At a Fortune 100 consumer-goods company, the platform integrated 7+ ERP data sources to produce a digital twin of the organization's value chain. The twin provides the substrate for a granular COGS and profitability model that applies at the SKU level.",
-      "Optimizing raw-material purchases now takes minutes instead of weeks — and is projected to generate millions in annual savings.",
-    ],
-    challenge: {
-      title: "Challenge",
-      body: "Profitability was reported only at an aggregate company level, but the customer needed to compute it with far more granularity to optimize COGS, improve output, and inform daily operations. The data lived across more than seven ERP systems, where it is stored natively and is inaccessible to most decision-makers — every analysis took weeks of costly manual work, and a growing backlog meant IT had to postpone its most valuable projects.",
-      questions: [
-        "How can we take advantage of pricing changes to raw materials and reduce COGS through spot-buy opportunities?",
-        "How can we avoid miscalculations of raw materials to reduce waste?",
-        "How can we optimize production through greater visibility into the cost and profitability of our product formulations?",
-      ],
-    },
-    solution: {
-      title: "Solution",
-      leads: [
-        "The platform integrated 7+ ERP data sources into a digital twin of the value chain — from the hand of the supplier to the hand of the customer.",
-        "Instead of querying complex ERP databases, supply-chain managers, plant managers, and demand planners now interact in a no-code way with a real-world object model of plants, SKUs, customers, and other core business concepts.",
-      ],
-      outro:
-        "This foundation lets analysts build a granular COGS and profitability model at the SKU level. New workflows incorporating these models help teams:",
-      bullets: [
-        {
-          lead: "Optimize COGS.",
-          body: "Within one week, an out-of-the-box Bill of Materials workflow let users begin optimizing raw-material purchases for the first time — assessing spot-buy opportunities while accounting for formulation constraints, existing inventory, and forecasted demand.",
-        },
-        {
-          lead: "Optimize Production.",
-          body: "Using the granular profitability model, supply-chain managers evaluate how new product formulations compare to existing ones and develop strategies to maximize production.",
-        },
-      ],
-    },
-  },
-};
-
 /* ----------------------------- Contact form ------------------------------ */
 
 export const contact = {

@@ -24,15 +24,7 @@ export function IndustriesSection() {
           </Reveal>
 
           <div className="flex flex-col gap-2xl desktop:col-span-6 desktop:col-start-7">
-            <Reveal className="flex flex-col gap-l">
-              {industries.body.map((p) => (
-                <p key={p} className="text-[clamp(1.125rem,1rem+0.6vw,1.333rem)] leading-[1.4] text-ink-light">
-                  {p}
-                </p>
-              ))}
-            </Reveal>
-
-            <Reveal index={1} className="grid grid-cols-1 gap-x-2xl tablet:grid-cols-2">
+            <Reveal className="grid grid-cols-1 gap-x-2xl tablet:grid-cols-2">
               {industries.links.map((l, i) => (
                 <ArrowRow key={l.label} href={l.href} className={cn(i >= lastRowStart && "border-b border-ink/20")}>
                   {l.label}

@@ -129,15 +129,6 @@ export const industries = {
   items: ["Financial Services", "Manufacturing", "Supply Chain", "Healthcare", "Defense"],
 };
 
-export const useCases = {
-  heading: "Example Use Cases",
-  items: [
-    { label: "Skywise", href: "#skywise" },
-    { label: "Syntropy", href: "#syntropy" },
-    { label: "Athinia", href: "#athinia" },
-  ] satisfies CTA[],
-};
-
 /* --------------------------------- form ----------------------------------- */
 
 export const contactForm = {
