@@ -53,7 +53,7 @@ export const whatWeDo = {
       lead: "Our customers understand their data and the problems they face. We bring proven technology and the engineers to put it to work.",
       secondary:
         "We send our teams into the field to work side by side with customers — deploying, adapting, and improving in the real world.",
-      link: { label: "The Challenges We Help Solve", href: "/defense" },
+      link: { label: "The Challenges We Help Solve", href: "/offerings" },
     },
     {
       statement: "We design technology to help institutions protect privacy",

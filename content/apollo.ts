@@ -95,13 +95,6 @@ export const exploreSolutions = {
   watchDemo: { label: "Watch the Demo", href: "#" } as Link,
 };
 
-/* — Federal Government CTA --------------------------------------------- */
-
-export const federal = {
-  heading: "Looking to Deploy Software to the Federal Government?",
-  link: { label: "FedStart", href: "/fedstart", arrow: "drillin" as ArrowKind },
-};
-
 /* — "From one to many environments" carousel --------------------------- */
 
 export const environments = {

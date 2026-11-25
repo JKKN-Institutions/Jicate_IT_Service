@@ -142,7 +142,6 @@ export const exampleIndustries = {
     "Transportation",
     "Heavy Industry",
     "CPG",
-    "Defense",
     "Health & Life Sciences",
     "Hospital Ops",
     "Telecommunications",

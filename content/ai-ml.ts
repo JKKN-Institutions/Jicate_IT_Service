@@ -154,7 +154,6 @@ export const industries = {
     { label: "Construction & Real Estate", href: "/construction" },
     { label: "Energy & Renewables", href: "/energy" },
     { label: "Financial Services & Banking", href: "/financial-services" },
-    { label: "Government & Security", href: "/defense" },
     { label: "Healthcare & Life Sciences", href: "/life-sciences" },
     { label: "Insurance", href: "/insurance" },
     { label: "Logistics", href: "/supply-chain" },

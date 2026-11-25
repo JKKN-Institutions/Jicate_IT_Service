@@ -25,13 +25,6 @@ export const offerings: Offering[] = [
   },
   {
     index: "/0.2",
-    name: "Gotham",
-    tagline: "Achieve AI-driven combat superiority, from space to mud",
-    href: "/gotham",
-    video: "/home/homepage-Gotham.mp4",
-  },
-  {
-    index: "/0.3",
     name: "Jicate Data Platform",
     tagline:
       "Build and manage Ontology-powered software, with a complete developer platform",
@@ -39,14 +32,14 @@ export const offerings: Offering[] = [
     video: "/home/homepage-Foundry.mp4",
   },
   {
-    index: "/0.4",
+    index: "/0.3",
     name: "Business Data Model",
     tagline: "The central system for orchestrating decisions across Human+AI teams",
     href: "/ontology",
     video: "/home/homepage-Ontology.mp4",
   },
   {
-    index: "/0.5",
+    index: "/0.4",
     name: "Jicate Deployment Service",
     tagline:
       "Autonomously deploy, monitor, and manage software across any environment",

@@ -23,7 +23,6 @@ export interface PopularSearch {
 /** Quick-pick queries shown under the input (mirrors the reference). */
 export const popularSearches: PopularSearch[] = [
   { label: "Jicate Data Platform", query: "Jicate Data Platform" },
-  { label: "Gotham", query: "Gotham" },
   { label: "Jicate Deployment Service", query: "Jicate Deployment Service" },
   { label: "Business Data Model", query: "Business Data Model" },
   { label: "Artificial Intelligence (AI)", query: "AI" },
@@ -32,7 +31,6 @@ export const popularSearches: PopularSearch[] = [
 const platformTaglines: Record<string, string> = {
   AIP: "Automate operations across your enterprise, from the factory floor to the front lines.",
   Foundry: "Build and manage Ontology-powered software with a complete developer platform.",
-  Gotham: "Achieve AI-driven decision advantage across your most critical missions.",
   Ontology: "The central system for orchestrating decisions across Human+AI teams.",
   Apollo: "Autonomously deploy, monitor, and manage software across any environment.",
 };

@@ -7,7 +7,6 @@ import {
   Features,
   DevOpsStatement,
   ExploreSolutions,
-  FederalCta,
   Environments,
 } from "@/components/apollo";
 import { demoForm } from "@/content/apollo";
@@ -26,7 +25,6 @@ export default function ApolloPage() {
       <Features />
       <DevOpsStatement />
       <ExploreSolutions />
-      <FederalCta />
       <Environments />
       <SiteContactForm title={demoForm.title} id="request-a-demo" />
     </main>

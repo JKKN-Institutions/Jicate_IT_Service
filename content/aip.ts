@@ -153,7 +153,6 @@ export const industries = {
     "Construction & Real Estate",
     "Energy & Renewables",
     "Financial Services & Banking",
-    "Government & Security",
     "Healthcare & Lifesciences",
     "Insurance",
     "Logistics",

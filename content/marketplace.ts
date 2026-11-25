@@ -126,7 +126,7 @@ export const howItWorks = {
 
 export const industries = {
   heading: "Industries",
-  items: ["Financial Services", "Manufacturing", "Supply Chain", "Healthcare", "Defense"],
+  items: ["Financial Services", "Manufacturing", "Supply Chain", "Healthcare"],
 };
 
 /* --------------------------------- form ----------------------------------- */
